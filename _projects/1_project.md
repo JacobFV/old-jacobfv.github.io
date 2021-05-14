@@ -5,6 +5,7 @@ description: A failed yet informative attempt to build a 2&times;2 sheet metal c
 img: /assets/img/cc_1.jpg
 importance: 1
 category: personal
+date: April-May 2015
 ---
 
 Outcomes:
