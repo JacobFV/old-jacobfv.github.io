@@ -2,9 +2,9 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Project portfolio
+description:
 nav: true
-display_categories: [personal, community, school]
+display_categories: [community, personal, school]
 horizontal: false
 ---
 
