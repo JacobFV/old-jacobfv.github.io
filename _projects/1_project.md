@@ -6,6 +6,7 @@ img: /assets/img/cc_1.jpg
 importance: 1
 category: personal
 date: April-May 2015
+redirect: https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6
 ---
 
 Outcomes:

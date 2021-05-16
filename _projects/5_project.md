@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
+title: SQTEST
+description: A rule-based past and present tense English and Spanish translator
+img: 
 importance: 3
-category: fun
+category: school
+redirect: https://github.com/JacobFV/SQT-English-to-Spanish-Translator
 ---
 
 Every project has a beautiful feature showcase page.

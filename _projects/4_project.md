@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: IndustrialAutomation@home
+description: Building my home Internet factory
+img: /assets/img/cnc.jpeg
 importance: 3
-category: fun
+category: personal
+redirect: https://jacobfv123.medium.com/industrialautomation-home-bba924a3b2f0
 ---
 
 Every project has a beautiful feature showcase page.
