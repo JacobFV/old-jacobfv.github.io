@@ -1,11 +1,11 @@
 ---
 layout: page
-title: IndustrialAutomation@home
-description: Building my home Internet factory
-img: /assets/img/cnc.jpeg
-importance: 2
-category: personal
-redirect: https://jacobfv123.medium.com/industrialautomation-home-bba924a3b2f0
+title: SQTEST
+description: A rule-based past and present tense English and Spanish translator
+img: 
+importance: 3
+category: school
+redirect: https://github.com/JacobFV/SQT-English-to-Spanish-Translator
 ---
 
 Every project has a beautiful feature showcase page.
