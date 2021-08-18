@@ -2,10 +2,12 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
-nav: false
+description: Courses I have taught / will teach
+nav: true
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## [Artificial Intelligence: Principle and Practice](https://jacobfv.github.io/Artificial-Intelligence-Principle-and-Practice/) 
 
-Organize your courses by years, topics, or universities, however you like!
+**October 2021**
+
+I am organizing a course on artificial intelligence theory and implementation. I am offering all this material free to the public and hosting it physically at UTA and live on YouTube. I hope to [have you as a student](https://jacobfv.github.io/Artificial-Intelligence-Principle-and-Practice/#signup). 
