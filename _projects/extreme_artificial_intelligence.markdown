@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Principled Artificial Intelligence
+title: Extreme Artificial Intelligence
 description: unbounded pluripotent intelligence?
 img: 
 importance: 1
