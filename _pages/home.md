@@ -85,6 +85,6 @@ safety meetings
 
 ## Teaching
 
-#### [**ArtificialIntelligence:PrincipleandPractice**](https://jacobfv.github.io/Artificial-Intelligence-Principle-and-Practice/)<br>
+#### [**Artificial Intelligence: Principle and Practice**](https://jacobfv.github.io/Artificial-Intelligence-Principle-and-Practice/)<br>
 - Independantly organized 8-day workshop on cutting-edge of artificial intelligence theory and technique
 - Planned for October 2021
