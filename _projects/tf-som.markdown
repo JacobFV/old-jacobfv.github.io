@@ -6,4 +6,6 @@ img:
 importance: 4
 category: personal
 redirect: https://github.com/JacobFV/tf-som
+
+sort_order: 45
 ---

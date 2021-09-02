@@ -6,4 +6,6 @@ img:
 importance: 7
 category: personal
 redirect: https://github.com/JacobFV/multi-graph-former
+
+sort_order: 60
 ---

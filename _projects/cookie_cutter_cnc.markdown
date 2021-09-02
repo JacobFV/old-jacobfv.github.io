@@ -7,6 +7,16 @@ importance: 5
 category: personal
 date: April-May 2015
 redirect: https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6
+
+sort_order: 4
+
+work_date: Mar – May 2015
+bullet_points: >
+    <ul>
+        <li> 36”×36” sheet metal cutter with server and client control systems </li>
+        <li> Full stack engineering project. Designed and developed C# .svg parser, toolpath scheduler, and optimizer, Arduino C controller with serial protocol and electronics, and CNC machine with electrodischarge machining head </li>
+        <li> Development journey published at <a href="https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6">https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6</a> </li>
+    </ul>
 ---
 
 Outcomes:

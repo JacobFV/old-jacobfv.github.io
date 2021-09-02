@@ -6,6 +6,17 @@ img:
 importance: 3
 category: school
 redirect: https://github.com/JacobFV/SQT-English-to-Spanish-Translator
+
+sort_order: 9
+
+work_date: Oct – Nov 2016
+bullet_points: >
+    <ul>
+        <li> Flexible Spanish – English translation system </li>
+        <li> Programmed in C# with Visual Studio </li>
+        <li> Formalized many more aspects of English – Spanish translation </li>
+        <li> Github repository <a href="https://github.com/JacobFV/SQT-English-to-Spanish-Translator">JacobFV/SQT-English-to-Spanish-Translator</a> </li>
+    </ul>
 ---
 
 Every project has a beautiful feature showcase page.

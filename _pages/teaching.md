@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: teaching
 description: Courses I have taught / will teach
-nav: true
+nav: false
 ---
 
 ## [Artificial Intelligence: Principle and Practice](https://jacobfv.github.io/Artificial-Intelligence-Principle-and-Practice/) 

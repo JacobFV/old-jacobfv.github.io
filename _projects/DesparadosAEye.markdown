@@ -6,6 +6,15 @@ img: /assets/img/desparados_3.png
 importance: 1
 category: school
 date: Jan.-May 2021
+
+sort_order: 150
+
+work_date: Jan – May 2021
+bullet_points: >
+    <ul>
+        <li> Project manager, general app developer, and ML engineer for a 5-person group developing open-ended Android chatbot </li>
+        <li> App available at <a href="https://github.com/kmosoti/DesparadosAEYE">https://github.com/kmosoti/DesparadosAEYE</a> </li>
+    </ul>
 ---
 
 <div class="row justify-content-sm-center">
