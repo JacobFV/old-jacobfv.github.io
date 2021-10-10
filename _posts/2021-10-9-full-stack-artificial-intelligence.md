@@ -16,3 +16,5 @@ We cannot expect the same algorithm to make increasing returns on all problems. 
 - Human feedback: How will we understand and communicate the system's performance? What should my iteration speed as the developer be?
 - Existing code: Do I know what's already been done? What should I do myself?
 - Human capital: What intelligence have others (developers, researchers, other thinkers) already contributed? Could this be a group effort? What motivational forces (free time, interest, project complexity and understandability) should be considered?
+
+I try to trackle these sprawling points in future posts.
