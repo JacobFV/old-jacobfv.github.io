@@ -39,11 +39,11 @@ env = AEEnv(envs=[
 ])
 ```
 
-`AEEnv` also makes it easy to train on prespecified problem domains with datasets and environments minimally specified by some overlapping hierarchial tag-based system. See Appendix A for a list of what I want to support.
+`AEEnv` also makes it easy to train on prespecified problem domains with datasets and environments minimally specified by some overlapping hierarchial tag-based system. Not all environments have the `.tag` attribute, so those will be ignored. However, the inbuilt list of envionrments should all support this schema. These filters can be changed at any moment between `AEEnv` steps. See Appendix A for a list of what I want to support.
 ```python
 env = AEEnv(
-    include=['text-commonsense', 'image', 'multiagent'],
-    exclude=['reward-free-rl', 'multiagent/atari'],
+    include=['domain:text-commonsense', 'domain:image', 'domain:multiagent'],
+    exclude=['domain:reward-free-rl', 'domain:multiagent/atari', 'test:True'],
 ) # train on text-commonsense (specific), image datasets (broad), and multiagent RL environments (broad) but don't train on the multiagent/atari environment or multiagent environments that don't have a environment specified reward.
 
 env = AEEnv() # train on all inbuilt datasets and environments
@@ -142,12 +142,15 @@ from Google's [FLAN blog post](https://ai.googleblog.com/2021/10/introducing-fla
 
 ## Appendix B: Utilities
 
-ae.env.trainsition_fns
+I provide these utilities to make it as simple as possible to integrate `AEEnv` with other libraries.
 
+```
+ae.env.trainsition_fns
 ae.env.next_env_fns
 
 ae.trainers.{SAC,RAINBOW,}
-
 ae.executers.{simple,multiagent,}
+ae.baselines.
 
 ae.utils.nest.{map,flatten,unflatten,all,any,}
+```
