@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Full-Stack Artificial Intelligence
-date:   2021-06-18
+date:   2021-10-09
 description: What's in the stack?
 ---
 

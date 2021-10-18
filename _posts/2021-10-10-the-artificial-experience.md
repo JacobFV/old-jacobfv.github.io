@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  The artificial experience
-date:   2021-06-18
-description: A tool for increasingly general AI
+title:  The Artificial Experience
+date:   2021-10-10
+description: A highly general dataset-env
 ---
 
 Our implicit objective in the hypothetical artificial general intelligence is to identify as many dimensions of variation to the underlying data structures that real Intelligence operates on and iterate development around that data. For datasets includes:
@@ -138,7 +138,9 @@ from Google's [FLAN blog post](https://ai.googleblog.com/2021/10/introducing-fla
 
 ### Images
 
-### TODO
+### Video
+
+### 
 
 ## Appendix B: Utilities
 
