@@ -18,3 +18,8 @@ The Node Neural Network is a modular deep learning architecture
 - common sparse language between nodes
 - manually design in Python
 - automatic growth
+
+- parametrized interface (API default, but can be overriden by obs/action spec)
+- integrate with Salina
+- Single architecture implements
+- multienvironment
