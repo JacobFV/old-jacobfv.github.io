@@ -13,3 +13,8 @@ The challenge is fusing them all togethor:
 I prpose developing a modular system to address these challanges: the *Node Neural Network (NNN)*. The following is a declarative description of what I intend to make:
 
 The Node Neural Network is a modular deep learning architecture
+
+- general nodes: PredNode, SORNNode, etc.
+- common sparse language between nodes
+- manually design in Python
+- automatic growth
