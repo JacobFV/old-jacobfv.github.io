@@ -80,11 +80,11 @@ contact_note:
 
 blog_name: Meditating on AI # your blog must have a name for it to show up in the nav bar
 blog_description: Deep thoughts on deep learning
-permalink: /blog/:year/:title/
+permalink: /blog/:title/
 
 # Pagination
 pagination:
-  enabled: false
+  enabled: true
 
 # Comments
 disqus_shortname: jacob-valdez # put your disqus shortname

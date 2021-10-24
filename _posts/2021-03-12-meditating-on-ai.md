@@ -5,7 +5,7 @@ date:   2021-03-12
 description: 
 ---
 
-Below is a collection of personal observations I have made on my journey to understand artificial intelligence. **Most of these conclusions are misleading** and many are incorrect, but I preserve them for personal inspiration. 
+Below is a collection of personal observations I have made on my journey to understand artificial intelligence. **Most of these conclusions are misleading** and many are incorrect, but I preserve them for personal notekeeping. 
 
 
 ## 12 March 2021
