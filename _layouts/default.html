@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
 
-  <!-- Head -->
-  <head>
-  {%- if page.redirect -%}
-    <meta http-equiv="refresh" content="3; url={{ site.baseurl | prepend: site.url }}/" />
-  {%- endif -%}
+<!-- Head -->
+
+<head>
   {% include head.html %}
-  </head>
+  {% include scripts/mathjax.html %}
+  {% if page.jupyter %}{% include jupyter.html %}{% endif %}
+</head>
 
-  <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+<body
+  class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}"
+  {% if page.jupyter %} class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light" {% endif
+  %}>
 
-    <!-- Header -->
-    {%- include header.html %}
+  <!-- Header -->
+  {%- include header.html %}
 
-    <!-- Content -->
-    <div class="container mt-5">
-      {{ content }}
-    </div>
+  <!-- Content -->
+  <div class="container mt-5">
+    {{ content }}
+  </div>
 
-    <!-- Footer -->
-    {%- include footer.html %}
+  <!-- Footer -->
+  {%- include footer.html %}
 
-    <!-- JavaScripts -->
-    {% include scripts/jquery.html %}
-    {% include scripts/bootstrap.html %}
-    {% include scripts/masonry.html %}
-    {% include scripts/misc.html %}
-    {% include scripts/mathjax.html %}
-    {% include scripts/analytics.html %}
-  </body>
+  <!-- JavaScripts -->
+  {% include scripts/jquery.html %}
+  {% include scripts/bootstrap.html %}
+  {% include scripts/masonry.html %}
+  {% include scripts/misc.html %}
+  {% include scripts/mathjax.html %}
+  {% include scripts/analytics.html %}
+</body>
+
 </html>
