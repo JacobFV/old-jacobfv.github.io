@@ -5,6 +5,8 @@ date:   2021-10-19
 description: //An infrastructure for relatively general artificial Intelligence.
 ---
 
+**WORK IN PROGRESS**
+
 Computatrum is an infrastructure for Intelligence. Think Internet 5.0. 
 
 node neural network hyper-regularized to scale gracefully and regularized for minimal complexity (like a polynomial model that puts increasing regularization strength on higher order coefficients and so it only scales to more complex models when necesary)
