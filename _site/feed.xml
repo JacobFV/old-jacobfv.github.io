@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-24T21:47:01-05:00</updated><id>/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal R&amp;D portfolio site
+</subtitle><entry><title type="html">Computatrum and Computatra</title><link href="/blog/computatrum/" rel="alternate" type="text/html" title="Computatrum and Computatra" /><published>2021-10-19T00:00:00-05:00</published><updated>2021-10-19T00:00:00-05:00</updated><id>/blog/computatrum</id><content type="html" xml:base="/blog/computatrum/">&lt;p&gt;&lt;strong&gt;WORK IN PROGRESS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Computatrum is an infrastructure for Intelligence. Think Internet 5.0.&lt;/p&gt;
+
+&lt;p&gt;node neural network hyper-regularized to scale gracefully and regularized for minimal complexity (like a polynomial model that puts increasing regularization strength on higher order coefficients and so it only scales to more complex models when necesary)&lt;/p&gt;
+
+&lt;p&gt;nodes can be local or they can be microservices exposed by other networks. (The NNN builds on existing open source multi-device abstractions)&lt;/p&gt;
+
+&lt;p&gt;A decentralized pool of weights and nodes are open sourced and can be used by anyone. independant subnetworks currently communicate over the internet, but they may utilize other mechanisms in the future.&lt;/p&gt;
+
+&lt;p&gt;Will include&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;computer interaction modalities (i.e.: mouse, keyboard, screen, audio, camera, etc.) for action and perception of unstructured data (i.e.: image search, wikipedia, twitter, etc.)&lt;/li&gt;
+  &lt;li&gt;graph interaction modalities for leveraging structured data (i.e.: DBPedia, Freebase, personal db, etc.) This will not be heavily emphasized when critical NN’s take off.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sizes of subnetworks can be arbitrarily large. I will develop three:
+computatrum-100M
+computatrum-1B
+computatrum-10B&lt;/p&gt;
+
+&lt;p&gt;All independant subnetworks&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;are independant economic agents&lt;/li&gt;
+  &lt;li&gt;heavily interface with computers&lt;/li&gt;
+  &lt;li&gt;conform to the API (+graph interaction)&lt;/li&gt;
+  &lt;li&gt;are under scrutiny&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;clarify names for:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;global network&lt;/li&gt;
+  &lt;li&gt;independant subnetworks&lt;/li&gt;
+  &lt;li&gt;the NNN’s that underlie independant subnetworks&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">WORK IN PROGRESS</summary></entry><entry><title type="html">Multi-Environment Learning</title><link href="/blog/multi-environment-learning/" rel="alternate" type="text/html" title="Multi-Environment Learning" /><published>2021-10-18T00:00:00-05:00</published><updated>2021-10-18T00:00:00-05:00</updated><id>/blog/multi-environment-learning</id><content type="html" xml:base="/blog/multi-environment-learning/">&lt;p&gt;Multi-environment learning extends the single environment RL paradigm to multiple environments. It’s like multiagent learning – except your only controlling one agent in multiple environments. In this paradigm, the policy $\pi : o_1, o_2, \dots \rightarrow a_1, a_2, \dots$ takes an observation $o_1, o_2, \dots$ from different environments and produces actions $a_1, a_2, \dots$ for all of them simultaneously on each step. You might have a collection loop like:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;observations&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;obs&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;envs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;policy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;observations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;zip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;envs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Advantages&lt;/strong&gt;: At first I couldn’t see why anyone would even want to use this paradigm. After all, if your environments are disjoint, learning to stack blocks probabbly won’t make much a difference on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CartPole&lt;/code&gt;. It’s especially unnecesary to observe both environments simultaneously. However, when your problem domain is in the open-ended world, it is helpful to learn intrinsic priors of logic, social skills, or commonsense knowledge from a simpler area and then apply that information to a more complex environment &lt;em&gt;in context&lt;/em&gt;. When we train our policies in sequential cirricula, the information has to flow from the environment to the weights before it can be used in a later environment. With the multi-environment approach however, policies can learn to access information at the exact time needed by a policy. For instance, you could train an agent where one environment is an interactive ImageNet search engine with no reward and the other environment is a classification challenge with delayed decisions allowed (but still regularized to encourage fast response). Giving the policy the ability to pause and search related images would make it more human like and ideally more accurate. I’m sure you can imagine other scenerios where the multi-environment paradigm is beneficial. (Just consider the computational beenfit of only needing to deploy a single large model to interact with dozens of consenting clients.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Greatest advantage&lt;/strong&gt;: Perhaps the greatest benefit of multi-environment learning is that we can use this paradigm to train otherwise-standard RL agents to &lt;em&gt;learn to adapt and generalize in context&lt;/em&gt;. In &lt;em&gt;parallel randomized domain learning&lt;/em&gt;, we might train our agent to explore different variations of the same procedurally generated environment simultaneously. In &lt;em&gt;staggered lifelong learning&lt;/em&gt;, we would present the agent with a cirricula of environments which do not all have the same start and end time. Of course, these kinds of techniques would require a &lt;em&gt;large set of environments or even procedural environment generators&lt;/em&gt;. These environments/procedural generators would need to be extremely diverse, so I’m just going to gather them by hand. Soon I hope to have an RL agent that can find more for me.&lt;/p&gt;</content><author><name></name></author><summary type="html">Multi-environment learning extends the single environment RL paradigm to multiple environments. It’s like multiagent learning – except your only controlling one agent in multiple environments. In this paradigm, the policy $\pi : o_1, o_2, \dots \rightarrow a_1, a_2, \dots$ takes an observation $o_1, o_2, \dots$ from different environments and produces actions $a_1, a_2, \dots$ for all of them simultaneously on each step. You might have a collection loop like: while True: observations = [env.obs for env in envs] actions = policy(observations) for env, action in zip(envs, actions): env.step(action)</summary></entry><entry><title type="html">The API</title><link href="/blog/the-api/" rel="alternate" type="text/html" title="The API" /><published>2021-10-18T00:00:00-05:00</published><updated>2021-10-18T00:00:00-05:00</updated><id>/blog/the-api</id><content type="html" xml:base="/blog/the-api/">&lt;p&gt;Though diverse, most humans share a common set of input and output modalities: sight, hearing, touch, and skeletal motor control. This common interface aligns our perception of the world to a rasonable degree and facilitates social interaction and collaboration. As progress continues towards developing humanly-impactful foundation models and policies, I propose establishing a common set of modalities for artificial intelligence systems as well: the &lt;strong&gt;anthrocentric policy interface&lt;/strong&gt; or &lt;strong&gt;API&lt;/strong&gt;. The API is not a formal application program interface specification but rather a description of the modalities that can be used to interact with an AI system. Following is my proposal for momdalities included by version 0.0 of the API:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;motor: sparse variable-dimensional graph of continuous motor values (\(x_{motor}, y_{motor} = (V,E), V = \{ v_i : v_i \in \mathbb{R}^{d_{v_i}} \}, E = \{ (v_src, v_dst) : v_src, v_dst \in V \}\)). API-compatible models are expected to produce appropriate outputs as modulated by their reward signals.&lt;/li&gt;
+  &lt;li&gt;touch: sparse variable-dimensional graph of continuous touch values (\(x_{touch}, y_{touch} = (V,E), V = \{ v_i : v_i \in \mathbb{R}^{d_{v_i}} \}, E = \{ (v_src, v_dst) : v_src, v_dst \in V \}\)). API-compatible models are expected to output predicted touch values for the next interaction step.&lt;/li&gt;
+  &lt;li&gt;reward: single or multidimensional reward signal (vector, \(x_{reward}, y_{reward} \in \mathbb{R}^n, n \in \mathbb{N}\)). Sparse or dense. API-compatible models are expected to output predicted reward value for the next interaction step.&lt;/li&gt;
+  &lt;li&gt;text: variable length string of tokens (\(x_{text}, y_{text} \in \mathbb{Z}^t, t \in \mathbb{Z}_{+}\)). API-compatible models are expected to output predicted text values for the next interaction step.&lt;/li&gt;
+  &lt;li&gt;audio: variable length, single or multi-channel waveform (\(x_{audio}, y_{audio} \in [0,1]^{t,c}, t,c \in \mathbb{Z}_{+}\)). API-compatible models are expected to output predicted audio values for the next interaction step.&lt;/li&gt;
+  &lt;li&gt;video: variable length, variable size, variable channel image sequence  (\(x_{video}, y_{video} \in [0,1]^{t,h,w,c}, t \in \mathbb{Z}_{+}, h,w,c \in \mathbb{N}\)). API-compatible models are expected to output predicted video values for the next interaction step.&lt;/li&gt;
+  &lt;li&gt;hidden state: arbitrary data structure. Developers can use this to store and retrieve state information between interactions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All modalities exchange input and output information over multiple interaction steps. For example, a vision transformer may recieve top down feedback and attend for multiple steps over a single image, an in-context learning model might recieve several batches of dataset examples over the interaction, or a conversation bot could be force fit on real conversations over time. This demands clarify time:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;training step = number of dataset minibatches or environment episodes trained on&lt;/li&gt;
+  &lt;li&gt;interaction step = number of modality inputs and outputs performed; the classical time measure within a single episode&lt;/li&gt;
+  &lt;li&gt;modality time step = which frame number in the video sequence; which token index in the text sequence&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Modality inputs and outputs are optional. These will be represented by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;None&lt;/code&gt; in Python, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;null&lt;/code&gt; in JSON, or similar in other languages. For example, you might only occasionally send images to a multimodal conversation bot but utilize the text modality on every step. Some ‘multimodal’ datasets and environments will only provide information for two or three modalities. Additionally, a transcribed audiovideo dataset might have zero-length text sequences, waveforms, and videos. Not all outputs will be used in every application so they can be explicitly marked  as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;do_not_compute&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Handling time steps within each modality introduces many technical challanges. Developer must consider questions as: how should a multimodal video model combine 8KHz audio with 12 FPS video? will the robot controller be presented with 100ms, 6-frame snippets of 60FPS video on each interaction step? or should it just recieve a single frame every 50ms? Should an audio transcriber recieve the full audio track or just 10 second staggered segments on each interaction step? Or should it use its motor modality to deliberately move its perception window around?&lt;/p&gt;
+
+&lt;p&gt;API-compatible models are expected to accommadate arbitrary numbers of each modality at initialization time. For example, you might initialize a policy with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vision:left&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vision:right&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:magent&lt;/code&gt; (social communication) and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:control&lt;/code&gt; (user directions). However, API-compatible models are not required to accomodate new modalities after initialization (you don’t have to tie the weights; the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:magent&lt;/code&gt; preprocessor network can be very different from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:control&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;I imagine a few ways this interface may be used:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;For N-way classification problems, you might have a motor graph with N 1-dimensional nodes.&lt;/li&gt;
+  &lt;li&gt;For N-dimensional regression, you might have a motor graph with just 1 N-dimensional node.&lt;/li&gt;
+  &lt;li&gt;For computer vision, the model iteratively attends to the image.&lt;/li&gt;
+  &lt;li&gt;For 3D robotic agents, … You get the idea.&lt;/li&gt;
+  &lt;li&gt;Managers might ask, ‘Is it compatible with the API?’&lt;/li&gt;
+  &lt;li&gt;Researchers might write, ‘this dataset/environment conforms to the API’.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I hope the API provides a common interface to facilitate community collaboration towards developing increasingly strong and general artificial intelligence systems. My focus for the next few months will be building the Artificial Experience – a dataset of datasets and environments (including procedurally generated ones) that can provide training signals for increasingly general API-compatible agents.&lt;/p&gt;</content><author><name></name></author><summary type="html">Though diverse, most humans share a common set of input and output modalities: sight, hearing, touch, and skeletal motor control. This common interface aligns our perception of the world to a rasonable degree and facilitates social interaction and collaboration. As progress continues towards developing humanly-impactful foundation models and policies, I propose establishing a common set of modalities for artificial intelligence systems as well: the anthrocentric policy interface or API. The API is not a formal application program interface specification but rather a description of the modalities that can be used to interact with an AI system. Following is my proposal for momdalities included by version 0.0 of the API: motor: sparse variable-dimensional graph of continuous motor values (\(x_{motor}, y_{motor} = (V,E), V = \{ v_i : v_i \in \mathbb{R}^{d_{v_i}} \}, E = \{ (v_src, v_dst) : v_src, v_dst \in V \}\)). API-compatible models are expected to produce appropriate outputs as modulated by their reward signals. touch: sparse variable-dimensional graph of continuous touch values (\(x_{touch}, y_{touch} = (V,E), V = \{ v_i : v_i \in \mathbb{R}^{d_{v_i}} \}, E = \{ (v_src, v_dst) : v_src, v_dst \in V \}\)). API-compatible models are expected to output predicted touch values for the next interaction step. reward: single or multidimensional reward signal (vector, \(x_{reward}, y_{reward} \in \mathbb{R}^n, n \in \mathbb{N}\)). Sparse or dense. API-compatible models are expected to output predicted reward value for the next interaction step. text: variable length string of tokens (\(x_{text}, y_{text} \in \mathbb{Z}^t, t \in \mathbb{Z}_{+}\)). API-compatible models are expected to output predicted text values for the next interaction step. audio: variable length, single or multi-channel waveform (\(x_{audio}, y_{audio} \in [0,1]^{t,c}, t,c \in \mathbb{Z}_{+}\)). API-compatible models are expected to output predicted audio values for the next interaction step. video: variable length, variable size, variable channel image sequence (\(x_{video}, y_{video} \in [0,1]^{t,h,w,c}, t \in \mathbb{Z}_{+}, h,w,c \in \mathbb{N}\)). API-compatible models are expected to output predicted video values for the next interaction step. hidden state: arbitrary data structure. Developers can use this to store and retrieve state information between interactions.</summary></entry><entry><title type="html">The Node Neural Network (NNN)</title><link href="/blog/the-node-neural-network/" rel="alternate" type="text/html" title="The Node Neural Network (NNN)" /><published>2021-10-18T00:00:00-05:00</published><updated>2021-10-18T00:00:00-05:00</updated><id>/blog/the-node-neural-network</id><content type="html" xml:base="/blog/the-node-neural-network/">&lt;p&gt;The challenge is fusing them all togethor:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;We already have reasonably well performing modality-specific architectures (VGG, BERT, WaveNet), but no general vision, language, audio architecture.&lt;/li&gt;
+  &lt;li&gt;We have foundation models (gpt3, ViT), but where are the foundation policies?&lt;/li&gt;
+  &lt;li&gt;What’s the most efficient way to shuttle information from dataset to model?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I prpose developing a modular system to address these challanges: the &lt;em&gt;Node Neural Network (NNN)&lt;/em&gt;. The following is a declarative description of what I intend to make:&lt;/p&gt;
+
+&lt;p&gt;The Node Neural Network is a modular deep learning architecture&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;general nodes: PredNode, SORNNode, etc.&lt;/li&gt;
+  &lt;li&gt;common sparse language between nodes&lt;/li&gt;
+  &lt;li&gt;manually design in Python&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;automatic growth&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;parametrized interface (API default, but can be overriden by obs/action spec)&lt;/li&gt;
+  &lt;li&gt;integrate with Salina&lt;/li&gt;
+  &lt;li&gt;Single architecture implements&lt;/li&gt;
+  &lt;li&gt;multienvironment&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">The challenge is fusing them all togethor: We already have reasonably well performing modality-specific architectures (VGG, BERT, WaveNet), but no general vision, language, audio architecture. We have foundation models (gpt3, ViT), but where are the foundation policies? What’s the most efficient way to shuttle information from dataset to model?</summary></entry><entry><title type="html">MNIST Classifier Tutorial</title><link href="/blog/mnist-classifier-tutorial/" rel="alternate" type="text/html" title="MNIST Classifier Tutorial" /><published>2021-10-14T00:00:00-05:00</published><updated>2021-10-14T00:00:00-05:00</updated><id>/blog/mnist-classifier-tutorial</id><content type="html" xml:base="/blog/mnist-classifier-tutorial/">&lt;div class=&quot;jupyter-notebook&quot; style=&quot;position: relative; width: 100%; margin: 0 auto;&quot;&gt;
+  &lt;div class=&quot;jupyter-notebook-iframe-container&quot;&gt;
+    &lt;iframe src=&quot;../../notebooks/MNIST_Classifier.ipynb.html&quot; style=&quot;position: absolute; top: 0; left: 0; border-style: none;&quot; width=&quot;100%&quot; height=&quot;100%&quot; onload=&quot;this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">The Artificial Experience</title><link href="/blog/the-artificial-experience/" rel="alternate" type="text/html" title="The Artificial Experience" /><published>2021-10-10T00:00:00-05:00</published><updated>2021-10-10T00:00:00-05:00</updated><id>/blog/the-artificial-experience</id><content type="html" xml:base="/blog/the-artificial-experience/">&lt;p&gt;Our implicit objective in the hypothetical artificial general intelligence is to identify as many dimensions of variation to the underlying data structures that real Intelligence operates on and iterate development around that data. For datasets includes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;domain: natural language, vision, audio, robot, etc.&lt;/li&gt;
+  &lt;li&gt;data structure: structured, text, image, video, audio, graph, etc., multimodal&lt;/li&gt;
+  &lt;li&gt;data representation: discrete, continuous, categorical, binary, etc.&lt;/li&gt;
+  &lt;li&gt;problem: classification, regression, clustering, autoencoding, autoregression, etc., no specified problem type.&lt;/li&gt;
+  &lt;li&gt;data augmentations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For environments we might consider:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;simulated/real&lt;/li&gt;
+  &lt;li&gt;data representation: discrete, continuous, categorical, binary, etc.&lt;/li&gt;
+  &lt;li&gt;single objective/multi-objective/no-objective&lt;/li&gt;
+  &lt;li&gt;partially/fully observable&lt;/li&gt;
+  &lt;li&gt;markovian/non-markovian&lt;/li&gt;
+  &lt;li&gt;single agent/multi-agent&lt;/li&gt;
+  &lt;li&gt;for multi-agent: cooperative/competitive/mixed-mode&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’ve listed several datasets and environments in the bottom of this post. Ideally, we should train increasingly general ML systems over all of these variations. Still, our training pipelines are very brittle.&lt;/p&gt;
+
+&lt;p&gt;I propose developing a tool that allows ML praticioners to easily train their agents across many datasets and environments: the Artificial Experience (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ae&lt;/code&gt;). &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ae&lt;/code&gt; should provide minially necesary extensions to extend existing open-source dataset loaders, environments, and hubs. It should be agnostic to the actual training paradigm and tricks (augmentations, experience replay, cirriculum learning, etc.) but itegrate cleanly with tools that do. The following is a declarative description of what I plan to make:&lt;/p&gt;
+
+&lt;p&gt;The ArtificialExperience environment (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AEEnv&lt;/code&gt;) provides a wrapper for multiple environments. Datasets may be wrapped into environments. Turn-based multiagent environments are wrapped into parallel agent cycles environments (you can unwrap this later in your multiagent executor). An AEEnv might look like this:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AEEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;envs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;DatasetEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tfds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'coco'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# multimodal information
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;DatasetEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'hub://activeloop/mnist-train'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# cloud-native data
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;DatasetEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tfds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'anli'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;epochs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;batch_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# quick customization
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;gym&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'CartPole-v0'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# continous observation, discrete control
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;gym&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Pong-v0'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# rgb image, discrete actions
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;gym&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'HalfCheetah-v2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# continuous observation, continuous control
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;gym_starcraft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;envs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;starcraft_base_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# starcraft env
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;pettingzoo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;atari&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mario_bros_v2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# multiagent atari env
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AEEnv&lt;/code&gt; also makes it easy to train on prespecified problem domains with datasets and environments minimally specified by some overlapping hierarchial tag-based system. Not all environments have the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.tag&lt;/code&gt; attribute, so those will be ignored. However, the inbuilt list of envionrments should all support this schema. These filters can be changed at any moment between &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AEEnv&lt;/code&gt; steps. See Appendix A for a list of what I want to support.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AEEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'domain:text-commonsense'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'domain:image'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'domain:multiagent'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;exclude&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'domain:reward-free-rl'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'domain:multiagent/atari'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'test:True'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# train on text-commonsense (specific), image datasets (broad), and multiagent RL environments (broad) but don't train on the multiagent/atari environment or multiagent environments that don't have a environment specified reward.
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AEEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# train on all inbuilt datasets and environments
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;next_env_fn(last_step_data: step, curr_env: env, available_envs: List[env]) -&amp;gt; env&lt;/code&gt; determines which environment to sample from at &lt;em&gt;each&lt;/em&gt; timestep. This may be a simple ‘wait until all done’s are true’ (for datasets, after all epochs) or it may be a more complex user-designed autocirricula system. An &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;env_transition_fn(old_env: env, new_env: env) -&amp;gt; NoReturn&lt;/code&gt; can be specified to make surface-level model changes when the environment (and hence its interface) changes.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# samples a different environment *at every step*. Simple way to train on a diverse lot of datasets within the same problem domain (like images).
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_env_fn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;last_step_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;available_envs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;available_envs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_env_fn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;next_env_fn&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# lazy next_env_fn specification
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# samples a different environment *after every epoch*. Traditional approach to multi-dataset training.
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;next_env_fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;last_step_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;available_envs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;last_step_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agent_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;agent_name&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agent_names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;available_envs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_env&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AEEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;next_env_fn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_env_fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# early next_env_fn specification
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# builds a new input and output layer for new environments
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;env_transition_fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;old_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NoReturn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ae&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;utils&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+        &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;old_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;action_space&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;old_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;observation_space&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;action_space&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;observation_space&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]):&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# the environments are compatible, no need to change the model
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# the environments are incompatible, we need to change the model
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;build_new_input_layer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;observation_space&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;build_new_output_layer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;action_space&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;env_transition_fn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env_transition_fn&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# lazy env_transition_fn specification
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# builds a new input and output layer for new environments
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;env_transition_fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;old_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NoReturn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;isinstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;old_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DatasetEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;isinstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DatasetEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# the environments are either both datasets or both regular environments, no need to change the model
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# the environments are incompatible, we need to change the training pipeline
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;change_training_pipeline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AEEnv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env_transition_fn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;env_transition_fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# early env_transition_fn specification
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Data is presented at each step as an agent-separated dictionary of namedtuple &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Step&lt;/code&gt;’s as well as meta information about the environment state (or dataset index). A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Step&lt;/code&gt; is a nested batch of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;observation&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reward&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;done&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;information&lt;/code&gt; . In most cases, these fields will be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;None&lt;/code&gt;. For example, datasets do not provide a reward (reward is determined by the training pipeline which is not part of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AEEnv&lt;/code&gt;).For supervised learning datasets, the observations include both X and Y while for unsupervised learning datasets, the observations include only X. Also, most datasets and environments will only present information for a single agent. Here are some examples:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;evalLoop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_supervised&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;last_step_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;agent&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;agent_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;agent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;act&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agent_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;observation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;agent_name&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agent_names&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;agent&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agent_names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;observation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reward&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;agent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;information&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;appendix-a-datasets-and-environments&quot;&gt;Appendix A: Datasets and environments&lt;/h2&gt;
+
+&lt;p&gt;The categories overlap. For instance, image captioning might be in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;image&lt;/code&gt; category, but also in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text&lt;/code&gt; category. The high-level hierarchy might be:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;images&lt;/li&gt;
+  &lt;li&gt;text&lt;/li&gt;
+  &lt;li&gt;video&lt;/li&gt;
+  &lt;li&gt;audio
+TODO&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;nlp&quot;&gt;NLP&lt;/h3&gt;
+&lt;p&gt;from Google’s &lt;a href=&quot;https://ai.googleblog.com/2021/10/introducing-flan-more-generalizable.html&quot;&gt;FLAN blog post&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Natural language inference: ANLI, RTE, CB, SNLI, MNLI, QNLI, WNLI, QNLI,&lt;/li&gt;
+  &lt;li&gt;Commonsense: CoPA, HeliaSwag, PiQA, StoryCloze&lt;/li&gt;
+  &lt;li&gt;Sentiment: IMDB, Sent140, SST-2, Yelp&lt;/li&gt;
+  &lt;li&gt;Paraphrase: MRPC, QQP, PAWS, STS-B&lt;/li&gt;
+  &lt;li&gt;Closed book QA: ARC (easy/chal), NQ, TQA&lt;/li&gt;
+  &lt;li&gt;Struct to Text: CommonGen, DART, E2ENLG, WEBNLG&lt;/li&gt;
+  &lt;li&gt;Reading Comp:&lt;/li&gt;
+  &lt;li&gt;Reading Comp w/o commonsensne:&lt;/li&gt;
+  &lt;li&gt;Conference:&lt;/li&gt;
+  &lt;li&gt;Misc.:&lt;/li&gt;
+  &lt;li&gt;Summarization:&lt;/li&gt;
+  &lt;li&gt;Translation:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;images&quot;&gt;Images&lt;/h3&gt;
+
+&lt;h3 id=&quot;video&quot;&gt;Video&lt;/h3&gt;
+
+&lt;p&gt;###&lt;/p&gt;
+
+&lt;h2 id=&quot;appendix-b-utilities&quot;&gt;Appendix B: Utilities&lt;/h2&gt;
+
+&lt;p&gt;I provide these utilities to make it as simple as possible to integrate &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AEEnv&lt;/code&gt; with other libraries.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ae.env.trainsition_fns
+ae.env.next_env_fns
+
+ae.trainers.{SAC,RAINBOW,}
+ae.executers.{simple,multiagent,}
+ae.baselines.
+
+ae.utils.nest.{map,flatten,unflatten,all,any,}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Our implicit objective in the hypothetical artificial general intelligence is to identify as many dimensions of variation to the underlying data structures that real Intelligence operates on and iterate development around that data. For datasets includes: domain: natural language, vision, audio, robot, etc. data structure: structured, text, image, video, audio, graph, etc., multimodal data representation: discrete, continuous, categorical, binary, etc. problem: classification, regression, clustering, autoencoding, autoregression, etc., no specified problem type. data augmentations.</summary></entry><entry><title type="html">Full-Stack Artificial Intelligence</title><link href="/blog/full-stack-artificial-intelligence/" rel="alternate" type="text/html" title="Full-Stack Artificial Intelligence" /><published>2021-10-09T00:00:00-05:00</published><updated>2021-10-09T00:00:00-05:00</updated><id>/blog/full-stack-artificial-intelligence</id><content type="html" xml:base="/blog/full-stack-artificial-intelligence/">&lt;p&gt;We cannot expect the same algorithm to make increasing returns on all problems. The complexity (and ⏱️,💲,🏭) growth of symbolic, deep learning, reinforcement learning, and other AI approaches motivate considering other dimensions of Intelligence. I draw attention to several broad, overlapping dimensions on the evolutionary scale of artificial intelligence:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Intrinsic properties: What are the intrinsic properties of a problem? How should the information flow from problem to solution? How should information flow from inputs to outputs for a single instance of the problem? What priors can we assume?&lt;/li&gt;
+  &lt;li&gt;Algorithm design: How do we concretely express the ideal information flow? What computational tricks will help us? How do we choose the right hyper/parameters? How are learnable components (hidden states, parameters, architectures) initialized?&lt;/li&gt;
+  &lt;li&gt;Datasets and environments: What data will we need? Does it need to be preprocessed?&lt;/li&gt;
+  &lt;li&gt;Training paradigms: How will we impose feedback on the solution space? SL, US, SSL, RL, MARL, multi-paradigm? Should the loss be a weighted sum of losses or should it look more like a pareto curve?&lt;/li&gt;
+  &lt;li&gt;Evaluation: How do we evaluate the performance of the solution? What quantitative metrics will we use? What qualitative assessments can we reasonably make?&lt;/li&gt;
+  &lt;li&gt;Infrastructure: What are the hardware and software requirements?&lt;/li&gt;
+  &lt;li&gt;Human feedback: How will we understand and communicate the system’s performance? What should my iteration speed as the developer be?&lt;/li&gt;
+  &lt;li&gt;Existing code: Do I know what’s already been done? What should I do myself?&lt;/li&gt;
+  &lt;li&gt;Human capital: What intelligence have others (developers, researchers, other thinkers) already contributed? Could this be a group effort? What motivational forces (free time, interest, project complexity and understandability) should be considered?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I try to trackle these sprawling points in future posts.&lt;/p&gt;</content><author><name></name></author><summary type="html">We cannot expect the same algorithm to make increasing returns on all problems. The complexity (and ⏱️,💲,🏭) growth of symbolic, deep learning, reinforcement learning, and other AI approaches motivate considering other dimensions of Intelligence. I draw attention to several broad, overlapping dimensions on the evolutionary scale of artificial intelligence:</summary></entry><entry><title type="html">Titanic Survival Prediction with TensorFlow</title><link href="/blog/titanic-survival-prediction-with-tensorflow/" rel="alternate" type="text/html" title="Titanic Survival Prediction with TensorFlow" /><published>2021-09-28T00:00:00-05:00</published><updated>2021-09-28T00:00:00-05:00</updated><id>/blog/titanic-survival-prediction-with-tensorflow</id><content type="html" xml:base="/blog/titanic-survival-prediction-with-tensorflow/">&lt;div class=&quot;jupyter-notebook&quot; style=&quot;position: relative; width: 100%; margin: 0 auto;&quot;&gt;
+  &lt;div class=&quot;jupyter-notebook-iframe-container&quot;&gt;
+    &lt;iframe src=&quot;../../notebooks/titanic-survival-prediction-with-tensorflow.ipynb.html&quot; style=&quot;position: absolute; top: 0; left: 0; border-style: none;&quot; width=&quot;100%&quot; height=&quot;100%&quot; onload=&quot;this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Self Organized Criticality</title><link href="/blog/self-organized-criticality/" rel="alternate" type="text/html" title="Self Organized Criticality" /><published>2021-06-22T00:00:00-05:00</published><updated>2021-06-22T00:00:00-05:00</updated><id>/blog/self-organized-criticality</id><content type="html" xml:base="/blog/self-organized-criticality/">&lt;div class=&quot;jupyter-notebook&quot; style=&quot;position: relative; width: 100%; margin: 0 auto;&quot;&gt;
+  &lt;div class=&quot;jupyter-notebook-iframe-container&quot;&gt;
+    &lt;iframe src=&quot;../../notebooks/self_organized_criticality.ipynb.html&quot; style=&quot;position: absolute; top: 0; left: 0; border-style: none;&quot; width=&quot;100%&quot; height=&quot;100%&quot; onload=&quot;this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Reaching for the Intangible</title><link href="/blog/reaching-for-the-intangible/" rel="alternate" type="text/html" title="Reaching for the Intangible" /><published>2021-06-22T00:00:00-05:00</published><updated>2021-06-22T00:00:00-05:00</updated><id>/blog/reaching-for-the-intangible</id><content type="html" xml:base="/blog/reaching-for-the-intangible/">&lt;p&gt;I wrote the following comment after conversing with a researcher at the University of Texas at Arlington:&lt;/p&gt;
+
+&lt;p&gt;Exactly how intelligent would you say humans are? With Hunter and Legg’s
+definition of intelligence as the ability to achieve a wide range of
+goals in many environments, it’s safe to say that humans are highly
+intelligent in comparison to all other observed goal-seeking systems. In
+fact, it is extremely difficult to identify goals they cannot seek
+within the framework of our universe. However, unreachable goals do
+‘exist’ as identified by Godel’s incompleteness theorems and Turing’s
+halting problem. Those formal proofs established the unprovability,
+undecidability, and intractability of their decade- and century-long
+problem domains, and their eager or reluctant acceptance optimized the
+ambitions of the mathematical and computational science research that
+followed.&lt;/p&gt;
+
+&lt;p&gt;I see certain fields of AI today reaching for a similarly intangible
+goal: human-level artificial intelligence. You see, ‘human-level’ AI
+research often begins with the speculation: “I see that human
+intelligence uniquely does this or that, so if I make an AI system with
+those features, it must be ‘human-level’ artificial intelligence.”
+Consider three examples of this thinking in action:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Turing @turing_1950 proposed the Imitation game as a discriminative
+test of humanly-indistinguishable machine “thinking”.&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;‘What will happen when a machine takes the part of A in this
+game?’ Will the interrogator decide wrongly as often when the game
+is played like this [between a machine and a woman] as he does
+when the game is played between a man and a woman? […] The
+question and answer method seems to be suitable for introducing
+almost any one of the fields of human endeavour that we wish to
+include.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Nilsson @Nilsson_2005 proposes the employment test as identifying a
+the fractional degree of progress towards human-level AI:&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;To pass the employment test, AI programs must be able to perform
+the jobs ordinarily performed by humans. Progress toward
+human-level AI could then be measured by the fraction of these
+jobs that can be acceptably performed by machines&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You @park2021definition propose the language acquisition test:&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;We conjecture that learning from others’ experience with the
+language is the essential characteristic that distinguishes human
+intelligence from the rest. Humans can update the action-value
+function with the verbal description as if they experience states,
+actions, and corresponding rewards sequences firsthand.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While these theses provide concrete measures which are useful feedback
+signals to compare AI, I find them insufficient to fully define the
+meaning of ‘human-level’ intelligence. It is now common to read
+statements from gpt3 and other large language models that pass our
+subjective ‘Turing test’. The employment test is probably the most
+general of the above three measures of human-level AI since it
+intrinsically demands few-shot on-the-job learning, but AI evolution is
+a slow feedback signal and better suited as an auxiliary dev metric than
+a primary optimization objective. We would may end up discovering the
+divergence between working-human intelligence and unemployed human
+intelligence by the time that benchmark approaches 100%. Finally, the
+language acquisition test is trivially solved by only reducing the
+parametric complexity of the “action-value function”. Learned optimizers
+have already been shown capable of optimizing themselves @metz2020tasks
+[@metz2021training], and in the language of reinforcement learning, you
+might say that they update their own action-value function. With various
+definitions of “language”, multi-agent reinforcement learning has also
+identified language emergence, acquisition, and guidance in
+feedback-driven environments, and as unsupervised, self-supervised, and
+intrinsically motivated reinforcement learning research progresses, we
+should soon be seeing the same results without feedback. However, rather
+than suggesting that the integration of self-optimizing learned
+optimizers, MARL environments, and reward-free training paradigms are
+guaranteed to converge at positively ‘human-level’ artificial
+intelligence, I would only estimate that they will exhibit &lt;em&gt;more&lt;/em&gt;
+complex, diverse, open-ended behaviors than previous architectures.&lt;/p&gt;
+
+&lt;p&gt;Those are just three examples where pivotal components of ‘human-level’
+intelligence are accentuated as if they defined it. Even the brain as a
+whole is often exalted too high above its underlying physiological world
+interface and environmental interaction experience. These other two
+players guide the development of the brain and the intelligence it
+expresses. Reciprocally, the brain acts as a forcing function to
+maintain order over its body and interact in its environment. The body
+and environment play key roles in grounding the brain’s internal
+oscillations into metaphors of cognition, and without all three, there
+is no human-level intelligence. Individuals raised in stimulation-poor
+environments or who have underlying physiological limitations, show
+statistically diminished potential in cultivating intelligence.&lt;/p&gt;
+
+&lt;p&gt;There are many other examples where an average AI researcher’s prior on
+“human-level” artificial intelligence diverges from the real deal, and I
+hypothesize those seemingly sparse cases are actually uncountable. As
+with physics’s models, the brain has been subjected to numerous
+comparisons over the ages including the oscillator, the clock, the steam
+engine, the formal proof machine, the computer, and even the neural
+network. However neuroscience continually reminds us that the Brain is
+something else, and while we AI researchers may surpass it in various
+complexity, accuracy, and recall metrics, we’re still not capturing its
+‘human-level’ intelligence.&lt;/p&gt;
+
+&lt;p&gt;These thoughts are not new, and even researchers in the field of human
+level artificial intelligence acknowledge them. They may justify their
+use of the term ‘human-level’ as a means to communicate their objective
+to non-specialists - including committee boards, funding agencies, and
+executives. However, I argue that this is where the term may be abused
+in its worst. We scientists recognize the nuances and history underlying
+our terminology, so we are often able to afford the use of ambiguous
+terms like ‘thinking’, ‘attention’, and ‘perception’ to describe the
+activity occurring in the brain or artificial neural network. I probably
+have a good idea of what you’re reaching for when you say “I’m
+developing a human-level AI system”. However, when the term is taken out
+of context, a person may be introduced to human-level AI with the idea
+that it should do &lt;em&gt;everything&lt;/em&gt; a real human intelligence can. Of course
+the realistic engineer expects to find flaws in his artificial system
+and eagerly looks for them, but when a funding agency, review board, or
+the general public are surprised by those same discrepancies, they are
+not amused. Funding for everybody gets cut; public interest declines;
+and the anticipation built up for ‘human-level’ artificial intelligence
+has been abused. If you want to help AI continue to evolve and avoid a
+third AI winter, don’t use the buzzword “human-level” to describe your
+artificial intelligence.&lt;/p&gt;
+
+&lt;p&gt;I see two paradigms driving the advancement of artificial intelligence.
+The first uses natural language and philosophy to observe and reason on
+intelligence. It says, “Intelligence involves a collection of discrete
+processes like attention, perception, memory, etc. Let me axiom-atize
+them into components and algorithms and watch intelligence to emerge.”
+The latter paradigm acknowledges that biological systems consist of a
+heterogeneous set of mechanisms to achieve their goals, but it cannot
+express itself in natural language. Instead it uses formal descriptions,
+statistical tools, and algorithms to describe intelligence. Both involve
+programming and experimentation. However the flow of information from
+observation to next iteration parameters must bounce around through a
+noisy natural language channel in the first paradigm, while seamlessly
+optimizing via pen and computer in the second paradigm. The latter
+approach can be intimidating for its abstract and endless complexity.
+However the former demands even more caution for it borders on a
+‘cargo-cult’ style of intelligence engineering. By that, I mean:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In the South Seas there is a Cargo Cult of people. During the war they
+saw airplanes land with lots of good materials, and they want the same
+thing to happen now. So they’ve arranged to make things like runways,
+to put fires along the sides of the runways, to make a wooden hut for
+a man to sit in, with two wooden pieces on his head like headphones
+and bars of bamboo sticking out like antennas—he’s the controller—and
+they wait for the airplanes to land. They’re doing everything right.
+The form is perfect. It looks exactly the way it looked before. But it
+doesn’t work. No airplanes land. So I call these things Cargo Cult
+Science, because they follow all the apparent precepts and forms of
+scientific investigation, but they’re missing something essential,
+because the planes don’t land.@feynman&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Obviously, this would be a blunder when aiming to extract the principles
+underpinning human intelligence and engineer them into a artificial
+system. Admittedly, both paradigms mentioned above represent extremes
+between which most machine learning research sits somewhere in the
+middle. However, as we develop increasingly advanced artificial systems,
+it becomes increasingly necessary to acquire and utilize a more
+mathematical oriented framework of intelligence – instead of speaking
+about philosophically-defined axioms of thought and components of
+intelligence. When the time comes to program a “thinking machine”, there
+are off-the-shelf &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;perceive(observation)&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;decide(thoughts)&lt;/code&gt;, or
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;attention&lt;/code&gt; functions. On the other hand, shuttling mathematical
+statements and statistical reports between the computer and brain is a
+much more straightforward task, and we can render their aims into
+precisely-defined building blocks like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;entropy&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mutual_information&lt;/code&gt;,
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;free_energy&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;perplexity&lt;/code&gt;, or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;criticality&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It should be clear to AI researchers who sit closer to the former
+extreme that advancing the intellectual capacity of artificial systems
+demands acquiring a basic understanding of the mathematical and
+statistical tools used to represent real intelligence – and not just be
+content with applying one or two in his or her research – but like
+brain’s predictive model ensemble, I encourage the active-learning agent
+who operates in research space to entertain as many principles of human
+intelligence as possible. Please consider starting with the following
+(listed in the order you may find easiest to grasp):&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Action and Perception as Divergence Minimization
+@DBLP:journals/corr/abs-2009-01791&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Friston’s Free Energy Principle (I recommend @friston_2009, but you
+may have already found a different paper on this topic.)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Energy Homeostasis Principle
+@vergara_jaramillo-riveri_luarte_moënne-loccoz_fuentes_couve_maldonado_2019&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Critical Brain Hypothesis @10.3389/fnsys.2014.00166
+[@Shew15595; @Chialvo_2010]&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Buzsáki’s neural syntax hypothesis @buzsáki_2010&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Once human-level AI researchers acquire a differentiable framework to
+propagate their thoughts through the research community, vague terms
+like ‘human-level’, ‘consciousness’, and ‘attention’ are unnecessary and
+actually get in the way of progress. Instead research may be defined in
+the language of neuroscience, psychology, information theory, computer
+science, or entirely new machine learning vocabulary. I personally
+advocate paper titles as “Towards Autonomous Developmental
+Language-Acquiring Artificial Intelligence” rather than “Towards Human
+Level Artificial Intelligence”. If you make the former your grant
+proposal, you will almost certainly meet your objectives. However your
+reward estimator diverges from mine on the latter (current) paper title.
+Between you and me, these vocabulary differences are only ornamental,
+and I can understand you when you say “human-level”. However, I fear
+these exterior word choices might cultivate paradigmatically different
+mindsets and approaches to engineering artificial systems that perform
+on-par with human intelligence over a wide range of goals.&lt;/p&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;/ol&gt;
+
+&lt;style&gt; .pdf-embed-wrap-d3c6c8b0-f71b-4e5d-a537-7caa64da93ef { display:flex; flex-direction: column; width: 100%; height: 650px; } .pdf-embed-container-d3c6c8b0-f71b-4e5d-a537-7caa64da93ef { height: 100%; } .pdf-link-d3c6c8b0-f71b-4e5d-a537-7caa64da93ef { background-color: white; text-align: center; border-style: solid; } .pdf-embed-container-d3c6c8b0-f71b-4e5d-a537-7caa64da93ef iframe { width: 100%; height: 100%; } &lt;/style&gt;
+&lt;div class=&quot;pdf-embed-wrap-d3c6c8b0-f71b-4e5d-a537-7caa64da93ef&quot;&gt; &lt;div class=&quot;pdf-link-d3c6c8b0-f71b-4e5d-a537-7caa64da93ef&quot;&gt; &lt;a href=&quot;/assets/pdf/Reaching-for-the-intangible.pdf&quot; target=&quot;_blank&quot;&gt;View PDF&lt;/a&gt; &lt;/div&gt; &lt;div class=&quot;pdf-embed-container-d3c6c8b0-f71b-4e5d-a537-7caa64da93ef&quot;&gt; &lt;iframe src=&quot;/assets/pdf/Reaching-for-the-intangible.pdf&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt; &lt;/div&gt; &lt;/div&gt;</content><author><name></name></author><summary type="html">I wrote the following comment after conversing with a researcher at the University of Texas at Arlington:</summary></entry></feed>
