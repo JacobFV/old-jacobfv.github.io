@@ -224,63 +224,23 @@
 <h3 id="computatrum-py"><code class="language-plaintext highlighter-rouge">computatrum-py</code></h3>
 <p>Python library that binds the controller and the environment together into an autonomous system. Also manages saving weights, zookeeping interface logic, and provides a CLI. Server-agnostic (HTTP API vs. managed controller makes no difference).</p>
 
-<h2 id="computatrumio">computatrum.io</h2>
+<h3 id="computatrumio">computatrum.io</h3>
 <ul>
   <li>Introduces humans to this system: general public, addresses AI-safety misconceptions, how to use Computatrum</li>
   <li>Facilitates research and development: tutorials, documentation, code, and weights</li>
-  <li>Provides fully managed / serverless controller API / environment hosting. For the controller API, users can have the recurrent state stored on the cloud. For fully managed computatra, permissions to read/write information may be federated.</li>
-  <li>Provides a home for the base Computatrum family who are viewable publicly on the Zookeeper dashboard. The community can also vote to shutdown individual computatra.</li>
+  <li>Provides fully managed / serverless controller API / environment hosting. For the controller API, users can have the recurrent state stored on the cloud. For fully managed computatra, permissions to read/write information via Zookeeper may be federated.</li>
+  <li>Provides a home for the base Computatrum family and web view-only Zookeeper dashboard on these computatra. The community can also vote to shutdown individual public computatra.</li>
 </ul>
 
 <h3 id="computatrum-zookeeper">Computatrum Zookeeper</h3>
 <ul>
   <li>React /native app: mobile, web, desktop</li>
-  <li>Users launch, hibernate, and shutdown computatra</li>
-  <li>Connects to remote computatra. On desktop, can also manage local computatra.</li>
-  <li>Presents realtime hidden state, reward, and other modality inputs and outputs</li>
-  <li>Computatrum information can be saved and rewatched later. Zookeeper maintains a user-determined rolling history of data to retrospectively capture.</li>
-  <li>Users can interact via <code class="language-plaintext highlighter-rouge">audio:parent</code>, <code class="language-plaintext highlighter-rouge">video:parent</code>, <code class="language-plaintext highlighter-rouge">text:parent</code>, and <code class="language-plaintext highlighter-rouge">reward:parent</code> modalities</li>
-  <li></li>
-</ul>
-
-<p>, observe, interact with computatra and record, annotate, and share information about the computatrum’s family tree, saved weight checkpoints,</p>
-<ul>
-  <li>Users can also</li>
-  <li>For the online-connected version, access to specific information may be federated. For the local-connected version, lists the local computatra.</li>
-</ul>
-
-<p>Computatrum is an infrastructure for Intelligence. Think Internet 5.0.</p>
-
-<p>node neural network hyper-regularized to scale gracefully and regularized for minimal complexity (like a polynomial model that puts increasing regularization strength on higher order coefficients and so it only scales to more complex models when necesary)</p>
-
-<p>nodes can be local or they can be microservices exposed by other networks. (The NNN builds on existing open source multi-device abstractions)</p>
-
-<p>A decentralized pool of weights and nodes are open sourced and can be used by anyone. independant subnetworks currently communicate over the internet, but they may utilize other mechanisms in the future.</p>
-
-<p>Will include</p>
-<ul>
-  <li>computer interaction modalities (i.e.: mouse, keyboard, screen, audio, camera, etc.) for action and perception of unstructured data (i.e.: image search, wikipedia, twitter, etc.)</li>
-  <li>graph interaction modalities for leveraging structured data (i.e.: DBPedia, Freebase, personal db, etc.) This will not be heavily emphasized when critical NN’s take off.</li>
-</ul>
-
-<p>Sizes of subnetworks can be arbitrarily large. I will develop three:
-computatrum-100M
-computatrum-1B
-computatrum-10B</p>
-
-<p>All independant subnetworks</p>
-<ul>
-  <li>are independant economic agents</li>
-  <li>heavily interface with computers</li>
-  <li>conform to the API (+graph interaction)</li>
-  <li>are under scrutiny</li>
-</ul>
-
-<p>clarify names for:</p>
-<ul>
-  <li>global network</li>
-  <li>independant subnetworks</li>
-  <li>the NNN’s that underlie independant subnetworks</li>
+  <li>Users launch, pause, hibernate, and shutdown computatra</li>
+  <li>Connects to remote computatra (such as personal on computatrum.io). On desktop, can also manage local computatra. All <code class="language-plaintext highlighter-rouge">computatrum-py</code> instances (and encapsulating servers) conform to a common interface that zookeeper can use.</li>
+  <li>Presents realtime hidden state, reward, and other modality inputs and outputs in various visualizations and formats.</li>
+  <li>Computatrum information can be actively or retrospectively recorded, re-watched, annotated, and shared.</li>
+  <li>Users can interact via <code class="language-plaintext highlighter-rouge">audio:from_parent</code>, <code class="language-plaintext highlighter-rouge">audio:to_parent</code>, <code class="language-plaintext highlighter-rouge">video:from_parent</code>, <code class="language-plaintext highlighter-rouge">video:to_parent</code>, <code class="language-plaintext highlighter-rouge">text:from_parent</code>, <code class="language-plaintext highlighter-rouge">text:to_parent</code>, and <code class="language-plaintext highlighter-rouge">reward:from_parent</code>  modalities</li>
+  <li>Users can pause a computatrum and take over the VNC session.</li>
 </ul>
 
   </article>
