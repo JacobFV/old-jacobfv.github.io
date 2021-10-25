@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description:
 nav: true
-display_categories: [personal, school, community]
+display_categories: [personal, work, school, community]
 horizontal: false
 ---
 

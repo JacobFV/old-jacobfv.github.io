@@ -10,7 +10,8 @@ group :jekyll_plugins do
     gem 'jekyll-paginate-v2'
     gem 'jekyll-scholar'
     gem 'jekyll-sitemap'
-    gem "jekyll-jupyter-notebook"
+    gem 'jekyll-jupyter-notebook'
+    gem 'jekyll-pdf-embed'
     gem 'jemoji'
     gem 'mini_racer'
     gem 'unicode_utils'
