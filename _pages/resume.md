@@ -5,4 +5,4 @@ title: resume
 nav: true
 ---
 
-{% pdf https://jacobfv.github.io/assets/pdf/Resume.pdf %}
+{% pdf /assets/pdf/Resume.pdf %}
