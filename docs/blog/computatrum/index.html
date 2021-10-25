@@ -11,7 +11,7 @@
   Jacob Valdez
 
 
-  | Computatrum and Computatra
+  | Computatrum
 
 </title>
 <meta name="description" content="Personal R&D portfolio site
@@ -179,12 +179,75 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Computatrum and Computatra</h1>
+    <h1 class="post-title">Computatrum</h1>
     <p class="post-meta">October 19, 2021</p>
   </header>
 
   <article class="post-content">
     <p><strong>WORK IN PROGRESS</strong></p>
+
+<p>Machine learning has a general recipe for developing increasingly advanced systems: we identify and optimize various ‘components of intelligence’ (such as datasets, environments, training paradigms, objectives, and architecture designs) and then incrementally integrate them under an iterative dev-test cycle. We do this while minimizing the amount of information movement required (how much data we have to collect, how long we train the model, and how much cognitive load our own mind handles through design and experimentation). The human mind is a powerful at solving machine, but <strong>even at the iteration speed of an expert research team with high end equipment, there are just too many accidental and essential complexities, and not enough automation driving ML evolution from end-to-end</strong>. Now in deep learning, the phrase “end-to-end” means you don’t have to hand-engineer a bunch of parameters, but state-of-the-art deep neural networks today are still relatively hardwired when you consider that they have to be spoon fed datasets, told when to wake up, train, and die, and they train under an economic fitness landscape that they have no direct awareness of. That is why they still employ us as machine learning engineers to tune the remaining 100 hyperparameters as well as the uncountably many unknown parameters. <strong>If machine learning is going to approach and surpass the rate-limiting bar of human research and development, we need to liberate as many aspects of the ML development cycle as possible to autonomous control.</strong></p>
+
+<p>This motivates developing systems that genuinely propagate feedback from ‘end-to-end’, hunt for their own data, pursues their own cultivated intrinsic motivations, act as their own economic entity subject to the same financial and technological constraints as an independant human engineer, and are able to research and develop state-of-the-art ML systems – including improvements of themselves. I am not just reformulating autoML, unsupervised/reward-free/intrinsically-motivated reinforcement learning, or some evolutionary AI-generating formal algorithm. <strong>I propose developing a fully autonomous, open-ended machine learning system that which interacts using standard peripherals connected to a virtual machine running Ubuntu with Internet access to interact with robots, research sites, and its own software and compute resources.</strong> I call this system Computatrum. Following is a description of the system’s architecture and the current state of development.</p>
+
+<h2 id="core">Core</h2>
+
+<h3 id="computatrum-controller-py"><code class="language-plaintext highlighter-rouge">computatrum-controller-py</code></h3>
+<p>The python library that runs the controller model. Transmits data using <code class="language-plaintext highlighter-rouge">launchpad</code> which allows the controller to run locally or remotely. Performs multiparadigm learning on each foreward pass. Utilizes a growing node neural network with the default modalities: 
+    - reward: <code class="language-plaintext highlighter-rouge">reward:from_parent</code> (reinforcing signal), <code class="language-plaintext highlighter-rouge">reward:to_children</code>
+    - text: <code class="language-plaintext highlighter-rouge">text:from_parent</code>, <code class="language-plaintext highlighter-rouge">text:to_parent</code>, <code class="language-plaintext highlighter-rouge">text:from_children</code>, <code class="language-plaintext highlighter-rouge">text:to_children</code>
+    - video: <code class="language-plaintext highlighter-rouge">video:from_parent</code>, <code class="language-plaintext highlighter-rouge">video:to_parent</code>, <code class="language-plaintext highlighter-rouge">video:from_computer</code>, <code class="language-plaintext highlighter-rouge">video:to_computer</code>
+    - audio: <code class="language-plaintext highlighter-rouge">audio:from_parent</code>, <code class="language-plaintext highlighter-rouge">audio:to_parent</code>, <code class="language-plaintext highlighter-rouge">audio:from_computer</code>, <code class="language-plaintext highlighter-rouge">audio:to_computer</code>
+    - other: <code class="language-plaintext highlighter-rouge">motor:computer</code>, <code class="language-plaintext highlighter-rouge">touch:computer</code>
+    - recurrent: <code class="language-plaintext highlighter-rouge">recurrent_state</code></p>
+
+<h3 id="computatrum-environment-py"><code class="language-plaintext highlighter-rouge">computatrum-environment-py</code></h3>
+<p>Server running on the machine that the computatrum interacts with. Uses VNC internally to transmit video <code class="language-plaintext highlighter-rouge">video:computer</code> and mouse and key <code class="language-plaintext highlighter-rouge">motor:computer</code> events. <code class="language-plaintext highlighter-rouge">touch:computer</code> represents the state of the OS, CPU processor cores, GPU, memory, and disk.</p>
+
+<p>Sends to computatrum-py:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">text:from_children</code>: Any text recieved from UDP TEXT_TO_PARENT_PORT.</li>
+  <li><code class="language-plaintext highlighter-rouge">video:from_computer</code>: Video from the Xorg display (via VNC)</li>
+  <li><code class="language-plaintext highlighter-rouge">audio:from_computer</code>: OS Internal audio</li>
+  <li><code class="language-plaintext highlighter-rouge">touch:computer</code>: representation of the state of the OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events.</li>
+</ul>
+
+<p>Recieves from computatrum-py:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">reward:to_children</code>: Reward signal to be broadcast on UDP REWARD_TO_CHILDREN_PORT.</li>
+  <li><code class="language-plaintext highlighter-rouge">text:to_children</code>: Text to be broadcast on UDP TEXT_TO_CHILDREN_PORT.</li>
+  <li><code class="language-plaintext highlighter-rouge">video:to_computer</code>: Video to stream to virtual webcam</li>
+  <li><code class="language-plaintext highlighter-rouge">audio:to_computer</code>: Audio to stream to virtual microphone</li>
+  <li><code class="language-plaintext highlighter-rouge">motor:computer</code>: Mouse and keyboard events to perform in the OS environment (via VNC)</li>
+</ul>
+
+<h3 id="computatrum-py"><code class="language-plaintext highlighter-rouge">computatrum-py</code></h3>
+<p>Python library that binds the controller and the environment together into an autonomous system. Also manages saving weights, zookeeping interface logic, and provides a CLI. Server-agnostic (HTTP API vs. managed controller makes no difference).</p>
+
+<h2 id="computatrumio">computatrum.io</h2>
+<ul>
+  <li>Introduces humans to this system: general public, addresses AI-safety misconceptions, how to use Computatrum</li>
+  <li>Facilitates research and development: tutorials, documentation, code, and weights</li>
+  <li>Provides fully managed / serverless controller API / environment hosting. For the controller API, users can have the recurrent state stored on the cloud. For fully managed computatra, permissions to read/write information may be federated.</li>
+  <li>Provides a home for the base Computatrum family who are viewable publicly on the Zookeeper dashboard. The community can also vote to shutdown individual computatra.</li>
+</ul>
+
+<h3 id="computatrum-zookeeper">Computatrum Zookeeper</h3>
+<ul>
+  <li>React /native app: mobile, web, desktop</li>
+  <li>Users launch, hibernate, and shutdown computatra</li>
+  <li>Connects to remote computatra. On desktop, can also manage local computatra.</li>
+  <li>Presents realtime hidden state, reward, and other modality inputs and outputs</li>
+  <li>Computatrum information can be saved and rewatched later. Zookeeper maintains a user-determined rolling history of data to retrospectively capture.</li>
+  <li>Users can interact via <code class="language-plaintext highlighter-rouge">audio:parent</code>, <code class="language-plaintext highlighter-rouge">video:parent</code>, <code class="language-plaintext highlighter-rouge">text:parent</code>, and <code class="language-plaintext highlighter-rouge">reward:parent</code> modalities</li>
+  <li></li>
+</ul>
+
+<p>, observe, interact with computatra and record, annotate, and share information about the computatrum’s family tree, saved weight checkpoints,</p>
+<ul>
+  <li>Users can also</li>
+  <li>For the online-connected version, access to specific information may be federated. For the local-connected version, lists the local computatra.</li>
+</ul>
 
 <p>Computatrum is an infrastructure for Intelligence. Think Internet 5.0.</p>
 

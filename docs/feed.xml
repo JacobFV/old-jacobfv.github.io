@@ -1,5 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-24T22:05:55-05:00</updated><id>/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal R&amp;D portfolio site
-</subtitle><entry><title type="html">Computatrum and Computatra</title><link href="/blog/computatrum/" rel="alternate" type="text/html" title="Computatrum and Computatra" /><published>2021-10-19T00:00:00-05:00</published><updated>2021-10-19T00:00:00-05:00</updated><id>/blog/computatrum</id><content type="html" xml:base="/blog/computatrum/">&lt;p&gt;&lt;strong&gt;WORK IN PROGRESS&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-25T18:00:59-05:00</updated><id>/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal R&amp;D portfolio site
+</subtitle><entry><title type="html">Computatrum</title><link href="/blog/computatrum/" rel="alternate" type="text/html" title="Computatrum" /><published>2021-10-19T00:00:00-05:00</published><updated>2021-10-19T00:00:00-05:00</updated><id>/blog/computatrum</id><content type="html" xml:base="/blog/computatrum/">&lt;p&gt;&lt;strong&gt;WORK IN PROGRESS&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Machine learning has a general recipe for developing increasingly advanced systems: we identify and optimize various ‘components of intelligence’ (such as datasets, environments, training paradigms, objectives, and architecture designs) and then incrementally integrate them under an iterative dev-test cycle. We do this while minimizing the amount of information movement required (how much data we have to collect, how long we train the model, and how much cognitive load our own mind handles through design and experimentation). The human mind is a powerful at solving machine, but &lt;strong&gt;even at the iteration speed of an expert research team with high end equipment, there are just too many accidental and essential complexities, and not enough automation driving ML evolution from end-to-end&lt;/strong&gt;. Now in deep learning, the phrase “end-to-end” means you don’t have to hand-engineer a bunch of parameters, but state-of-the-art deep neural networks today are still relatively hardwired when you consider that they have to be spoon fed datasets, told when to wake up, train, and die, and they train under an economic fitness landscape that they have no direct awareness of. That is why they still employ us as machine learning engineers to tune the remaining 100 hyperparameters as well as the uncountably many unknown parameters. &lt;strong&gt;If machine learning is going to approach and surpass the rate-limiting bar of human research and development, we need to liberate as many aspects of the ML development cycle as possible to autonomous control.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This motivates developing systems that genuinely propagate feedback from ‘end-to-end’, hunt for their own data, pursues their own cultivated intrinsic motivations, act as their own economic entity subject to the same financial and technological constraints as an independant human engineer, and are able to research and develop state-of-the-art ML systems – including improvements of themselves. I am not just reformulating autoML, unsupervised/reward-free/intrinsically-motivated reinforcement learning, or some evolutionary AI-generating formal algorithm. &lt;strong&gt;I propose developing a fully autonomous, open-ended machine learning system that which interacts using standard peripherals connected to a virtual machine running Ubuntu with Internet access to interact with robots, research sites, and its own software and compute resources.&lt;/strong&gt; I call this system Computatrum. Following is a description of the system’s architecture and the current state of development.&lt;/p&gt;
+
+&lt;h2 id=&quot;core&quot;&gt;Core&lt;/h2&gt;
+
+&lt;h3 id=&quot;computatrum-controller-py&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;computatrum-controller-py&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;The python library that runs the controller model. Transmits data using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;launchpad&lt;/code&gt; which allows the controller to run locally or remotely. Performs multiparadigm learning on each foreward pass. Utilizes a growing node neural network with the default modalities: 
+    - reward: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reward:from_parent&lt;/code&gt; (reinforcing signal), &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reward:to_children&lt;/code&gt;
+    - text: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:from_parent&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:to_parent&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:from_children&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:to_children&lt;/code&gt;
+    - video: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:from_parent&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:to_parent&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:from_computer&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:to_computer&lt;/code&gt;
+    - audio: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:from_parent&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:to_parent&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:from_computer&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:to_computer&lt;/code&gt;
+    - other: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;motor:computer&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch:computer&lt;/code&gt;
+    - recurrent: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;recurrent_state&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;computatrum-environment-py&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;computatrum-environment-py&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Server running on the machine that the computatrum interacts with. Uses VNC internally to transmit video &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:computer&lt;/code&gt; and mouse and key &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;motor:computer&lt;/code&gt; events. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch:computer&lt;/code&gt; represents the state of the OS, CPU processor cores, GPU, memory, and disk.&lt;/p&gt;
+
+&lt;p&gt;Sends to computatrum-py:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:from_children&lt;/code&gt;: Any text recieved from UDP TEXT_TO_PARENT_PORT.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:from_computer&lt;/code&gt;: Video from the Xorg display (via VNC)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:from_computer&lt;/code&gt;: OS Internal audio&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch:computer&lt;/code&gt;: representation of the state of the OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Recieves from computatrum-py:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reward:to_children&lt;/code&gt;: Reward signal to be broadcast on UDP REWARD_TO_CHILDREN_PORT.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:to_children&lt;/code&gt;: Text to be broadcast on UDP TEXT_TO_CHILDREN_PORT.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:to_computer&lt;/code&gt;: Video to stream to virtual webcam&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:to_computer&lt;/code&gt;: Audio to stream to virtual microphone&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;motor:computer&lt;/code&gt;: Mouse and keyboard events to perform in the OS environment (via VNC)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;computatrum-py&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;computatrum-py&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Python library that binds the controller and the environment together into an autonomous system. Also manages saving weights, zookeeping interface logic, and provides a CLI. Server-agnostic (HTTP API vs. managed controller makes no difference).&lt;/p&gt;
+
+&lt;h2 id=&quot;computatrumio&quot;&gt;computatrum.io&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Introduces humans to this system: general public, addresses AI-safety misconceptions, how to use Computatrum&lt;/li&gt;
+  &lt;li&gt;Facilitates research and development: tutorials, documentation, code, and weights&lt;/li&gt;
+  &lt;li&gt;Provides fully managed / serverless controller API / environment hosting. For the controller API, users can have the recurrent state stored on the cloud. For fully managed computatra, permissions to read/write information may be federated.&lt;/li&gt;
+  &lt;li&gt;Provides a home for the base Computatrum family who are viewable publicly on the Zookeeper dashboard. The community can also vote to shutdown individual computatra.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;computatrum-zookeeper&quot;&gt;Computatrum Zookeeper&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;React /native app: mobile, web, desktop&lt;/li&gt;
+  &lt;li&gt;Users launch, hibernate, and shutdown computatra&lt;/li&gt;
+  &lt;li&gt;Connects to remote computatra. On desktop, can also manage local computatra.&lt;/li&gt;
+  &lt;li&gt;Presents realtime hidden state, reward, and other modality inputs and outputs&lt;/li&gt;
+  &lt;li&gt;Computatrum information can be saved and rewatched later. Zookeeper maintains a user-determined rolling history of data to retrospectively capture.&lt;/li&gt;
+  &lt;li&gt;Users can interact via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:parent&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:parent&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:parent&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reward:parent&lt;/code&gt; modalities&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;, observe, interact with computatra and record, annotate, and share information about the computatrum’s family tree, saved weight checkpoints,&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Users can also&lt;/li&gt;
+  &lt;li&gt;For the online-connected version, access to specific information may be federated. For the local-connected version, lists the local computatra.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Computatrum is an infrastructure for Intelligence. Think Internet 5.0.&lt;/p&gt;
 
@@ -510,5 +573,5 @@ on-par with human intelligence over a wide range of goals.&lt;/p&gt;
 
 &lt;ol class=&quot;bibliography&quot;&gt;&lt;/ol&gt;
 
-&lt;style&gt; .pdf-embed-wrap-788eb3ef-9a99-4f1d-aef9-dd9b2b9d4b74 { display:flex; flex-direction: column; width: 100%; height: 650px; } .pdf-embed-container-788eb3ef-9a99-4f1d-aef9-dd9b2b9d4b74 { height: 100%; } .pdf-link-788eb3ef-9a99-4f1d-aef9-dd9b2b9d4b74 { background-color: white; text-align: center; border-style: solid; } .pdf-embed-container-788eb3ef-9a99-4f1d-aef9-dd9b2b9d4b74 iframe { width: 100%; height: 100%; } &lt;/style&gt;
-&lt;div class=&quot;pdf-embed-wrap-788eb3ef-9a99-4f1d-aef9-dd9b2b9d4b74&quot;&gt; &lt;div class=&quot;pdf-link-788eb3ef-9a99-4f1d-aef9-dd9b2b9d4b74&quot;&gt; &lt;a href=&quot;/assets/pdf/Reaching-for-the-intangible.pdf&quot; target=&quot;_blank&quot;&gt;View PDF&lt;/a&gt; &lt;/div&gt; &lt;div class=&quot;pdf-embed-container-788eb3ef-9a99-4f1d-aef9-dd9b2b9d4b74&quot;&gt; &lt;iframe src=&quot;/assets/pdf/Reaching-for-the-intangible.pdf&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt; &lt;/div&gt; &lt;/div&gt;</content><author><name></name></author><summary type="html">I wrote the following comment after conversing with a researcher at the University of Texas at Arlington:</summary></entry></feed>
+&lt;style&gt; .pdf-embed-wrap-e64fd82f-dbcb-4541-aa9d-9363b2755be9 { display:flex; flex-direction: column; width: 100%; height: 650px; } .pdf-embed-container-e64fd82f-dbcb-4541-aa9d-9363b2755be9 { height: 100%; } .pdf-link-e64fd82f-dbcb-4541-aa9d-9363b2755be9 { background-color: white; text-align: center; border-style: solid; } .pdf-embed-container-e64fd82f-dbcb-4541-aa9d-9363b2755be9 iframe { width: 100%; height: 100%; } &lt;/style&gt;
+&lt;div class=&quot;pdf-embed-wrap-e64fd82f-dbcb-4541-aa9d-9363b2755be9&quot;&gt; &lt;div class=&quot;pdf-link-e64fd82f-dbcb-4541-aa9d-9363b2755be9&quot;&gt; &lt;a href=&quot;/assets/pdf/Reaching-for-the-intangible.pdf&quot; target=&quot;_blank&quot;&gt;View PDF&lt;/a&gt; &lt;/div&gt; &lt;div class=&quot;pdf-embed-container-e64fd82f-dbcb-4541-aa9d-9363b2755be9&quot;&gt; &lt;iframe src=&quot;/assets/pdf/Reaching-for-the-intangible.pdf&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt; &lt;/div&gt; &lt;/div&gt;</content><author><name></name></author><summary type="html">I wrote the following comment after conversing with a researcher at the University of Texas at Arlington:</summary></entry></feed>
