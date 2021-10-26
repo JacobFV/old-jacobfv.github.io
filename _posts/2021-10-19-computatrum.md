@@ -53,5 +53,5 @@ Python library that binds the controller and the environment together into an au
 - Connects to remote computatra (such as personal on computatrum.io). On desktop, can also manage local computatra. All `computatrum-py` instances (and encapsulating servers) conform to a common interface that zookeeper can use.
 - Presents realtime hidden state, reward, and other modality inputs and outputs in various visualizations and formats.
 - Computatrum information can be actively or retrospectively recorded, re-watched, annotated, and shared.
-- Users can interact via `audio:from_parent`, `audio:to_parent`, `video:from_parent`, `video:to_parent`, `text:from_parent`, `text:to_parent`, and `reward:from_parent`  modalities
+- Users can interact via `audio:from_parent`, `audio:to_parent`, `video:from_parent`, `video:to_parent`, `text:from_parent`, `text:to_parent`, and `reward:from_parent`  modalities which map to ports that `computatrum-py` communicates on.
 - Users can pause a computatrum and take over the VNC session.
