@@ -11,6 +11,14 @@ Machine learning has a general recipe for developing increasingly advanced syste
 
 This motivates developing systems that genuinely propagate feedback from ‘end-to-end’, hunt for their own data, pursues their own cultivated intrinsic motivations, act as their own economic entity subject to the same financial and technological constraints as an independant human engineer, and are able to research and develop state-of-the-art ML systems -- including improvements of themselves. I am not just reformulating autoML, unsupervised/reward-free/intrinsically-motivated reinforcement learning, or some evolutionary AI-generating formal algorithm. **I propose developing a fully autonomous, open-ended machine learning system that which interacts using standard peripherals connected to a virtual machine running Ubuntu with Internet access to interact with robots, research sites, and its own software and compute resources.** I call this system Computatrum. Following is a description of the system’s architecture and the current state of development.
 
+## Design
+
+A computatrum is a distributed system consisting of:
+- a controller (local or remote) that performs computation and learning
+- an environment (virtual or physical) for the agent to interact in 
+- an agent (local) that manages the controller--environment interaction loop, saving, 
+
+
 ## Core
 
 ### `computatrum-controller-py`
@@ -25,29 +33,53 @@ The python library that runs the controller model. Transmits data using `launchp
 ### `computatrum-environment-py`
 Server running on the machine that the computatrum interacts with. Uses VNC internally to transmit video `video:computer` and mouse and key `motor:computer` events. `touch:computer` represents the state of the OS, CPU processor cores, GPU, memory, and disk.  
 
-Sends to computatrum-py:
-- `text:from_children`: Any text recieved from UDP TEXT_TO_PARENT_PORT.
+Sends signals to the controller:
+- `text:from_children`: Any text recieved from UDP TEXT_BOTTOM_UP_PORT.
 - `video:from_computer`: Video from the Xorg display (via VNC)
-- `audio:from_computer`: OS Internal audio
-- `touch:computer`: representation of the state of the OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events.  
+- `audio:from_computer`: OS internal audio
+- `touch:environment_computer`: Representation of the state of the environment OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events.  
 
-Recieves from computatrum-py:
-- `reward:to_children`: Reward signal to be broadcast on UDP REWARD_TO_CHILDREN_PORT.
-- `text:to_children`: Text to be broadcast on UDP TEXT_TO_CHILDREN_PORT.
-- `video:to_computer`: Video to stream to virtual webcam
-- `audio:to_computer`: Audio to stream to virtual microphone
+Recieves signals from the controller:
+- `reward:to_children`: Reward signal to be broadcast on UDP REWARD_TOP_DOWN_PORT.
+- `text:to_children`: Text to be broadcast on UDP TEXT_TOP_DOWN_PORT.
+- `video:to_computer`: Video to stream to a virtual webcam
+- `audio:to_computer`: Audio to stream to a virtual microphone
 - `motor:computer`: Mouse and keyboard events to perform in the OS environment (via VNC)
 
 ### `computatrum-py`
-Python library that binds the controller and the environment together into an autonomous system. Also manages saving weights, zookeeping interface logic, and provides a CLI. Server-agnostic (HTTP API vs. managed controller makes no difference).
+Python library that binds the controller and the environment together into an autonomous system. Also manages saving weights, zookeeping interface logic, and provides a CLI. 
+- Server-agnostic (HTTP API vs. managed controller makes no difference). 
+- Saves recurrent state, activation, and weights to disk at programmed intervals.
 
-### computatrum.io
+Sends signals to the controller:
+- `reward:from_parent`: Any reward signals recieved from UDP REWARD_TOP_DOWN_PORT.
+- `text:from_parent`: Any text recieved from UDP TEXT_TOP_DOWN_PORT.
+- `video:from_parent`: Video from a webcam on the computatrum host OS
+- `audio:from_parent`: Audio from a webcam on the computatrum host OS
+- `touch:controller_computer`: Representation of the state of the controller OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events.  
+
+Recieves signals from the controller:
+- `text:to_parent`: Text to be broadcast on UDP TEXT_BOTTOM_UP_PORT.
+- `video:to_computer`: Video to stream to a virtual webcam
+- `audio:to_computer`: Audio to stream to a virtual microphone
+
+UDP port numbers for reward and text can be changed during execution if computatatrum should not share the same communication channel or reward. Here's a diagram showing the overall signal propagation architecture:
+{% mermaid %}
+graph TD;
+node  [label="computatrum-py environment"];
+    (webcam)-modality:name->computatrum-py;
+    A-->C;
+    B-->D;
+    C-->D;
+{% endmermaid %}
+
+## computatrum.io
 - Introduces humans to this system: general public, addresses AI-safety misconceptions, how to use Computatrum
 - Facilitates research and development: tutorials, documentation, code, and weights
 - Provides fully managed / serverless controller API / environment hosting. For the controller API, users can have the recurrent state stored on the cloud. For fully managed computatra, permissions to read/write information via Zookeeper may be federated. 
 - Provides a home for the base Computatrum family and web view-only Zookeeper dashboard on these computatra. The community can also vote to shutdown individual public computatra.
 
-### Computatrum Zookeeper
+## Computatrum Zookeeper
 - React /native app: mobile, web, desktop
 - Users launch, pause, hibernate, and shutdown computatra 
 - Connects to remote computatra (such as personal on computatrum.io). On desktop, can also manage local computatra. All `computatrum-py` instances (and encapsulating servers) conform to a common interface that zookeeper can use.

@@ -12,6 +12,7 @@ group :jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-jupyter-notebook'
     gem 'jekyll-pdf-embed'
+    gem 'jekyll-mermaid'
     gem 'jemoji'
     gem 'mini_racer'
     gem 'unicode_utils'

@@ -193,20 +193,47 @@
 
 <p>I prpose developing a modular system to address these challanges: the <em>Node Neural Network (NNN)</em>. The following is a declarative description of what I intend to make:</p>
 
-<p>The Node Neural Network is a modular deep learning architecture</p>
+<p>The Node Neural Network is an iterative update deep learning architecture composed of a network of <em>nodes</em> (modules) that are connected by <em>coonnections</em> between <em>ports</em> on the nodes.</p>
 
+<p><strong>Learning</strong>: All learning is local to the node:</p>
 <ul>
-  <li>general nodes: PredNode, SORNNode, etc.</li>
-  <li>common sparse language between nodes</li>
-  <li>manually design in Python</li>
-  <li>
-    <p>automatic growth</p>
-  </li>
-  <li>parametrized interface (API default, but can be overriden by obs/action spec)</li>
-  <li>integrate with Salina</li>
-  <li>Single architecture implements</li>
-  <li>multienvironment</li>
+  <li>connection formation/growth/prunning</li>
+  <li>node binary fision and node death</li>
+  <li>node internal parameter updates</li>
 </ul>
+
+<p><strong>Energy</strong>: All nodes must conform to an energy budget which is distributed by the energy management system and appropriately penalize activations or computations. Energy is supplied by the developer on each iteration step and the <code class="language-plaintext highlighter-rouge">nnn</code> library includes a compute energy estimation function.</p>
+
+<p><strong>Optional Computation</strong>: No signal – even input signals – except energy is required to be present. The NNN is a sparse self-gated network of experts and nodes output <code class="language-plaintext highlighter-rouge">None</code> if they do not activate.</p>
+
+<p><strong>Nodes</strong> may be specialized or common. Common nodes share a sparse activation distribution which facilitates open-ended growth. Common nodes include:</p>
+<ul>
+  <li>PredNode</li>
+  <li>SORNNode</li>
+  <li>SOMPNode</li>
+  <li>…</li>
+</ul>
+
+<p>Specialized nodes represent a (part of a) specific ML model. Their ports must be specifically labeled corresponding to the expected flow of information. <code class="language-plaintext highlighter-rouge">nnn</code> includes:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">nnn.nodes.specialized.bert</code></li>
+  <li><code class="language-plaintext highlighter-rouge">nnn.nodes.specialized.gpt3</code></li>
+  <li><code class="language-plaintext highlighter-rouge">nnn.nodes.specialized.vit</code></li>
+  <li><code class="language-plaintext highlighter-rouge">nnn.nodes.specialized.wavenet</code></li>
+  <li><code class="language-plaintext highlighter-rouge">nnn.nodes.specialized.xlm</code></li>
+  <li><code class="language-plaintext highlighter-rouge">nnn.nodes.specialized.triple_graph</code> can be initialized empty or with DBPedia, Wikidata, other queryable knowledge graphs.</li>
+  <li><code class="language-plaintext highlighter-rouge">nnn.nodes.specialized.gym_env</code></li>
+  <li><code class="language-plaintext highlighter-rouge">nnn.nodes.specialized.gym_env</code></li>
+  <li>…</li>
+</ul>
+
+<p>From a developer perspective, the NNN features:</p>
+<ul>
+  <li>parametrized interface (API default, but can be overriden by obs/action spec)</li>
+  <li>iterative update architecture; integrates with Salina</li>
+  <li>multimodal and multienvironment learning</li>
+</ul>
+
 
   </article>
 

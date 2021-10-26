@@ -1,9 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-25T19:28:43-05:00</updated><id>/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal R&amp;D portfolio site
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-26T06:41:06-05:00</updated><id>/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal R&amp;D portfolio site
 </subtitle><entry><title type="html">Computatrum</title><link href="/blog/computatrum/" rel="alternate" type="text/html" title="Computatrum" /><published>2021-10-19T00:00:00-05:00</published><updated>2021-10-19T00:00:00-05:00</updated><id>/blog/computatrum</id><content type="html" xml:base="/blog/computatrum/">&lt;p&gt;&lt;strong&gt;WORK IN PROGRESS&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Machine learning has a general recipe for developing increasingly advanced systems: we identify and optimize various ‘components of intelligence’ (such as datasets, environments, training paradigms, objectives, and architecture designs) and then incrementally integrate them under an iterative dev-test cycle. We do this while minimizing the amount of information movement required (how much data we have to collect, how long we train the model, and how much cognitive load our own mind handles through design and experimentation). The human mind is a powerful at solving machine, but &lt;strong&gt;even at the iteration speed of an expert research team with high end equipment, there are just too many accidental and essential complexities, and not enough automation driving ML evolution from end-to-end&lt;/strong&gt;. Now in deep learning, the phrase “end-to-end” means you don’t have to hand-engineer a bunch of parameters, but state-of-the-art deep neural networks today are still relatively hardwired when you consider that they have to be spoon fed datasets, told when to wake up, train, and die, and they train under an economic fitness landscape that they have no direct awareness of. That is why they still employ us as machine learning engineers to tune the remaining 100 hyperparameters as well as the uncountably many unknown parameters. &lt;strong&gt;If machine learning is going to approach and surpass the rate-limiting bar of human research and development, we need to liberate as many aspects of the ML development cycle as possible to autonomous control.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;This motivates developing systems that genuinely propagate feedback from ‘end-to-end’, hunt for their own data, pursues their own cultivated intrinsic motivations, act as their own economic entity subject to the same financial and technological constraints as an independant human engineer, and are able to research and develop state-of-the-art ML systems – including improvements of themselves. I am not just reformulating autoML, unsupervised/reward-free/intrinsically-motivated reinforcement learning, or some evolutionary AI-generating formal algorithm. &lt;strong&gt;I propose developing a fully autonomous, open-ended machine learning system that which interacts using standard peripherals connected to a virtual machine running Ubuntu with Internet access to interact with robots, research sites, and its own software and compute resources.&lt;/strong&gt; I call this system Computatrum. Following is a description of the system’s architecture and the current state of development.&lt;/p&gt;
+
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
+
+&lt;p&gt;A computatrum is a distributed system consisting of:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;a controller (local or remote) that performs computation and learning&lt;/li&gt;
+  &lt;li&gt;an environment (virtual or physical) for the agent to interact in&lt;/li&gt;
+  &lt;li&gt;an agent (local) that manages the controller–environment interaction loop, saving,&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;core&quot;&gt;Core&lt;/h2&gt;
 
@@ -19,27 +28,57 @@
 &lt;h3 id=&quot;computatrum-environment-py&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;computatrum-environment-py&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Server running on the machine that the computatrum interacts with. Uses VNC internally to transmit video &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:computer&lt;/code&gt; and mouse and key &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;motor:computer&lt;/code&gt; events. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch:computer&lt;/code&gt; represents the state of the OS, CPU processor cores, GPU, memory, and disk.&lt;/p&gt;
 
-&lt;p&gt;Sends to computatrum-py:&lt;/p&gt;
+&lt;p&gt;Sends signals to the controller:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:from_children&lt;/code&gt;: Any text recieved from UDP TEXT_TO_PARENT_PORT.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:from_children&lt;/code&gt;: Any text recieved from UDP TEXT_BOTTOM_UP_PORT.&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:from_computer&lt;/code&gt;: Video from the Xorg display (via VNC)&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:from_computer&lt;/code&gt;: OS Internal audio&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch:computer&lt;/code&gt;: representation of the state of the OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:from_computer&lt;/code&gt;: OS internal audio&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch:environment_computer&lt;/code&gt;: Representation of the state of the environment OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Recieves from computatrum-py:&lt;/p&gt;
+&lt;p&gt;Recieves signals from the controller:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reward:to_children&lt;/code&gt;: Reward signal to be broadcast on UDP REWARD_TO_CHILDREN_PORT.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:to_children&lt;/code&gt;: Text to be broadcast on UDP TEXT_TO_CHILDREN_PORT.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:to_computer&lt;/code&gt;: Video to stream to virtual webcam&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:to_computer&lt;/code&gt;: Audio to stream to virtual microphone&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reward:to_children&lt;/code&gt;: Reward signal to be broadcast on UDP REWARD_TOP_DOWN_PORT.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:to_children&lt;/code&gt;: Text to be broadcast on UDP TEXT_TOP_DOWN_PORT.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:to_computer&lt;/code&gt;: Video to stream to a virtual webcam&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:to_computer&lt;/code&gt;: Audio to stream to a virtual microphone&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;motor:computer&lt;/code&gt;: Mouse and keyboard events to perform in the OS environment (via VNC)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;computatrum-py&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;computatrum-py&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Python library that binds the controller and the environment together into an autonomous system. Also manages saving weights, zookeeping interface logic, and provides a CLI. Server-agnostic (HTTP API vs. managed controller makes no difference).&lt;/p&gt;
+&lt;p&gt;Python library that binds the controller and the environment together into an autonomous system. Also manages saving weights, zookeeping interface logic, and provides a CLI.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Server-agnostic (HTTP API vs. managed controller makes no difference).&lt;/li&gt;
+  &lt;li&gt;Saves recurrent state, activation, and weights to disk at programmed intervals.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;computatrumio&quot;&gt;computatrum.io&lt;/h3&gt;
+&lt;p&gt;Sends signals to the controller:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reward:from_parent&lt;/code&gt;: Any reward signals recieved from UDP REWARD_TOP_DOWN_PORT.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:from_parent&lt;/code&gt;: Any text recieved from UDP TEXT_TOP_DOWN_PORT.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:from_parent&lt;/code&gt;: Video from a webcam on the computatrum host OS&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:from_parent&lt;/code&gt;: Audio from a webcam on the computatrum host OS&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch:controller_computer&lt;/code&gt;: Representation of the state of the controller OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Recieves signals from the controller:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text:to_parent&lt;/code&gt;: Text to be broadcast on UDP TEXT_BOTTOM_UP_PORT.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;video:to_computer&lt;/code&gt;: Video to stream to a virtual webcam&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;audio:to_computer&lt;/code&gt;: Audio to stream to a virtual microphone&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;UDP port numbers for reward and text can be changed during execution if computatatrum should not share the same communication channel or reward. Here’s a diagram showing the overall signal propagation architecture:
+&lt;script src=&quot;/assets/js/mermaid/mermaid.js&quot;&gt;&lt;/script&gt;&amp;lt;div class=&quot;mermaid&quot;&amp;gt;
+graph TD;
+node  [label=”computatrum-py environment”];
+    (webcam)-modality:name-&amp;gt;computatrum-py;
+    A–&amp;gt;C;
+    B–&amp;gt;D;
+    C–&amp;gt;D;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;computatrumio&quot;&gt;computatrum.io&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Introduces humans to this system: general public, addresses AI-safety misconceptions, how to use Computatrum&lt;/li&gt;
   &lt;li&gt;Facilitates research and development: tutorials, documentation, code, and weights&lt;/li&gt;
@@ -47,7 +86,7 @@
   &lt;li&gt;Provides a home for the base Computatrum family and web view-only Zookeeper dashboard on these computatra. The community can also vote to shutdown individual public computatra.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;computatrum-zookeeper&quot;&gt;Computatrum Zookeeper&lt;/h3&gt;
+&lt;h2 id=&quot;computatrum-zookeeper&quot;&gt;Computatrum Zookeeper&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;React /native app: mobile, web, desktop&lt;/li&gt;
   &lt;li&gt;Users launch, pause, hibernate, and shutdown computatra&lt;/li&gt;
@@ -109,19 +148,45 @@
 
 &lt;p&gt;I prpose developing a modular system to address these challanges: the &lt;em&gt;Node Neural Network (NNN)&lt;/em&gt;. The following is a declarative description of what I intend to make:&lt;/p&gt;
 
-&lt;p&gt;The Node Neural Network is a modular deep learning architecture&lt;/p&gt;
+&lt;p&gt;The Node Neural Network is an iterative update deep learning architecture composed of a network of &lt;em&gt;nodes&lt;/em&gt; (modules) that are connected by &lt;em&gt;coonnections&lt;/em&gt; between &lt;em&gt;ports&lt;/em&gt; on the nodes.&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;Learning&lt;/strong&gt;: All learning is local to the node:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;general nodes: PredNode, SORNNode, etc.&lt;/li&gt;
-  &lt;li&gt;common sparse language between nodes&lt;/li&gt;
-  &lt;li&gt;manually design in Python&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;automatic growth&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;connection formation/growth/prunning&lt;/li&gt;
+  &lt;li&gt;node binary fision and node death&lt;/li&gt;
+  &lt;li&gt;node internal parameter updates&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Energy&lt;/strong&gt;: All nodes must conform to an energy budget which is distributed by the energy management system and appropriately penalize activations or computations. Energy is supplied by the developer on each iteration step and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nnn&lt;/code&gt; library includes a compute energy estimation function.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Optional Computation&lt;/strong&gt;: No signal – even input signals – except energy is required to be present. The NNN is a sparse self-gated network of experts and nodes output &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;None&lt;/code&gt; if they do not activate.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nodes&lt;/strong&gt; may be specialized or common. Common nodes share a sparse activation distribution which facilitates open-ended growth. Common nodes include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PredNode&lt;/li&gt;
+  &lt;li&gt;SORNNode&lt;/li&gt;
+  &lt;li&gt;SOMPNode&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Specialized nodes represent a (part of a) specific ML model. Their ports must be specifically labeled corresponding to the expected flow of information. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nnn&lt;/code&gt; includes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nnn.nodes.specialized.bert&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nnn.nodes.specialized.gpt3&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nnn.nodes.specialized.vit&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nnn.nodes.specialized.wavenet&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nnn.nodes.specialized.xlm&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nnn.nodes.specialized.triple_graph&lt;/code&gt; can be initialized empty or with DBPedia, Wikidata, other queryable knowledge graphs.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nnn.nodes.specialized.gym_env&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nnn.nodes.specialized.gym_env&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From a developer perspective, the NNN features:&lt;/p&gt;
+&lt;ul&gt;
   &lt;li&gt;parametrized interface (API default, but can be overriden by obs/action spec)&lt;/li&gt;
-  &lt;li&gt;integrate with Salina&lt;/li&gt;
-  &lt;li&gt;Single architecture implements&lt;/li&gt;
-  &lt;li&gt;multienvironment&lt;/li&gt;
+  &lt;li&gt;iterative update architecture; integrates with Salina&lt;/li&gt;
+  &lt;li&gt;multimodal and multienvironment learning&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">The challenge is fusing them all togethor: We already have reasonably well performing modality-specific architectures (VGG, BERT, WaveNet), but no general vision, language, audio architecture. We have foundation models (gpt3, ViT), but where are the foundation policies? What’s the most efficient way to shuttle information from dataset to model?</summary></entry><entry><title type="html">MNIST Classifier Tutorial</title><link href="/blog/mnist-classifier-tutorial/" rel="alternate" type="text/html" title="MNIST Classifier Tutorial" /><published>2021-10-14T00:00:00-05:00</published><updated>2021-10-14T00:00:00-05:00</updated><id>/blog/mnist-classifier-tutorial</id><content type="html" xml:base="/blog/mnist-classifier-tutorial/">&lt;div class=&quot;jupyter-notebook&quot; style=&quot;position: relative; width: 100%; margin: 0 auto;&quot;&gt;
   &lt;div class=&quot;jupyter-notebook-iframe-container&quot;&gt;
     &lt;iframe src=&quot;../../notebooks/MNIST_Classifier.ipynb.html&quot; style=&quot;position: absolute; top: 0; left: 0; border-style: none;&quot; width=&quot;100%&quot; height=&quot;100%&quot; onload=&quot;this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'&quot;&gt;&lt;/iframe&gt;
@@ -533,5 +598,5 @@ on-par with human intelligence over a wide range of goals.&lt;/p&gt;
 
 &lt;ol class=&quot;bibliography&quot;&gt;&lt;/ol&gt;
 
-&lt;style&gt; .pdf-embed-wrap-3e03e1d4-cfbd-4f67-9128-0d21b2abf5ba { display:flex; flex-direction: column; width: 100%; height: 650px; } .pdf-embed-container-3e03e1d4-cfbd-4f67-9128-0d21b2abf5ba { height: 100%; } .pdf-link-3e03e1d4-cfbd-4f67-9128-0d21b2abf5ba { background-color: white; text-align: center; border-style: solid; } .pdf-embed-container-3e03e1d4-cfbd-4f67-9128-0d21b2abf5ba iframe { width: 100%; height: 100%; } &lt;/style&gt;
-&lt;div class=&quot;pdf-embed-wrap-3e03e1d4-cfbd-4f67-9128-0d21b2abf5ba&quot;&gt; &lt;div class=&quot;pdf-link-3e03e1d4-cfbd-4f67-9128-0d21b2abf5ba&quot;&gt; &lt;a href=&quot;/assets/pdf/Reaching-for-the-intangible.pdf&quot; target=&quot;_blank&quot;&gt;View PDF&lt;/a&gt; &lt;/div&gt; &lt;div class=&quot;pdf-embed-container-3e03e1d4-cfbd-4f67-9128-0d21b2abf5ba&quot;&gt; &lt;iframe src=&quot;/assets/pdf/Reaching-for-the-intangible.pdf&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt; &lt;/div&gt; &lt;/div&gt;</content><author><name></name></author><summary type="html">I wrote the following comment after conversing with a researcher at the University of Texas at Arlington:</summary></entry></feed>
+&lt;style&gt; .pdf-embed-wrap-a5069934-b746-4957-9d18-18892bc2fbd5 { display:flex; flex-direction: column; width: 100%; height: 650px; } .pdf-embed-container-a5069934-b746-4957-9d18-18892bc2fbd5 { height: 100%; } .pdf-link-a5069934-b746-4957-9d18-18892bc2fbd5 { background-color: white; text-align: center; border-style: solid; } .pdf-embed-container-a5069934-b746-4957-9d18-18892bc2fbd5 iframe { width: 100%; height: 100%; } &lt;/style&gt;
+&lt;div class=&quot;pdf-embed-wrap-a5069934-b746-4957-9d18-18892bc2fbd5&quot;&gt; &lt;div class=&quot;pdf-link-a5069934-b746-4957-9d18-18892bc2fbd5&quot;&gt; &lt;a href=&quot;/assets/pdf/Reaching-for-the-intangible.pdf&quot; target=&quot;_blank&quot;&gt;View PDF&lt;/a&gt; &lt;/div&gt; &lt;div class=&quot;pdf-embed-container-a5069934-b746-4957-9d18-18892bc2fbd5&quot;&gt; &lt;iframe src=&quot;/assets/pdf/Reaching-for-the-intangible.pdf&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt; &lt;/div&gt; &lt;/div&gt;</content><author><name></name></author><summary type="html">I wrote the following comment after conversing with a researcher at the University of Texas at Arlington:</summary></entry></feed>
