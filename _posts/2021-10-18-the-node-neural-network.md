@@ -36,13 +36,52 @@ Specialized nodes represent a (part of a) specific ML model. Their ports must be
 - `nnn.nodes.specialized.wavenet`
 - `nnn.nodes.specialized.xlm`
 - `nnn.nodes.specialized.triple_graph` can be initialized empty or with DBPedia, Wikidata, other queryable knowledge graphs.
-- `nnn.nodes.specialized.gym_env`
-- `nnn.nodes.specialized.gym_env`
+- `nnn.nodes.specialized.gym_interface` provides a *source* of energy via reward. Also the standard input and output
+- `nnn.nodes.specialized.dataset_interface`
+- `nnn.nodes.specialized.video`
+- `nnn.nodes.specialized.audio`
+- `nnn.nodes.specialized.webcam`
 - ...
 
-From a developer perspective, the NNN features:
-- parametrized interface (API default, but can be overriden by obs/action spec)
-- iterative update architecture; integrates with Salina
-- multimodal and multienvironment learning
+From the developer perspective, it should be easy to do things like
+```python
+nnn = NNN(interface=dict(obs=env.obs_spec, act=env.action_spec))
+# itegrate with common RL loops
+traj = executor.run(nnn, env)
+trainier.train(nnn, env, traj)
 
+# itergrate with ML pipelines
+nnn = NNN(example=ds[0])
+nnn.fit(ds, epochs=10)
+nnn.evaluate(ds)
 
+# make cool NNN's quickly
+nnn = NNN(nodes=dict(
+    bert=nnn.nodes.specialized.bert,
+    gpt3=nnn.nodes.specialized.gpt3,
+    reward=nnn.nodes.specialized.gym_interface(myenv),
+    webcam=nnn.nodes.specialized.webcam,
+    somp0=nnn.nodes.common.somp.SOMP(),
+    somp1=nnn.nodes.common.somp.SOMP(),
+    somp2=nnn.nodes.common.somp.SOMP(),
+    somp3=nnn.nodes.common.somp.SOMP(),
+    compute_energy=nnn.nodes.common.compute_energy.ComputeEnergyEstimator(),
+    ), connections=[
+        ('gpt3:input', 'somp1:input'),
+        ...
+    ], grow=True)
+
+state = nnn.reset()
+for _ in range(10):
+    state = nnn.step(state)
+    NNN.visualize_state(state)
+
+# add a new modality to the NNN
+nnn.add_node(nnn.nodes.specialized.audio.Audio(), 'audio')
+
+nnn.save('my_nnn.pkl')
+nnn.show_graph()
+nnn.save_model('my_model.savedmodel')  # may not allow for future growth. Just a compiled single iteration cell.
+
+nnn = NNN.load('my_nnn.pkl')
+```

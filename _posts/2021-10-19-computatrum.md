@@ -64,7 +64,7 @@ Recieves signals from the controller:
 - `audio:to_computer`: Audio to stream to a virtual microphone
 
 UDP port numbers for reward and text can be changed during execution if computatatrum should not share the same communication channel or reward. Here's a diagram showing the overall signal propagation architecture:
-{% mermaid %}
+{% mermaid %} TODO
 graph TD;
 node  [label="computatrum-py environment"];
     (webcam)-modality:name->computatrum-py;
