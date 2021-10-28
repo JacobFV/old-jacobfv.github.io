@@ -172,3 +172,9 @@ Common agents
 - share a sparse representation language where 0 is equivalent to `None`
 - share a common dataflow interpretation for `bottom`, `side`, and `top` (not all agents use all these variables)
 - namescope their variables and only operate on other name-scoped variables
+
+The executor also passes itself into the call function for agents that are common agents. The common agent can then look at All of the agents in the executors agent pool to see if it wants to form parent-child connections. The agent makes parent child connections by calling the dot at parent function on its child and calling the dot add child function on itself
+
+You have the search for your own parents and children
+parentname:top > selfname:side? > selfname:top 
+childname:bottomgrad:selfname > self:bottomgrad:parentname

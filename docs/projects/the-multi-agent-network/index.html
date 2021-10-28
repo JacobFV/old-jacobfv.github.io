@@ -358,6 +358,12 @@ Learning can also be coordinated by variables with a <code class="language-plain
   <li>namescope their variables and only operate on other name-scoped variables</li>
 </ul>
 
+<p>The executor also passes itself into the call function for agents that are common agents. The common agent can then look at All of the agents in the executors agent pool to see if it wants to form parent-child connections. The agent makes parent child connections by calling the dot at parent function on its child and calling the dot add child function on itself</p>
+
+<p>You have the search for your own parents and children
+parentname:top &gt; selfname:side? &gt; selfname:top 
+childname:bottomgrad:selfname &gt; self:bottomgrad:parentname</p>
+
   </article>
 
 </div>
