@@ -6,7 +6,6 @@ img:
 importance: 2
 category: personal
 
-redirect: /blog/2021/02/01/the-multi-agent-network
 sort_order: 300
 
 work_date: Oct - Nov 2021
@@ -154,3 +153,22 @@ A Multi Agent Network `MAN` includes
 - any number of other agents in `self.agents`: such as internal datasets, replay buffers, state estimators, triple graph query agents, etc.
 
 `CommonAgent`'s
+
+## New Attempt
+
+The Multi Agent Network (MAN) extends salina with an **executor** and **common agents**.
+
+An executor
+- contains a workspace and agents
+- helps you schedule updates on particular subsets of agents
+    - indefinitely
+    - alternating periodic
+    - update condition for each agent
+- provides a feedforeward wrapper to update the workspace variable for the current timestep
+
+Common agents
+- keep track of, connect, and prune their lateral neighbors, parents, and children
+- reproduce, train, and die
+- share a sparse representation language where 0 is equivalent to `None`
+- share a common dataflow interpretation for `bottom`, `side`, and `top` (not all agents use all these variables)
+- namescope their variables and only operate on other name-scoped variables

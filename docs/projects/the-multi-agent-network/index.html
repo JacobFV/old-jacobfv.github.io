@@ -332,6 +332,32 @@ Learning can also be coordinated by variables with a <code class="language-plain
 
 <p><code class="language-plaintext highlighter-rouge">CommonAgent</code>’s</p>
 
+<h2 id="new-attempt-1">New Attempt</h2>
+
+<p>The Multi Agent Network (MAN) extends salina with an <strong>executor</strong> and <strong>common agents</strong>.</p>
+
+<p>An executor</p>
+<ul>
+  <li>contains a workspace and agents</li>
+  <li>helps you schedule updates on particular subsets of agents
+    <ul>
+      <li>indefinitely</li>
+      <li>alternating periodic</li>
+      <li>update condition for each agent</li>
+    </ul>
+  </li>
+  <li>provides a feedforeward wrapper to update the workspace variable for the current timestep</li>
+</ul>
+
+<p>Common agents</p>
+<ul>
+  <li>keep track of, connect, and prune their lateral neighbors, parents, and children</li>
+  <li>reproduce, train, and die</li>
+  <li>share a sparse representation language where 0 is equivalent to <code class="language-plaintext highlighter-rouge">None</code></li>
+  <li>share a common dataflow interpretation for <code class="language-plaintext highlighter-rouge">bottom</code>, <code class="language-plaintext highlighter-rouge">side</code>, and <code class="language-plaintext highlighter-rouge">top</code> (not all agents use all these variables)</li>
+  <li>namescope their variables and only operate on other name-scoped variables</li>
+</ul>
+
   </article>
 
 </div>
