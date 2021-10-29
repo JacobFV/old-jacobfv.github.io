@@ -24,7 +24,9 @@ This motivates developing systems that genuinely propagate feedback from ‘end-
 
 ## Design
 
-A computatrum is a family of multiagent network architectures which consist of
+A computatrum is a family of multiagent network ([MAN](/projects/the-multi-agent-network)) architectures which consist of
 - a substrate agent which provides a representation of the state of the environment OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events. 
 - one or more computer interation agents for each computer that the computatrum has control over. Computer interaction agents provide computer screen capture video, computer sound capture audio, audio and video stream to a virtual webcam on the computer, keyboard control, mouse control, and a representation of the state of the environment OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events. 
 - Zookeeper interface agent: allows any zookeeper client to connect and interact via text, audio, video, reward, and multimodal conversation. **NOTE**: The Zookeeper server is also able to peer into each of the computatrum's child machine environments and recieve and control all the information that the computatrum does (keystrokes/mouse/audio/video/etc).
+
+**Training:** Computatra (pl of Computatrum) train by intrinsic and extrinsic objectives. I plan to collect dozens of unsupervised/intrinsically motivated reinforcement learning algorithms and train them online. I also plan to use programming tasks with performance normalized by the compute cost as a benchmark to administer reward.
