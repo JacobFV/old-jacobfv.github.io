@@ -5,6 +5,8 @@ date:   2021-10-10
 description: A highly general dataset-env
 ---
 
+**Update: the Artificial Experience is under work at [https://github.com/JacobFV/artificial-experience](https://github.com/JacobFV/artificial-experience)**
+
 Our implicit objective in the hypothetical artificial general intelligence is to identify as many dimensions of variation to the underlying data structures that real Intelligence operates on and iterate development around that data. For datasets includes:
 - domain: natural language, vision, audio, robot, etc.
 - data structure: structured, text, image, video, audio, graph, etc., multimodal
