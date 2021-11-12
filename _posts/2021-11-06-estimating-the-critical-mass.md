@@ -3,6 +3,7 @@ layout: post
 title:  Estimating the Critical Mass
 date:   2021-11-6
 description: How close are we to matching the computational metrics of the brain?
+hidden: true
 ---
 
 I'm sure somebody has made these kinds of analyses in much greator detail, but I wanted to get a sense of the computational limits that we are presently at. Many of the numbers are pulled out of the internet without serious effort; others are (explicitly) made-up.
