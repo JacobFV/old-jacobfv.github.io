@@ -7,6 +7,7 @@ importance: 2
 category: personal
 
 sort_order: 300
+redirect: https://github.com/Limboid/ainimal-zookeeper
 
 work_date: Oct - Nov 2021
 bullet_points: >

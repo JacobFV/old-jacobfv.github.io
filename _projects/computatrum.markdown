@@ -13,6 +13,8 @@ bullet_points: >
     <ul>
         <li> Teachable yet autonomous open-ended computer interaction agents </li>
     </ul>
+
+redirect: https://github.com/Limboid/computatrum
 ---
 
 
