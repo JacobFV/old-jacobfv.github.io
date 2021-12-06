@@ -1,10 +1,10 @@
 ---
 layout: page
 title: jnumpy
-description: A deep learning extension for numpy
+description: Another autograd / deep learning / reinforcement learning extension for numpy
 img:
 importance: 3
-category: personal
+category: school
 redirect: https://github.com/JacobFV/jnumpy
 
 sort_order: 46
