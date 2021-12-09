@@ -15,25 +15,37 @@ TODO: list all my ideas here. citations are allowed, but focus on getting ideas 
 
 - Synthesis integrates bottom up signals into composite models. Layer units activate if both a top-down model predicts their activation and a bottom-up signal initiates it. Top-down models compete to 'explain' a signal and sharpen their precision (cognitive niche) when correctly explained. They gradually loosen their precision if they cannot explain a bottom up signal field. If no sharp models explain a bottom up signal, then imprecise general models become competitive. I think model-signal similarity should be measured by $KL[p_{bu} || \tau_{td}]$ which heavily taxes precise models that get selected when they predict low probabilities but true signals have high probabilities. Only the winning model gets optimized by the signal. Loosing models increase their variances.[^2]
 
-- The Gaussian may only represent a small amount of data distributions, but deviations from an estimated and actual distribution are always Gaussian. Also variances. I'm not sure about higher0order moments.
+- Heterachical competition requires computing 'explanatum' (the model's predictive accuracy for an input signal normalized over all higher nodes offering predictions) for each unit-model connection. Since explanatum is softmaxed, it may be rolling-averaged as a nice coefficient $a \in [0, 1)$ to inform model optimization and growth.
+
+- Real neurons don't reproduce (they're simply in abundance and specialize), but the architecture I am describing should only be as complex as necessary. Therefore, models (units with efferent td connections) should binary fizz when their explanatum score $a$ is high. Children can share identical parameters and connectivity since random noise should quickly break their symmetry.
+
+- The Gaussian may only represent a small amount of data distributions, but deviations from an estimated and actual distribution are always Gaussian. Also variances. I'm not sure about higher-order moments.
 
 - Dynamic precision training: start training at 32bit, shrink to 1bit for most pre-training, fine-tune back at 32bit. With 1bit networks at criticality, the network gets the maximum computational power out of its physical substrate, and critical dynamics should translate these gains into learnable logical flexibility. Maybe just stay at 1bit.
 
 - If using 1bit representations, maybe have each unit transmit a vector at a time.
 
+- Biological synaptic distribution is exponentially bimodal. I should recognize this by federating the weights into a few large neurons and many small connectivity neurons. This may reduce to sparse scattered (global connectivity) and fixed conv (local connectivity) layers.
+
 - Sparse connectivity is essential, but some local dense connectivity may complement it.
+
+- Maybe initialize the network with subgraphs taken from liquid state machines or from connectome research.
+
+- Look beyond the computational realization of memory-compute. Maybe neurons exist in a geometric-structured field instead of being entries in an euclidean structured tensor? This allows for dynamically moving neurons, adding neurons, and deleting neurons.
 
 - Look beyond statics to focus on system dynamics. Forget feedforward solutions.
 
-- Integration -- which is not directly solvable like differentiation -- represents tremendous complexity reduction. Try to integrate this behavior into the system dynamics perhaps with a differentiable form of Risch's algorithm.
+- Integration -- which is not directly solvable like differentiation -- represents tremendous complexity reduction. Try to integrate this behavior into the system dynamics perhaps with a differentiable form of Risch's algorithm or taking advantage of Fourier or Laplace transforms (with inverses)
 
 - Use the log-form of geometric mean to allow networks to selectively multiply or add incoming weights.
 
-- Regularize synchronization and low entropy into the dynamics to favor system-II-type distributed trajectory emergence.
+- Regularize synchronization and low entropy into the dynamics to favor system-II-type distributed trajectory emergence. Is their a way to estimate entropy empirically? For known distributions, yes (eg.: assume signals represent actual-expected input. THen they are normal with known confidence intervals.)
 
 - Design the system to generate minimal activity at each realization level: minimal distributed trajectories, minimal activations, minimal structural connections.
 
 - Prediction and reward maximization may supply the bulk of training information. However include maybe 10% data from more structured forms like task-specific probes and decoders as well as intrinsic behavioral objective satisfaction.
+
+- To take advantage of existing pretrained models, other architectures, and for research and development convenience, make the above SOMPNet layer able to interface with other SOMPNet layers, DL layers in general, and python functions in a pythonic interface as if they were directly expressed in math.
 
 At the implementation-end, machine learning research has acquired a diverse array of tools and techniques which represent orders-of-magnitude learning efficiency gains over independent effort. Ever striving to maximize the efficiency with which meaningful information can be infused into a system recommends riding on the energy-momentum of hundreds of thousands of researchers (and zillions of servers). I.E.: incorporating permutations of as many ML research outcomes as possible: codebases, pretrained models, individual weights, architectures, training paradigms, existing datasets, and environments all guided by machine and human intuition. Here are some notable ones:
 

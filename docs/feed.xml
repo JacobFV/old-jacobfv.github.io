@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-12-08T00:32:41-06:00</updated><id>/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal R&amp;D portfolio site
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-12-09T08:28:43-06:00</updated><id>/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal R&amp;D portfolio site
 </subtitle><entry><title type="html">Design Patterns for AI</title><link href="/blog/design-patterns-for-ai/" rel="alternate" type="text/html" title="Design Patterns for AI" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>/blog/design-patterns-for-ai</id><content type="html" xml:base="/blog/design-patterns-for-ai/">&lt;p&gt;Engineering generally starts off with a few high-level abstract ambitions that are refined and translated with increasing clarity into physical realizations. In software engineering, the outputs of this process are unambiguous executable statements. Of course, the whole process is iterative with loops of increasing frequency over the project lifespan and tools automating this optimization (compiler chains, code optimization, high-level languages) operating at progressively higher-levels further reducing the idea to implementation transit time. When neural networks are the focus of software engineering, translation from informal to unambiguous specification is almost immediate (given sufficient understanding of programming, math, deep learning, and thermodynamics) and the brunt of effort shifts (as it rightly should) to actually testing deep learning hypotheses. In the problem space of ‘human-level’ or ‘general’ intelligence, this demands attempting to consolidate as many ideas in neuroscience, cognitive psychology, and artificial intelligence as possible into a working system implementation. While this consolidation appears deceptively simple in literature, the constituent ideas are often lost in implementation&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Therefore, I explicitly list several &lt;strong&gt;unverified hypotheses&lt;/strong&gt; below to help explicitly keep in mind desired cognitive dynamics of increasingly general intelligence.&lt;/p&gt;
 
 &lt;p&gt;TODO: list all my ideas here. citations are allowed, but focus on getting ideas out.&lt;/p&gt;
@@ -22,7 +22,13 @@
     &lt;/table&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;The Gaussian may only represent a small amount of data distributions, but deviations from an estimated and actual distribution are always Gaussian. Also variances. I’m not sure about higher0order moments.&lt;/p&gt;
+    &lt;p&gt;Heterachical competition requires computing ‘explanatum’ (the model’s predictive accuracy for an input signal normalized over all higher nodes offering predictions) for each unit-model connection. Since explanatum is softmaxed, it may be rolling-averaged as a nice coefficient $a \in [0, 1)$ to inform model optimization and growth.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Real neurons don’t reproduce (they’re simply in abundance and specialize), but the architecture I am describing should only be as complex as necessary. Therefore, models (units with efferent td connections) should binary fizz when their explanatum score $a$ is high. Children can share identical parameters and connectivity since random noise should quickly break their symmetry.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Gaussian may only represent a small amount of data distributions, but deviations from an estimated and actual distribution are always Gaussian. Also variances. I’m not sure about higher-order moments.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Dynamic precision training: start training at 32bit, shrink to 1bit for most pre-training, fine-tune back at 32bit. With 1bit networks at criticality, the network gets the maximum computational power out of its physical substrate, and critical dynamics should translate these gains into learnable logical flexibility. Maybe just stay at 1bit.&lt;/p&gt;
@@ -31,24 +37,36 @@
     &lt;p&gt;If using 1bit representations, maybe have each unit transmit a vector at a time.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
+    &lt;p&gt;Biological synaptic distribution is exponentially bimodal. I should recognize this by federating the weights into a few large neurons and many small connectivity neurons. This may reduce to sparse scattered (global connectivity) and fixed conv (local connectivity) layers.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;p&gt;Sparse connectivity is essential, but some local dense connectivity may complement it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Maybe initialize the network with subgraphs taken from liquid state machines or from connectome research.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Look beyond the computational realization of memory-compute. Maybe neurons exist in a geometric-structured field instead of being entries in an euclidean structured tensor? This allows for dynamically moving neurons, adding neurons, and deleting neurons.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Look beyond statics to focus on system dynamics. Forget feedforward solutions.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Integration – which is not directly solvable like differentiation – represents tremendous complexity reduction. Try to integrate this behavior into the system dynamics perhaps with a differentiable form of Risch’s algorithm.&lt;/p&gt;
+    &lt;p&gt;Integration – which is not directly solvable like differentiation – represents tremendous complexity reduction. Try to integrate this behavior into the system dynamics perhaps with a differentiable form of Risch’s algorithm or taking advantage of Fourier or Laplace transforms (with inverses)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Use the log-form of geometric mean to allow networks to selectively multiply or add incoming weights.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Regularize synchronization and low entropy into the dynamics to favor system-II-type distributed trajectory emergence.&lt;/p&gt;
+    &lt;p&gt;Regularize synchronization and low entropy into the dynamics to favor system-II-type distributed trajectory emergence. Is their a way to estimate entropy empirically? For known distributions, yes (eg.: assume signals represent actual-expected input. THen they are normal with known confidence intervals.)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Design the system to generate minimal activity at each realization level: minimal distributed trajectories, minimal activations, minimal structural connections.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Prediction and reward maximization may supply the bulk of training information. However include maybe 10% data from more structured forms like task-specific probes and decoders as well as intrinsic behavioral objective satisfaction.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Prediction and reward maximization may supply the bulk of training information. However include maybe 10% data from more structured forms like task-specific probes and decoders as well as intrinsic behavioral objective satisfaction.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To take advantage of existing pretrained models, other architectures, and for research and development convenience, make the above SOMPNet layer able to interface with other SOMPNet layers, DL layers in general, and python functions in a pythonic interface as if they were directly expressed in math.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;At the implementation-end, machine learning research has acquired a diverse array of tools and techniques which represent orders-of-magnitude learning efficiency gains over independent effort. Ever striving to maximize the efficiency with which meaningful information can be infused into a system recommends riding on the energy-momentum of hundreds of thousands of researchers (and zillions of servers). I.E.: incorporating permutations of as many ML research outcomes as possible: codebases, pretrained models, individual weights, architectures, training paradigms, existing datasets, and environments all guided by machine and human intuition. Here are some notable ones:&lt;/p&gt;
