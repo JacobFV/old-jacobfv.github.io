@@ -25,8 +25,7 @@ description: Some notes on recent research.
 
 [Pruning neural networks without any data by iteratively conserving synaptic flow](https://proceedings.neurips.cc/paper/2020/file/46a4378f835dc8040c8057beb6a2da52-Paper.pdf)
 
-> Recent works have identified, through an expensive sequence of training
-> and pruning cycles, the existence of winning lottery tickets or sparse trainable subnetworks at initialization. This raises a foundational question: can we identify highly sparse trainable subnetworks at initialization, without ever training, or indeed without ever looking at the data? We provide an affirmative answer to this question through theory driven algorithm design
+> Recent works have identified, through an expensive sequence of training and pruning cycles, the existence of winning lottery tickets or sparse trainable subnetworks at initialization. This raises a foundational question: can we identify highly sparse trainable subnetworks at initialization, without ever training, or indeed without ever looking at the data? We provide an affirmative answer to this question through theory driven algorithm design
 
 [Parameter Prediction for Unseen Deep Architectures](https://research.fb.com/wp-content/uploads/2021/11/Parameter-Prediction-for-Unseen-Deep-Architectures.pdf)
 
