@@ -2,15 +2,15 @@
 layout: about
 title: Home
 permalink: /
-description: 
+description:
 
 profile:
   align: right
   image: prof_pic.jpg
 
-news: false  # includes a list of news items
+news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 Hello! I’m a machine learning researcher with experience in architecture design, implementation, and testing using numpy, tensorflow, and pytorch. I am currently researching and developing the illusion vaguely identified by the terms: "human-level AI", "artificial general intelligence", "superintelligence", ... When I'm not interacting with artificial intelligences, you'll find me speaking to real people. I hope that includes you!
@@ -18,11 +18,13 @@ Hello! I’m a machine learning researcher with experience in architecture desig
 ## Education
 
 #### **The University of Texas at Arlington**<br>
+
 B.S. Computer Science<br>
 Enrolled: June 2020 – Present<br>
 GPA 3.7/4.0; graduate Aug 2022<br>
 
 #### **Navarro College**<br>
+
 A.A.S. in Mathematics<br>
 Enrolled: Sept 2014 – May 2018<br>
 GPA 3.9/4.0; 85 hours taken<br>
@@ -30,24 +32,31 @@ GPA 3.9/4.0; 85 hours taken<br>
 ## Employment
 
 #### **ITLab** Developer<br>
+
 June 2021 – Present, Remote<br>
+
 - Collaborate with research group to develop and operate statistical
-visualization tool CoWiz
+  visualization tool CoWiz and MLN-Dashboard
 
 #### **UTA Social Work** Developer<br>
+
 June 2021 – Present, Remote<br>
+
 - Maintain and enhance information system for social work research
 
 #### **McDonald's** Crew Trainer<br>
+
 May 2016 – Mar 2020, Midlothian TX<br>
+
 - Led safety committee and addressed employees during 30-minute monthly
-safety meetings
+  safety meetings
 - Trained employees on-the-job and formally
 - In addition to 4 years of formal Spanish education, actively used Spanish on-the-job
 
 ## Projects
 
 {% for project in site.projects %}
+
   <div>
     <h4>
       {% if project.redirect %}
@@ -86,5 +95,6 @@ safety meetings
 ## Teaching
 
 #### [**Artificial Intelligence: Principle and Practice**](https://jacobfv.github.io/Artificial-Intelligence-Principle-and-Practice/)<br>
+
 - Independantly organized 8-day workshop on cutting-edge of artificial intelligence theory and technique
 - Planned for October 2021
