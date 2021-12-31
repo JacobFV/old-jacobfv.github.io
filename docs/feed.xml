@@ -1,13 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-12-23T17:42:18-06:00</updated><id>/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal R&amp;D portfolio site
-</subtitle><entry><title type="html">Ergonomic Optimization</title><link href="/blog/ergonomic-optimization/" rel="alternate" type="text/html" title="Ergonomic Optimization" /><published>2021-12-23T00:00:00-06:00</published><updated>2021-12-23T00:00:00-06:00</updated><id>/blog/ergonomic-optimization</id><content type="html" xml:base="/blog/ergonomic-optimization/">&lt;p&gt;I don’t find it easy to remain productive when I’m working at the computer (not to suggest that I am generally productive anyway). I’ve unintentionally conditioned myself that whenever I sit down at the computer, I need to browse the latest papers / popular repositories / system settings / etc. but not actually do the work I came to do. I’m thankful that I’m not overwhelmed with things to do anyway, but I think I could be much more productive than I currently am. I’m going to try applying the following steps for the next 8 months to increase my productivity:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-12-31T10:20:37-06:00</updated><id>/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal portfolio site
+</subtitle><entry><title type="html">Ergonomic Optimization</title><link href="/blog/ergonomic-optimization/" rel="alternate" type="text/html" title="Ergonomic Optimization" /><published>2021-12-31T00:00:00-06:00</published><updated>2021-12-31T00:00:00-06:00</updated><id>/blog/ergonomic-optimization</id><content type="html" xml:base="/blog/ergonomic-optimization/">&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Establish a routine&lt;/strong&gt;: On Saturdays, Sundays, Mondays, and Wednesdays, I will work from 2pm to 5pm and possibly also 8am to 10am and 8pm-10pm. On Tuesdays and Thursdays, I will work from 9am to 1pm and maybe later in the evening. Each day, I will also have a consistent eating, sleeping, relaxing, reading, writing, and exercise routine. I might follow this routine when I don’t want to because I recognize the benefits of being in formal control. This routine should work regardless of whether school is currently on break or not.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Write down my plans and &lt;em&gt;follow them&lt;/em&gt;&lt;/strong&gt;: If I need to make a change, this should also be written before making the change. I will plan for each day in the morning and perhaps also make high level plans occasionally. Each project will have a separate planning page in my notebook. I must follow my written plans even when I don’t want to do them because then I will better be able to combat distractions.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Proactively fight temptations that rob me of productivity&lt;/strong&gt;: I love walking outdoors, running, eating, reading new papers on arxiv. None of those activities are wrong, but out of balance, they pose a challenge to productivity. I must recognize, avoid, and fight the stressors and situations that make me want to overeat, walk for hours, check the ai news, etc.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;I don’t find it easy to remain productive when I’m working at the computer (not to suggest that I am generally productive anyway). I’ve unintentionally conditioned myself that whenever I sit down at the computer, I need to browse the latest papers / popular repositories / system settings / etc. but not actually do the work I came to do. I’m thankful that I’m not overwhelmed with things to do anyway, but I think I could be much more productive than I currently am.&lt;/p&gt;
 
-&lt;p&gt;I find it hard to do things that I don’t want to do, but I know I can do them. I am going to stay focused on developing the Computatrum and the Limboid, and if I can do that, I hope to have some physical accomplishments by the time I graduate, and if not, at least I will have exercised my brain to better take on the next challenge.&lt;/p&gt;</content><author><name></name></author><summary type="html">I don’t find it easy to remain productive when I’m working at the computer (not to suggest that I am generally productive anyway). I’ve unintentionally conditioned myself that whenever I sit down at the computer, I need to browse the latest papers / popular repositories / system settings / etc. but not actually do the work I came to do. I’m thankful that I’m not overwhelmed with things to do anyway, but I think I could be much more productive than I currently am. I’m going to try applying the following steps for the next 8 months to increase my productivity:</summary></entry><entry><title type="html">Teaching Computers to Use Computers</title><link href="/blog/teaching-computers-to-use-computers/" rel="alternate" type="text/html" title="Teaching Computers to Use Computers" /><published>2021-12-10T00:00:00-06:00</published><updated>2021-12-10T00:00:00-06:00</updated><id>/blog/teaching-computers-to-use-computers</id><content type="html" xml:base="/blog/teaching-computers-to-use-computers/">&lt;div class=&quot;jupyter-notebook&quot; style=&quot;position: relative; width: 100%; margin: 0 auto;&quot;&gt;
+&lt;h2 id=&quot;what-i-tried&quot;&gt;What I tried&lt;/h2&gt;
+
+&lt;p&gt;I started by recognizing that I needed to change some of my personality traits, routines, and motivations. I started spending more time alone thinking out loud about the things I need to do. This evolved into a journal where I record my thoughts on problems, emotions, and ideas and then reflect on them later. I started using these habits and techniques to think explicitly about how I can continue changing my personality. I made a “Habits” document where I record habits I need to create, stop, and specific techniques that help me change.&lt;/p&gt;
+
+&lt;div class=&quot;row justify-content-sm-center&quot;&gt;
+    &lt;div class=&quot;col-sm-6 mt-3 mt-md-0&quot;&gt;
+        &lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/img/Journal-12.png&quot; alt=&quot;&quot; title=&quot;planning the next months&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-6 mt-3 mt-md-0&quot;&gt;
+        &lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/img/Journal-22.png&quot; alt=&quot;&quot; title=&quot;reviewing what I learned&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The latest extension to my externalized cognitive toolkit is a “Tasks” document. I divide tasks into four categories:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Game plan: scheduled tasks with details&lt;/li&gt;
+  &lt;li&gt;Long range: goals to keep focused on in the long range&lt;/li&gt;
+  &lt;li&gt;Unscheduled: tasks that are not scheduled yet but should be handled&lt;/li&gt;
+  &lt;li&gt;Optional: I don’t want to forget these task entirely, but nothing bad happens if I don’t do them&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If I don’t finish everything on the plate for today, I simply move it over to the next day and work on that at the first chance. However, I generally work to be realistic – but not too conservative – with my demands.&lt;/p&gt;
+
+&lt;div class=&quot;row justify-content-sm-center&quot;&gt;
+    &lt;div class=&quot;col-sm-6 mt-3 mt-md-0&quot;&gt;
+        &lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/img/Tasks-1.png&quot; alt=&quot;&quot; title=&quot;My task list&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-6 mt-3 mt-md-0&quot;&gt;
+        &lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/img/Routines-2.png&quot; alt=&quot;&quot; title=&quot;Routines I need to kill&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;outcomes&quot;&gt;Outcomes&lt;/h2&gt;
+
+&lt;p&gt;30 days into this routine, I definitely see positive results. Making a habit of thinking about the things I need to do has helped me to be more productive while avoiding the need to constantly worry ‘did I do this or that?’. Anytime a to do pops in my head, all I have to do is write it down and then I can free my brain to focus on the context I’m currently in.&lt;/p&gt;
+
+&lt;p&gt;Taking time to think out loud and using a gratitude journal has seriously helped me increase control over my emotions which in turn has helped me to be more productive. Journaling has helped me to be more aware of my emotions and to ask myself questions like “what do I feel like doing?” vs. “what should I be doing?”. I really feel like this has helped me be more in control of my decisions.&lt;/p&gt;
+
+&lt;p&gt;Writing my thoughts down and revisiting them later helps me think about them more objectively. I see that I forget so easy without a written memory aid. Things that stressed me out never really mattered anyway. Many of the things that I thought were impossible to do now appear easy or otherwise more manageable. It seems that I have a lot more control of my life than I thought I did. I understand better why people say, “life is like a box of chocolates”; it’s full of color, emotions, thoughts, activities, accomplishments, and surprises!&lt;/p&gt;
+
+&lt;h2 id=&quot;going-forward&quot;&gt;Going forward&lt;/h2&gt;
+
+&lt;p&gt;A few days ago, I read through all these cognitive tools, and I was amazed at how they have improved my productivity. Obviously, I’m going to continue using them. However, I don’t want to stop here. Like a manufacturing toolchain that continually gets upgraded, I will continue refining my productivity habits and techniques and I will also start making regular reviews of my journal to avoid repeating any mistakes I’ve made. I may even start a “Mistakes” document to record specific cases to watch out for. I will also start quantifying objectives and subjectives like tasks completed per day, tasks completed / tasks attempted per day, relative emotion positivity and negativity, big breakthroughs per week, etc.&lt;/p&gt;
+
+&lt;p&gt;I’m definitely not perfect, but I’m going to use every tool I have to optimize my habits, personality, productivity, and self. I hope sharing this reflection will help others on their personal journey as well.&lt;/p&gt;</content><author><name></name></author><summary type="html">The Problem</summary></entry><entry><title type="html">Teaching Computers to Use Computers</title><link href="/blog/teaching-computers-to-use-computers/" rel="alternate" type="text/html" title="Teaching Computers to Use Computers" /><published>2021-12-10T00:00:00-06:00</published><updated>2021-12-10T00:00:00-06:00</updated><id>/blog/teaching-computers-to-use-computers</id><content type="html" xml:base="/blog/teaching-computers-to-use-computers/">&lt;div class=&quot;jupyter-notebook&quot; style=&quot;position: relative; width: 100%; margin: 0 auto;&quot;&gt;
   &lt;div class=&quot;jupyter-notebook-iframe-container&quot;&gt;
     &lt;iframe src=&quot;../../notebooks/general-computer-interaction-language-alignment.ipynb.html&quot; style=&quot;position: absolute; top: 0; left: 0; border-style: none;&quot; width=&quot;100%&quot; height=&quot;100%&quot; onload=&quot;this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + 'px'&quot;&gt;&lt;/iframe&gt;
   &lt;/div&gt;

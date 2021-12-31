@@ -13,6 +13,16 @@ I don't find it easy to remain productive when I'm working at the computer (not 
 
 I started by recognizing that I needed to change some of my personality traits, routines, and motivations. I started spending more time alone thinking out loud about the things I need to do. This evolved into a journal where I record my thoughts on problems, emotions, and ideas and then reflect on them later. I started using these habits and techniques to think explicitly about how I can continue changing my personality. I made a "Habits" document where I record habits I need to create, stop, and specific techniques that help me change.
 
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Journal-12.png' | relative_url }}" alt="" title="planning the next months"/>
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Journal-22.png' | relative_url }}" alt="" title="reviewing what I learned"/>
+    </div>
+</div>
+<br>
+
 The latest extension to my externalized cognitive toolkit is a "Tasks" document. I divide tasks into four categories:
 
 - Game plan: scheduled tasks with details
@@ -21,6 +31,16 @@ The latest extension to my externalized cognitive toolkit is a "Tasks" document.
 - Optional: I don’t want to forget these task entirely, but nothing bad happens if I don’t do them
 
 If I don't finish everything on the plate for today, I simply move it over to the next day and work on that at the first chance. However, I generally work to be realistic -- but not too conservative -- with my demands.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Tasks-1.png' | relative_url }}" alt="" title="My task list"/>
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/Routines-2.png' | relative_url }}" alt="" title="Routines I need to kill"/>
+    </div>
+</div>
+<br>
 
 ## Outcomes
 
