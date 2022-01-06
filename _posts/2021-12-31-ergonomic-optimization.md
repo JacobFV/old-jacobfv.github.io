@@ -48,7 +48,7 @@ If I don't finish everything on the plate for today, I simply move it over to th
 
 Taking time to think out loud and using a gratitude journal has seriously helped me increase control over my emotions which in turn has helped me to be more productive. Journaling has helped me to be more aware of my emotions and to ask myself questions like "what do I feel like doing?" vs. "what should I be doing?". I really feel like this has helped me be more in control of my decisions.
 
-Writing my thoughts down and revisiting them later helps me think about them more objectively. I see that I forget so easy without a written memory aid. Things that stressed me out never really mattered anyway. Many of the things that I thought were impossible to do now appear easy or otherwise more manageable. It seems that I have a lot more control of my life than I thought I did. I understand better why people say, "life is like a box of chocolates"; it's full of color, emotions, thoughts, activities, accomplishments, and surprises!
+Writing my thoughts down and revisiting them later helps me think about them more objectively. I see that I forget so easy without a written memory aid. Things that stressed me out never really mattered anyway. Many of the things that I thought were impossible to do now appear easy or otherwise more manageable. It seems that I have a lot more control of my life than I thought I did. I understand better why people say, "life is like a box of chocolates"; it's full of color, emotions, thoughts, activities, accomplishments, and surprises. YouTube doesn't compare to a productive day!
 
 ## Going forward
 
