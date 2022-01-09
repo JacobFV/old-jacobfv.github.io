@@ -12,7 +12,7 @@ date: 2022-01-01
 work_date: Feb 2019 – Present
 bullet_points: >
   <ul>
-      <li> Teachable yet autonomous open-ended computer interaction agents </li>
+      <li> Active project to develop teachable yet autonomous open-ended computer interaction agents </li>
   </ul>
 
 redirect: https://github.com/Limboid/computatrum

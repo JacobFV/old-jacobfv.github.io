@@ -11,4 +11,9 @@ sort_order: 50
 
 date: 2021-05-16
 work_date: May 2021
+
+bullet_points: >
+  <ul>
+      <li> Architected and developed library of dynamic time GNN abstractions on top of tensorflow and keras </li>
+  </ul>
 ---

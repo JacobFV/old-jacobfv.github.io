@@ -31,7 +31,7 @@ GPA 3.9/4.0; 85 hours taken
 
 ## Employment
 
-#### **ITLab** Research Assistant
+#### **ITLab** Student Research Assistant
 
 June 2021 – Present, Remote
 
@@ -39,7 +39,7 @@ June 2021 – Present, Remote
   visualization tool CoWiz
 - Currently developing a full stack web server MLN-Dashboard using Next-React-GraphQL stack
 
-#### **UTA Social Work** Developer
+#### **UTA Social Work** Student Research Assistant
 
 June 2021 – Present, Remote
 
