@@ -8,4 +8,7 @@ category: personal
 redirect: https://github.com/JacobFV/multigraph-nn
 
 sort_order: 50
+
+date: 2021-05-16
+work_date: May 2021
 ---

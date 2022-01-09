@@ -13,40 +13,41 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hello! I’m a machine learning researcher with experience in architecture design, implementation, and testing using numpy, tensorflow, and pytorch. I am currently researching and developing the illusion vaguely identified by the terms: "human-level AI", "artificial general intelligence", "superintelligence", ... When I'm not interacting with artificial intelligences, you'll find me speaking to real people. I hope that includes you!
+Hello! I’m a machine learning researcher with experience in architecture design, implementation, and testing using numpy, tensorflow, and pytorch. I am currently researching and developing the illusion vaguely identified by the terms: "human-level AI", "artificial general intelligence", "superintelligence", ... When I'm not interacting with _artificial_ intelligences, you'll find me speaking to real ones. I hope that includes you!
 
 ## Education
 
-#### **The University of Texas at Arlington**<br>
+#### **The University of Texas at Arlington**
 
 B.S. Computer Science<br>
 Enrolled: June 2020 – Present<br>
-GPA 3.7/4.0; graduate Aug 2022<br>
+GPA 3.7/4.0; graduate Aug 2022
 
-#### **Navarro College**<br>
+#### **Navarro College**
 
 A.A.S. in Mathematics<br>
 Enrolled: Sept 2014 – May 2018<br>
-GPA 3.9/4.0; 85 hours taken<br>
+GPA 3.9/4.0; 85 hours taken
 
 ## Employment
 
-#### **ITLab** Developer<br>
+#### **ITLab** Research Assistant
 
-June 2021 – Present, Remote<br>
+June 2021 – Present, Remote
 
-- Collaborate with research group to develop and operate statistical
-  visualization tool CoWiz and MLN-Dashboard
+- Collaborated with research group to evolve and test a flask-based statistical
+  visualization tool CoWiz
+- Currently developing a full stack web server MLN-Dashboard using Next-React-GraphQL stack
 
-#### **UTA Social Work** Developer<br>
+#### **UTA Social Work** Developer
 
-June 2021 – Present, Remote<br>
+June 2021 – Present, Remote
 
-- Maintain and enhance information system for social work research
+- Maintain and enhance multi-platform (iOS and Android) data collecting application MyAmble using flutter and firebase and web administrator interface
 
-#### **McDonald's** Crew Trainer<br>
+#### **McDonald's** Crew Trainer
 
-May 2016 – Mar 2020, Midlothian TX<br>
+May 2016 – Mar 2020, Midlothian TX
 
 - Led safety committee and addressed employees during 30-minute monthly
   safety meetings
@@ -55,7 +56,8 @@ May 2016 – Mar 2020, Midlothian TX<br>
 
 ## Projects
 
-{% for project in site.projects %}
+{% for project in site.projects reversed | sort: 'date' %}
+{% if project.hidden != true %}
 
   <div>
     <h4>
@@ -75,26 +77,19 @@ May 2016 – Mar 2020, Midlothian TX<br>
       {{project.bullet_points}}
     </p>
     {% else %}
-      <p>{{project.description}}</p>
+      <ul><li>{{project.description}}</li></ul>
     {% endif %}
   </div>
-
+{% endif %}
 {% endfor %}
 
 ## Certifications
 
-**Google TensorFlow Developer Certification** April 2021<br>
+**Google TensorFlow Developer Certification** April 2021
 
 **DeepLearning.AI TensorFlow Developer** Oct 2020<br>
-**Deep Learning Specialization by DeepLearning.AI** Sept 2020<br>
+**Deep Learning Specialization by DeepLearning.AI** Sept 2020
 
 **AWS Certified Developer – Associate** Mar 2019<br>
 **AWS Certified SysOps Administrator – Associate** Mar 2019<br>
-**AWS Certified Solutions Architect – Associate** Feb 2019<br>
-
-## Teaching
-
-#### [**Artificial Intelligence: Principle and Practice**](https://jacobfv.github.io/Artificial-Intelligence-Principle-and-Practice/)<br>
-
-- Independantly organized 8-day workshop on cutting-edge of artificial intelligence theory and technique
-- Planned for October 2021
+**AWS Certified Solutions Architect – Associate** Feb 2019

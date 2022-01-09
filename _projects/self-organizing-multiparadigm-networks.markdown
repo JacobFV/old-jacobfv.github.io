@@ -1,17 +1,19 @@
 ---
 layout: page
 title: SOMPNets
-description: Self Organizing Multi-Paradigm Networks. 
-img: 
+description: Self Organizing Multi-Paradigm Networks.
+img:
 importance: 2
 category: personal
 
-redirect: https://github.com/JacobFV/sompnets
+redirect: https://github.com/JacobFV/self-organizing-multi-paradigm-networks
 sort_order: 300
+hidden: true
 
-work_date: Oct 2021
+date: 2022-01-30
+work_date: Jan 2022
 bullet_points: >
-    <ul>
-        <li> Trains a self organizing neural network by a blend of Supervised, self-supervised, unsupervised, and reinforcement learning </li>
-    </ul>
+  <ul>
+      <li> Trains a self organizing neural network by a blend of Supervised, self-supervised, unsupervised, and reinforcement learning </li>
+  </ul>
 ---

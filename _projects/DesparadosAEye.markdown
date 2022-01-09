@@ -5,16 +5,16 @@ description: deep learning on the edge
 img: /assets/img/desparados_3.png
 importance: 1
 category: school
-date: Jan.-May 2021
 
 sort_order: 150
 
+date: 2021-05-08
 work_date: Jan – May 2021
 bullet_points: >
-    <ul>
-        <li> Project manager, general app developer, and ML engineer for a 5-person group developing open-ended Android chatbot </li>
-        <li> App available at <a href="https://github.com/kmosoti/DesparadosAEYE">https://github.com/kmosoti/DesparadosAEYE</a> </li>
-    </ul>
+  <ul>
+      <li> Project manager, general app developer, and ML engineer for a 5-person group developing open-ended Android chatbot </li>
+      <li> App available at <a href="https://github.com/kmosoti/DesparadosAEYE">https://github.com/kmosoti/DesparadosAEYE</a> </li>
+  </ul>
 ---
 
 <div class="row justify-content-sm-center">
@@ -28,9 +28,9 @@ bullet_points: >
 
 Designing, training, and deploying a 335-million parameter state-of-the-art neural network chatbot to ordinary Android phones is not easy. This project formally began with the goal of developing a chatbot Android application, but we wanted to do things differently. You see, most mobile chatbot applications rely on an Internet service to host the actual intelligent backend. It's relatively easy nowdays to run GPT-2 in the cloud. However, these approaches have their limitations: 1) someone has to pay for all the power, 2) you have to protect your users' data, and 3) there's a whole lot of virtual infrastructure to manage. In recent years, [TensorFlow Lite](https://www.tensorflow.org/lite) has progressively allowed deploying more advanced machine learning models to mobile devices. These observations all came togethor in a semester-long undergraduate class project where our team &mdash; Kennedy Mosoti, Chance Huddleston, Adam Khalaf, Payton Parrish, and myself &mdash; learned and worked to develop an Android chatbot application.
 
-However, this project *actually* began with the observation that fully utilizing large language models kind of requires 'getting to know' them. Let me explain what I mean: If you talk to [Blenderbot Small](https://huggingface.co/facebook/blenderbot_small-90M), you'll quickly notice that it has quite natural responses in a few domains, but ask the wrong question and you'll see it has no idea what response you're expecting. This is true of all qualitatively studied language models so far. Around this time, I learned that CSE3310 featured a semester long choose-your-own mobile app development project &mdash; the perfect oppurtunity to develop a human AI chatbot!
+However, this project _actually_ began with the observation that fully utilizing large language models kind of requires 'getting to know' them. Let me explain what I mean: If you talk to [Blenderbot Small](https://huggingface.co/facebook/blenderbot_small-90M), you'll quickly notice that it has quite natural responses in a few domains, but ask the wrong question and you'll see it has no idea what response you're expecting. This is true of all qualitatively studied language models so far. Around this time, I learned that CSE3310 featured a semester long choose-your-own mobile app development project &mdash; the perfect oppurtunity to develop a human AI chatbot!
 
-After talking with several of my classmates, I asked six of my peers if they would like to work togethor. The four I mentioned above agreed and by the weekend, we had formalized a development plan. Adam and Payton worked on the login screen and an icon for it; Chance and Kennedy developed the core application and backend data model; and I developed the conversation interface and its ML backend. 
+After talking with several of my classmates, I asked six of my peers if they would like to work togethor. The four I mentioned above agreed and by the weekend, we had formalized a development plan. Adam and Payton worked on the login screen and an icon for it; Chance and Kennedy developed the core application and backend data model; and I developed the conversation interface and its ML backend.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-4 mt-3 mt-md-0">

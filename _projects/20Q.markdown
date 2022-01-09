@@ -5,7 +5,7 @@ description: 20 Questions Android App
 img: /assets/img/20q_app_1.png
 importance: 4
 category: school
-date: June-Aug. 2021
+date: 2021-08-12
 
 sort_order: 201
 

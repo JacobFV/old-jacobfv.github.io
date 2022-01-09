@@ -8,4 +8,7 @@ category: personal
 redirect: https://github.com/JacobFV/multi-graph-former
 
 sort_order: 60
+
+date: 2020-09-02
+work_date: Sept 2020
 ---

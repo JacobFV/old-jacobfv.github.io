@@ -1,25 +1,26 @@
 ---
 layout: page
 title: Cookie Cutter CNC
-description: A failed yet informative attempt to build a 2&times;2 sheet metal cutter  
+description: A failed yet informative attempt to build a 2&times;2 sheet metal cutter
 img: /assets/img/cc_1.jpg
 importance: 5
 category: personal
-date: April-May 2015
 redirect: https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6
 
 sort_order: 4
 
+date: 2015-05-29
 work_date: Mar – May 2015
 bullet_points: >
-    <ul>
-        <li> 36”×36” sheet metal cutter with server and client control systems </li>
-        <li> Full stack engineering project. Designed and developed C# .svg parser, toolpath scheduler, and optimizer, Arduino C controller with serial protocol and electronics, and CNC machine with electrodischarge machining head </li>
-        <li> Development journey published at <a href="https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6">https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6</a> </li>
-    </ul>
+  <ul>
+      <li> 36”×36” sheet metal cutter with server and client control systems </li>
+      <li> Full stack engineering project. Designed and developed C# .svg parser, toolpath scheduler, and optimizer, Arduino C controller with serial protocol and electronics, and CNC machine with electrodischarge machining head </li>
+      <li> Development journey published at <a href="https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6">https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6</a> </li>
+  </ul>
 ---
 
 Outcomes:
+
 - 36”×36” sheet metal CNC (without cutting tool) with server and client control systems
 - Became significantly more fluent in C#
 - Developed .svg parser and toolpath scheduler with local optimization
@@ -39,7 +40,7 @@ Outcomes:
 
 I quickly began deciding objectives. PDFs started piling up on material science, electrical engineering, mechanotronics, programming, and gcode. For the first month, I spent much of my time in school taking notes, formulating designs, and drafting parts. It's so easy to get tempted to plan out every millimeter of a machine.
 
-Finally, I settled on an *acceptable* design and began construction. At this point, there were only a few weeks of school left, and I wanted to share my work with my peers so I intensified my activity: no more basketball, programming through class and lunch, staying in the garage much of the evening. (I would've made more balanced decisions now) At this point, I began actually learning about machanical and electrical engineering, arduino programming, C#, SVG processing, matrix transformations, and of course, failure.
+Finally, I settled on an _acceptable_ design and began construction. At this point, there were only a few weeks of school left, and I wanted to share my work with my peers so I intensified my activity: no more basketball, programming through class and lunch, staying in the garage much of the evening. (I would've made more balanced decisions now) At this point, I began actually learning about machanical and electrical engineering, arduino programming, C#, SVG processing, matrix transformations, and of course, failure.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
