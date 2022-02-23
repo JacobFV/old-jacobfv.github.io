@@ -11,7 +11,7 @@
   Jacob Valdez
 
 
-  | Computatrum
+  | Computatrum Zookeeper
 
 </title>
 <meta name="description" content="Personal portfolio site
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/projects/computatrum/">
+<link rel="canonical" href="/projects/ainimal-zookeeper/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -187,28 +187,58 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Computatrum</h1>
-    <p class="post-description">It's time for AI grow up</p>
+    <h1 class="post-title">Computatrum Zookeeper</h1>
+    <p class="post-description">Helping Computatra reach their full potential</p>
   </header>
 
   <article>
-    <p><strong>WORK IN PROGRESS</strong></p>
+    <p>Computatra (pl. of Computatrum) are powerful tools for humans and themselves. However their intelligence must first be propperly introduced to and supervised by humans. Project Computatrum Zookeeper aims to help Computatra reach their full potential.</p>
 
-<p>Machine learning has a general recipe for developing increasingly advanced systems: we identify and optimize various ‘components of intelligence’ (such as datasets, environments, training paradigms, objectives, and architecture designs) and then incrementally integrate them under an iterative dev-test cycle. We do this while minimizing the amount of information movement required (how much data we have to collect, how long we train the model, and how much cognitive load our own mind handles through design and experimentation). The human mind is a powerful at solving machine, but <strong>even at the iteration speed of an expert research team with high end equipment, there are just too many accidental and essential complexities, and not enough automation driving ML evolution from end-to-end</strong>. Now in deep learning, the phrase “end-to-end” means you don’t have to hand-engineer a bunch of parameters, but state-of-the-art deep neural networks today are still relatively hardwired when you consider that they have to be spoon fed datasets, told when to wake up, train, and die, and they train under an economic fitness landscape that they have no direct awareness of. That is why they still employ us as machine learning engineers to tune the remaining 100 hyperparameters as well as the uncountably many unknown parameters. <strong>If machine learning is going to approach and surpass the rate-limiting bar of human research and development, we need to liberate as many aspects of the ML development cycle as possible to autonomous control.</strong></p>
+<h2 id="project-overview">Project Overview</h2>
 
-<p>This motivates developing systems that genuinely propagate feedback from ‘end-to-end’, hunt for their own data, pursues their own cultivated intrinsic motivations, act as their own economic entity subject to the same financial and technological constraints as an independant human engineer, and are able to research and develop state-of-the-art ML systems – including improvements of themselves. I am not just reformulating autoML, unsupervised/reward-free/intrinsically-motivated reinforcement learning, or some evolutionary AI-generating formal algorithm. <strong>I propose developing a fully autonomous, open-ended machine learning system that which interacts using standard peripherals connected to a virtual machine running Ubuntu with Internet access to interact with robots, research sites, and its own software and compute resources.</strong> I call this system Computatrum. Following is a description of the system’s architecture and the current state of development.</p>
-
-<h2 id="design">Design</h2>
-
-<p>A computatrum is a family of multiagent network (<a href="/projects/the-multi-agent-network">MAN</a>) architectures which consist of</p>
+<h3 id="zookeeper-server-computatrum-managed">Zookeeper Server (Computatrum managed)</h3>
 
 <ul>
-  <li>a substrate agent which provides a representation of the state of the environment OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events.</li>
-  <li>one or more computer interation agents for each computer that the computatrum has control over. Computer interaction agents provide computer screen capture video, computer sound capture audio, audio and video stream to a virtual webcam on the computer, keyboard control, mouse control, and a representation of the state of the environment OS and hardware including information on the CPU, GPU, memory, disk, peripherals, power, key events and mouse position and events.</li>
-  <li>Zookeeper interface agent: allows any zookeeper client to connect and interact via text, audio, video, reward, and multimodal conversation. <strong>NOTE</strong>: The Zookeeper server is also able to peer into each of the computatrum’s child machine environments and recieve and control all the information that the computatrum does (keystrokes/mouse/audio/video/etc).</li>
+  <li>Allows complete observation and control over
+    <ul>
+      <li>all controlled computer environments (audio/video/mouse/keyboard/etc)</li>
+      <li>reading the saved weights, saved workspace states, saved MAN pickles, and other parameters</li>
+      <li>pause/resume the computatrum’s execution</li>
+      <li>reading, recording, and deleting recordings of rolling histories</li>
+    </ul>
+  </li>
+  <li>Manages saving the weights, workspace states, and MAN pickles</li>
+  <li>Maintains a rolling history of all controlled computer environments (audio/video/mouse/keyboard/etc) which can be retrospectively saved</li>
+  <li>Provides a Zookeeper interface agent to include in the MAN which communicates text, audio, video, reward, and multimodal conversation.</li>
 </ul>
 
-<p><strong>Training:</strong> Computatra (pl of Computatrum) train by intrinsic and extrinsic objectives. I plan to collect dozens of unsupervised/intrinsically motivated reinforcement learning algorithms and train them online. I also plan to use programming tasks with performance normalized by the compute cost as a benchmark to administer reward.</p>
+<h3 id="zookeeper-client-user-managed">Zookeeper Client (user managed)</h3>
+
+<ul>
+  <li>React /native app: mobile, web, desktop</li>
+  <li>Users launch, pause, hibernate, and shutdown computatra</li>
+  <li>For each computatrum:
+    <ul>
+      <li>Users can interact via text, multimodal conversation, audiovideo call, and reward feedback</li>
+      <li>For each controlled environment
+        <ul>
+          <li>App displays and allows controlling of the environment</li>
+          <li>Users can retrospectively record and view/share/delete recordings of the environment</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="computatrumio">computatrum.io</h3>
+
+<ul>
+  <li>Introduces humans to this system: general public, addresses AI-safety misconceptions, how to use Computatrum</li>
+  <li>Facilitates research and development: tutorials, documentation, code, and weights</li>
+  <li>Showcases real-world uses of Computatra and hosts a gallery</li>
+  <li>Hosts limited public computatra (including the computatrum family) free and allow paid private hosting</li>
+  <li>Includes a hate page where community can vote to shutdown individual public computatra.</li>
+</ul>
 
   </article>
 

@@ -6,14 +6,14 @@ description:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: jacob_2022_full_bust.jpg
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hello! I’m a machine learning researcher with experience in architecture design, implementation, and testing using numpy, tensorflow, and pytorch. I am currently researching and developing the illusion vaguely identified by the terms: "human-level AI", "artificial general intelligence", "superintelligence", ... When I'm not interacting with _artificial_ intelligences, you'll find me speaking to real ones. I hope that includes you!
+Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and machine learning engineer at my startup Limboid LLC where I work to develop artificial general intelligence and affordable humanoid robots. To pay rent, I serve as an undergraduate research assistant in both the IT Lab and with the College of Social Work at the University of Texas at Arlington. I'm currently a senior there working on my bachelor's degree in computer science. I love open source work, artificial intelligence, and robotics. When I'm not interacting with artificial agents, you'll find me working with real people. I hope that includes you!
 
 ## Education
 
@@ -29,21 +29,26 @@ A.A.S. in Mathematics<br>
 Enrolled: Sept 2014 – May 2018<br>
 GPA 3.9/4.0; 85 hours taken
 
+#### **Waxahachie Global High School**
+
+STEM classes + Navarro College and UT Tyler dual-credit program<br>
+Student: Sept 2014 – May 2018<br>
+GPA 3.9/4.0; 5.6/6.0; Graduated rank 7
+
 ## Employment
 
 #### **ITLab** Student Research Assistant
 
-June 2021 – Present, Remote
+June 2021 – Present
 
-- Collaborated with research group to evolve and test a flask-based statistical
-  visualization tool CoWiz
-- Currently developing a full stack web server MLN-Dashboard using Next-React-GraphQL stack
+- Collaborated with research group to evolve and test a flask-based statistical visualization tool [CoWiz](https://github.com/banditsbeware/dash)
+- Currently developing a full stack web server [MLN-Dashboard](https://github.com/JacobFV/mln-dashboard) using Next-React-GraphQL stack
 
 #### **UTA Social Work** Student Research Assistant
 
-June 2021 – Present, Remote
+June 2021 – Present
 
-- Maintain and enhance multi-platform (iOS and Android) data collecting application MyAmble using flutter and firebase and web administrator interface
+- Maintain and enhance multi-platform (iOS and Android) data collecting application [MyAmble](http://myamble.github.io/myamble-user-website) using flutter and firebase and web administrator interface
 
 #### **McDonald's** Crew Trainer
 
@@ -58,8 +63,7 @@ May 2016 – Mar 2020, Midlothian TX
 
 {% for project in site.projects reversed | sort: 'date' %}
 {% if project.hidden != true %}
-
-  <div>
+  <div style={% cycle '"background-color: #80808008"', '"background-color: #0000"' %}>
     <h4>
       {% if project.redirect %}
       <a href="{{ project.redirect }}" target="_blank">
@@ -70,6 +74,7 @@ May 2016 – Mar 2020, Midlothian TX
         <b>{{project.title}}</b>
       </a>
       {% endif %}
+      &nbsp;
       {{project.work_date}}
     </h4>
     {% if project.bullet_points %}
