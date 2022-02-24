@@ -6,7 +6,7 @@ description:
 
 profile:
   align: right
-  image: jacob_2022_full_bust.jpg
+  image: prof_pic.jpg
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
