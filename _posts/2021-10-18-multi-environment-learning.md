@@ -3,6 +3,8 @@ layout: post
 title:  Multi-Environment Learning
 date:   2021-10-18
 description: Another paradigm for increasingly general AI
+categories: [ideas]
+tags:   [agi]
 ---
 
 Multi-environment learning extends the single environment RL paradigm to multiple environments. It's like multiagent learning -- except your only controlling one agent in multiple environments. In this paradigm, the policy $\pi : o_1, o_2, \dots \rightarrow a_1, a_2, \dots$ takes an observation $o_1, o_2, \dots$ from different environments and produces actions $a_1, a_2, \dots$ for all of them simultaneously on each step. You might have a collection loop like:

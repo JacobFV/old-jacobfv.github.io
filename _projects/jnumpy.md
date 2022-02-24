@@ -5,6 +5,7 @@ description: Another autograd / deep learning / reinforcement learning extension
 img: /assets/img/jnumpy_logo.png
 importance: 3
 category: school
+github: https://github.com/JacobFV/jnumpy
 redirect: https://github.com/JacobFV/jnumpy
 
 sort_order: 46

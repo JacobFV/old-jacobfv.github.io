@@ -67,7 +67,7 @@ work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
-stackoverflow_id: #your stackoverflow id
+stackoverflow_id: 10808103 #your stackoverflow id
 
 contact_note:
 
@@ -156,6 +156,38 @@ mermaid:
 
 # Extras
 github: [metadata]
+
+# -----------------------------------------------------------------------------
+# Jekyll optimization
+# -----------------------------------------------------------------------------
+
+# HTML remove comments (<!-- .... -->)
+remove_HTML_comments: true
+
+# HTML beautifier (_plugins/beautify.rb) / https://github.com/threedaymonk/htmlbeautifier
+beautify: true # This function has conflict with the code snippets, they can be displayed incorrectly
+
+# HTML minify (_plugins/minify.rb) Thanks to: https://www.ffbit.com/blog/2021/03/17/html-minification-in-jekyll.html
+minify: true
+
+# CSS/SASS minify
+sass:
+  style: compressed
+
+# -----------------------------------------------------------------------------
+# Jekyll Archives
+# -----------------------------------------------------------------------------
+
+jekyll-archives:
+  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them). 
+  layouts:
+    year: archive-year
+    tag: archive-tag
+    category: archive-category
+  permalinks:
+    year: '/blog/:year/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

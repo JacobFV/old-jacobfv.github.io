@@ -11,10 +11,11 @@ hidden: true
 
 date: 2022-01-01
 work_date: Feb 2019 – Present
+github: https://github.com/Limboid/the-artificial-ecosystem
 bullet_points: >
   <ul>
       <li> Active project to research and develop human-level artificial intelligence </li>
-      <li> Ongoing research published at <a href="https://jacobfv.github.io/projects/extreme_artificial_intelligence/">https://jacobfv.github.io/projects/extreme_artificial_intelligence/</a> </li>
+      <li> Ongoing research published at <a href="https://github.com/Limboid/the-artificial-ecosystem">https://github.com/Limboid/the-artificial-ecosystem</a> </li>
   </ul>
 ---
 

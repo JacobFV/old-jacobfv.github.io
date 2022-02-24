@@ -11,6 +11,7 @@ sort_order: 30
 
 date: 2020-04-01
 work_date: April 2020
+github: https://github.com/JacobFV/factory-server
 bullet_points: >
   <ul>
       <li> Internet connected prototyping machine hub </li>

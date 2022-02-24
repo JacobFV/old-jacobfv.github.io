@@ -3,6 +3,8 @@ layout: post
 title:  Skills Assessment Reflection
 date:   2020-06-14
 description: My Summer 2020 focus statement
+categories: [reflection]
+tags:   []
 ---
 
 *This personal reflection was completed to fulfill the requirements of COMS 2302 on 14 July 2020 for Dr. Hughey at the University of Texas at Arlington.*

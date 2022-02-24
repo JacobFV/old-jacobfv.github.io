@@ -3,6 +3,8 @@ layout: post
 title:  Reaching for the Intangible
 date:   2021-06-22
 description: We don't really want human-level AI
+categories: [reflection]
+tags:   [agi]
 ---
 
 I wrote the following comment after conversing with a researcher at the University of Texas at Arlington:

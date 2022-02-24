@@ -15,6 +15,7 @@ bullet_points: >
       <li> Active project to develop teachable yet autonomous open-ended computer interaction agents </li>
   </ul>
 
+github: https://github.com/Limboid/computatrum
 redirect: https://github.com/Limboid/computatrum
 ---
 

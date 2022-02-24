@@ -3,6 +3,8 @@ layout: post
 title: Ergonomic Optimization
 date: 2021-12-31
 description: Steps I am taking to increase my productivity
+categories: [experiment,reflection]
+tags:   []
 ---
 
 ## The Problem

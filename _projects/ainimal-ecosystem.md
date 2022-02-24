@@ -7,7 +7,8 @@ importance: 2
 category: personal
 
 sort_order: 300
-redirect: https://github.com/Limboid/ainimal-zookeeper
+github: https://github.com/Limboid/ainimal-ecosystem
+redirect: https://github.com/Limboid/ainimal-ecosystem
 
 date: 2022-02-01
 work_date: Oct 2021 - Feb 2022

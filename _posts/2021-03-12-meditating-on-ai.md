@@ -2,7 +2,9 @@
 layout: post
 title:  Meditating on AI
 date:   2021-03-12
-description: 
+description: Collection of personal observations on AI
+categories: [notes,reflection]
+tags:   []
 ---
 
 Below is a collection of personal observations I have made on my journey to understand artificial intelligence. **Most of these conclusions are misleading** and many are incorrect, but I preserve them for personal notekeeping. 

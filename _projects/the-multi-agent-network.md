@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The Multi-Agent Network
+title: The Multi-Agent Network (MAN)
 description: Datasets, environments, and algorithms for multi-agent systems.
 img:
 importance: 2
@@ -8,6 +8,7 @@ category: personal
 
 hidden: true
 sort_order: 300
+github: https://github.com/Limboid/man
 
 date: 2022-02-12
 work_date: Oct 2021 – Feb 2022
@@ -17,6 +18,8 @@ bullet_points: >
       <li>  </li>
   </ul>
 ---
+
+TODO: separate this content into a blog post and the github repository
 
 The challenge is fusing them all togethor:
 

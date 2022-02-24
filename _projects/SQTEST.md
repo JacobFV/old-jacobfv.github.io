@@ -6,6 +6,7 @@ img:
 importance: 3
 category: school
 redirect: https://github.com/JacobFV/SQT-English-to-Spanish-Translator
+github: https://github.com/JacobFV/SQT-English-to-Spanish-Translator
 
 sort_order: 9
 

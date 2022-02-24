@@ -2,7 +2,9 @@
 layout: post
 title:  RTC Jupyterlab in the Cloud
 date:   2021-06-18
-description: How to run jupyterlab on AWS and  GCP in realtime collaborative mode.
+description: How to run jupyterlab on AWS and GCP in realtime collaborative mode.
+categories: [tutorial]
+tags:   [gpt3]
 ---
 
 

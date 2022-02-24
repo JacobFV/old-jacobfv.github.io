@@ -3,9 +3,9 @@ layout: post
 title:  The Artificial Experience
 date:   2021-10-10
 description: A highly general dataset-env
+categories: [computatrum, code, ideas]
+tags:   [agi]
 ---
-
-**Update: the Artificial Experience is under work at [https://github.com/JacobFV/artificial-experience](https://github.com/JacobFV/artificial-experience)**
 
 Our implicit objective in the hypothetical artificial general intelligence is to identify as many dimensions of variation to the underlying data structures that real Intelligence operates on and iterate development around that data. For datasets includes:
 - domain: natural language, vision, audio, robot, etc.
@@ -113,7 +113,9 @@ def evalLoop(agents, env):
             print(step[agent].information)
 ```
 
+There's a lot more I don't have time to explain about my plans. Please keep on the lookout for updates: [https://github.com/JacobFV/artificial-experience](https://github.com/JacobFV/artificial-experience).
 
+<!--
 ## Appendix A: Datasets and environments
 
 The categories overlap. For instance, image captioning might be in the `image` category, but also in the `text` category. The high-level hierarchy might be:
@@ -158,3 +160,4 @@ ae.baselines.
 
 ae.utils.nest.{map,flatten,unflatten,all,any,}
 ```
+-->

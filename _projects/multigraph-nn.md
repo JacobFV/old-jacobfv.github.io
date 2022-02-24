@@ -5,6 +5,7 @@ description: One isn't enough. Multigraph neural networks are the way to go!
 img:
 importance: 4
 category: personal
+github: https://github.com/JacobFV/multigraph-nn
 redirect: https://github.com/JacobFV/multigraph-nn
 
 sort_order: 50

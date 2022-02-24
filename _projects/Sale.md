@@ -5,6 +5,7 @@ description: Basic Spanish – English translation system
 img: /assets/img/sale.png
 importance: 4
 category: school
+github: https://github.com/JacobFV/Sale
 redirect: https://github.com/JacobFV/Sale
 
 sort_order: 7

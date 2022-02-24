@@ -4,6 +4,8 @@ title: Generalization -- Fast and Slow
 date: 2021-10-31
 description: Learning to generalize on multiple frequency bands
 hidden: true
+categories: [ideas]
+tags:   [jupyter notebook]
 ---
 
 I don't think I ever fleshed out this idea. I was trying to point out the continual nature of ML optimization.

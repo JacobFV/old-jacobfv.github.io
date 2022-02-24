@@ -6,6 +6,7 @@ img: #/assets/img/mcds.jpg
 importance: 6
 category: personal
 redirect: https://github.com/JacobFV/Workplace-Surveillance-System
+github: https://github.com/JacobFV/Workplace-Surveillance-System
 
 sort_order: 15
 

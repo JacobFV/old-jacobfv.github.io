@@ -2,7 +2,9 @@
 layout: post
 title:  What is intelligence?
 date:   2021-06-18
-description: 
+description: I asked GPT-3 about intelligence
+categories: [experiment,notes]
+tags:   [gpt3]
 ---
 
 I asked GPT-3 this question and surprisingly, its answer turned my attention to a domain I had not even considered -- art. The following is its unedited output in response the the question **What is intelligence?**:  

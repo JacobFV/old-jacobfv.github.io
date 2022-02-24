@@ -7,6 +7,7 @@ importance: 2
 category: personal
 
 redirect: https://github.com/JacobFV/self-organizing-multi-paradigm-networks
+github: https://github.com/JacobFV/self-organizing-multi-paradigm-networks
 sort_order: 300
 hidden: true
 

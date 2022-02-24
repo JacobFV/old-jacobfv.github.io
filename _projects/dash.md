@@ -7,6 +7,7 @@ importance: 4
 category: work
 
 sort_order: 32
+github: https://github.com/banditsbeware/dash
 redirect: https://github.com/banditsbeware/dash
 
 date: 2021-10-31

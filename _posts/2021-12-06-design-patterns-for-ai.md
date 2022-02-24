@@ -4,6 +4,8 @@ title: Design Patterns for AI
 date: 2021-12-06
 description: We need to transfer existing design patterns as far down the stack as possible.
 hidden: true
+categories: [reflection, ideas]
+tags:   [agi]
 ---
 
 Engineering generally starts off with a few high-level abstract ambitions that are refined and translated with increasing clarity into physical realizations. In software engineering, the outputs of this process are unambiguous executable statements. Of course, the whole process is iterative with loops of increasing frequency over the project lifespan and tools automating this optimization (compiler chains, code optimization, high-level languages) operating at progressively higher-levels further reducing the idea to implementation transit time. When neural networks are the focus of software engineering, translation from informal to unambiguous specification is almost immediate (given sufficient understanding of programming, math, deep learning, and thermodynamics) and the brunt of effort shifts (as it rightly should) to actually testing deep learning hypotheses. In the problem space of 'human-level' or 'general' intelligence, this demands attempting to consolidate as many ideas in neuroscience, cognitive psychology, and artificial intelligence as possible into a working system implementation. While this consolidation appears deceptively simple in literature, the constituent ideas are often lost in implementation[^1]. Therefore, I explicitly list several **unverified hypotheses** below to help explicitly keep in mind desired cognitive dynamics of increasingly general intelligence.

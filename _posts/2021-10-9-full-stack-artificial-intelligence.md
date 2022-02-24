@@ -3,6 +3,8 @@ layout: post
 title:  Full-Stack Artificial Intelligence
 date:   2021-10-09
 description: What's in the stack?
+categories: [reflection, ideas]
+tags:   [agi]
 ---
 
 We cannot expect the same algorithm to make increasing returns on all problems. The complexity (and ⏱️,💲,🏭) growth of symbolic, deep learning, reinforcement learning, and other AI approaches motivate considering other dimensions of Intelligence. I draw attention to several broad, overlapping dimensions on the evolutionary scale of artificial intelligence:

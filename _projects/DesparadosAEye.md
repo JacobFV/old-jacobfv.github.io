@@ -5,6 +5,7 @@ description: deep learning on the edge
 img: /assets/img/desparados_3.png
 importance: 1
 category: school
+github: https://github.com/kmosoti/DesparadosAEYE
 
 sort_order: 150
 

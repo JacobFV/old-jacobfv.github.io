@@ -5,6 +5,7 @@ description: Quick plotting utilities
 img:
 importance: 4
 category: personal
+github: https://github.com/JacobFV/jplotlib
 redirect: https://github.com/JacobFV/jplotlib
 
 sort_order: 75

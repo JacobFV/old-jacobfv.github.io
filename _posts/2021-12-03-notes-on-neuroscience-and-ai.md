@@ -3,6 +3,8 @@ layout: post
 title: Notes on Neuroscience and AI
 date: 2021-12-03
 description: Some notes on recent research.
+categories: [notes]
+tags:   [brain]
 ---
 
 ["Neurodynamics of Cognition and Consciousness"](https://link.springer.com/book/10.1007/978-3-540-73267-9) preface:

@@ -5,6 +5,7 @@ description: Supercool self-organizing maps in tensorflow
 img:
 importance: 4
 category: personal
+github: https://github.com/JacobFV/tf-som
 redirect: https://github.com/JacobFV/tf-som
 
 sort_order: 45
