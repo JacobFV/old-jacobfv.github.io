@@ -1,4 +1,5 @@
 #_site  # compile local, run static
+_site
 .bundle
 .sass-cache
 .jekyll-cache
