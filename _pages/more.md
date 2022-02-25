@@ -7,6 +7,10 @@ children:
     - title: resume
       permalink: /resume/
     - title: divider
+    - title: papers
+      permalink: /papers/
+    - title: divider
     - title: high school
       permalink: https://jacobfvaldez.weebly.com/
+order: 9
 ---

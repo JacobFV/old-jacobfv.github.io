@@ -2,7 +2,8 @@
 layout: page
 permalink: /resume/
 title: resume
-nav: true
+nav: false
+order: 10
 ---
 
 {% pdf /assets/pdf/Resume.pdf %}

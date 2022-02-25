@@ -6,6 +6,7 @@ description:
 nav: true
 display_categories: [personal, work, school, community]
 horizontal: false
+order: 3
 ---
 
 <!-- pages/projects.md -->

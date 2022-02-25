@@ -11,6 +11,7 @@ profile:
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+order: 1
 ---
 
 Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and machine learning engineer at my startup Limboid LLC where I work to develop artificial general intelligence and affordable humanoid robots. To pay rent, I serve as an undergraduate research assistant in both the IT Lab and with the College of Social Work at the University of Texas at Arlington. I'm currently a senior there working on my bachelor's degree in computer science. I love open source work, artificial intelligence, and robotics. When I'm not interacting with artificial agents, you'll find me working with real people. I hope that includes you!
