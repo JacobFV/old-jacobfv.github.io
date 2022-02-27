@@ -4,7 +4,7 @@ title: Computatrum
 description: It's time for AI grow up
 img:
 importance: 1
-category: personal
+category: ai
 
 sort_order: 300
 

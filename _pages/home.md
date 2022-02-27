@@ -28,7 +28,7 @@ GPA 3.7/4.0; graduate Aug 2022
 
 A.A.S. in Mathematics<br>
 Enrolled: Sept 2014 – May 2018<br>
-GPA 3.9/4.0; 85 hours taken
+GPA 3.9/4.0; 85 hours taken; Graduated Magna Cum Laude
 
 #### **Waxahachie Global High School**
 
@@ -90,6 +90,8 @@ May 2016 – Mar 2020, Midlothian TX
 {% endfor %}
 
 ## Certifications
+
+**AWS Certified Machine Learning Engineer – Specialty** Feb 2022
 
 **Google TensorFlow Developer Certification** April 2021
 

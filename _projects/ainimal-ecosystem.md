@@ -4,7 +4,7 @@ title: Computatrum Zookeeper
 description: Helping Computatra reach their full potential
 img:
 importance: 2
-category: personal
+category: ai
 
 sort_order: 300
 github: https://github.com/Limboid/ainimal-ecosystem

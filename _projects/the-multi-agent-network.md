@@ -4,7 +4,7 @@ title: The Multi-Agent Network (MAN)
 description: Datasets, environments, and algorithms for multi-agent systems.
 img:
 importance: 2
-category: personal
+category: ai
 
 hidden: true
 sort_order: 300

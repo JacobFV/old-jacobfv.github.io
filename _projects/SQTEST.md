@@ -2,7 +2,7 @@
 layout: page
 title: SQTEST
 description: A rule-based past and present tense English and Spanish translator
-img:
+img: /assets/img/sqtest.png
 importance: 3
 category: school
 redirect: https://github.com/JacobFV/SQT-English-to-Spanish-Translator

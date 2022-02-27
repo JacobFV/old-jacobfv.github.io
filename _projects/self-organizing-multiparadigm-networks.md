@@ -4,7 +4,7 @@ title: SOMPNets
 description: Self Organizing Multi-Paradigm Networks.
 img:
 importance: 2
-category: personal
+category: ai
 
 redirect: https://github.com/JacobFV/self-organizing-multi-paradigm-networks
 github: https://github.com/JacobFV/self-organizing-multi-paradigm-networks

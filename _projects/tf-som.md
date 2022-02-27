@@ -4,7 +4,7 @@ title: tf-som
 description: Supercool self-organizing maps in tensorflow
 img:
 importance: 4
-category: personal
+category: ai
 github: https://github.com/JacobFV/tf-som
 redirect: https://github.com/JacobFV/tf-som
 

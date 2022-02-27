@@ -9,6 +9,8 @@ children:
     - title: divider
     - title: papers
       permalink: /papers/
+    - title: videos
+      permalink: https://jacobfvaldez.weebly.com/videos.html
     - title: divider
     - title: high school
       permalink: https://jacobfvaldez.weebly.com/

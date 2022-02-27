@@ -70,13 +70,15 @@ In honor of an attempted 3D printer, the Cookie Baker, I named this machine the 
         {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
 =======
 <div class="row">
+    <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/cc_3.jpg' | relative_url }}" alt="" title="Final CookieCutter"/>
     <div class="col-sm mt-3 mt-md-0">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/dyWwv9mZEvk?start=61" title="YouTube video player" frameborder="0" class="z-depth-1 rounded" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 >>>>>>> 2:_projects/1_project.markdown
     </div>
-    <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/cc_3.jpg' | relative_url }}" alt="" title="Final CookieCutter"/>
+    <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/cookie_control.png' | relative_url }}" alt="" title="Cookie Control"/>
 </div>
 <div class="caption">
+<<<<<<< HEAD
 <<<<<<< HEAD:_projects/1_project.md
     You can also have artistically styled 2/3 + 1/3 images, like these.
 </div>
@@ -101,5 +103,8 @@ Here's the code for the last row of images above:
 {% endraw %}
 =======
     Mock product-release video (above) and final CookieCutter (below)
+=======
+    Final CookieCutter (left), mock product-release video (center), and CookieControl (right)
+>>>>>>> added projects and images
 </div>
 >>>>>>> 2:_projects/1_project.markdown

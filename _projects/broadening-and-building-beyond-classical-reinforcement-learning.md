@@ -4,7 +4,7 @@ title: Broadening and Building Beyond Classical Reinforcement Learning
 description: Affective psychology + multi-agent reinforcement learning
 img:
 importance: 5
-category: personal
+category: school
 
 sort_order: 78
 
@@ -16,3 +16,5 @@ We humans have potential to self-actualize far beyond our immediate or even our 
 
 This poster was presented at the 2021 UTA-sponsored Broaden and Build Conference in Arlington, Texas:
 {% pdf /assets/pdf/Broadening_and_Building_Beyond_Classical_Reinforcement_Learning.pdf %}
+
+Post script: I regret to write that I never completed work on this project after the conference.

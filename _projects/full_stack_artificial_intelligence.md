@@ -4,7 +4,7 @@ title: Full Stack Artificial Intelligence
 description: Computer interaction + deep reinforcement learning
 img:
 importance: 1
-category: personal
+category: ai
 
 sort_order: 300
 hidden: true
