@@ -1,0 +1,52 @@
+---
+layout: post
+title: Industry as a Service (IndaaS)
+date: 2022-02-27
+description: An automated, open-source, and accessible system to facilitate on-demand manufacturing,  
+categories: [idea]
+tags:   []
+---
+
+## Initial motivation
+
+My brother and I have always approached cooking from an economic perspective: what's the fastest way to cook X? how long will it last in the freezer? how much time and money does it take? We believe many of the demands imposed by the traditional culinary methodology are accidental and artificial -- rather than essential. Not that traditional cooking is a problem, but in our case, hard economic or practical concerns often overshadow the importance of replicating a particular subjective experience. 
+
+Could we automate the entire culinary process? Further, could we even automate growing and harvesting the plants themselves? I google'd "fastest growing vegetables" and found several -- including carrots 🥕, lettuce 🥬, tomatoes 🍅, cucumbers 🥒, onions 🧅, broccoli 🥦, turnips, celery, and kale -- which all mature in around two months. That's really fast. Sometimes I think, "If only I had planted a fruit tree 5 years ago, it would be ready now." but for the above plants, the turnaround only takes 60 days!
+
+## Dirt cheap is too expensive
+
+Now how would I grow these plants? I remember hearing about a plant-growing technique called hydroponics. This is an old technique where you grow plants in a watery-nutrient solution instead of soil. Taking this approach makes it easier to control the environment surrounding the roots which reduces the likelihood of viral outbreaks, and hence, the need for fertilizers and pesticides. It also cuts down on labor requirements. A related techniuqe, areoponics, eliminates the need for large amounts of water altogether. The plants literally grow suspended in the air, and their roots are regularly spraying with a solution of water and nutrients. I'm going to explore both techniques, but if areoponics can be sucessfully applied to the above plants, I'll primarily lean on it given its apparent simplicity and low nutrient-solution requirements.  
+
+Just doing some napkin math, tomato prices are around 2 \$/lb. This website[^1] claims their *Bush Early Girl Tomato* produces ~100 tomatoes that each weigh 6-7oz (~0.4 lbs) in a 60 day turnaround time. Multiplying this all togethor, we get: 100 tomatoes/plant &times; 0.4 lbs/tomato &times; 2 \$/lbs &approx; 80 \$/plant every 60 days. That's slightly above \$1/plant/day. I wouldn't be surprised if other plants weren't as productive, but this analysis makes even a small automated areoponic vegetable garden seem like an economically viable starting point. 
+
+[^1]: https://bonnieplants.com/products/bush-early-girl-tomato
+
+## Open, online, on-demand
+
+Of course, if growing a small areoponic garden were my only concern, I could just get a spray bottle and mist the plants myself every day. Automation demands a signifcantly large or complex application space to justify its existance -- much bigger than I could ever manage. I have trouble growing "starter" plants, let alone large, diverse gardens. However, my associates and YouTube inform me that there are many people who do have this skill. This broadened my focus from "how to grow" to "how to help other people grow". My brother recommended adapting the AWS infrastructure-as-a-service (IAAS) model to farming with managed racking, stacking, packaging, and climate control. After playing around with it, we arrived at the idea for Ecosystem-as-a-Service (EaS):
+
+- *Racks* come in various sizes with optional watering, misting, lighting, ventilation, and temperature control. *Containers* and *buildings* are climate controlled places that simulate various ecosystems.
+- Racks are stacked on top of each other to form a *stack*. Stacks are placed in containers or buildings. Containers go in buildings.
+- *Growers* pay to use racks and place them in publically available or privately rented containers. Growers can place fungi, plants, and approved animals in their racks.
+- Growers also pay for things like cameras, tilling machines, and other equipment installed in their racks.
+
+This service generalizes the automated farming model to many kinds of life. I think it could produce some interesting use-cases. For example, a community garden is a medium-sized garden that it managed by the local community. On the other hand, this online racking service would allow Internet communities to form their own decentralized, global community gardens. Cameras could be made to stream realtime footage of their plants to a website, and community members could remotely watch their plants grow up, initiate 'rain', control the temperature, or change the time of day. This touchless, online service would also help people who are afraid of bugs to get their garden itch satisfied. People could even use the racking service to remotely manage a bee hive and harvest honey. (As long as there is a polinator-friendly container available and other growers are cultivating flowering species there.) People like myself who want to farm but don't know how would benefit from its more-deterministic environments to learn in. Agg schools could use this service to teach their students. Ecology researchers might even build entire ecosystems with this service to help them understand the Earth and how to sustainably cultivate it.
+
+The Earth's ecosystem is an incredible complex dynamical system. In fact, it's so incredible, I hardley notice it. Unlike the economy which fluctuates in extremes or even the brain which peaks in the mid-20's and then slowely declines, the Earth's ecosystem is amazingly robust to the perturbations we throw at it. I think it can tell us a lot about economics, neuroscience, and artificial neural networks, and the Ecosystem-as-a-Service (EaS) model could be a great way to draw attention in that direction.
+
+## Food-prep-as-a-Service (FPAAS)
+
+Returning to the earlier problem, I need a way to automate the culinary process. I will start by making a small scale areoponic farm in my room using wooden racks, LED lights, pressurized spray misting pipeline, and a camera-equipted raspberry pi with aluminum foil blanketing it all. Once I get the kinks worked out, I will rent a storage unit building that has electricity and scale up to a larger workspace. Then I will use the revenue from this personally managed areoponic farm to rent factory space where the Ecosystem-as-a-Service (EaS) model can go full scale. Still, I need to automate the cooking process. Extending the on-demand web service model here, I will use the revenue from the earlier EaS model to create an automated food service. Here's the plan:
+
+- Restaurants supply a recipie with indegredient quantities and the preparation strategy.
+- The stragegy is a list of steps, each step specifies a list of ingredients and the operation performed.
+- Operations are limited to stack, fold, mix, pour, and a few other simple procedures allowing them to be entirely automated.
+- The ingredients are stored in a warehouse, and the warehouse is connected to the kitchen via a network of containers using a similar rack-management system as in the EaS model.
+- Restaurants can sell food to other restaraunts directly within the production infrastructure network.
+- Several managed logistics services are available to the restaurant, including a warehousing, trucking service, and home delivery service.
+- Morterless restaurants using this service can also pay for a complete e-commerce website with realtime video virtual dinning rooms and a delivery service that delivers food to all guests at the same time.
+- This restaurant-as-a-service (RAS) model could be used to automate the entire food production process.
+
+## Conclusion
+
+This has been a long and sprawling post outline some very high-level ideas on automated cooking. I hope to see some of them implemented in the next few years and maybe even take part in realizing them. Please let me know if you used this business model so myself and others can the watch out for the certain, yet unknown pitfalls ahead. Thanks for reading!
