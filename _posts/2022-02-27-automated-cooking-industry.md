@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Industry as a Service (IndaaS)
+title: Building an Automated Cooking Industry
 date: 2022-02-27
-description: An automated, open-source, and accessible system to facilitate on-demand manufacturing,  
+description: Some ideas for automating the cooking industry
 categories: [idea]
 tags:   []
 ---
