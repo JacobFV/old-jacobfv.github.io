@@ -55,17 +55,19 @@ Imitating AWS, this warehouse service would be online and adopt a pay-as-you-go 
 
 [^2]: multi-AZ deployment means Amazon Web Services deploys its services on multiple data centers in different, yet reasonably nearby, geographic locations. This helps decouple power or internet availability from service availability.
 
-I can see several use-cases for this warehouse service:
+I imagine several use-cases for this warehouse service:
 
-- A retail store (like Walmart, Thift Towne, or just any bookstore) uses machine learning to note what products the customer is interested in most. Then it predicts where the customer will walk and dynamically stocks shelves in that area with the products that are most likely to interest them.
+- A retail store uses machine learning to note what products the customer is interested in most and where those customers will walk. Then the store automatically circulates products on its shelves with a selection that is predicted to maximize revenue. This process happens continuously, automatically, and asynchonously on empty isles.   
 
 - A restaurant uses a small palate management system to shuttle cooking trays between food prep stations. Human chefs apply the finishing touches to dishes before serving them out.
 
+- A company uses the warehousing service to build a virtual chicken coup. This company sells access to its coup on a service-based model and its customers use the virtual coup to produce chickens and eggs, offer virtual chicken coup visiting experiences to children, and provide training grounds for poultry businesses.  
+
 - A startup doesn't want to pay thousands to a Chinese factory and doesn't have enough money for its own factory equiptment yet. It can use the warehouse service to go from initial to medium-sized production until it can afford its own space and equipment. Since the warehouse and on-demand manufacturing infrastructure are both managed services, the startup can quickly change its product design as it works through kinks in the value chain.
 
-- Much of the manufacturing sector could go virtual. Instead of managing a factory, it could use the warehouse service to manage its own production facilities. This would allow the emergence of *e-manufacturing companies* which focus on core business and do not worry about the infrastructure.
+- Much of the manufacturing sector could go virtual. Instead of managing a factory, it could use the warehouse service to manage its own production facilities. This would allow increasing emergence of *e-manufacturing companies* where more focus can stay on core business rather than infrastructure.
 
-*Macro-economic activity often fluctuates chaoticly in response to unpredictable world dynamics. This automated warehouse service with its online, on-demand service model could allow small and large businesses to adaopt faster to the economy's shifting winds and remain competitive. It has strong potential to democratize access to 21st century manufacturing technology.  *
+*Macro-economic activity often fluctuates chaoticly in response to unpredictable world dynamics. This automated warehouse service with its online, on-demand service model could allow small and large businesses to adaopt faster to the economy's shifting winds and remain competitive. It has strong potential to democratize access to 21st century manufacturing technology.*
 
 ## Conclusion
 
