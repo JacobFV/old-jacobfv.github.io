@@ -61,9 +61,11 @@ I've already described two use-cases for this warehouse service above. Here are 
 
 - A fast food restaurant installs an on-premise palate management system to replace its manual labor prep and assembly line. Human labor is only used to apply finishing touches to dishes, clean the machines, interface with customers.
 
-- A company uses the warehousing service to build a virtual chicken coup. This company sells access to its coup on a service-based model and its customers use the virtual coup to produce chickens and eggs, offer virtual chicken coup visiting experiences to children, and provide training grounds for poultry businesses.  
+- A company uses the warehousing service to build a virtual chicken coup. This company sells access to its coup on a service-based model and its customers use the virtual coup to produce chickens and eggs, offer virtual chicken coup visiting experiences to children, and provide training grounds for poultry businesses.
 
-- A startup doesn't want to pay thousands to a Chinese factory and doesn't have enough money for its own factory equiptment yet. It can use the warehouse service to go from initial to medium-sized production until it can afford its own space and equipment. Since the warehouse and on-demand manufacturing infrastructure are both managed services, the startup can quickly change its product design as it works through kinks in the value chain.
+- Collectively owned *virtual makerspaces* could democratize access to expensive equiptment like metal 3d printers, 5-axis CNC machines, and metal forming machines.
+
+- A startup doesn't want to pay thousands to a Chinese factory and doesn't have enough money for its own factory equiptment yet. It can use the warehouse service to go from initial to medium-sized production until it can afford its own space and equipment. Since the warehouse and on-demand manufacturing infrastructure are both managed, on-demand services, the startup can quickly change its product design as it works through kinks in the value chain.
 
 - Much of the manufacturing sector could go virtual. Instead of managing a factory, it could use the warehouse service to manage its own production facilities. This would allow increasing emergence of *e-manufacturing companies* where more focus can stay on core business rather than infrastructure.
 
