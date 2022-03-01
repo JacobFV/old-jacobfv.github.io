@@ -55,11 +55,11 @@ Imitating AWS, this warehouse service would be online and adopt a pay-as-you-go 
 
 [^2]: multi-AZ deployment means Amazon Web Services deploys its services on multiple data centers in different, yet reasonably nearby, geographic locations. This helps decouple power or internet availability from service availability.
 
-I imagine several use-cases for this warehouse service:
+I've already described two use-cases for this warehouse service above. Here are some more:
 
 - A retail store uses machine learning to note what products the customer is interested in most and where those customers will walk. Then the store automatically circulates products on its shelves with a selection that is predicted to maximize revenue. This process happens continuously, automatically, and asynchonously on empty isles.   
 
-- A restaurant uses a small palate management system to shuttle cooking trays between food prep stations. Human chefs apply the finishing touches to dishes before serving them out.
+- A fast food restaurant installs an on-premise palate management system to replace its manual labor prep and assembly line. Human labor is only used to apply finishing touches to dishes, clean the machines, interface with customers.
 
 - A company uses the warehousing service to build a virtual chicken coup. This company sells access to its coup on a service-based model and its customers use the virtual coup to produce chickens and eggs, offer virtual chicken coup visiting experiences to children, and provide training grounds for poultry businesses.  
 

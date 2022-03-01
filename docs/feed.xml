@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jacobfv.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jacobfv.github.io/" rel="alternate" type="text/html" /><updated>2022-02-28T18:15:37-06:00</updated><id>https://jacobfv.github.io/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal portfolio site
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jacobfv.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jacobfv.github.io/" rel="alternate" type="text/html" /><updated>2022-02-28T18:19:00-06:00</updated><id>https://jacobfv.github.io/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal portfolio site
 </subtitle><entry><title type="html">Industry as a Service (IndAAS)</title><link href="https://jacobfv.github.io/blog/industry-as-a-service/" rel="alternate" type="text/html" title="Industry as a Service (IndAAS)" /><published>2022-02-28T00:00:00-06:00</published><updated>2022-02-28T00:00:00-06:00</updated><id>https://jacobfv.github.io/blog/industry-as-a-service</id><content type="html" xml:base="https://jacobfv.github.io/blog/industry-as-a-service/">&lt;h2 id=&quot;initial-motivation&quot;&gt;Initial motivation&lt;/h2&gt;
 
 &lt;p&gt;My brother and I have always approached cooking from an economic perspective: what’s the fastest way to cook X? how long will it last in the freezer? how much time and money does it take? We believe many of the demands imposed by the traditional culinary methodology are accidental and artificial – rather than essential. Not that traditional cooking is a problem, but in our case, hard economic or practical concerns often overshadow the importance of replicating a particular subjective experience.&lt;/p&gt;
@@ -47,14 +47,14 @@
 
 &lt;p&gt;Imitating AWS, this warehouse service would be online and adopt a pay-as-you-go model – no upfront costs or artificial friction to economic activity. Just as AWS offers multi-AZ&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; deployment, the warehouse service would offer multi-warehouse deployment, and warehouses within a single region would be linked by high-speed, high-capacity railways. The warehouse service would also offer a &lt;em&gt;service infrastructure&lt;/em&gt; that would allow customers to build their own services on top of the warehouse infrastructure and sell them to other businesses using the warehouse. Finally, customers could pay the warehouse service company to set up and maintain on-premise warehousing systems in other company’s warehouses. This would be important in industries where the shipping costs are high like car or heavy machinery manufacturing.&lt;/p&gt;
 
-&lt;p&gt;I imagine several use-cases for this warehouse service:&lt;/p&gt;
+&lt;p&gt;I’ve already described two use-cases for this warehouse service above. Here are some more:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;A retail store uses machine learning to note what products the customer is interested in most and where those customers will walk. Then the store automatically circulates products on its shelves with a selection that is predicted to maximize revenue. This process happens continuously, automatically, and asynchonously on empty isles.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;A restaurant uses a small palate management system to shuttle cooking trays between food prep stations. Human chefs apply the finishing touches to dishes before serving them out.&lt;/p&gt;
+    &lt;p&gt;A fast food restaurant installs an on-premise palate management system to replace its manual labor prep and assembly line. Human labor is only used to apply finishing touches to dishes, clean the machines, interface with customers.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;A company uses the warehousing service to build a virtual chicken coup. This company sells access to its coup on a service-based model and its customers use the virtual coup to produce chickens and eggs, offer virtual chicken coup visiting experiences to children, and provide training grounds for poultry businesses.&lt;/p&gt;
