@@ -54,7 +54,12 @@ At the implementation-end, machine learning research has acquired a diverse arra
 
 TODO: list everything I plan to use here
 
--
+**Agent Organization**
+- botttom up observation and independant abstraction
+- top down action, forcing the world to be the way the agent thinks it should be
+- side communication. When agents have a strong idea of what's going on, they should broadcast it to their peers.
+
+Maybe represent everything by SDR of binary probits. This allows concretely defining entropy, KLD, and other metrics, it has low overlap and all the other benefits of SDR's, and it's easy to implement and might even scale to lower and lower precisions until it can work at single bit-level representations (classical SDR's). Maybe there's a way to make the precision dynamically determined (like entropy). Train a neural-CPU on the floating point data, and then whenever the precision reaches one bit, run the neural CPU instructions directly as machine code.
 
 [^1]: I know all the cuts to make before I enter the shop, but sawing for 2 hours leaves me exhausted and I end up incorrectly measuring or cutting material unless things are marked correctly.
 [^2]: ["Neurodynamics of Cognition and Consciousness"](https://link.springer.com/book/10.1007/978-3-540-73267-9) ch.1, 5
