@@ -33,3 +33,7 @@ tags:   [brain]
 
 > By leveraging advances in graph neural networks, we propose a hypernetwork that can predict performant parameters in a single forward pass taking a fraction of a second, even on a CPU. The proposed model achieves surprisingly good performance on unseen and diverse networks. For example, it is able to predict all 24 million parameters of a ResNet-50 achieving a 60% accuracy on CIFAR-10. On ImageNet, top-5 accuracy of some of our networks
 > approaches 50%. Our task along with the model and results can potentially lead to a new, more computationally efficient paradigm of training networks. Our model also learns a strong representation of neural architectures enabling their analysis.
+
+[AutoDIME: Automatic Design of Interesting Multi-Agent Environments](https://arxiv.org/pdf/2203.02481.pdf)
+
+>  Of the intrinsic rewards considered we found value disagreement to be most consistent across tasks, leading to faster and more reliable emergence of advanced skills in Hide and Seek and the maze task. Another candidate intrinsic reward considered, value prediction error, also worked well in Hide and Seek but was susceptible to noisy-TV style distractions in stochastic environments. Policy disagreement performed well in the maze task but did not speed up learning in Hide and Seek. Our results suggest that intrinsic teacher rewards, and in particular value disagreement, are a promising approach for automating both single and multi-agent environment design.
