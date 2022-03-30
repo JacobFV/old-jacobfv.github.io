@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jacobfv.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jacobfv.github.io/" rel="alternate" type="text/html" /><updated>2022-03-30T15:38:28-05:00</updated><id>https://jacobfv.github.io/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal portfolio site
+</subtitle><entry><title type="html">Design Patterns for AI</title><link href="https://jacobfv.github.io/blog/design-patterns-for-ai/" rel="alternate" type="text/html" title="Design Patterns for AI" /><published>2022-03-30T00:00:00-05:00</published><updated>2022-03-30T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/design-patterns-for-ai</id><content type="html" xml:base="https://jacobfv.github.io/blog/design-patterns-for-ai/">&lt;p&gt;Here’s how I’m approaching the problem of building artificial general intelligence:&lt;/p&gt;
+
+&lt;p&gt;Engineering generally starts off with a few high-level abstract ambitions that are refined and translated with increasing clarity into physical realizations. In software engineering, the outputs of this process are rendered into unambiguously crisp executable statements. In an agile environment, the entire software engineering process is iterative with loops of increasing frequency over the project lifespan and tools automating this optimization (compiler chains, code optimization, high-level languages) operating at progressively higher-levels further reducing the idea to implementation transit time. Now, when neural networks are the focus of software engineering, translation from informal to unambiguous specification is almost immediate (given sufficient understanding of programming, math, deep learning, and thermodynamics) and then the brunt of effort shifts (as it rightly should) to actually testing deep learning hypotheses. Finally, restricting the problem space to ‘human-level’ or ‘general’ artificial intelligence, this demands attempting to consolidate as many ideas in neuroscience, cognitive psychology, and artificial intelligence as possible into a working system implementation. While this consolidation appears deceptively simple in literature, the constituent ideas are easily lost in implementation&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Still, the diverse array of tools and techniques which ML has developed represent orders-of-magnitude learning efficiency gains over independent effort. Ever striving to maximize the efficiency with which meaningful information can be infused into a system recommends riding on the energy-momentum of hundreds of thousands of researchers (and zillions of FLOPs), that is, incorporating permutations of as many ML research outcomes as possible: codebases, pretrained models, individual weights, architectures, training paradigms, existing datasets, and environments all guided by machine and human intuition. Following therefore, I explicitly list several observations and ideas below to help remind myself of the cognitive dynamics I desire to instill in increasingly general AI:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Definite (e.g.: boolean) logic is inconsistent. Thermodynamics – rather than logic – governs the mind. Logical thought only emerges as a dissipating low-entropy trajectory.&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; It seems reasonable then to devote more compute to System I-type components than System II-type components&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Differentiation evolves representations from vague to crisp culminating in perceptions and actions. Actions (thought words, decisions, motor activity) may modify the world state and destroy their causal crisp representation thus restarting the process.&lt;sup id=&quot;fnref:2:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Synthesis integrates bottom up signals into composite models. Layer units activate if both a top-down model predicts their activation and a bottom-up signal initiates it. Top-down models compete to ‘explain’ a signal and sharpen their precision (cognitive niche) when correctly explained. They gradually loosen their precision if they cannot explain a bottom up signal field. If no sharp models explain a bottom up signal, then imprecise general models become competitive. I think model-signal similarity should be measured by $KL[p_{bu}&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;\tau_{td}]$ which heavily taxes precise models that get selected when they predict low probabilities but true signals have high probabilities. Only the winning model gets optimized by the signal. Loosing models increase their variances.&lt;sup id=&quot;fnref:2:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Heterachical competition requires computing ‘explanatum’ (the model’s predictive accuracy for an input signal normalized over all higher nodes offering predictions) for each unit-model connection. Since explanatum is softmaxed, it may be rolling-averaged as a nice coefficient $a \in [0, 1)$ to inform model optimization and growth.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Real neurons don’t reproduce (they’re simply in abundance and specialize), but the architecture I am describing should only be as complex as necessary. Therefore, models (units with efferent td connections) should binary fizz when their explanatum score $a$ is high. Children can share identical parameters and connectivity since random noise should quickly break their symmetry.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Gaussian may only represent a small amount of data distributions, but deviations from an estimated and actual distribution are always Gaussian. Also variances. I’m not sure about higher-order moments.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dynamic precision training: start training at 32bit, shrink to 1bit for most pre-training, fine-tune back at 32bit. With 1bit networks at criticality, the network gets the maximum computational power out of its physical substrate, and critical dynamics should translate these gains into learnable logical flexibility. Maybe just stay at 1bit.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If using 1bit representations, maybe have each unit transmit a vector at a time.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Biological synaptic distribution is exponentially bimodal. I should recognize this by federating the weights into a few large neurons and many small connectivity neurons. This may reduce to sparse scattered (global connectivity) and fixed conv (local connectivity) layers.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sparse connectivity is essential, but some local dense connectivity may complement it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Maybe initialize the network with subgraphs taken from liquid state machines or from connectome research.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Look beyond the computational realization of memory-compute. Maybe neurons exist in a geometric-structured field instead of being entries in an euclidean structured tensor? This allows for dynamically moving neurons, adding neurons, and deleting neurons.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Look beyond statics to focus on system dynamics. Forget feedforward solutions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Integration – which is not directly solvable like differentiation – represents tremendous complexity reduction. Try to integrate this behavior into the system dynamics perhaps with a differentiable form of Risch’s algorithm or taking advantage of Fourier or Laplace transforms (with inverses)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use the log-form of geometric mean to allow networks to selectively multiply or add incoming weights.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Regularize synchronization and low entropy into the dynamics to favor system-II-type distributed trajectory emergence. Is their a way to estimate entropy empirically? For known distributions, yes (eg.: assume signals represent actual-expected input. THen they are normal with known confidence intervals.)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Design the system to generate minimal activity at each realization level: minimal distributed trajectories, minimal activations, minimal structural connections.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Prediction and reward maximization may supply the bulk of training information. However include maybe 10% data from more structured forms like task-specific probes and decoders as well as intrinsic behavioral objective satisfaction.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To take advantage of existing pretrained models, other architectures, and for research and development convenience, make the above SOMPNet layer able to interface with other SOMPNet layers, DL layers in general, and python functions in a pythonic interface as if they were directly expressed in math.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2203.08913v1.pdf&quot;&gt;Memorizing transformers&lt;/a&gt; perform nondifferentiable knn search over long trajectories. This allows agents to have very short soft attention sequences. A developing agent should  progressively utilize longer and longer hard attention.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Agent Organization
+    &lt;ul&gt;
+      &lt;li&gt;botttom up observation and independant abstraction&lt;/li&gt;
+      &lt;li&gt;top down action, forcing the world to be the way the agent thinks it should be&lt;/li&gt;
+      &lt;li&gt;side communication. When agents have a strong idea of what’s going on, they should broadcast it to their peers.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Maybe represent everything by SDR of binary probits. This allows concretely defining entropy, KLD, and other metrics, it has low overlap and all the other benefits of SDR’s, and it’s easy to implement and might even scale to lower and lower precisions until it can work at single bit-level representations (classical SDR’s). Maybe there’s a way to make the precision dynamically determined (like entropy). Train a neural-CPU on the floating point data, and then whenever the precision reaches one bit, run the neural CPU instructions directly as machine code.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Model capacity should grow linearly with experience. Ideally, this would take place continually and online. However there it seems more efficient to parallelize data collection (policy usage) and then make training and architectural changes offline.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;While philosophy gets us nowhere, it is good to keep in mind relevant analogies to the AI system to guide creative design. For example, pain might be construed as a negative reward, and unselfish love, the objective of optimizing the loved object’s objectives. Epistemic entropy minimization is to curiosity as high entropy combined with mutual information between internal states over time is to consciousness. Art is about engineering aesthetic qualities into observers’ perceptions, and science is the perception of humanity as a whole.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The AI should interact with the world in a way that is intuitive and natural for its own cognitive architecture just as we humans do with our bodies. Alternatively, for any given world interface (environment-body combination), the AI should be able to evolve its brain to conform to that interface.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I know all the cuts to make before I enter the shop, but sawing for 2 hours leaves me exhausted and I end up incorrectly measuring or cutting material unless things are marked correctly. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://link.springer.com/book/10.1007/978-3-540-73267-9&quot;&gt;“Neurodynamics of Cognition and Consciousness”&lt;/a&gt; ch.1, 5 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:2:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:2:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="reflection" /><category term="ideas" /><category term="agi" /><summary type="html">Here’s how I’m approaching the problem of building artificial general intelligence:</summary></entry><entry><title type="html">Advanced Python Features</title><link href="https://jacobfv.github.io/blog/advanced-python-features/" rel="alternate" type="text/html" title="Advanced Python Features" /><published>2022-03-13T00:00:00-06:00</published><updated>2022-03-13T00:00:00-06:00</updated><id>https://jacobfv.github.io/blog/advanced-python-features</id><content type="html" xml:base="https://jacobfv.github.io/blog/advanced-python-features/">&lt;p&gt;Python’s always been a cool language for many reasons: it uses a lot of simple, English-language keywords, it cuts down on many of the braces and semicolons so prevelant in other programming languages, and it’s cross-platform. Python code is beautiful. But besides these obvious perks, Python syntax and semantics go far deeper. In this post, I want to highlight 3 aspects of the language: functions, object definitions, and runtime introspection.&lt;/p&gt;
+
+&lt;h2 id=&quot;function-signatures-are-highly-expressive&quot;&gt;Function signatures are highly expressive&lt;/h2&gt;
+
+&lt;p&gt;You’re probabbly familiar with ordered arguments:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;But have you ever passed in arguments by keyword?&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also define a function with an arbitrary number of positional arguments like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And you can do the same for keyword arguments:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# d is ignored; a=1, b=2, c=3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can even declare &lt;em&gt;position-only arguments&lt;/em&gt; by terminating those args with a slash &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# error; b is a position-only argument
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And you can do the same for &lt;em&gt;keyword-only arguments&lt;/em&gt; by prefixing them in the argument list with an asterisk &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# error; c is a keyword-only argument
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;These features help you as a developer make the intent of your API more obvious by constraining how a function can be called. Python also offers the ability to annotate arguments with types, replace missing arguments with default values, and include a special triple-quote string at the start of your function for clear documentation.&lt;/p&gt;
+
+&lt;h2 id=&quot;everything-is-an-object&quot;&gt;Everything is an object&lt;/h2&gt;
+
+&lt;p&gt;Unlike C++ or Java, Python treats all semantic-level constructs the same; functions, classes, types, instances – they’re all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt;’s from the interpretter’s point of view. All objects have a name, a type, and a value. So when we write something like:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt; 
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;we’ve just initialized three objects: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt; which is an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt; with a value of 1; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;B&lt;/code&gt; which is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;type&lt;/code&gt; object with a value of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;B&lt;/code&gt; class’s contents; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c&lt;/code&gt; which is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;function&lt;/code&gt; with a value containing the function code, its signature, and some other data. We can verify this by running:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;which outputs&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;class &apos;int&apos;&amp;gt;
+&amp;lt;class &apos;type&apos;&amp;gt;
+&amp;lt;class &apos;function&apos;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Since classes and functions are just plain-old &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt;’s, that means you aren’t limited by their block-style definition syntax. While certainly convenient, you can dynamically build your own types and functions.&lt;/p&gt;
+
+&lt;p&gt;Let’s build a class &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D&lt;/code&gt; using the three objects above:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;D&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;D&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,),&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is the same as:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;v2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;v3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;but it gives us the flexibility to programmatically define what &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D&lt;/code&gt; should look like.&lt;/p&gt;
+
+&lt;p&gt;Python is sometimes like JavaScript, in that you can often add properties on the fly. (I.E.: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myobj.new_attribute = value&lt;/code&gt;). In cases where the interpretter allows you to do this, it’s usually because that object has a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__dict__&lt;/code&gt; attribute defined. This attribute contains all the object’s regular attributes and methods as well as hidden introspective variables (next section). You can override the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getattr&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setattr&lt;/code&gt; to methods to take managing the object’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__dict__&lt;/code&gt; in your own hands. Finally, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;property(f_get, f_set, f_del)&lt;/code&gt; method lets you define properties on objects with a custom getter (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f_get&lt;/code&gt;), setter (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f_set&lt;/code&gt;), and delete function (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f_del&lt;/code&gt;). This function is available as a higher order function so you can write &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@property&lt;/code&gt; on the line above an instance method to make convert it into a propery accessor.&lt;/p&gt;
+
+&lt;h2 id=&quot;runtime-introspection-is-super-simple&quot;&gt;Runtime introspection is super simple&lt;/h2&gt;
+
+&lt;p&gt;Runtime introspection is the ability to look at the state of the programming runtime within the code that is being run. In simple cases, you might want to find out how deep you are in the stacktrace to avoid overflows. In complex cases, you could be allocating memory by hand, declaring new types, or changing the code being executed! First, some basics:&lt;/p&gt;
+
+&lt;p&gt;Python code is run in a two-stage processes: First, the source code file is opened, and Python compiles it into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code&lt;/code&gt; object. Then the interpretter begins executing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code&lt;/code&gt; at its top-level scope. Whenever you’re just interpretting, compilation happens on the fly instead of ahead of time. This may sound complex, but conveniently, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code&lt;/code&gt; is a Python object type. That means we can introspect the code inside itself!&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code&lt;/code&gt; is much more common that you may realize. Every Python function contains a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__code__&lt;/code&gt; property. Anytime you run a parameter-less function, you practically get identical behavior as if you had manually evaluated the function’s code using Python’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eval&lt;/code&gt; builtin:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# same as
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__code__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;globals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Pretty cool!&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;I’m sure you can now see why so many computer science students use Python. It has awsome theoretical and practical power! Is there a feature of the Python programming language that you like? Please share it in the discussion.&lt;/p&gt;</content><author><name></name></author><category term="notes" /><summary type="html">Python’s always been a cool language for many reasons: it uses a lot of simple, English-language keywords, it cuts down on many of the braces and semicolons so prevelant in other programming languages, and it’s cross-platform. Python code is beautiful. But besides these obvious perks, Python syntax and semantics go far deeper. In this post, I want to highlight 3 aspects of the language: functions, object definitions, and runtime introspection.</summary></entry><entry><title type="html">Industry as a Service (IndAAS)</title><link href="https://jacobfv.github.io/blog/industry-as-a-service/" rel="alternate" type="text/html" title="Industry as a Service (IndAAS)" /><published>2022-02-28T00:00:00-06:00</published><updated>2022-02-28T00:00:00-06:00</updated><id>https://jacobfv.github.io/blog/industry-as-a-service</id><content type="html" xml:base="https://jacobfv.github.io/blog/industry-as-a-service/">&lt;h2 id=&quot;initial-motivation&quot;&gt;Initial motivation&lt;/h2&gt;
+
+&lt;p&gt;My brother and I have always approached cooking from an economic perspective: what’s the fastest way to cook X? how long will it last in the freezer? how much time and money does it take? We believe many of the demands imposed by the traditional culinary methodology are accidental and artificial – rather than essential. Not that traditional cooking is a problem, but in our case, hard economic or practical concerns often overshadow the importance of replicating a particular subjective experience.&lt;/p&gt;
+
+&lt;p&gt;Could we automate the entire culinary process? Further, could we even automate growing and harvesting the plants themselves? I google’d “fastest growing vegetables” and found several – including carrots 🥕, lettuce 🥬, tomatoes 🍅, cucumbers 🥒, onions 🧅, broccoli 🥦, turnips, celery, and kale – which all mature in around two months. That’s really fast. Sometimes I think, “If only I had planted a fruit tree 5 years ago, it would be ready now.” but for the above plants, the turnaround only takes 60 days!&lt;/p&gt;
+
+&lt;h2 id=&quot;dirt-cheap-is-too-expensive&quot;&gt;Dirt cheap is too expensive&lt;/h2&gt;
+
+&lt;p&gt;Now how would I grow these plants? I remember hearing about a plant-growing technique called hydroponics. This is an old technique where you grow plants in a watery-nutrient solution instead of soil. Taking this approach makes it easier to control the environment surrounding the roots which reduces the likelihood of viral outbreaks, and hence, the need for fertilizers and pesticides. It also cuts down on labor requirements. A related techniuqe, areoponics, eliminates the need for large amounts of water altogether. The plants literally grow suspended in the air, and their roots are regularly spraying with a solution of water and nutrients. I’m going to explore both techniques, but if areoponics can be sucessfully applied to the above plants, I’ll primarily lean on it given its apparent simplicity and low nutrient-solution requirements.&lt;/p&gt;
+
+&lt;p&gt;Just doing some napkin math, tomato prices are around 2 $/lb. This website&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; claims their &lt;em&gt;Bush Early Girl Tomato&lt;/em&gt; produces ~100 tomatoes that each weigh 6-7oz (~0.4 lbs) in a 60 day turnaround time. Multiplying this all togethor, we get: 100 tomatoes/plant × 0.4 lbs/tomato × 2 $/lbs &amp;amp;approx; 80 $/plant every 60 days. That’s slightly above $1/plant/day. I wouldn’t be surprised if other plants weren’t as productive, but this analysis makes even a small automated areoponic vegetable garden seem like an economically viable starting point.&lt;/p&gt;
+
+&lt;h2 id=&quot;open-online-on-demand&quot;&gt;Open, online, on-demand&lt;/h2&gt;
+
+&lt;p&gt;Of course, if growing a small areoponic garden were my only concern, I could just get a spray bottle and mist the plants myself every day. Automation demands a signifcantly large or complex application space to justify its existance – much bigger than I could ever manage. I have trouble growing “starter” plants, let alone large, diverse gardens. However, my associates and YouTube inform me that there are many people who do have this skill. This broadened my focus from “how to grow” to “how to help other people grow”. My brother recommended adapting the AWS infrastructure-as-a-service (IAAS) model to farming with managed racking, stacking, packaging, and climate control. After playing around with it, we arrived at the idea for Ecosystem-as-a-Service (EaS):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Racks&lt;/em&gt; come in various sizes with optional watering, misting, lighting, ventilation, and temperature control. &lt;em&gt;Containers&lt;/em&gt; and &lt;em&gt;buildings&lt;/em&gt; are climate controlled places that simulate various ecosystems.&lt;/li&gt;
+  &lt;li&gt;Racks are stacked on top of each other to form a &lt;em&gt;stack&lt;/em&gt;. Stacks are placed in containers or buildings. Containers go in buildings.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Growers&lt;/em&gt; pay to use racks and place them in publically available or privately rented containers. Growers can place fungi, plants, and approved animals in their racks.&lt;/li&gt;
+  &lt;li&gt;Growers also pay for things like cameras, tilling machines, and other equipment installed in their racks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This service generalizes the automated farming model to many kinds of life. I think it could produce some interesting use-cases. For example, a community garden is a medium-sized garden that it managed by the local community. On the other hand, this online racking service would allow Internet communities to form their own decentralized, global community gardens. Cameras could be made to stream realtime footage of their plants to a website, and community members could remotely watch their plants grow up, initiate ‘rain’, control the temperature, or change the time of day. This touchless, online service would also help people who are afraid of bugs to get their garden itch satisfied. People could even use the racking service to remotely manage a bee hive and harvest honey. (As long as there is a polinator-friendly container available and other growers are cultivating flowering species there.) People like myself who want to farm but don’t know how would benefit from its more-deterministic environments to learn in. Agg schools could use this service to teach their students. Ecology researchers might even build entire ecosystems with this service to help them understand the Earth and how to sustainably cultivate it.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The Earth’s ecosystem is an incredible complex dynamical system. In fact, it’s so incredible, I hardley notice it. Unlike the economy which fluctuates in extremes or even the brain which peaks in the mid-20’s and then slowely declines, the Earth’s ecosystem is amazingly robust to the perturbations we throw at it. I think it can tell us a lot about economics, neuroscience, and artificial neural networks, and the Ecosystem-as-a-Service (EaS) model could be a great way to draw attention in that direction.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;food-prep-as-a-service-fpaas&quot;&gt;Food-prep-as-a-Service (FPAAS)&lt;/h2&gt;
+
+&lt;p&gt;Returning to the earlier problem, I need a way to automate the culinary process. I will start by making a small scale areoponic farm in my room using wooden racks, LED lights, pressurized spray misting pipeline, and a camera-equipted raspberry pi with aluminum foil blanketing it all. Once I get the kinks worked out, I will rent a storage unit building that has electricity and scale up to a larger workspace. Then I will use the revenue from this personally managed areoponic farm to rent factory space where the Ecosystem-as-a-Service (EaS) model can go full scale. Still, I need to automate the cooking process. Extending the on-demand web service model here, I will use the revenue from the earlier EaS model to create an automated food service. Here’s the plan:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Restaurants supply a recipie with indegredient quantities and the preparation strategy.&lt;/li&gt;
+  &lt;li&gt;The stragegy is a list of steps, each step specifies a list of ingredients and the operation performed.&lt;/li&gt;
+  &lt;li&gt;Operations are limited to stack, fold, mix, pour, and a few other simple procedures allowing them to be entirely automated.&lt;/li&gt;
+  &lt;li&gt;The ingredients are stored in a warehouse, and the warehouse is connected to the kitchen via a network of containers using a similar rack-management system as in the EaS model.&lt;/li&gt;
+  &lt;li&gt;Restaurants can sell food to other restaraunts directly within the production infrastructure network.&lt;/li&gt;
+  &lt;li&gt;Several managed logistics services are available to the restaurant, including a warehousing, trucking service, and home delivery service.&lt;/li&gt;
+  &lt;li&gt;Morterless restaurants using this service can also pay for a complete e-commerce website with realtime video virtual dinning rooms and a delivery service that delivers food to all guests at the same time.&lt;/li&gt;
+  &lt;li&gt;This restaurant-as-a-service (RAS) model could be used to automate the entire food production process.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;generalizing-the-idea&quot;&gt;Generalizing the idea&lt;/h2&gt;
+
+&lt;p&gt;At this point, I’ve described plans to automate two steps on the culinary value chain: producing and cooking. Why stop there? Would it be possible to apply the same automatic, online racking, stacking, and environment management system service to manufacturing, small animal farming, and other production-related industries? Imagine an online warehousing service where customers bring in &lt;em&gt;stations&lt;/em&gt; for their unique business domains. Manufacturing customers bring in their CNC’s, bakers bring in their industrial cooking equiptment, farmers bring in their chicken coups, and so on. Then the warehouse provides moving, racking, stacking, and other intra-warehouse logistics as a service. Better yet, it provides a &lt;em&gt;service infrastructure&lt;/em&gt; of several common services like drilling, milling, welding, mixing, oven cooking, planting, misting, climate control, and so on which are available at inexpensive – perhaps even disadvantageous prices to encourage customers to capitalize on the warehouse infrastructure for producing their own products and services. Instead of growing plants or even directly managing a farm service, the warehouse simply provides an infrastructure for business customers to use to build their own farm-as-a-service (FAS). Maybe the warehouse’s only profitable service would be pallete shuttling – which is an unavoidable service that all customers must buy into.&lt;/p&gt;
+
+&lt;p&gt;Imitating AWS, this warehouse service would be online and adopt a pay-as-you-go model – no upfront costs or artificial friction to economic activity. Just as AWS offers multi-AZ&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; deployment, the warehouse service would offer multi-warehouse deployment, and warehouses within a single region would be linked by high-speed, high-capacity railways. The warehouse service would also offer a &lt;em&gt;service infrastructure&lt;/em&gt; that would allow customers to build their own services on top of the warehouse infrastructure and sell them to other businesses using the warehouse. Finally, customers could pay the warehouse service company to set up and maintain on-premise warehousing systems in other company’s warehouses. This would be important in industries where the shipping costs are high like car or heavy machinery manufacturing.&lt;/p&gt;
+
+&lt;p&gt;I’ve already described two use-cases for this warehouse service above. Here are some more:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;A retail store uses machine learning to note what products the customer is interested in most and where those customers will walk. Then the store automatically circulates products on its shelves with a selection that is predicted to maximize revenue. This process happens continuously, automatically, and asynchonously on empty isles.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A fast food restaurant installs an on-premise palate management system to replace its manual labor prep and assembly line. Human labor is only used to apply finishing touches to dishes, clean the machines, interface with customers.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A company uses the warehousing service to build a virtual chicken coup. This company sells access to its coup on a service-based model and its customers use the virtual coup to produce chickens and eggs, offer virtual chicken coup visiting experiences to children, and provide training grounds for poultry businesses.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Collectively owned &lt;em&gt;virtual makerspaces&lt;/em&gt; could democratize access to expensive equiptment like metal 3d printers, 5-axis CNC machines, and metal forming machines.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A startup doesn’t want to pay thousands to a Chinese factory and doesn’t have enough money for its own factory equiptment yet. It can use the warehouse service to go from initial to medium-sized production until it can afford its own space and equipment. Since the warehouse and on-demand manufacturing infrastructure are both managed, on-demand services, the startup can quickly change its product design as it works through kinks in the value chain.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Much of the manufacturing sector could go virtual. Instead of managing a factory, it could use the warehouse service to manage its own production facilities. This would allow increasing emergence of &lt;em&gt;e-manufacturing companies&lt;/em&gt; where more focus can stay on core business rather than infrastructure.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Macro-economic activity often fluctuates chaoticly in response to unpredictable world dynamics. This automated warehouse service with its online, on-demand service model could allow small and large businesses to adaopt faster to the economy’s shifting winds and remain competitive. It has strong potential to democratize access to 21st century manufacturing technology.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This has been a long and sprawling post outlining some very lofty ideals for the 4th industrial revolution. I hope to see some of them implemented in the next few years and maybe even take part in realizing them. Please let me know if you used this business model so myself and others can the watch out for the certain, yet unknown pitfalls ahead. Thanks for reading!&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;https://bonnieplants.com/products/bush-early-girl-tomato &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;multi-AZ deployment means Amazon Web Services deploys its services on multiple data centers in different, yet reasonably nearby, geographic locations. This helps decouple power or internet availability from service availability. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="idea" /><summary type="html">Initial motivation</summary></entry><entry><title type="html">Ergonomic Optimization</title><link href="https://jacobfv.github.io/blog/ergonomic-optimization/" rel="alternate" type="text/html" title="Ergonomic Optimization" /><published>2021-12-31T00:00:00-06:00</published><updated>2021-12-31T00:00:00-06:00</updated><id>https://jacobfv.github.io/blog/ergonomic-optimization</id><content type="html" xml:base="https://jacobfv.github.io/blog/ergonomic-optimization/">&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
+
+&lt;p&gt;I don’t find it easy to remain productive when I’m working at the computer (not to suggest that I am generally productive anyway). I’ve unintentionally conditioned myself that whenever I sit down at the computer, I need to browse the latest papers / popular repositories / system settings / etc. but not actually do the work I came to do. I’m thankful that I’m not overwhelmed with things to do anyway, but I think I could be much more productive than I currently am.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-i-tried&quot;&gt;What I tried&lt;/h2&gt;
+
+&lt;p&gt;I started by recognizing that I needed to change some of my personality traits, routines, and motivations. I started spending more time alone thinking out loud about the things I need to do. This evolved into a journal where I record my thoughts on problems, emotions, and ideas and then reflect on them later. I started using these habits and techniques to think explicitly about how I can continue changing my personality. I made a “Habits” document where I record habits I need to create, stop, and specific techniques that help me change.&lt;/p&gt;
+
+&lt;div class=&quot;row justify-content-sm-center&quot;&gt;
+    &lt;div class=&quot;col-sm-6 mt-3 mt-md-0&quot;&gt;
+        &lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/img/Journal-12.png&quot; alt=&quot;&quot; title=&quot;planning the next months&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-6 mt-3 mt-md-0&quot;&gt;
+        &lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/img/Journal-22.png&quot; alt=&quot;&quot; title=&quot;reviewing what I learned&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The latest extension to my externalized cognitive toolkit is a “Tasks” document. I divide tasks into four categories:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Game plan: scheduled tasks with details&lt;/li&gt;
+  &lt;li&gt;Long range: goals to keep focused on in the long range&lt;/li&gt;
+  &lt;li&gt;Unscheduled: tasks that are not scheduled yet but should be handled&lt;/li&gt;
+  &lt;li&gt;Optional: I don’t want to forget these task entirely, but nothing bad happens if I don’t do them&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If I don’t finish everything on the plate for today, I simply move it over to the next day and work on that at the first chance. However, I generally work to be realistic – but not too conservative – with my demands.&lt;/p&gt;
+
+&lt;div class=&quot;row justify-content-sm-center&quot;&gt;
+    &lt;div class=&quot;col-sm-6 mt-3 mt-md-0&quot;&gt;
+        &lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/img/Tasks-1.png&quot; alt=&quot;&quot; title=&quot;My task list&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-6 mt-3 mt-md-0&quot;&gt;
+        &lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/img/Routines-2.png&quot; alt=&quot;&quot; title=&quot;Routines I need to kill&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;outcomes&quot;&gt;Outcomes&lt;/h2&gt;
+
+&lt;p&gt;30 days into this routine, I definitely see positive results. Making a habit of thinking about the things I need to do has helped me to be more productive while avoiding the need to constantly worry ‘did I do this or that?’. Anytime a to do pops in my head, all I have to do is write it down and then I can free my brain to focus on the context I’m currently in.&lt;/p&gt;
+
+&lt;p&gt;Taking time to think out loud and using a gratitude journal has seriously helped me increase control over my emotions which in turn has helped me to be more productive. Journaling has helped me to be more aware of my emotions and to ask myself questions like “what do I feel like doing?” vs. “what should I be doing?”. I really feel like this has helped me be more in control of my decisions.&lt;/p&gt;
+
+&lt;p&gt;Writing my thoughts down and revisiting them later helps me think about them more objectively. I see that I forget so easy without a written memory aid. Things that stressed me out never really mattered anyway. Many of the things that I thought were impossible to do now appear easy or otherwise more manageable. It seems that I have a lot more control of my life than I thought I did. I understand better why people say, “life is like a box of chocolates”; it’s full of color, emotions, thoughts, activities, accomplishments, and surprises. YouTube doesn’t compare to a productive day!&lt;/p&gt;
+
+&lt;h2 id=&quot;going-forward&quot;&gt;Going forward&lt;/h2&gt;
+
+&lt;p&gt;A few days ago, I read through all these cognitive tools, and I was amazed at how they have improved my productivity. Obviously, I’m going to continue using them. However, I don’t want to stop here. Like a manufacturing toolchain that continually gets upgraded, I will continue refining my productivity habits and techniques and I will also start making regular reviews of my journal to avoid repeating any mistakes I’ve made. I may even start a “Mistakes” document to record specific cases to watch out for. I will also start quantifying objectives and subjectives like tasks completed per day, tasks completed / tasks attempted per day, relative emotion positivity and negativity, big breakthroughs per week, etc.&lt;/p&gt;
+
+&lt;p&gt;I’m definitely not perfect, but I’m going to use every tool I have to optimize my habits, personality, productivity, and self. I hope sharing this reflection will help others on their personal journey as well.&lt;/p&gt;</content><author><name></name></author><category term="experiment" /><category term="reflection" /><summary type="html">The Problem</summary></entry><entry><title type="html">Notes on Neuroscience and AI</title><link href="https://jacobfv.github.io/blog/notes-on-neuroscience-and-ai/" rel="alternate" type="text/html" title="Notes on Neuroscience and AI" /><published>2021-12-03T00:00:00-06:00</published><updated>2021-12-03T00:00:00-06:00</updated><id>https://jacobfv.github.io/blog/notes-on-neuroscience-and-ai</id><content type="html" xml:base="https://jacobfv.github.io/blog/notes-on-neuroscience-and-ai/">&lt;p&gt;&lt;a href=&quot;https://link.springer.com/book/10.1007/978-3-540-73267-9&quot;&gt;“Neurodynamics of Cognition and Consciousness”&lt;/a&gt; preface:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The main theme os this volume is the dynamics of higher cognitive functions. The authors of this volume provide a line of arguments explaining why dynamics plays [a] central role in intelligence in biological brains and in man made artifacts[.] Researcher too often make the mistake of identifying intelligence with the projection of intelligence into a brilliant symbolic form, whereas intelligence is the unity of the path (or dynamic trajectory) leading to the observed formalisms and the intermitted appearance of the formalism itself. Intelligence can be understood only in the context of the complementary nature as it is describes by Kelso and collaborators. Neurodynamics had a peculiar property described as the “edge of stability” or “metastability.” Accordingly, the brain as a complete dynamic system is in perpetual movement from one state to another. When the brain reaches a dominant state, it does not [rest] there, rather it immediately moves on and decays into an unordered state, only to emerge a moment later to another prominent state. Freeman has identified neurophysiologic correlates of this metastable wandering along the landscape of brain dynamics in terms of spatio-temporal patterns of oscillations, sudden jumps or phase transitions of local field potentials.
+This book explores various aspects of the neurodynamics of metastable cognitive states. It covers a wide range of research areas relates to dynamics of cognition including experimental studies, dynamical modeling and interpretation of cognitive experiments, and theoretical approaches. Spatio-temporal structures of neural activity and synchronization are manifested as propagating phase cones or phase boundaries over the cortex. Methods to detect, identify and characterize such transient structures are described. Identification fo transients is a very hard pattern recognition problem as the simultaneous overlapping dynamical processes provide a noisy and cluttered domain Advanced techniques of dynamical logic progress from vague concepts to increasingly crisp and articulate forms, which is a promising approach to detect the required complex spatio-temporal correlates of cognitive functions. SIgnificant part of the volume is devotes to the description of various components of the actin-perception cycles and sensory processing domains, from cellular to system levels, and applications in intelligence designs&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2105.07284.pdf&quot;&gt;A brain basis of dynamical intelligence for AI and computational neuroscience&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To motivate a brain basis of neural computation, we present a &lt;strong&gt;dynamical view of intelligence&lt;/strong&gt; from which we elaborate concepts of sparsity in network structure, temporal dynamics, and interactive learning. In particular, we suggest that temporal dynamics, as expressed through &lt;strong&gt;neural synchrony&lt;/strong&gt;, &lt;strong&gt;nested oscillations&lt;/strong&gt;, and &lt;strong&gt;flexible sequences&lt;/strong&gt;, provide a rich computational layer for reading and updating hierarchical models distributed in long-term memory networks. &lt;em&gt;(p. 1)&lt;/em&gt;
+While it is difficult to answer “What is intelligence?”, it is almost as useful to answer “What is intelligence for?”: Intelligence is for adaptive behavior. Otherwise, an organism would have been better off (as in the neuromythology surrounding the sea squirt) ingesting its brain and attaching itself to a rock. &lt;strong&gt;A corresponding yardstick for intelligence would be the degree to which an organism or agent controls its environment in service of continued survival&lt;/strong&gt;. Indeed, &lt;strong&gt;extending this assessment to novel or unpredicted situations, along ecological dimensions, should correlate with generalized problem-solving capacity&lt;/strong&gt;. &lt;em&gt;(p. 2)&lt;/em&gt;
+This not-unusual definition of intelligence puts AI (based on disembodied and nonagentic neural nets trained on datasets lacking spatial, temporal, epistemic, mnemonic, social, and/or environmental context) at a disadvantage for purposes beyond hypercompetent regression and classification. Behavior is variable and complex, but it is also hierarchically organized through time in all animals, with &lt;strong&gt;humans exhibiting perhaps the deepest such hierarchies&lt;/strong&gt;. Conceptual knowledge is similarly hierarchical and demanding of flexibility, reconfigurability, and combinatoric expressiveness (cf. the compositionality and systematicity of language). High level cognition is ordered, temporal, and dynamical in that &lt;strong&gt;what came before conditions the &lt;em&gt;meaning&lt;/em&gt; of what comes after, with lifelong horizons in both directions&lt;/strong&gt; &lt;em&gt;(p. 2)&lt;/em&gt;
+Typically &amp;lt;1–2% of possible unit-wise connections exist within the cortico-limbic circuits of the hippocampus and neocortex. The impressive combinatorics inherent in this level of sparsity give rise to the intuitive, but perhaps wishful, notion that discovering the underlying motifs, generating functions, or connectomes of synaptic connectivity will unlock the brain’s neural coding secrets. Without such sparsity, dense connectivity either reliably relaxes into pattern completion for recurrent models viz. Hopfield nets, or universal function approximation for feedforward models viz. multi-layer perceptrons and deep learning. &lt;strong&gt;Brains appear to do both, but also much more.&lt;/strong&gt; Density, as in typical artificial neural nets (ANNs), collapses the space of possible network configurations to that of size and layer architecture. Having far fewer degrees-of-freedom greatly restricts structural, and thus functional, diversity. &lt;em&gt;(p. 4)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.incompleteideas.net/IncIdeas/BitterLesson.html&quot;&gt;The Bitter Lesson&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a big lesson. As a field, we still have not thoroughly learned it, as we are continuing to make the same kind of mistakes. To see this, and to effectively resist it, we have to understand the appeal of these mistakes. We have to learn the bitter lesson that building in how we think we think does not work in the long run. The bitter lesson is based on the historical observations that 1) AI researchers have often tried to build knowledge into their agents, 2) this always helps in the short term, and is personally satisfying to the researcher, but 3) in the long run it plateaus and even inhibits further progress, and 4) breakthrough progress eventually arrives by an opposing approach based on scaling computation by search and learning. The eventual success is tinged with bitterness, and often incompletely digested, because it is success over a favored, human-centric approach.
+[…]
+The second general point to be learned from the bitter lesson is that the actual contents of minds are tremendously, irredeemably complex; we should stop trying to find simple ways to think about the contents of minds, such as simple ways to think about space, objects, multiple agents, or symmetries. All these are part of the arbitrary, intrinsically-complex, outside world. They are not what should be built in, as their complexity is endless; instead we should build in only the meta-methods that can find and capture this arbitrary complexity. Essential to these methods is that they can find good approximations, but the search for them should be by our methods, not by us. We want AI agents that can discover like we can, not which contain what we have discovered. Building in our discoveries only makes it harder to see how the discovering process can be done.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://proceedings.neurips.cc/paper/2020/file/46a4378f835dc8040c8057beb6a2da52-Paper.pdf&quot;&gt;Pruning neural networks without any data by iteratively conserving synaptic flow&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Recent works have identified, through an expensive sequence of training and pruning cycles, the existence of winning lottery tickets or sparse trainable subnetworks at initialization. This raises a foundational question: can we identify highly sparse trainable subnetworks at initialization, without ever training, or indeed without ever looking at the data? We provide an affirmative answer to this question through theory driven algorithm design&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://research.fb.com/wp-content/uploads/2021/11/Parameter-Prediction-for-Unseen-Deep-Architectures.pdf&quot;&gt;Parameter Prediction for Unseen Deep Architectures&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;By leveraging advances in graph neural networks, we propose a hypernetwork that can predict performant parameters in a single forward pass taking a fraction of a second, even on a CPU. The proposed model achieves surprisingly good performance on unseen and diverse networks. For example, it is able to predict all 24 million parameters of a ResNet-50 achieving a 60% accuracy on CIFAR-10. On ImageNet, top-5 accuracy of some of our networks
+approaches 50%. Our task along with the model and results can potentially lead to a new, more computationally efficient paradigm of training networks. Our model also learns a strong representation of neural architectures enabling their analysis.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2203.02481.pdf&quot;&gt;AutoDIME: Automatic Design of Interesting Multi-Agent Environments&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Of the intrinsic rewards considered we found value disagreement to be most consistent across tasks, leading to faster and more reliable emergence of advanced skills in Hide and Seek and the maze task. Another candidate intrinsic reward considered, value prediction error, also worked well in Hide and Seek but was susceptible to noisy-TV style distractions in stochastic environments. Policy disagreement performed well in the maze task but did not speed up learning in Hide and Seek. Our results suggest that intrinsic teacher rewards, and in particular value disagreement, are a promising approach for automating both single and multi-agent environment design.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="notes" /><category term="brain" /><summary type="html">“Neurodynamics of Cognition and Consciousness” preface:</summary></entry><entry><title type="html">Naive Bayes Classifier</title><link href="https://jacobfv.github.io/blog/naive-bayes-classifier/" rel="alternate" type="text/html" title="Naive Bayes Classifier" /><published>2021-11-30T00:00:00-06:00</published><updated>2021-11-30T00:00:00-06:00</updated><id>https://jacobfv.github.io/blog/naive-bayes-classifier</id><content type="html" xml:base="https://jacobfv.github.io/blog/naive-bayes-classifier/">&lt;div class=&quot;jupyter-notebook&quot; style=&quot;position: relative; width: 100%; margin: 0 auto;&quot;&gt;
+  &lt;div class=&quot;jupyter-notebook-iframe-container&quot;&gt;
+    &lt;iframe src=&quot;../../notebooks/naive_bayes.ipynb.html&quot; style=&quot;position: absolute; top: 0; left: 0; border-style: none;&quot; width=&quot;100%&quot; height=&quot;100%&quot; onload=&quot;this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + &apos;px&apos;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="tutorial" /><category term="jupyter notebook" /><summary type="html"></summary></entry><entry><title type="html">Regularization</title><link href="https://jacobfv.github.io/blog/regularization/" rel="alternate" type="text/html" title="Regularization" /><published>2021-11-11T00:00:00-06:00</published><updated>2021-11-11T00:00:00-06:00</updated><id>https://jacobfv.github.io/blog/regularization</id><content type="html" xml:base="https://jacobfv.github.io/blog/regularization/">&lt;div class=&quot;jupyter-notebook&quot; style=&quot;position: relative; width: 100%; margin: 0 auto;&quot;&gt;
+  &lt;div class=&quot;jupyter-notebook-iframe-container&quot;&gt;
+    &lt;iframe src=&quot;../../notebooks/linear_regression.ipynb.html&quot; style=&quot;position: absolute; top: 0; left: 0; border-style: none;&quot; width=&quot;100%&quot; height=&quot;100%&quot; onload=&quot;this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + &apos;px&apos;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="tutorial" /><category term="jupyter notebook" /><summary type="html"></summary></entry><entry><title type="html">Estimating the Critical Mass</title><link href="https://jacobfv.github.io/blog/estimating-the-critical-mass/" rel="alternate" type="text/html" title="Estimating the Critical Mass" /><published>2021-11-06T00:00:00-05:00</published><updated>2021-11-06T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/estimating-the-critical-mass</id><content type="html" xml:base="https://jacobfv.github.io/blog/estimating-the-critical-mass/">&lt;p&gt;I’m sure somebody has made these kinds of analyses in much greater detail, but I wanted to get a sense of the computational limits that we are presently at. Caution: Many of the following numbers are pulled out of the internet &lt;em&gt;without serious effort&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;energy-efficiency&quot;&gt;Energy efficiency&lt;/h2&gt;
+
+&lt;p&gt;At its developed peak, the brain &lt;em&gt;might&lt;/em&gt; have 200 trillion synapses and consume 1760 kJ/day. Making this a ratio, we get 200 trillion synapses / 20W = 10 trillion synapses / watt. Suppose 1 synapse performs at least 10 ‘operations’ per second. Then the brain performs at least 100 TFLOPS with an ideal efficiency exceeding 100 TFLOPS/watt. Compare this to machine computation:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/pdf/1911.11313.pdf&quot;&gt;This paper (fig 5)&lt;/a&gt; says that in 2020, GPUs reach 100 GFLOPS/watt. However it notes that energy efficiency is exponentially increasing (rough estimate, 10x every 10 years)&lt;/li&gt;
+  &lt;li&gt;The v3-32 TPU Pod delivers ~1680 TFLOPS (see below) with &lt;a href=&quot;https://www.nextplatform.com/2018/05/10/tearing-apart-googles-tpu-3-0-ai-coprocessor/&quot;&gt;estimated power consumption&lt;/a&gt; 200W/core*32cores = 6.4kW. This makes about 250GFLOPS/watt. Only about 3 orders of magnitude less than this brain estimate.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;compute-cost-efficiency&quot;&gt;Compute cost efficiency&lt;/h2&gt;
+
+&lt;p&gt;Suppose it costs $10/day to sustain a human brain. Using the above measures, then the brain can perform at least 2000 trillion operations per second using only $0.0001… for a single second. This makes 17280000 TFLOP/$ or 17 exaflops per dollar. The v3-32 TPU Pod ideally approaches 4 times the single 8 core TPU performance = 4 * 420TFLOPS = 1680TFLOPS at a price $10,512 / month or $0.00400219298 per second. This makes 1680TFLOP/$0.00400219298 or 419769 operations per dollar or about 0.5MFLOP/$. Digital compute infrastructure looks on the order of 10^18 times less cost-efficient than the brain’s biological computation.&lt;/p&gt;
+
+&lt;h2 id=&quot;raw-compute&quot;&gt;Raw Compute&lt;/h2&gt;
+
+&lt;p&gt;The 100 TFLOPS brain estimate looks rather small. This number is easily surpassed by a single TPU pod in terms of brute computational speed – but definitely not efficiency. Still, the TPU pod is not unaffordably expensive. Maybe this infrastructure is sufficient for developing human-level AI!&lt;/p&gt;</content><author><name></name></author><category term="reflection" /><category term="agi" /><category term="brain" /><summary type="html">I’m sure somebody has made these kinds of analyses in much greater detail, but I wanted to get a sense of the computational limits that we are presently at. Caution: Many of the following numbers are pulled out of the internet without serious effort.</summary></entry><entry><title type="html">Image Classification</title><link href="https://jacobfv.github.io/blog/image-classification/" rel="alternate" type="text/html" title="Image Classification" /><published>2021-11-02T00:00:00-05:00</published><updated>2021-11-02T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/image-classification</id><content type="html" xml:base="https://jacobfv.github.io/blog/image-classification/">&lt;div class=&quot;jupyter-notebook&quot; style=&quot;position: relative; width: 100%; margin: 0 auto;&quot;&gt;
+  &lt;div class=&quot;jupyter-notebook-iframe-container&quot;&gt;
+    &lt;iframe src=&quot;../../notebooks/image_classification.ipynb.html&quot; style=&quot;position: absolute; top: 0; left: 0; border-style: none;&quot; width=&quot;100%&quot; height=&quot;100%&quot; onload=&quot;this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + &apos;px&apos;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="tutorial" /><category term="jupyter notebook" /><summary type="html"></summary></entry><entry><title type="html">Generalization – Fast and Slow</title><link href="https://jacobfv.github.io/blog/generalization-fast-and-slow/" rel="alternate" type="text/html" title="Generalization – Fast and Slow" /><published>2021-10-31T00:00:00-05:00</published><updated>2021-10-31T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/generalization-fast-and-slow</id><content type="html" xml:base="https://jacobfv.github.io/blog/generalization-fast-and-slow/">&lt;p&gt;I don’t think I ever fleshed out this idea. I was trying to point out the continual nature of ML optimization.&lt;/p&gt;
+
+&lt;div class=&quot;jupyter-notebook&quot; style=&quot;position: relative; width: 100%; margin: 0 auto;&quot;&gt;
+  &lt;div class=&quot;jupyter-notebook-iframe-container&quot;&gt;
+    &lt;iframe src=&quot;2021-10-31-generalization-fast-and-slow.ipynb.html&quot; style=&quot;position: absolute; top: 0; left: 0; border-style: none;&quot; width=&quot;100%&quot; height=&quot;100%&quot; onload=&quot;this.parentElement.style.paddingBottom = (this.contentWindow.document.documentElement.scrollHeight + 10) + &apos;px&apos;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="ideas" /><category term="jupyter notebook" /><summary type="html">I don’t think I ever fleshed out this idea. I was trying to point out the continual nature of ML optimization.</summary></entry></feed>
