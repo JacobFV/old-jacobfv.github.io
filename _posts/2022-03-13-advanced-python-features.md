@@ -4,6 +4,7 @@ title: Advanced Python Features
 date: 2022-03-13
 description: Now I know why so many of my professors use Python
 categories: [notes]
+comments: true
 tags:   []
 ---
 
