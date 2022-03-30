@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://jacobfv.github.io/sitemap.xml

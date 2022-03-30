@@ -1,18 +1,17 @@
 ---
 layout: post
 title: Design Patterns for AI
-date: 2021-12-06
+date: 2022-03-30
 description: We need to transfer existing design patterns as far down the stack as possible.
-hidden: true
 categories: [reflection, ideas]
 tags:   [agi]
 ---
 
-Engineering generally starts off with a few high-level abstract ambitions that are refined and translated with increasing clarity into physical realizations. In software engineering, the outputs of this process are unambiguous executable statements. Of course, the whole process is iterative with loops of increasing frequency over the project lifespan and tools automating this optimization (compiler chains, code optimization, high-level languages) operating at progressively higher-levels further reducing the idea to implementation transit time. When neural networks are the focus of software engineering, translation from informal to unambiguous specification is almost immediate (given sufficient understanding of programming, math, deep learning, and thermodynamics) and the brunt of effort shifts (as it rightly should) to actually testing deep learning hypotheses. In the problem space of 'human-level' or 'general' intelligence, this demands attempting to consolidate as many ideas in neuroscience, cognitive psychology, and artificial intelligence as possible into a working system implementation. While this consolidation appears deceptively simple in literature, the constituent ideas are often lost in implementation[^1]. Therefore, I explicitly list several **unverified hypotheses** below to help explicitly keep in mind desired cognitive dynamics of increasingly general intelligence.
+Here's how I'm approaching the problem of building artificial general intelligence:
 
-TODO: list all my ideas here. citations are allowed, but focus on getting ideas out.
+Engineering generally starts off with a few high-level abstract ambitions that are refined and translated with increasing clarity into physical realizations. In software engineering, the outputs of this process are rendered into unambiguously crisp executable statements. In an agile environment, the entire software engineering process is iterative with loops of increasing frequency over the project lifespan and tools automating this optimization (compiler chains, code optimization, high-level languages) operating at progressively higher-levels further reducing the idea to implementation transit time. Now, when neural networks are the focus of software engineering, translation from informal to unambiguous specification is almost immediate (given sufficient understanding of programming, math, deep learning, and thermodynamics) and then the brunt of effort shifts (as it rightly should) to actually testing deep learning hypotheses. Finally, restricting the problem space to 'human-level' or 'general' artificial intelligence, this demands attempting to consolidate as many ideas in neuroscience, cognitive psychology, and artificial intelligence as possible into a working system implementation. While this consolidation appears deceptively simple in literature, the constituent ideas are easily lost in implementation[^1]. Still, the diverse array of tools and techniques which ML has developed represent orders-of-magnitude learning efficiency gains over independent effort. Ever striving to maximize the efficiency with which meaningful information can be infused into a system recommends riding on the energy-momentum of hundreds of thousands of researchers (and zillions of FLOPs), that is, incorporating permutations of as many ML research outcomes as possible: codebases, pretrained models, individual weights, architectures, training paradigms, existing datasets, and environments all guided by machine and human intuition. Following therefore, I explicitly list several observations and ideas below to help remind myself of the cognitive dynamics I desire to instill in increasingly general AI:
 
-- Definite (e.g.: boolean) logic is inconsistent. Thermodynamics governs the mind; not logic. Logical thought only emerges as a dissipating low-entropy trajectory.[^2]
+- Definite (e.g.: boolean) logic is inconsistent. Thermodynamics -- rather than logic -- governs the mind. Logical thought only emerges as a dissipating low-entropy trajectory.[^2] It seems reasonable then to devote more compute to System I-type components than System II-type components
 
 - Differentiation evolves representations from vague to crisp culminating in perceptions and actions. Actions (thought words, decisions, motor activity) may modify the world state and destroy their causal crisp representation thus restarting the process.[^2]
 
@@ -50,16 +49,20 @@ TODO: list all my ideas here. citations are allowed, but focus on getting ideas 
 
 - To take advantage of existing pretrained models, other architectures, and for research and development convenience, make the above SOMPNet layer able to interface with other SOMPNet layers, DL layers in general, and python functions in a pythonic interface as if they were directly expressed in math.
 
-At the implementation-end, machine learning research has acquired a diverse array of tools and techniques which represent orders-of-magnitude learning efficiency gains over independent effort. Ever striving to maximize the efficiency with which meaningful information can be infused into a system recommends riding on the energy-momentum of hundreds of thousands of researchers (and zillions of servers). I.E.: incorporating permutations of as many ML research outcomes as possible: codebases, pretrained models, individual weights, architectures, training paradigms, existing datasets, and environments all guided by machine and human intuition. Here are some notable ones:
+- [Memorizing transformers](https://arxiv.org/pdf/2203.08913v1.pdf) perform nondifferentiable knn search over long trajectories. This allows agents to have very short soft attention sequences. A developing agent should  progressively utilize longer and longer hard attention.
 
-TODO: list everything I plan to use here
+- Agent Organization
+  - botttom up observation and independant abstraction
+  - top down action, forcing the world to be the way the agent thinks it should be
+  - side communication. When agents have a strong idea of what's going on, they should broadcast it to their peers.
 
-**Agent Organization**
-- botttom up observation and independant abstraction
-- top down action, forcing the world to be the way the agent thinks it should be
-- side communication. When agents have a strong idea of what's going on, they should broadcast it to their peers.
+- Maybe represent everything by SDR of binary probits. This allows concretely defining entropy, KLD, and other metrics, it has low overlap and all the other benefits of SDR's, and it's easy to implement and might even scale to lower and lower precisions until it can work at single bit-level representations (classical SDR's). Maybe there's a way to make the precision dynamically determined (like entropy). Train a neural-CPU on the floating point data, and then whenever the precision reaches one bit, run the neural CPU instructions directly as machine code.
 
-Maybe represent everything by SDR of binary probits. This allows concretely defining entropy, KLD, and other metrics, it has low overlap and all the other benefits of SDR's, and it's easy to implement and might even scale to lower and lower precisions until it can work at single bit-level representations (classical SDR's). Maybe there's a way to make the precision dynamically determined (like entropy). Train a neural-CPU on the floating point data, and then whenever the precision reaches one bit, run the neural CPU instructions directly as machine code.
+- Model capacity should grow linearly with experience. Ideally, this would take place continually and online. However there it seems more efficient to parallelize data collection (policy usage) and then make training and architectural changes offline. 
+
+- While philosophy gets us nowhere, it is good to keep in mind relevant analogies to the AI system to guide creative design. For example, pain might be construed as a negative reward, and unselfish love, the objective of optimizing the loved object's objectives. Epistemic entropy minimization is to curiosity as high entropy combined with mutual information between internal states over time is to consciousness. Art is about engineering aesthetic qualities into observers' perceptions, and science is the perception of humanity as a whole.
+
+- The AI should interact with the world in a way that is intuitive and natural for its own cognitive architecture just as we humans do with our bodies. Alternatively, for any given world interface (environment-body combination), the AI should be able to evolve its brain to conform to that interface.
 
 [^1]: I know all the cuts to make before I enter the shop, but sawing for 2 hours leaves me exhausted and I end up incorrectly measuring or cutting material unless things are marked correctly.
 [^2]: ["Neurodynamics of Cognition and Consciousness"](https://link.springer.com/book/10.1007/978-3-540-73267-9) ch.1, 5
