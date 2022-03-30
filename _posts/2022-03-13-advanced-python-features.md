@@ -9,7 +9,6 @@ tags:   []
 
 Python's always been a cool language for many reasons: it uses a lot of simple, English-language keywords, it cuts down on many of the braces and semicolons so prevelant in other programming languages, and it's cross-platform. Python code is beautiful. But besides these obvious perks, Python syntax and semantics go far deeper. In this post, I want to highlight 3 aspects of the language: functions, object definitions, and runtime introspection.
 
-
 ## Function signatures are highly expressive
 
 You're probabbly familiar with ordered arguments:
