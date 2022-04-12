@@ -101,3 +101,7 @@ May 2016 – Mar 2020, Midlothian TX
 **AWS Certified Developer – Associate** Mar 2019<br>
 **AWS Certified SysOps Administrator – Associate** Mar 2019<br>
 **AWS Certified Solutions Architect – Associate** Feb 2019
+
+## Other Achievements
+
+**TBHF Scholar Award Finalist** 2022
