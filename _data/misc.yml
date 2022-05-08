@@ -1,0 +1,53 @@
+achievements:
+
+- name: 2022 Future Texas Business Legend Award Finalist
+  organization: Texas Business Hall of Fame
+  display_date: Spring 2022
+  date: 2022-02-15
+  reason: For submitting [Limboid LLC business proposal](/assets/pdf/Limboid-LLC-Business Plan.pdf)
+
+- name: Paper accepted
+  organization: Baltic DB&IS 2022
+  display_date: Spring 2022
+  date: 2022-04-15
+  reason: "For co-authoring *ModViz: A Modular and Extensible Architecture for Drill-Down and Visualization of Complex Data*"
+
+- name: Broaden and Build Conference Honorable Mention
+  organization: UTA College of Social Work
+  date: 2021-09-27
+  reason: For presenting work [*Broadening and Building Beyond Classical Reinforcement Learning*](https://jacobfv.github.io/projects/broadening-and-building-beyond-classical-reinforcement-learning/)
+
+- name: SCRF Honorable Mention
+  organization: UTA CSE Dept
+  display_date: Spring 2021
+  date: 2021-04-01
+  reason: For presenting work *Predictive General Intelligence*
+
+- name: 20% Project Presentation Honorable Mention
+  organization: FSMS
+  date: 2013-05-29
+  reason: For presenting the [CookieBaker 3D Printer](https://jacobfvaldez.weebly.com/engineering.html#cookiebaker_3d_printer) to a 100-person audience
+
+
+certifications:
+
+- name: AWS Certified Machine Learning Engineer – Specialty
+  date: 2022-02-01
+
+- name: Google TensorFlow Developer Certification
+  date: 2021-04-01
+
+- name: DeepLearning.AI TensorFlow Developer
+  date: 2020-10-15
+
+- name: Deep Learning Specialization by DeepLearning.AI
+  date: 2020-09-30
+
+- name: AWS Certified Developer – Associate
+  date: 2019-03-18
+
+- name: AWS Certified SysOps Administrator – Associate
+  date: 2019-03-18
+
+- name: AWS Certified Solutions Architect – Associate
+  date: 2019-02-27

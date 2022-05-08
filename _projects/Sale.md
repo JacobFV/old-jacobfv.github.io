@@ -1,22 +1,24 @@
 ---
 layout: page
+
 title: Sale
-description: Basic Spanish – English translation system
-img: /assets/img/sale.png
-importance: 4
-category: school
-github: https://github.com/JacobFV/Sale
+
+hidden:
 redirect: https://github.com/JacobFV/Sale
+category: [school]
+importance: 4
 
-sort_order: 7
+date: 2015-10-18 # YYYY-MM-DD, must be specified
+start: 2015-10-18
+end: 2015-11-18
+display_date: # used instead of `date` or date range
 
-date: 2015-11-18
-work_date: Oct – Nov 2015
-bullet_points: >
-  <ul>
-      <li> Basic Spanish – English translation system </li>
-      <li> Programmed in C# with Visual Studio </li>
-      <li> Implements formal language parsing and production system </li>
-      <li> Github repository <a href="https://github.com/JacobFV/Sale">JacobFV/Sale</a> </li>
-  </ul>
+img: /assets/img/sale.png
+github: JacobFV/Sale # uname/repo, don't include the prefix `https://github.com/`
+
+description: Basic Spanish – English translation system
+bullet_points: | # at least two bullet points
+  - Basic Spanish – English translation system
+  - Programmed in C# with Visual Studio
+  - Implements formal language parsing and production system
 ---

@@ -1,22 +1,25 @@
 ---
 layout: page
+
 title: Full Stack Artificial Intelligence
-description: Computer interaction + deep reinforcement learning
-img:
-importance: 1
-category: ai
 
-sort_order: 300
 hidden: true
+redirect:
+category: [ai]
+importance: 1
 
-date: 2022-01-01
-work_date: Feb 2019 – Present
-github: https://github.com/Limboid/the-artificial-ecosystem
-bullet_points: >
-  <ul>
-      <li> Active project to research and develop human-level artificial intelligence </li>
-      <li> Ongoing research published at <a href="https://github.com/Limboid/the-artificial-ecosystem">https://github.com/Limboid/the-artificial-ecosystem</a> </li>
-  </ul>
+date: 2019-02-01 #  YYYY-MM-DD, must be specified
+start: 2019-02-01
+end:
+display_date: # used instead of `date` or date range
+
+img:
+github: Limboid/the-artificial-ecosystem # uname/repo, don't include the prefix `https://github.com/`
+
+description: Computer interaction + deep reinforcement learning
+bullet_points: | # at least two bullet points
+  - Active project to research and develop human-level artificial intelligence
+  - Ongoing research published at [here](https://github.com/Limboid/the-artificial-ecosystem)
 ---
 
 **This work has been reduced into the following projects: "Multiparadigm learning", "Multi Environment Learning", "The Multi Agent Network", "Computatrum", "the Computatrum Family", "computatrum.io", and "Limboid". Please see corresponding projects for more details.**

@@ -1,23 +1,25 @@
 ---
 layout: page
-title: labatron
-description: Automated stochiometry solver for CHEM 1411/12
-img: assets/img/labatron.png
-importance: 3
-category: school
+
+title: "<code>Labatron</code>"
+
+hidden:
 redirect:
-github: https://github.com/JacobFV/Labatron
+category: [school]
+importance: 3
 
-sort_order: 0
+date: 2016-11-01 #  YYYY-MM-DD, must be specified
+start:
+end:
+display_date: # used instead of `date` or date range
 
-date: 2016-11-01
-work_date: Fall 2016
-bullet_points: >
-  <ul>
-      <li> Automated stochiometry solver for CHEM 1411/12 </li>
-      <li> Programmed in C# with Visual Studio </li>
-      <li> Github repository <a href="https://github.com/JacobFV/Labatron">JacobFV/Labatron</a> </li>
-  </ul>
+img: assets/img/labatron.png
+github: JacobFV/Labatron # uname/repo, don't include the prefix `https://github.com/`
+
+description: Automated stochiometry solver for CHEM 1411/12
+bullet_points: | # at least two bullet points
+  - Automated stochiometry solver for CHEM 1411/12
+  - Programmed in C# with Visual Studio
 ---
 
 Chemistry Labatron outputs a .csv containing work shown for Chemistry class. Input equations in form "X+Y->A+B" with optional physical state indicators yield a fully worked out stochiometry equation. Example: "CH4(g)+2O2(g)->2H2O(l)+CO2(g)". I can't remember receiving less then a perfect score on any labs I used this program on!

@@ -102,6 +102,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  jobs:
+    output: true
+    permalink: /jobs/:path/
 
 news_limit: 5
 

@@ -1,15 +1,23 @@
 ---
 layout: page
-title: tf-som
-description: Supercool self-organizing maps in tensorflow
-img:
-importance: 4
-category: ai
-github: https://github.com/JacobFV/tf-som
+
+title: "<code>tf-som</code>"
+
+hidden:
 redirect: https://github.com/JacobFV/tf-som
+category: [ai]
+importance: 10
 
-sort_order: 45
+date: 2021-03-08 # YYYY-MM-DD, must be specified
+start:
+end:
+display_date: # used instead of `date` or date range
 
-date: 2021-03-08
-work_date: Mar 2021
+img:
+github: JacobFV/tf-som # uname/repo, don't include the prefix `https://github.com/`
+
+description: Self-organizing maps in tensorflow
+bullet_points: | # at least two bullet points
+  - developed variant of the popular unsupervised learning algorithm SOM
+  - available on pypi: `pip install tf-som`
 ---

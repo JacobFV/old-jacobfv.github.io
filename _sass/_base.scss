@@ -19,6 +19,7 @@ strong {
   color: var(--global-text-color);
 }
 
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -464,6 +465,7 @@ footer.sticky-bottom {
   }
 }
 
+$horz-img-size: 90px;
 
 // Projects
 
@@ -511,6 +513,59 @@ footer.sticky-bottom {
   }
 }
 
+
+.horz-card {
+
+  img {
+    float: left;
+    width: 5rem;
+    margin-right: 1rem;
+  }
+
+  .horz-card-body {
+    float: left;
+    width: calc(100% - 1rem - 5rem);
+
+
+    .horz-card-title {
+      font-size: 1.25rem;
+    }
+
+    .horz-card-subtitle {
+      font-size: 1.2rem;
+    }
+
+    .fab {
+      margin-left: 1em;
+      margin-right: 0.5em;
+    }
+
+    .horz-card-text {}
+  }
+
+  margin-bottom: 0.5rem;
+}
+
+.thin-horz-card {
+
+  .thin-horz-card-body {
+
+    .thin-horz-card-title {
+      font-size: 1rem;
+      font-weight: bolder;
+    }
+
+    .thin-horz-card-subtitle {
+      font-size: 1rem;
+    }
+
+    .thin-horz-card-text {
+      color: var(--global-text-color-light);
+    }
+  }
+
+  margin-bottom: 0.125rem;
+}
 
 // Publications
 

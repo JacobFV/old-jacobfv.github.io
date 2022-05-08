@@ -1,22 +1,24 @@
 ---
 layout: page
-title: The Multi-Agent Network (MAN)
-description: Datasets, environments, and algorithms for multi-agent systems.
-img:
-importance: 2
-category: ai
+
+title: "The Multi-Agent Network (aka: the <code>MAN</code>)"
 
 hidden: true
-sort_order: 300
-github: https://github.com/Limboid/man
+redirect: https://github.com/Limboid/man
+category: [ai]
+importance: 4
 
-date: 2022-02-12
-work_date: Oct 2021 – Feb 2022
-bullet_points: >
-  <ul>
-      <li>  </li>
-      <li>  </li>
-  </ul>
+date: 2021-10-01 #  YYYY-MM-DD, must be specified
+start: 2021-10-01
+end:
+display_date: # used instead of `date` or date range
+
+img:
+github: Limboid/man # uname/repo, don't include the prefix `https://github.com/`
+
+description: A modular developer-oriented framework for integrating pretrained and learning agents
+bullet_points: | # at least two bullet points
+  - :construction: Under construction :construction:
 ---
 
 TODO: separate this content into a blog post and the github repository

@@ -1,24 +1,26 @@
 ---
 layout: page
+
 title: SQTEST
-description: A rule-based past and present tense English and Spanish translator
-img: /assets/img/sqtest.png
-importance: 3
-category: school
+
+hidden:
 redirect: https://github.com/JacobFV/SQT-English-to-Spanish-Translator
-github: https://github.com/JacobFV/SQT-English-to-Spanish-Translator
+category: [school]
+importance: 6
 
-sort_order: 9
+date: 2016-10-18 # YYYY-MM-DD, must be specified
+start: 2016-10-18
+end: 2016-11-18
+display_date: # used instead of `date` or date range
 
-date: 2016-11-18
-work_date: Oct – Nov 2016
-bullet_points: >
-  <ul>
-      <li> Flexible Spanish – English translation system </li>
-      <li> Programmed in C# with Visual Studio </li>
-      <li> Formalized many more aspects of English – Spanish translation </li>
-      <li> Github repository <a href="https://github.com/JacobFV/SQT-English-to-Spanish-Translator">JacobFV/SQT-English-to-Spanish-Translator</a> </li>
-  </ul>
+img: /assets/img/sqtest.png
+github: JacobFV/SQT-English-to-Spanish-Translator # uname/repo, don't include the prefix `https://github.com/`
+
+description: Flexible Spanish – English translation system
+bullet_points: | # at least two bullet points
+  - Rule-based past and present tense English and Spanish translator
+  - Programmed in C# with Visual Studio
+  - Formalized many more aspects of English – Spanish translation
 ---
 
 Every project has a beautiful feature showcase page.
@@ -79,6 +81,7 @@ To make images responsive, add `img-fluid` class to each; for rounded corners an
 Here's the code for the last row of images above:
 
 {% raw %}
+
 ```html
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
@@ -99,4 +102,5 @@ Here's the code for the last row of images above:
   </div>
 </div>
 ```
+
 {% endraw %}

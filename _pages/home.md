@@ -18,90 +18,91 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
 
 ## Education
 
-#### **The University of Texas at Arlington**
-
-B.S. Computer Science<br>
-Enrolled: June 2020 – Present<br>
-GPA 3.7/4.0; graduate Aug 2022
-
-#### **Navarro College**
-
-A.A.S. in Mathematics<br>
-Enrolled: Sept 2014 – May 2018<br>
-GPA 3.9/4.0; 85 hours taken; Graduated Magna Cum Laude
-
-#### **Waxahachie Global High School**
-
-STEM classes + Navarro College and UT Tyler dual-credit program<br>
-Student: Sept 2014 – May 2018<br>
-GPA 3.9/4.0; 5.6/6.0; Graduated rank 7
+<div class="container">
+  <div class="row row-cols-1">
+    {%- assign sorted_education = site.data.education | sort: "start" | reverse -%}
+    {%- for education in sorted_education -%}
+      {%- include horz_card.html
+      img=education.image
+      title=education.school
+      subtitle=education.degree
+      start=education.start
+      end=education.end
+      description=education.misc -%}
+    {%- endfor %}
+  </div>
+</div>
 
 ## Employment
 
-#### **ITLab** Student Research Assistant
-
-June 2021 – Present
-
-- Collaborated with research group to evolve and test a flask-based statistical visualization tool [CoWiz](https://github.com/banditsbeware/dash)
-- Currently developing a full stack web server [MLN-Dashboard](https://github.com/JacobFV/mln-dashboard) using Next-React-GraphQL stack
-
-#### **UTA Social Work** Student Research Assistant
-
-June 2021 – Present
-
-- Maintain and enhance multi-platform (iOS and Android) data collecting application [MyAmble](http://myamble.github.io/myamble-user-website) using flutter and firebase and web administrator interface
-
-#### **McDonald's** Crew Trainer
-
-May 2016 – Mar 2020, Midlothian TX
-
-- Led safety committee and addressed employees during 30-minute monthly
-  safety meetings
-- Trained employees on-the-job and formally
-- In addition to 4 years of formal Spanish education, actively used Spanish on-the-job
+<div class="container">
+  <div class="row row-cols-1">
+    {%- assign sorted_jobs = site.jobs | sort: "start" | reverse -%}
+    {%- for job in sorted_jobs -%}
+      {%- include horz_card.html
+        img=job.img
+        title=job.role
+        subtitle=job.company
+        subtitle_url=job.company_url
+        start=job.start
+        end=job.end
+        location=job.location
+        description=job.description
+       -%}
+    {%- endfor %}
+  </div>
+</div>
 
 ## Projects
 
-{% for project in site.projects reversed | sort: 'date' %}
-{% if project.hidden != true %}
-  <div style={% cycle '"background-color: #80808008"', '"background-color: #0000"' %}>
-    <h4>
-      {% if project.redirect %}
-      <a href="{{ project.redirect }}" target="_blank">
-        <b>{{project.title}}</b>
-      </a>
-      {% else %}
-      <a href="{{ project.url | relative_url }}">
-        <b>{{project.title}}</b>
-      </a>
-      {% endif %}
-      &nbsp;
-      {{project.work_date}}
-    </h4>
-    {% if project.bullet_points %}
-    <p>
-      {{project.bullet_points}}
-    </p>
-    {% else %}
-      <ul><li>{{project.description}}</li></ul>
-    {% endif %}
+<div class="container">
+  <div class="row row-cols-1">
+    {%- assign sorted_projects = site.projects | sort: "importance" | reverse -%}
+    {%- for project in sorted_projects -%}
+    {%- if project.hidden != true -%}
+      {%- include horz_card.html
+      img=project.img
+      title=project.title
+      url=project.url
+      subtitle=project.description
+      date=project.date
+      start=project.start
+      end=project.end
+      github=project.github
+      github_stars=project.github_stars
+      description=project.bullet_points
+      -%}
+    {%- endif -%}
+    {%- endfor %}
   </div>
-{% endif %}
-{% endfor %}
+</div>
 
 ## Certifications
 
-**AWS Certified Machine Learning Engineer – Specialty** Feb 2022
+<div class="container">
+  <div class="row row-cols-1">
+  {%- assign sorted_certifications = site.data.misc.certifications | sort: "date" | reverse -%}
+  {%- for certification in sorted_certifications -%}
+    {%- include thin_horz_card.html
+    title=certification.name
+    display_date=achievement.display_date
+    date=certification.date -%}
+  {%- endfor %}
+  </div>
+</div>
 
-**Google TensorFlow Developer Certification** April 2021
+## Achievements
 
-**DeepLearning.AI TensorFlow Developer** Oct 2020<br>
-**Deep Learning Specialization by DeepLearning.AI** Sept 2020
-
-**AWS Certified Developer – Associate** Mar 2019<br>
-**AWS Certified SysOps Administrator – Associate** Mar 2019<br>
-**AWS Certified Solutions Architect – Associate** Feb 2019
-
-## Other Achievements
-
-**TBHF Scholar Award Finalist** 2022
+<div class="container">
+  <div class="row row-cols-1">
+  {%- assign sorted_achievements = site.data.misc.achievements | sort: "date" | reverse -%}
+  {%- for achievement in sorted_achievements -%}
+    {%- include thin_horz_card.html
+    title=achievement.name
+    subtitle=achievement.organization
+    date=achievement.date
+    display_date=achievement.display_date
+    description=achievement.reason -%}
+  {%- endfor %}
+  </div>
+</div>

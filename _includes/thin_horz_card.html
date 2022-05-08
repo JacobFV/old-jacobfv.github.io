@@ -1,0 +1,65 @@
+<!--
+  include should have the following attributes:
+  - title
+  - subtitle
+  - date
+  - display_date
+  - description
+-->
+
+<div class="thin-horz-card">
+
+  <span>
+    {%- if include.img %}
+    {%- include figure.html
+    path=include.img
+    alt=include.title -%}
+    {%- endif %}
+  </span>
+
+  <span class="thin-horz-card-body">
+
+    <div>
+      <span class="thin-horz-card-title">
+        {%- if include.url -%}
+        <a href="{{ include.url }}">
+          <b>{{ include.title }}</b>
+        </a>
+        {%- else -%}
+        <b>{{ include.title }}</b>
+        {%- endif -%}
+      </span>
+
+      <span class="thin-horz-card-subtitle">
+
+        {%- if include.subtitle_url -%}
+        <a href="{{include.subtitle_url}}">
+          {{ include.subtitle }}
+        </a>
+        {%- else -%}
+        {{ include.subtitle }}
+        {%- endif -%}
+      </span>
+
+      <!--Items can either have:
+        1) no date,
+        2) a manually specified `display_date`, or
+        3) a single `date` -->
+      <span class="thin-horz-card-date">
+        {%- if include.display_date -%}
+        {{ include.display_date }}
+        {%- elsif include.date -%}
+        {{ include.date | date: "%B %Y" }}
+        {%- endif -%}
+      </span>
+
+    </div>
+
+    {%- if include.description -%}
+    <div class="thin-horz-card-text">
+      {{ include.description | markdownify }}
+    </div>
+    {%- endif -%}
+  </span>
+
+</div>

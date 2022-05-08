@@ -1,0 +1,107 @@
+<!--
+data should be formatted like so:
+include:
+img: 'path/to/image.jpg'
+title: 'Title'
+url: 'http://example.com'
+subtitle: 'Subtitle'
+subtitle_url: 'http://example.com'
+start: 'YYYY-MM-DD'
+end: 'YYYY-MM-DD' or 'Present'
+location: 'Location'
+github: 'https://github.com/username/repository'
+github_stars: 3
+description: 'Description'
+Since data is passed using the `include` var, you might be able to
+directly iterate, but you can also assign args to the include tag.
+-->
+
+<div class="horz-card">
+
+  <span>
+    {%- if include.img %}
+    {%- include figure.html
+    path=include.img
+    alt=include.title -%}
+    {%- endif %}
+  </span>
+
+  <span class="horz-card-body">
+
+    <div>
+      <span class="horz-card-title">
+        {%- if include.url -%}
+        <a href="{{ include.url }}">
+          <b>{{ include.title }}</b>
+        </a>
+        {%- else -%}
+        <b>{{ include.title }}</b>
+        {%- endif -%}
+      </span>
+
+      <span class="horz-card-subtitle">
+
+        {%- if include.subtitle_url -%}
+        <a href="{{include.subtitle_url}}">
+          {{ include.subtitle }}
+        </a>
+        {%- else -%}
+        {{ include.subtitle }}
+        {%- endif -%}
+      </span>
+
+      <br>
+      <!--Items can either have:
+        1) no date, (display_date = "")
+        2) a manually specified `display_date`,
+        3) a single `date`,
+        4) a `start` and `end`, or
+        5) a `start` (implying ongoing activity) -->
+      <span class="horz-card-date">
+        {%- if include.display_date -%}
+        {{ include.display_date }}
+        {%- elsif include.start and include.end -%}
+        {{ include.start | date: "%B %Y" }} &ndash; {{ include.end | date: "%B %Y" }}
+        {%- elsif include.start -%}
+        {{ include.start | date: "%B %Y" }} &ndash; Present
+        {%- elsif include.date -%}
+        {{ include.date | date: "%B %Y" }}
+        {%- endif -%}
+      </span>
+
+      {%- if include.github -%}
+      <span class="github-icon">
+        <span class="icon" data-toggle="tooltip" title="Code Repository">
+          <a href="https://github.com/{{ include.github }}">
+            <i class="fab fa-github gh-icon"></i>
+            {{ include.github}}
+          </a>
+        </span>
+        {%- if include.github_stars -%}
+        <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+          <em class="fas fa-star"></em>
+          <span id="{{ include.github_stars }}-stars"></span>
+        </span>
+        {%- endif %}
+      </span>
+      {%- endif -%}
+
+      {%- if include.location -%}
+      <span>
+        <span class="icon" data-toggle="tooltip" title="Location">
+          <i class="fa-solid fa-location-dot"></i>
+        </span>
+        {{ include.location }}
+      </span>
+      {%- endif -%}
+
+    </div>
+
+    {%- if include.description -%}
+    <div class="horz-card-text">
+      {{ include.description | markdownify }}
+    </div>
+    {%- endif -%}
+  </span>
+
+</div>

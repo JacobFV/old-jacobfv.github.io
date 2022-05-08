@@ -1,27 +1,26 @@
 ---
 layout: page
 
-title: Cookie Cutter CNC
+title: Cookie Baker 3D Printer
 
 hidden:
-redirect: https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6
+redirect: <https://jacobfvaldez.weebly.com/engineering.html#cookiebaker_3d_printer>
 category: [personal]
-importance: 5
+importance: 6
 
-date: 2015-03-01 #  YYYY-MM-DD, must be specified
-start: 2015-03-01
-end: 2015-05-29
+date: 2013-03-01 #  YYYY-MM-DD, must be specified
+start: 2013-03-01
+end: 2013-05-29
 display_date: # used instead of `date` or date range
 
-img: /assets/img/cc_1.jpg
-github: JacobFV/CookieControl # uname/repo, don't include the prefix `https://github.com/`
+img: /assets/img/cookie_baker.jpg
+github: # uname/repo, don't include the prefix `https://github.com/`
 
-description: Full stack engineering project
+description: Programmable 12×12 2D gantry
 bullet_points: | # at least two bullet points
-  - 36”×36” sheet metal cutter with [server](https://github.com/JacobFV/CookieControl) and Arduino [client](https://github.com/JacobFV/Arduino-CookieControl) control systems
-  - Designed and developed C\# .svg parser, toolpath scheduler, and optimizer, Arduino controller with serial protocol and electronics, and CNC machine with electrodischarge machining head.
-  - Presented on project in May 2015 and June 2016
-  - Development journey published [here](https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6)
+- Learned mechanical engineering basics
+- Intended to make a 3D printer, but extruder never added
+- Re-attempted project in October 2014 with design modifications
 ---
 
 Outcomes:
@@ -66,50 +65,13 @@ It's hard to maintain a crazy level of involvement for long without losing some 
 
 In honor of an attempted 3D printer, the Cookie Baker, I named this machine the Cookie Cutter. This system has all the bare-bones you would expect from a sheet metal cutting CNC except for an actual working cutting head. It uses CookieWare to read SVG files, an Arduino Mega with CookieWare Client to buffer serial input and make appropriate movements, and a threadscrew XY table. Check out the CookieCutter's Github repos for [server](https://github.com/JacobFV/CookieControl) and [client](https://github.com/JacobFV/Arduino-CookieControl) code.
 
-<<<<<<< HEAD:_projects/1_project.md
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-=======
 <div class="row">
     <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/cc_3.jpg' | relative_url }}" alt="" title="Final CookieCutter"/>
     <div class="col-sm mt-3 mt-md-0">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/dyWwv9mZEvk?start=61" title="YouTube video player" frameborder="0" class="z-depth-1 rounded" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
->>>>>>> 2:_projects/1_project.markdown
     </div>
     <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/cookie_control.png' | relative_url }}" alt="" title="Cookie Control"/>
 </div>
 <div class="caption">
-<<<<<<< HEAD
-<<<<<<< HEAD:_projects/1_project.md
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
-=======
-    Mock product-release video (above) and final CookieCutter (below)
-=======
     Final CookieCutter (left), mock product-release video (center), and CookieControl (right)
->>>>>>> added projects and images
 </div>
->>>>>>> 2:_projects/1_project.markdown
