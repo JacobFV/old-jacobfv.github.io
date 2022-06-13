@@ -1,3 +1,4 @@
+---
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
@@ -9,7 +10,7 @@ last_name: Valdez
 email: jacob.valdez@limboid.ai
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal portfolio site
-# footer_text: >
+footer_text:
 #  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 #  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
@@ -49,30 +50,13 @@ serve_schema_org: false # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
-# Social integration
+# Social integration (most data moved to /_data/social.yml)
 # -----------------------------------------------------------------------------
 
-github_username: JacobFV # your GitHub user name
-gitlab_username: # your GitLab user name
-twitter_username: # your Twitter handle
-linkedin_username: jacob-f-valdez # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
-orcid_id: # your ORCID ID
-medium_username: jacobfv123 # your Medium username
-quora_username: # your Quora username
-publons_id: # your ID on Publons
-research_gate_profile: # your profile on ResearchGate
-blogger_url: # your blogger URL
-work_url: # work page URL
-keybase_username: # your keybase user name
-wikidata_id: # your wikidata id
-dblp_url: # your DBLP profile url
-stackoverflow_id: 10808103 #your stackoverflow id
-
-contact_note:
-
-#google_analytics: UA-XXXXXXXXX # out your google-analytics code
-#panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
+google_analytics: # your google-analytics ID (format: UA-XXXXXXXXX)
+google_site_verification: # your google-site-verification ID (Google Search Console)
+bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
+panelbear_analytics: # panelbear analytics site ID (format: XXXXXXXXX)
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -105,6 +89,9 @@ collections:
   jobs:
     output: true
     permalink: /jobs/:path/
+  bio:
+    output: true
+    permalink: /bio/:path/
 
 news_limit: 5
 
@@ -115,7 +102,8 @@ news_limit: 5
 # Markdown and syntax highlight
 markdown: kramdown
 highlighter: rouge
-highlight_theme: github # https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme_light: github # https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme_dark: native # https://github.com/jwarby/jekyll-pygments-themes
 kramdown:
   input: GFM
   syntax_highlighter_opts:
@@ -153,10 +141,12 @@ plugins:
   - jekyll-pdf-embed
   - jemoji
 
-# mermaid
-mermaid:
-  src: "/assets/js/mermaid/mermaid.js"
-
+# Sitemap settings
+defaults:
+  - scope:
+      path: "assets/**/*.*"
+    values:
+      sitemap: false
 # Extras
 github: [metadata]
 
@@ -182,15 +172,15 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them). 
+  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
   layouts:
     year: archive-year
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+    year: "/blog/:year/"
+    tag: "/blog/tag/:name/"
+    category: "/blog/category/:name/"
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -220,12 +210,6 @@ scholar:
 
   query: "@*"
 
-# Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview]
-
-# Maximum number of authors to be shown, other authors will be visible on hover, leave blank to show all authors
-max_author_limit: 3
-
 # -----------------------------------------------------------------------------
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
@@ -251,9 +235,8 @@ imagemagick:
 # -----------------------------------------------------------------------------
 
 jekyll-diagrams:
-    # configuration, see https://github.com/zhustec/jekyll-diagrams.
-    # feel free to comment out this section if not using jekyll diagrams.
-
+  # configuration, see https://github.com/zhustec/jekyll-diagrams.
+  # feel free to comment out this section if not using jekyll diagrams.
 
 # -----------------------------------------------------------------------------
 # Optional Features
@@ -261,7 +244,9 @@ jekyll-diagrams:
 
 enable_google_analytics: false # enables google analytics
 enable_panelbear_analytics: false # enables panelbear analytics
-enable_mansory: true # enables automatic project cards arangement
+enable_google_verification: false # enables google site verification
+enable_bing_verification: false # enables bing site verification
+enable_masonry: true # enables automatic project cards arangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips:
   false # enables automatic tooltip links generated
@@ -274,7 +259,6 @@ enable_project_categories:
   true # enables categorization of projects into
   # multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
-
 
 # -----------------------------------------------------------------------------
 # Library versions

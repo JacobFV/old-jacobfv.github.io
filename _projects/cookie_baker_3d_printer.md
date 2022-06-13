@@ -3,8 +3,8 @@ layout: page
 
 title: Cookie Baker 3D Printer
 
-hidden:
-redirect: <https://jacobfvaldez.weebly.com/engineering.html#cookiebaker_3d_printer>
+hidden: false
+redirect: https://jacobfvaldez.weebly.com/engineering.html#cookiebaker_3d_printer
 category: [personal]
 importance: 6
 
@@ -14,13 +14,14 @@ end: 2013-05-29
 display_date: # used instead of `date` or date range
 
 img: /assets/img/cookie_baker.jpg
-github: # uname/repo, don't include the prefix `https://github.com/`
+# github: # uname/repo, don't include the prefix `https://github.com/`
 
 description: Programmable 12×12 2D gantry
-bullet_points: | # at least two bullet points
-- Learned mechanical engineering basics
-- Intended to make a 3D printer, but extruder never added
-- Re-attempted project in October 2014 with design modifications
+bullet_points: |
+    - Learned mechanical engineering basics
+    - Intended to make a 3D printer, but extruder never added
+    - Re-attempted project in October 2014 with design modifications
+
 ---
 
 Outcomes:

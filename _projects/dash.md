@@ -18,6 +18,6 @@ github: banditsbeware/dash # uname/repo, don't include the prefix `https://githu
 
 description: Covid19 Analysis Visualization Dashboard
 bullet_points: | # at least two bullet points
-  - Web developer on covid19 data visualization dashboard project
-  - Stack: Python, pandas, flask
+    - Web developer on covid19 data visualization dashboard project
+    - Stack: Python, pandas, flask
 ---

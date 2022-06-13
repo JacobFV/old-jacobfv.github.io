@@ -18,7 +18,7 @@ github: JacobFV/jnumpy # uname/repo, don't include the prefix `https://github.co
 
 description: Another autograd / deep learning / RL library
 bullet_points: | # at least two bullet points
-  - My solution for when professors ask you to not use a third-party library
-  - Later extended to include connect-4 reinforcement learning support
-  - Developers can purchase jnumpy-themed apparel [here](https://jacobfv.threadless.com/designs/jnumpy-logo)
+    - My go-to solution when professors ask you to not use a third-party autograd framework
+    - Later extended to include connect-4 reinforcement learning support
+    - Developers can purchase jnumpy-themed apparel [here](https://jacobfv.threadless.com/designs/jnumpy-logo)
 ---

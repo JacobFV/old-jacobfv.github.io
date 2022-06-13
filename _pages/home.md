@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: home
 title: Home
 permalink: /
 description:
@@ -14,7 +14,7 @@ social: true # includes social icons at the bottom of the page
 order: 1
 ---
 
-Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and machine learning engineer at my startup Limboid LLC where I work to develop artificial general intelligence and affordable humanoid robots. To pay rent, I serve as an undergraduate research assistant in both the IT Lab and with the College of Social Work at the University of Texas at Arlington. I'm currently a senior there working on my bachelor's degree in computer science. I love open source work, artificial intelligence, and robotics. When I'm not interacting with artificial agents, you'll find me working with real people. I hope that includes you!
+Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and machine learning engineer at my startup Limboid LLC where I work to develop artificial general intelligence and affordable humanoid robots. To pay rent, I serve as an undergraduate research assistant in both the IT Lab and with the College of Social Work at the University of Texas at Arlington. I'm currently a senior there working on my bachelor's degree in computer science. I love open source work, artificial intelligence, and robotics. When I'm not interacting with artificial agents, you'll find me working with real people. I hope that includes you! [more &rangle; &rangle;]({{ site.baseurl }}/bio)
 
 ## Education
 
@@ -59,11 +59,18 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
   <div class="row row-cols-1">
     {%- assign sorted_projects = site.projects | sort: "importance" | reverse -%}
     {%- for project in sorted_projects -%}
+
+    {%- if project.redirect -%}
+    {%- assign url = project.redirect -%}
+    {%- else -%}
+    {%- assign url = project.url | relative_url -%}
+    {%- endif -%} 
+
     {%- if project.hidden != true -%}
       {%- include horz_card.html
       img=project.img
       title=project.title
-      url=project.url
+      url=url
       subtitle=project.description
       date=project.date
       start=project.start
@@ -90,6 +97,8 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
   {%- endfor %}
   </div>
 </div>
+
+<br>
 
 ## Achievements
 

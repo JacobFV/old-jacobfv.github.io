@@ -18,7 +18,7 @@ github: Limboid/man # uname/repo, don't include the prefix `https://github.com/`
 
 description: A modular developer-oriented framework for integrating pretrained and learning agents
 bullet_points: | # at least two bullet points
-  - :construction: Under construction :construction:
+    - :construction: Under construction :construction:
 ---
 
 TODO: separate this content into a blog post and the github repository

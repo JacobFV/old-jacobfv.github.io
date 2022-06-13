@@ -18,13 +18,13 @@ github: JacobFV/Copyright-Calculator # uname/repo, don't include the prefix `htt
 
 description: Scripted conversation bot to help students stay safe
 bullet_points: | # at least two bullet points
-  - Helps students avoid plagiarism
-  - Hybrid Google site and Web 1.0 app *written in text editor!*
+    - Helps students avoid plagiarism
+    - Hybrid Google site and Web 1.0 app *written in text editor!*
 ---
 
-The Copyright Calculator is a tool designed for 2014-2015 Waxahachie ISD students which aids in the selection of material that falls under fair use. It consists of a small library of information as well as an interactive app that, after information has been fed to, tells the student whether he/she qualifies for fair use. It does not however claim liability for misuse.
+The Copyright Calculator is a tool designed for 2014-2015 Waxahachie ISD students which aids in the selection of material that falls under fair use. It consists of a small library of information as well as an interactive app, which, after querying the user, indicates whether he/she qualifies for fair use. It does not claim liability for innacurate information.
 
-I wrote this application in the early morning hours of Fall 2014 in a text editor on my Windows 8 Surface tablet. Life was hard back then. I didn't have autocomplete, codex, or anything like that. And since I updated the DOM by using the ancient approach `Document.getElementById(...).innerHTML = ...`, I often didn't even have syntax highlighting. There were backslashes all over the place -- especailly in parts of the app where the dynamically generated HTML was being used to generate more content!
+Developing this application was one of the most involved projects of my 9th grade given the resources and skills at my disposal. At the time, I was already busy starting high school, building a 3D printer, and making Blender animations when Technology class started a 4-person group project with the focus of helping students determine whether they can reuse a third-party artifact under fair-use. I had recently learned about HTML, CSS, and javascript, and I could read simple web pages, but this project called for serious early morning study and coding sessions. Life was hard back then. I didn't have autocomplete, Github CoPilot, or anything like that. And since I updated the DOM by using the ancient approach `Document.getElementById(...).innerHTML = ...`, I often didn't even have syntax highlighting. There were backslashes all over the place -- especailly in parts of the app where the dynamically generated HTML was being used to generate more content! However, the result was a awsome web app, not to mention a grade of 100.
 
 A while ago Google told me that they were going to disband their Google sites so I lost most of this project. You can still find some of it in my [Github repo](https://github.com/JacobFV/Copyright-Calculator).
 

@@ -18,6 +18,6 @@ github: JacobFV/jplotlib # uname/repo, don't include the prefix `https://github.
 
 description: Quick plotting utilities for jupyter notebooks
 bullet_points: | # at least two bullet points
-  - `pip install jplotlib`
-  - A useful library, until I discovered `plt.subplots`
+    - `pip install jplotlib`
+    - A useful library, until I discovered `plt.subplots`
 ---

@@ -19,8 +19,8 @@ github: jennarsimon/sodp-team114 # uname/repo, don't include the prefix `https:/
 
 description: Data scientist in a 5-student international group
 bullet_points: | # at least two bullet points
-  - Team research project analyzing misinformation related to coronavirus vaccination hesitancy and sentiment and semantics of the COVID19 pandemic
-  - We literally worked around the clock for the weekend of the Datathon
+    - Team research project analyzing misinformation related to coronavirus vaccination hesitancy and sentiment and semantics of the COVID19 pandemic
+    - We literally worked around the clock for the weekend of the Datathon
 ---
 
 This 2021 Stanford Open Datathon project analyzed misinformation related to coronavirus vaccination hesitancy. I worked with 4 other undergraduates &mdash; Jenna Simon, Kopal Mathur, Teddy Sandler, and Masaya Heywood &mdash; from 3 different time zones in the United States and Australia over the April 9th-11th 2021 weekend. As a team, we agreed on a research focus. Next, Teddy and I searched for datasets, took observations, and quantitatively verified our hypotheses. Then Jenna and Kopal composed a formal discussion of our research. Finally, Jenna published our findings online. You can view our final website [here](https://sodp-team114.herokuapp.com) and our Github repo [here](https://github.com/jennarsimon/sodp-team114) (or [here](https://github.com/JacobFV/sodp-team114) if that repo gets deleted).

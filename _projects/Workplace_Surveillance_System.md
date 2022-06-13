@@ -13,12 +13,12 @@ start:
 end:
 display_date: # used instead of `date` or date range
 
-img:
+img: /assets/img/wss.png
 github: JacobFV/Workplace-Surveillance-System # uname/repo, don't include the prefix `https://github.com/`
 
 description: When you need to catch employees on their phone, this will do the trick!
 bullet_points: | # at least two bullet points
-  - Employee phone detection computer vision system
-  - Stack: web 1.0, tensorflow.js, mobilenet
-  - Demonstration to employer succeeded identifying employees on their phone, but employer didn't end up purchasing a subscription
+    - Employee phone detection computer vision system
+    - Stack: web 1.0, tensorflow.js, mobilenet
+    - Demonstration to employer succeeded identifying employees on their phone, but employer didn't end up purchasing a subscription
 ---

@@ -19,4 +19,4 @@ description: |
 
 ---
 
-A simple inline announcement.
+I am listed under https://itlab.uta.edu/students.html#alumni

@@ -19,8 +19,8 @@ github: # uname/repo, don't include the prefix `https://github.com/`
 
 description: It's time for AI grow up
 bullet_points: | # at least two bullet points
-  - ambitious project to build a computer program that can program a computer
-  - :construction: Under construction :construction:
+    - ambitious project to build a computer program that can program a computer
+    - :construction: Under construction :construction:
 
 bullet_points: >
   <ul>
