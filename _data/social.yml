@@ -4,7 +4,7 @@
   id: +1-972-460-6353
   star: true
   note:
-  icon: <i class="fa-phone"></i>
+  icon: <i class="fab fas fa-phone"></i>
   url: "tel:+1-972-460-6353"
 
 - email:
@@ -85,7 +85,7 @@
   id: jacob_valdez
   star:
   note: CAD design
-  icon: <img src="/assets/media/logos/onshape.svg" height="3em" width="3em" />
+  icon: <img src="/assets/img/logos/onshape.svg" height="3em" width="3em" />
   url:
 
 - soundcloud:
@@ -98,28 +98,28 @@
 - linkedin:
   id: jacob-f-valdez
   star:
-  note: Professional networking and portfolio account
+  note: Professional networking
   icon: <i class="fab fa-linkedin"></i>
   url: "https://www.linkedin.com/in/jacob-f-valdez" # "https://www.linkedin.com/in/{{ id }}"
 
-- quora:
-  id: Jacob-Valdez-46
-  star:
-  note:
-  icon: <i class="fab fa-quora"></i>
-  url: "https://www.quora.com/profile/Jacob-Valdez-46" # "https://www.quora.com/profile/{{ id }}"
+# - quora:
+#   id: Jacob-Valdez-46
+#   star:
+#   note:
+#   icon: <i class="fab fa-quora"></i>
+#   url: "https://www.quora.com/profile/Jacob-Valdez-46" # "https://www.quora.com/profile/{{ id }}"
 
 - stackexchange:
   id: 14971315
   star:
-  note: Used for asking, answering, and commenting on StackExchange network questions. See linked accounts on Stack Overflow, robotics, worldbuilding, etc..
+  note: StackExchange Q&A
   icon: <i class="fab fa-stack-exchange"></i>
   url: "https://stackexchange.com/users/14971315" # "https://stackexchange.com/users/{{ id }}"
 
 - gitlab:
   id: jacobfv123
   star:
-  note: Mirror for some of my GitHub work
+  note: Partial GitHub mirror
   icon: <i class="fab fa-gitlab"></i>
   url: "https://gitlab.com/jacobfv123" # "https://gitlab.com/{{ id }}"
 

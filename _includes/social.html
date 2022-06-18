@@ -1,17 +1,29 @@
-{%- for social in site.data.social -%}
+{% for social in site.data.social %}
 
-{%- if include.starred_only == true and social.star == false -%}
-{%- continue -%}
-{%- endif -%}
+<!--Maybe only display starred social identities-->
+{% if include.starred_only == true and social.star == false %}
+{% continue %}
+{% endif %}
 
-{%- if social.url -%}
-<a href="{{ social.url }}">{{ social.icon }}</a>
-{%- else -%}
-{{ social.icon }}
-{%- endif -%}
+{% capture icon %}
+<figure style="display: inline-block; margin: 0;">
+  {{ social.icon }}
+  {% if include.detailed == true %}
+  <figcaption style="font-size: small">
+    <code>{{ social.id }}</code>
+    {% if social.note %}
+    <br>{{ social.note }}
+    {% endif %}
+  </figcaption>
+  {% endif %}
+</figure>
+{% endcapture %}
 
-{%- if include.detailed == true -%}
-<span style="font-size: 0.8rem;">{{' '}}id:<code>{{ social.id }}</code>.{{' '}}{{ social.note }}{{' '}}</span><br>
-{%- endif -%}
+<!--Maybe hyperlink icon-->
+{% if social.url %}
+<a href="{{ social.url }}">{{ icon }}</a>
+{% else %}
+{{ icon }}
+{% endif %}
 
-{%- endfor -%}
+{% endfor %}

@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 {%- assign img_path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" -%}
+=======
+{% assign path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" %}
+>>>>>>> fixed social icons and contact form layout
 
 <figure>
 
   <picture>
+<<<<<<< HEAD
     {% if site.imagemagick.enabled %}
     {% for i in site.imagemagick.widths -%}
       <source 
@@ -28,9 +33,19 @@
       {% if include.zoomable %}data-zoomable{% endif %}
       onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
     />
+=======
+    {% for i in site.imagemagick.widths %}
+    <source media="(max-width: {{ i }}px)" srcset="{{ path | relative_url }}-{{ i }}.webp" />
+    {% endfor %}
+
+    <!-- Fallback to the original file -->
+    <img {% if include.class %}class="{{ include.class }}" {% endif %} src="{{ include.path | relative_url }}" {% if
+      include.alt %}alt="{{ include.alt }}" {% endif %} {% if include.title %}title="{{ include.title }}" {% endif %} {%
+      if include.zoomable %}data-zoomable{% endif %} />
+>>>>>>> fixed social icons and contact form layout
 
   </picture>
 
-  {%- if include.caption -%}<figcaption class="caption">{{ include.caption }}</figcaption>{%- endif %}
+  {% if include.caption %}<figcaption class="caption">{{ include.caption }}</figcaption>{% endif %}
 
 </figure>

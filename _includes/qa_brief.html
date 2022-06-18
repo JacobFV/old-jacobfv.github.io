@@ -9,18 +9,18 @@
     inline: bool = False
 
 
-{%- if include.redirect -%}{{include.redirect}}{$- else -%}{{include.url}}{%- endif -%}
+{% if include.redirect %}{{include.redirect}}{$- else %}{{include.url}}{% endif %}
 {{ include.redirect ?? include.url }}
 -->
 
-{%- assign short_content = include.content | TODO less 300 -%}
+{% assign short_content = include.content | TODO less 300 %}
 
 <div class="horz-card">
-  {%- if include.inline -%}
+  {% if include.inline %}
   <b>{{include.title}}</b>{" "}{{include.content | markdownify }}
-  {%- else -%}
+  {% else %}
   <a href="{{ include.redirect ?? include.url }}">
     <b>{{include.title}}</b>{" "}{{include.content | markdownify }}
   </a>
-  {%- endif -%}
+  {% endif %}
 </div>

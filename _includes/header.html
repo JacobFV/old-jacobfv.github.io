@@ -4,12 +4,12 @@
   <nav id="navbar"
     class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
     <div class="container">
-      {% if page.title != "about" -%}
+      {% if page.title != "about" %}
       <a class="navbar-brand title font-weight-lighter" href="{{ '/' | relative_url }}">
-        {%- if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name
-        }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif -%}
+        {% if site.title == "blank" %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name
+        }} {{ site.last_name }}{% else %}{{ site.title }}{% endif %}
       </a>
-      {%- elsif site.enable_navbar_social -%}
+      {% elsif site.enable_navbar_social %}
       <!-- Social Icons -->
       <div class="navbar-brand social">
         {% include social.html %}
@@ -33,6 +33,7 @@
                 {%- if page.permalink == '/' -%}
                 =======
 
+<<<<<<< HEAD
                 <!-- Home -->
             <li class="nav-item {% if page.title == 'home' %}active{% endif %}">
               <a class="nav-link" href="{{ '/' | relative_url }}">home
@@ -140,6 +141,72 @@
     </ul>
     </div>
     >>>>>>> incomplete but workable
+=======
+          <!-- Home -->
+          <li class="nav-item {% if page.title == 'home' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/' | relative_url }}">home
+              {% if page.title == "home" %}
+              <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
+          {% if site.blog_name %}
+          <!-- Blog -->
+          <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/blog/' | relative_url }}">blog
+              {% if page.title == "blog" %}
+              <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
+          {% endif %}
+
+          <!-- Other pages -->
+          {% assign sorted_pages = site.pages | sort: "order" %}
+          {% for p in sorted_pages %}
+          {% if p.nav and p.autogen == nil %}
+          {% if p.dropdown %}
+          <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">{{ p.title }}
+              {% if page.title == p.title %}
+              <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              {% for child in p.children %}
+              {% if child.title == 'divider' %}
+              <div class="dropdown-divider"></div>
+              {% else %}
+              <a class="dropdown-item" href="{{ child.permalink | relative_url }}">{{ child.title }}</a>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </li>
+          {% else %}
+          <li class="nav-item {% if page.title == p.title %}active{% endif %}">
+            <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
+              {% if page.title == p.title %}
+              <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          {% if site.enable_darkmode %}
+
+          <!-- Toogle theme mode -->
+          <div class="toggle-container">
+            <a id="light-toggle">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+            </a>
+          </div>
+          {% endif %}
+        </ul>
+      </div>
+>>>>>>> fixed social icons and contact form layout
     </div>
   </nav>
 </header>

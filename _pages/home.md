@@ -20,16 +20,16 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
 
 <div class="container">
   <div class="row row-cols-1">
-    {%- assign sorted_education = site.data.education | sort: "start" | reverse -%}
-    {%- for education in sorted_education -%}
-      {%- include horz_card.html
+    {% assign sorted_education = site.data.education | sort: "start" | reverse %}
+    {% for education in sorted_education %}
+      {% include horz_card.html
       img=education.image
       title=education.school
       subtitle=education.degree
       start=education.start
       end=education.end
-      description=education.misc -%}
-    {%- endfor %}
+      description=education.misc %}
+    {% endfor %}
   </div>
 </div>
 
@@ -37,9 +37,9 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
 
 <div class="container">
   <div class="row row-cols-1">
-    {%- assign sorted_jobs = site.jobs | sort: "start" | reverse -%}
-    {%- for job in sorted_jobs -%}
-      {%- include horz_card.html
+    {% assign sorted_jobs = site.jobs | sort: "start" | reverse %}
+    {% for job in sorted_jobs %}
+      {% include horz_card.html
         img=job.img
         title=job.role
         subtitle=job.company
@@ -48,8 +48,8 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
         end=job.end
         location=job.location
         description=job.description
-       -%}
-    {%- endfor %}
+       %}
+    {% endfor %}
   </div>
 </div>
 
@@ -57,17 +57,17 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
 
 <div class="container">
   <div class="row row-cols-1">
-    {%- assign sorted_projects = site.projects | sort: "importance" | reverse -%}
-    {%- for project in sorted_projects -%}
+    {% assign sorted_projects = site.projects | sort: "importance" | reverse %}
+    {% for project in sorted_projects %}
 
-    {%- if project.redirect -%}
-    {%- assign url = project.redirect -%}
-    {%- else -%}
-    {%- assign url = project.url | relative_url -%}
-    {%- endif -%} 
+    {% if project.redirect %}
+    {% assign url = project.redirect %}
+    {% else %}
+    {% assign url = project.url | relative_url %}
+    {% endif %} 
 
-    {%- if project.hidden != true -%}
-      {%- include horz_card.html
+    {% if project.hidden != true %}
+      {% include horz_card.html
       img=project.img
       title=project.title
       url=url
@@ -78,9 +78,9 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
       github=project.github
       github_stars=project.github_stars
       description=project.bullet_points
-      -%}
-    {%- endif -%}
-    {%- endfor %}
+      %}
+    {% endif %}
+    {% endfor %}
   </div>
 </div>
 
@@ -88,13 +88,13 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
 
 <div class="container">
   <div class="row row-cols-1">
-  {%- assign sorted_certifications = site.data.misc.certifications | sort: "date" | reverse -%}
-  {%- for certification in sorted_certifications -%}
-    {%- include thin_horz_card.html
+  {% assign sorted_certifications = site.data.misc.certifications | sort: "date" | reverse %}
+  {% for certification in sorted_certifications %}
+    {% include thin_horz_card.html
     title=certification.name
     display_date=achievement.display_date
-    date=certification.date -%}
-  {%- endfor %}
+    date=certification.date %}
+  {% endfor %}
   </div>
 </div>
 
@@ -104,14 +104,14 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
 
 <div class="container">
   <div class="row row-cols-1">
-  {%- assign sorted_achievements = site.data.misc.achievements | sort: "date" | reverse -%}
-  {%- for achievement in sorted_achievements -%}
-    {%- include thin_horz_card.html
+  {% assign sorted_achievements = site.data.misc.achievements | sort: "date" | reverse %}
+  {% for achievement in sorted_achievements %}
+    {% include thin_horz_card.html
     title=achievement.name
     subtitle=achievement.organization
     date=achievement.date
     display_date=achievement.display_date
-    description=achievement.reason -%}
-  {%- endfor %}
+    description=achievement.reason %}
+  {% endfor %}
   </div>
 </div>

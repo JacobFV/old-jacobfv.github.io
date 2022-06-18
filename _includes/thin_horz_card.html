@@ -10,35 +10,35 @@
 <div class="thin-horz-card">
 
   <span>
-    {%- if include.img %}
-    {%- include figure.html
+    {% if include.img %}
+    {% include figure.html
     path=include.img
-    alt=include.title -%}
-    {%- endif %}
+    alt=include.title %}
+    {% endif %}
   </span>
 
   <span class="thin-horz-card-body">
 
     <div>
       <span class="thin-horz-card-title">
-        {%- if include.url -%}
+        {% if include.url %}
         <a href="{{ include.url }}">
           <b>{{ include.title }}</b>
         </a>
-        {%- else -%}
+        {% else %}
         <b>{{ include.title }}</b>
-        {%- endif -%}
+        {% endif %}
       </span>
 
       <span class="thin-horz-card-subtitle">
 
-        {%- if include.subtitle_url -%}
+        {% if include.subtitle_url %}
         <a href="{{include.subtitle_url}}">
           {{ include.subtitle }}
         </a>
-        {%- else -%}
+        {% else %}
         {{ include.subtitle }}
-        {%- endif -%}
+        {% endif %}
       </span>
 
       <!--Items can either have:
@@ -46,20 +46,20 @@
         2) a manually specified `display_date`, or
         3) a single `date` -->
       <span class="thin-horz-card-date">
-        {%- if include.display_date -%}
+        {% if include.display_date %}
         {{ include.display_date }}
-        {%- elsif include.date -%}
+        {% elsif include.date %}
         {{ include.date | date: "%B %Y" }}
-        {%- endif -%}
+        {% endif %}
       </span>
 
     </div>
 
-    {%- if include.description -%}
+    {% if include.description %}
     <div class="thin-horz-card-text">
       {{ include.description | markdownify }}
     </div>
-    {%- endif -%}
+    {% endif %}
   </span>
 
 </div>
