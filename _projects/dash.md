@@ -13,7 +13,7 @@ start: 2021-06-01
 end: 2021-10-31
 display_date: # used instead of `date` or date range
 
-img:
+img: /assets/img/dash.png
 github: banditsbeware/dash # uname/repo, don't include the prefix `https://github.com/`
 
 description: Covid19 Analysis Visualization Dashboard

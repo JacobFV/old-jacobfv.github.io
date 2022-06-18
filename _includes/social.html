@@ -23,7 +23,7 @@
 {% if social.url %}
 <a href="{{ social.url }}">{{ icon }}</a>
 {% else %}
-{{ icon }}
+<span title="{{social.id}}">{{ icon }}</span>
 {% endif %}
 
 {% endfor %}

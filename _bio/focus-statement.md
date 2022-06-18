@@ -1,4 +1,6 @@
 ---
+layout: page
+
 topic: Focus Statement
 hidden: false
 inline: false

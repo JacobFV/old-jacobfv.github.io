@@ -1,4 +1,6 @@
 ---
+layout: page
+
 topic: Relate a setback you’ve overcome
 hidden: false
 inline: false

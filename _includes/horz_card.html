@@ -39,8 +39,9 @@ directly iterate, but you can also assign args to the include tag.
         {% endif %}
       </span>
 
+      {% if include.subtitle %}
       <span class="horz-card-subtitle">
-
+        &nbsp;&#10072;&nbsp;
         {% if include.subtitle_url %}
         <a href="{{include.subtitle_url}}">
           {{ include.subtitle }}
@@ -49,6 +50,7 @@ directly iterate, but you can also assign args to the include tag.
         {{ include.subtitle }}
         {% endif %}
       </span>
+      {% endif %}
 
       <br>
       <!--Items can either have:
@@ -58,6 +60,8 @@ directly iterate, but you can also assign args to the include tag.
         4) a `start` and `end`, or
         5) a `start` (implying ongoing activity) -->
       <span class="horz-card-date">
+        {% assign should_display_date = true %}
+        {% capture display_date %}
         {% if include.display_date %}
         {{ include.display_date }}
         {% elsif include.start and include.end %}
@@ -66,8 +70,27 @@ directly iterate, but you can also assign args to the include tag.
         {{ include.start | date: "%B %Y" }} &ndash; Present
         {% elsif include.date %}
         {{ include.date | date: "%B %Y" }}
+        {% else %}
+        {% assign should_display_date = false %}
+        {% endif %}
+        {% endcapture %}
+
+        {% if should_display_date == true %}
+        {% if include.location %}
+        {% assign display_date = display_date | strip | append: ", " %}
+        {% endif %}
+        {{ display_date }}
         {% endif %}
       </span>
+
+      {% if include.location %}
+      <span>
+        <span class="icon" data-toggle="tooltip" title="Location">
+          <i class="fa-solid fa-location-dot"></i>
+        </span>
+        {{ include.location }}
+      </span>
+      {% endif %}
 
       {% if include.github %}
       <span class="github-icon">
@@ -83,15 +106,6 @@ directly iterate, but you can also assign args to the include tag.
           <span id="{{ include.github_stars }}-stars"></span>
         </span>
         {% endif %}
-      </span>
-      {% endif %}
-
-      {% if include.location %}
-      <span>
-        <span class="icon" data-toggle="tooltip" title="Location">
-          <i class="fa-solid fa-location-dot"></i>
-        </span>
-        {{ include.location }}
       </span>
       {% endif %}
 

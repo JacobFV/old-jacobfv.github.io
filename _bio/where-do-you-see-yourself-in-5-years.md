@@ -1,4 +1,6 @@
 ---
+layout: page
+
 topic: Where do you see yourself in 5 years?
 hidden: false
 inline: true

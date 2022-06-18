@@ -1,4 +1,6 @@
 ---
+layout: page
+
 topic: Common objections to work involving artificial intelligence
 hidden: false
 inline: false

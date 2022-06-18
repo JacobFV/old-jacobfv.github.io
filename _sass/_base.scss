@@ -544,6 +544,14 @@ $horz-img-size: 90px;
   }
 
   margin-bottom: 0.5rem;
+
+  .qabrief-link {
+    text-decoration: none;
+
+    :hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .thin-horz-card {

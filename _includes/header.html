@@ -143,6 +143,7 @@
     >>>>>>> incomplete but workable
 =======
           <!-- Home -->
+          {% if site.show_home_nav_link == true %}
           <li class="nav-item {% if page.title == 'home' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">home
               {% if page.title == "home" %}
@@ -150,6 +151,7 @@
               {% endif %}
             </a>
           </li>
+          {% endif %}
           {% if site.blog_name %}
           <!-- Blog -->
           <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">

@@ -1,4 +1,6 @@
 ---
+layout: page
+
 topic: What makes AI so interesting?
 hidden: false
 inline: false

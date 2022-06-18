@@ -14,7 +14,9 @@ social: true # includes social icons at the bottom of the page
 order: 1
 ---
 
-Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and machine learning engineer at my startup Limboid LLC where I work to develop artificial general intelligence and affordable humanoid robots. To pay rent, I serve as an undergraduate research assistant in both the IT Lab and with the College of Social Work at the University of Texas at Arlington. I'm currently a senior there working on my bachelor's degree in computer science. I love open source work, artificial intelligence, and robotics. When I'm not interacting with artificial agents, you'll find me working with real people. I hope that includes you! [more &rangle; &rangle;]({{ site.baseurl }}/bio)
+{% assign intro = site.bio | where: "introduction", true | first %}
+
+{{ intro.content | remove: '<p>' | remove: '</p>' }} <a href="{{ '/bio' | relative_url }}">more &#8250;&#8250;</a>
 
 ## Education
 
@@ -28,6 +30,7 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
       subtitle=education.degree
       start=education.start
       end=education.end
+      location=education.location
       description=education.misc %}
     {% endfor %}
   </div>
@@ -57,7 +60,7 @@ Hello. Nice to meet you! My name's Jacob. I'm an entrepreneur, roboticist, and m
 
 <div class="container">
   <div class="row row-cols-1">
-    {% assign sorted_projects = site.projects | sort: "importance" | reverse %}
+    {% assign sorted_projects = site.projects | sort: "date" | reverse %}
     {% for project in sorted_projects %}
 
     {% if project.redirect %}
