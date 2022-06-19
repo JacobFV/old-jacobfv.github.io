@@ -3,7 +3,7 @@ layout: post
 title:  Dev Platforms
 date:   2020-06-01
 description: Various potential 'incubators' for AGI.
-categories: [notes]
+categories: [ai, notes]
 tags:   []
 ---
 

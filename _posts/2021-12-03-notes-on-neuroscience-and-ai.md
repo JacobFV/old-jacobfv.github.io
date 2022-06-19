@@ -3,7 +3,7 @@ layout: post
 title: Notes on Neuroscience and AI
 date: 2021-12-03
 description: Some notes on recent research.
-categories: [notes]
+categories: [ai, notes]
 tags:   [brain]
 ---
 

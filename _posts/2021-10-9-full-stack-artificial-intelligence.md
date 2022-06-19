@@ -3,7 +3,7 @@ layout: post
 title:  Full-Stack Artificial Intelligence
 date:   2021-10-09
 description: What's in the stack?
-categories: [reflection, ideas]
+categories: [ai, reflection, ideas]
 tags:   [agi]
 ---
 

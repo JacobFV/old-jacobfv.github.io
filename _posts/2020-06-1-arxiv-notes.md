@@ -3,7 +3,7 @@ layout: post
 title:  arxiv-notes
 date:   2020-06-01
 description: Some relevant articles that I will apply towards AGI
-categories: [notes]
+categories: [ai, notes]
 tags:   []
 ---
 

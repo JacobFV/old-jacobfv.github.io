@@ -1,0 +1,7 @@
+TODO:
+x fix md/html on bio and blog
+- add picture at desk on bio
+- make links in introduction correct
+- add links to focus statement (and ensure repositories are decent)
+- refine former blog posts
+- add new material

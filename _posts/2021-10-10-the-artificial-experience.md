@@ -3,7 +3,7 @@ layout: post
 title:  The Artificial Experience
 date:   2021-10-10
 description: A highly general dataset-env
-categories: [computatrum, code, ideas]
+categories: [ai, computatrum, code, ideas]
 tags:   [agi]
 ---
 

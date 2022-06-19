@@ -3,7 +3,7 @@ layout: post
 title:  What is intelligence?
 date:   2021-06-18
 description: I asked GPT-3 about intelligence
-categories: [experiment,notes]
+categories: [ai, experiment,notes]
 tags:   [gpt3]
 ---
 

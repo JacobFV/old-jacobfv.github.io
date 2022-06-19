@@ -3,7 +3,7 @@ layout: post
 title:  Multi-Environment Learning
 date:   2021-10-18
 description: Another paradigm for increasingly general AI
-categories: [ideas]
+categories: [ai, ideas]
 tags:   [agi]
 ---
 

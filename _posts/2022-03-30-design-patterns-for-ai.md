@@ -3,7 +3,7 @@ layout: post
 title: Design Patterns for AI
 date: 2022-03-30
 description: We need to transfer existing design patterns as far down the stack as possible.
-categories: [reflection, ideas]
+categories: [ai, reflection, ideas]
 tags:   [agi]
 ---
 

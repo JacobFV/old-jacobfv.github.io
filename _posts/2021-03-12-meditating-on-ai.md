@@ -3,7 +3,7 @@ layout: post
 title:  Meditating on AI
 date:   2021-03-12
 description: Collection of personal observations on AI
-categories: [notes,reflection]
+categories: [ai, notes, reflection]
 tags:   []
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  Reaching for the Intangible
 date:   2021-06-22
 description: We don't really want human-level AI
-categories: [reflection]
+categories: [ai, reflection]
 tags:   [agi]
 ---
 
