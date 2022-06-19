@@ -20,7 +20,10 @@ nav: true
 ## Let's talk
 <div id="contact"></div> <!--don't change this id -->
 
-Want to work togethor on a project? See mistakes I overlooked? Please contact me via [SMS]({{ site.data.social.phone.id }}) or [email]({{ "mailto:" | append: site.data.social.email.id | encode_email }}) so we can find a place for artificial intelligence in your next exciting project! I can usually make time to meet M-F 8am-6pm CT.
+{% assign phone = site.data.social | where: "type", "phone" | first %}
+{% assign email = site.data.social | where: "type", "email" | first %}
+
+Want to work togethor on a project? See mistakes I overlooked? Please contact me via <a href="tel:{{ phone.id | encode_phone }}">SMS</a> or <a href="mailto:{{ email.id | encode_email }}">email</a>. I can usually make time to meet M-F 8am-6pm CT.
 
 {% include contact.html %}
 

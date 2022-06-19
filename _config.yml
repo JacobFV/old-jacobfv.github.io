@@ -132,6 +132,7 @@ plugins:
   - jekyll-archives
   - jekyll-diagrams
   - jekyll-email-protect
+  - jekyll-phone-protect
   - jekyll-feed
   - jekyll-imagemagick
   - jekyll-minifier

@@ -1,41 +1,41 @@
 # core social
 
-- phone:
+- type: phone
   id: +1-972-460-6353
   star: true
   note:
   icon: <i class="fab fas fa-phone"></i>
   url: "tel:+1-972-460-6353"
 
-- email:
+- type: email
   id: jacob.valdez@limboid.ai
   star: true
   note:
   icon: <i class="fas fa-envelope"></i>
   url: mailto:jacob.valdez@limboid.ai # "{{ 'mailto:' | append: site.data.social.email.id | encode_email }}"
 
-- discord:
+- type: discord
   id: jacob-valdez#5523
   star: true
   note:
   icon: <i class="fab fa-discord"></i>
   url:
 
-- twitter:
+- type: twitter
   id: JacobFV123
   star:
   note:
   icon: <i class="fab fa-twitter"></i>
   url: https://twitter.com/JacobFV123 # "https://twitter.com/{{ id }}"
 
-- github:
+- type: github
   id: JacobFV
   star: true
   note: Code VCS, publishing, and archive
   icon: <i class="fab fa-github"></i>
   url: https://github.com/JacobFV # "https://github.com/{{ id }}"
 
-- rss:
+- type: rss
   id:
   star: true
   note: Latest blog posts and announcements
@@ -44,14 +44,14 @@
 
 # cloud solutions
 
-- google:
+- type: google
   id: jacobfv123@gmail.com
   star:
   note: Google drive sharing, gmail, calendar, OAuth, etc.
   icon: <i class="fab fa-google"></i>
   url:
 
-- microsoft:
+- type: microsoft
   id: jacobfv@msn.com
   star:
   note: OneDrive sharing, outlook, OAuth, etc.
@@ -60,42 +60,42 @@
 
 # domain-specific
 
-- medium:
+- type: medium
   id: jacobfv123
   star:
   note: Old blogging account which I no longer use
   icon: <i class="fab fa-medium"></i>
   url: "https://medium.com/@jacobfv123" # "https://medium.com/@{{ id }}"
 
-- youtube:
+- type: youtube
   id: jacobfv123
   star:
   note: Presentations, animations, experiments, and other videos
   icon: <i class="fab fa-youtube"></i>
   url: https://www.youtube.com/channel/UCs5sasWz1dlbrvBo7tBincg
 
-- thingiverse:
+- type: thingiverse
   id: jacobfv123
   star:
   note: Things I've made with my 3D printer or CNC router
   icon: <i class="fa-light fa-circle-t"></i> # <svg src="/assets/img/logos/thingiverse.svg" width="200px" />
   url: https://www.thingiverse.com/jacobfv123/designs # https://www.thingiverse.com/{{ id }}/designs
 
-- onshape:
+- type: onshape
   id: jacob_valdez
   star:
   note: CAD design
   icon: <img src="/assets/img/logos/onshape.svg" height="3em" width="3em" />
   url:
 
-- soundcloud:
+- type: soundcloud
   id: jacob-valdez-946056620
   star:
   note: Personal music
   icon: <i class="fab fa-soundcloud"></i>
   url: "https://soundcloud.com/jacob-valdez-946056620" # "https://soundcloud.com/{{ id }}"
 
-- linkedin:
+- type: linkedin
   id: jacob-f-valdez
   star:
   note: Professional networking
@@ -109,21 +109,21 @@
 #   icon: <i class="fab fa-quora"></i>
 #   url: "https://www.quora.com/profile/Jacob-Valdez-46" # "https://www.quora.com/profile/{{ id }}"
 
-- stackexchange:
+- type: stackexchange
   id: 14971315
   star:
   note: StackExchange Q&A
   icon: <i class="fab fa-stack-exchange"></i>
   url: "https://stackexchange.com/users/14971315" # "https://stackexchange.com/users/{{ id }}"
 
-- gitlab:
+- type: gitlab
   id: jacobfv123
   star:
   note: Partial GitHub mirror
   icon: <i class="fab fa-gitlab"></i>
   url: "https://gitlab.com/jacobfv123" # "https://gitlab.com/{{ id }}"
 
-- huggingface:
+- type: huggingface
   id: jacob-valdez
   star:
   note: ML models
