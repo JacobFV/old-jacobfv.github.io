@@ -18,7 +18,7 @@ github: JacobFV/CookieControl # uname/repo, don't include the prefix `https://gi
 
 description: Full stack engineering project
 bullet_points: | # at least two bullet points
-    - 36”×36” sheet metal cutter with [server](https://github.com/JacobFV/CookieControl) and Arduino [client](https://github.com/JacobFV/Arduino-CookieControl) control systems
+    - 36"×36" sheet metal cutter with [server](https://github.com/JacobFV/CookieControl) and Arduino [client](https://github.com/JacobFV/Arduino-CookieControl) control systems
     - Designed and developed C\# .svg parser, toolpath scheduler, and optimizer, Arduino controller with serial protocol and electronics, and CNC machine with electrodischarge machining head.
     - [Presented](https://youtu.be/yGfpX0WXYFM) on project in May 2015 and June 2016
     - Development journey published [here](https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6)

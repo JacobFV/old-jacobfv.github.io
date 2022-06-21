@@ -42,7 +42,7 @@ tags:   []
   > Making decisions freely presupposes that there is some indeterminacy in the environment and in the decision making engine [. . .] Memory, perception, action and thought involve a level of indeterminacy and decision making may be free in such degree. 
 
 - [A Review of Personality in Human‒Robot Interactions](https://arxiv.org/abs/2001.11777)
-  > Why is analyzing personality important? "Theories of personality assert that individual human traits can be used to predict human emotions, cognitions and behaviors [...] “Personality traits” is a label to describe a specific set of characteristics that are believed to be the best predictors of an individual’s behavior"
+  > Why is analyzing personality important? "Theories of personality assert that individual human traits can be used to predict human emotions, cognitions and behaviors [...] "Personality traits" is a label to describe a specific set of characteristics that are believed to be the best predictors of an individual's behavior"
   - give the robot a fitting personality for its role
   - important for "enjoyment, empathy, intelligence, social attraction, credibility and trust, perceived performance, and compliance"
   - personailty builds social connections
@@ -59,12 +59,12 @@ tags:   []
   4. Big five isn't the only set of psychometrics
 
 - :star:[THE NEXT BIG THING(S) IN UNSUPERVISED MACHINE LEARNING: FIVE LESSONS FROM INFANT LEARNING](https://arxiv.org/abs/2009.08497)
-  1) "Babies’ information processing is guided and constrained from birth"
+  1) "Babies' information processing is guided and constrained from birth"
     - its okay to be feature engineer
   2) "Babies are learning statistical relations across diverse inputs"
     - eg: visual information serves as tiebreaker for otherwise impossible to distinguish audio inputs
     - even for SL tasks, carry some of the higher weights (theoretically processing more abstract information) over from different modalities
-  3) "Babies’ input is scaffolded in time"
+  3) "Babies' input is scaffolded in time"
     - the effect of the "stability/plasticity dilemma" are *critical learning periods* and *catastrophic interference*.
   4) "Babies actively seek out learning opportunities"
     - arousal homeostasis: not too boring nor too alarming
@@ -194,7 +194,7 @@ allowing to jointly train and perform inference in hybrid learning tasks
   - minimize variational free energy by adjusting 1) actions 2) world models
 
 - [Active Inference: A Process Theory](https://www.mitpressjournals.org/doi/pdf/10.1162/NECO_a_00912#:~:text=In%20brief%2C%20active%20inference%20separates,model%20of%20(observed)%20outcomes.)
-  > "all neuronal processing (and action selection) can be explained by maximizing Bayesian model evidence—or minimizing variational free energy \[. . .\] the fact that a gradient descent appears to be a valid description of neuronal activity means that variational free energy is a Lyapunov function for neuronal dynamics, which therefore conform to Hamilton’s principle of least action
+  > "all neuronal processing (and action selection) can be explained by maximizing Bayesian model evidence—or minimizing variational free energy \[. . .\] the fact that a gradient descent appears to be a valid description of neuronal activity means that variational free energy is a Lyapunov function for neuronal dynamics, which therefore conform to Hamilton's principle of least action
 
 - [Automatic Recall Machines: Internal Replay, Continual Learning and the Brain](https://arxiv.org/abs/2006.12323)
   - "optimizing for not forgetting calls for the generation of samples that are specialized to each real training batch"
@@ -257,9 +257,9 @@ Structures](https://arxiv.org/abs/2007.09820)
 
 ## Meta-learning beyond few-shot learning
 
-> When we say a task was “easy” to learn, we usually mean that it didn’t take us too long and that the process was relatively smooth. From a machine learning perspective, this implies rapid convergence. It also implies parameter updates should improve performance monotonically (well, in expectation at least). Oscillating back and forth is equivalent to not knowing what to do.
+> When we say a task was "easy" to learn, we usually mean that it didn't take us too long and that the process was relatively smooth. From a machine learning perspective, this implies rapid convergence. It also implies parameter updates should improve performance monotonically (well, in expectation at least). Oscillating back and forth is equivalent to not knowing what to do.
 >
-> Both these notions revolve around how we travel from our initialisation to our final destination on the model’s loss surface. The ideal is a going straight down-hill to the parameterisation with smallest loss for the given task. Worst case is taking a long detour with lots of back-and-forts. In Leap, we leverage the following insight:
+> Both these notions revolve around how we travel from our initialisation to our final destination on the model's loss surface. The ideal is a going straight down-hill to the parameterisation with smallest loss for the given task. Worst case is taking a long detour with lots of back-and-forts. In Leap, we leverage the following insight:
 >
 > Transferring knowledge therefore implies influencing the parameter trajectory such that it converges as rapidly and smoothly as possible.
 >
@@ -277,7 +277,7 @@ Structures](https://arxiv.org/abs/2007.09820)
 >
 > ![evo](http://flennerhag.com/img/leap/evo.png)
 >
-> Leap learns an initialisation that induces faster learning on tasks from the given task distribution. By minimising the distance we need to travel, we make tasks as ‘easy’ as possible to learn.
+> Leap learns an initialisation that induces faster learning on tasks from the given task distribution. By minimising the distance we need to travel, we make tasks as 'easy' as possible to learn.
 
 http://flennerhag.com/2019-05-09-transferring-knowledge-across-learning-processes/
 

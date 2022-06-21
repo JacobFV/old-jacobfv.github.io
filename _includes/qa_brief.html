@@ -20,7 +20,7 @@
     {% endif %}
   </a>
   <a class="qabrief-link" href="{{ include.url }}">
-    {{include.content | remove: '<p>' | remove: '</p>' | truncatewords: 50 | markdownify }}
+    <span>{{include.content | truncatewords: 50 | markdownify | remove: '<p>' | remove: '</p>' }}</span>
     <a href="{{ include.url }}">more &#8250;&#8250;</a>
   </a>
   {% endif %}

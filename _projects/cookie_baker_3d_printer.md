@@ -26,7 +26,7 @@ bullet_points: |
 
 Outcomes:
 
-- 36”×36” sheet metal CNC (without cutting tool) with server and client control systems
+- 36"×36" sheet metal CNC (without cutting tool) with server and client control systems
 - Became significantly more fluent in C#
 - Developed .svg parser and toolpath scheduler with local optimization
 - Learned elementary electrical engineering

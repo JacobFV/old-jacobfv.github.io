@@ -30,7 +30,7 @@ The latest extension to my externalized cognitive toolkit is a "Tasks" document.
 - Game plan: scheduled tasks with details
 - Long range: goals to keep focused on in the long range
 - Unscheduled: tasks that are not scheduled yet but should be handled
-- Optional: I don’t want to forget these task entirely, but nothing bad happens if I don’t do them
+- Optional: I don't want to forget these task entirely, but nothing bad happens if I don't do them
 
 If I don't finish everything on the plate for today, I simply move it over to the next day and work on that at the first chance. However, I generally work to be realistic -- but not too conservative -- with my demands.
 

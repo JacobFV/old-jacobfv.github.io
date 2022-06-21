@@ -16,7 +16,7 @@ order: 1
 
 {% assign intro = site.bio | where: "introduction", true | first %}
 
-{{ intro.content | remove: '<p>' | remove: '</p>' }} <a href="{{ '/bio' | relative_url }}">more &#8250;&#8250;</a>
+{{ intro.content | markdown | remove: '<p>' | remove: '</p>' }} <a href="{{ '/bio' | relative_url }}">more &#8250;&#8250;</a>
 
 ## Education
 

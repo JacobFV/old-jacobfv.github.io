@@ -3673,7 +3673,7 @@ d-citation-list .references .title {
   			// a) function foo {
   			// b) foo() {
   			// c) function foo() {
-  			// but not “foo {”
+  			// but not "foo {"
   			{
   				// a) and c)
   				pattern: /(\bfunction\s+)\w+(?=(?:\s*\(?:\s*\))?\s*\{)/,
@@ -3693,7 +3693,7 @@ d-citation-list .references .title {
   			lookbehind: true
   		},
   		// Highlight variable names as variables in the left-hand part
-  		// of assignments (“=” and “+=”).
+  		// of assignments ("=" and "+=").
   		'assign-left': {
   			pattern: /(^|[\s;|&]|[<>]\()\w+(?=\+?=)/,
   			inside: {
@@ -3715,13 +3715,13 @@ d-citation-list .references .title {
   				inside: insideString
   			},
   			// Here-document with quotes around the tag
-  			// → No expansion (so no “inside”).
+  			// → No expansion (so no "inside").
   			{
   				pattern: /((?:^|[^<])<<-?\s*)(["'])(\w+)\2\s*(?:\r?\n|\r)[\s\S]*?(?:\r?\n|\r)\3/,
   				lookbehind: true,
   				greedy: true
   			},
-  			// “Normal” string
+  			// "Normal" string
   			{
   				pattern: /(^|[^\\](?:\\\\)*)(["'])(?:\\[\s\S]|\$\([^)]+\)|`[^`]+`|(?!\2)[^\\])*\2/,
   				lookbehind: true,
@@ -6230,8 +6230,8 @@ p small {
           valuePrefix = (valueNegative ? (sign === "(" ? sign : minus) : sign === "-" || sign === "(" ? "" : sign) + valuePrefix;
           valueSuffix = (type === "s" ? prefixes[8 + prefixExponent / 3] : "") + valueSuffix + (valueNegative && sign === "(" ? ")" : "");
 
-          // Break the formatted value into the integer “value” part that can be
-          // grouped, and fractional or exponential “suffix” part that is not.
+          // Break the formatted value into the integer "value" part that can be
+          // grouped, and fractional or exponential "suffix" part that is not.
           if (maybeSuffix) {
             i = -1, n = value.length;
             while (++i < n) {
@@ -7604,7 +7604,7 @@ p small {
     };
   }
 
-  var keyPrefix = "$"; // Protect against keys like “__proto__”.
+  var keyPrefix = "$"; // Protect against keys like "__proto__".
 
   function bindIndex(parent, group, enter, update, exit, data) {
     var i = 0,
@@ -7624,7 +7624,7 @@ p small {
       }
     }
 
-    // Put any non-null nodes that don’t fit into exit.
+    // Put any non-null nodes that don't fit into exit.
     for (; i < groupLength; ++i) {
       if (node = group[i]) {
         exit[i] = node;
@@ -9049,7 +9049,7 @@ distill-header .nav a {
     if (typeof journal !== 'undefined' && journal.title === 'Distill') {
       html += `
     <h3 id="reuse">Reuse</h3>
-    <p>Diagrams and text are licensed under Creative Commons Attribution <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> with the <a class="github" href="${frontMatter.githubUrl}">source available on GitHub</a>, unless noted otherwise. The figures that have been reused from other sources don’t fall under this license and can be recognized by a note in their caption: “Figure from …”.</p>
+    <p>Diagrams and text are licensed under Creative Commons Attribution <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> with the <a class="github" href="${frontMatter.githubUrl}">source available on GitHub</a>, unless noted otherwise. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from …".</p>
     `;
     }
 

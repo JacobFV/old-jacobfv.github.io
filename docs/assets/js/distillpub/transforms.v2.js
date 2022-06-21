@@ -1670,7 +1670,7 @@
       }
 
       /**
-       * Given a pair of tokens (this and endToken), compute a “Token” encompassing
+       * Given a pair of tokens (this and endToken), compute a "Token" encompassing
        * the whole input range enclosed by these two.
        *
        * @param {Token}  endToken  last token of the range, inclusive
@@ -1783,7 +1783,7 @@
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
   /**
-   * This file contains the “gullet” where macros are expanded
+   * This file contains the "gullet" where macros are expanded
    * until only non-macro tokens remain.
    */
 
@@ -4892,7 +4892,7 @@
       var inner = [];
 
       if (group.value.modType === "bmod") {
-          // “\nonscript\mskip-\medmuskip\mkern5mu”
+          // "\nonscript\mskip-\medmuskip\mkern5mu"
           if (!options.style.isTight()) {
               inner.push((0, _buildCommon.makeSpan)(["mspace", "negativemediumspace"], [], options));
           }
@@ -4913,7 +4913,7 @@
           var modInner = [_buildCommon2.default.mathsym("m", group.mode), _buildCommon2.default.mathsym("o", group.mode), _buildCommon2.default.mathsym("d", group.mode)];
           if (group.value.modType === "bmod") {
               inner.push((0, _buildCommon.makeSpan)(["mbin"], modInner, options));
-              // “\mkern5mu\nonscript\mskip-\medmuskip”
+              // "\mkern5mu\nonscript\mskip-\medmuskip"
               inner.push((0, _buildCommon.makeSpan)(["mspace", "thickspace"], [], options));
               if (!options.style.isTight()) {
                   inner.push((0, _buildCommon.makeSpan)(["mspace", "negativemediumspace"], [], options));
@@ -11674,10 +11674,10 @@
   // Unicode versions of existing characters
   defineSymbol(text, main, textord, "\u2013", "–");
   defineSymbol(text, main, textord, "\u2014", "—");
-  defineSymbol(text, main, textord, "\u2018", "‘");
-  defineSymbol(text, main, textord, "\u2019", "’");
-  defineSymbol(text, main, textord, "\u201C", "“");
-  defineSymbol(text, main, textord, "\u201D", "”");
+  defineSymbol(text, main, textord, "\u2018", "'");
+  defineSymbol(text, main, textord, "\u2019", "'");
+  defineSymbol(text, main, textord, "\u201C", """);
+  defineSymbol(text, main, textord, "\u201D", """);
 
   },{}],49:[function(require,module,exports){
 
@@ -12641,10 +12641,10 @@
       .replace(/'/g, '\u2032');
 
     // Allow escaped quotes
-    text = text.replace(/\\“/, '"');
-    text = text.replace(/\\”/, '"');
-    text = text.replace(/\\’/, '\'');
-    text = text.replace(/\\‘/, '\'');
+    text = text.replace(/\\"/, '"');
+    text = text.replace(/\\"/, '"');
+    text = text.replace(/\\'/, '\'');
+    text = text.replace(/\\'/, '\'');
 
     return text;
   }
@@ -12963,7 +12963,7 @@ distill-header .nav a {
     if (typeof journal !== 'undefined' && journal.title === 'Distill') {
       html += `
     <h3 id="reuse">Reuse</h3>
-    <p>Diagrams and text are licensed under Creative Commons Attribution <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> with the <a class="github" href="${frontMatter.githubUrl}">source available on GitHub</a>, unless noted otherwise. The figures that have been reused from other sources don’t fall under this license and can be recognized by a note in their caption: “Figure from …”.</p>
+    <p>Diagrams and text are licensed under Creative Commons Attribution <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> with the <a class="github" href="${frontMatter.githubUrl}">source available on GitHub</a>, unless noted otherwise. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from …".</p>
     `;
     }
 

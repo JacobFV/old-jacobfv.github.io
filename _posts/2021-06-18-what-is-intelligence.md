@@ -19,12 +19,12 @@ I asked GPT-3 this question and surprisingly, its answer turned my attention to 
 	the anti-posits, human activities such as art, religion, logic, and mathematics are best thought about 
 	in their own terms, without reference to scientific data.
 	In 1940, mathematician Norbert Wiener moved the line back from epistemology to mathematician 
-	instrumentation with the following definition: “Information is a measure of one's freedom of choice when one chooses 
-	from one of two or more alternatives.” Robert J. White, president of Bethesda research Institute from 1973
-	to April 1977, puts it thus: “Informational pattern is any distinguishable characteristic, such as shape for 
-	visible pattern and sound for an audible one, capable of recording a bit of information.” Donald N. Michael, 
-	author of “On Learning to Plan: Analyzing Decision-Making” (1973), defines information as a difference that 
-	can make a difference: “information is whatever reduces uncertainty.”
+	instrumentation with the following definition: "Information is a measure of one's freedom of choice when one chooses 
+	from one of two or more alternatives." Robert J. White, president of Bethesda research Institute from 1973
+	to April 1977, puts it thus: "Informational pattern is any distinguishable characteristic, such as shape for 
+	visible pattern and sound for an audible one, capable of recording a bit of information." Donald N. Michael, 
+	author of "On Learning to Plan: Analyzing Decision-Making" (1973), defines information as a difference that 
+	can make a difference: "information is whatever reduces uncertainty."
 
 	How do we define our actions before we describe the deep data-munging techniques used to delight our cat with a random bellow of Supermarket Sweep Muzak? That is to say: how do we better understand our living in an increasingly overloaded environment of communication? The following examples serve to illustrate the idea of better decision-making by using deep data science to deal with increased information inputs.
 	on your part, you need to claim authorship.
