@@ -7,3 +7,5 @@ x fix md/html on bio and blog
 - add links to focus statement (and ensure repositories are decent)
 - refine former blog posts
 - add new material
+- 20Q youtube embed not working
+- add `cookie-cutter` id div to engineering weebly page
