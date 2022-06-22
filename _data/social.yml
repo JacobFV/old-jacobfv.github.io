@@ -3,14 +3,14 @@
 - type: phone
   id: +1-972-460-6353
   star: true
-  note:
+  note: Text before calling
   icon: <i class="fab fas fa-phone"></i>
   url: "tel:+1-972-460-6353"
 
 - type: email
   id: jacob.valdez@limboid.ai
   star: true
-  note:
+  note: Primary email address
   icon: <i class="fas fa-envelope"></i>
   url: mailto:jacob.valdez@limboid.ai # "{{ 'mailto:' | append: site.data.social.email.id | encode_email }}"
 
@@ -31,7 +31,7 @@
 - type: github
   id: JacobFV
   star: true
-  note: Code VCS, publishing, and archive
+  note:
   icon: <i class="fab fa-github"></i>
   url: https://github.com/JacobFV # "https://github.com/{{ id }}"
 
@@ -40,14 +40,14 @@
 - type: google
   id: jacobfv123@gmail.com
   star:
-  note: Google drive sharing, gmail, calendar, OAuth, etc.
+  note:
   icon: <i class="fab fa-google"></i>
   url:
 
 - type: microsoft
   id: jacobfv@msn.com
   star:
-  note: OneDrive sharing, outlook, OAuth, etc.
+  note:
   icon: <i class="fab fa-microsoft"></i>
   url:
 
@@ -63,7 +63,7 @@
 - type: youtube
   id: jacobfv123
   star:
-  note: Presentations, animations,<br>experiments, and other videos
+  note: Presentations/animations/<br>experiments/etc.
   icon: <i class="fab fa-youtube"></i>
   url: https://www.youtube.com/channel/UCs5sasWz1dlbrvBo7tBincg
 
@@ -71,14 +71,14 @@
   id: jacobfv123
   star:
   note: Things I've made
-  icon: <i class="fa-light fa-circle-t"></i> # <svg src="/assets/img/logos/thingiverse.svg" width="200px" />
+  icon: <img src="/assets/img/logos/thingiverse.svg" height="80rem" width="80rem"  />
   url: https://www.thingiverse.com/jacobfv123/designs # https://www.thingiverse.com/{{ id }}/designs
 
 - type: onshape
   id: jacob_valdez
   star:
   note: CAD design
-  icon: <img src="/assets/img/logos/onshape.svg" height="3em" width="3em" />
+  icon: <img src="/assets/img/logos/onshape.svg" height="80rem" width="200rem" />
   url:
 
 - type: soundcloud
@@ -120,7 +120,7 @@
   id: jacob-valdez
   star:
   note: ML models
-  icon: <i class="fa-thin fa-face-smiling-hands"></i> # <svg src="/assets/media/logos/huggingface.svg" width="200px" />
+  icon: <img src="/assets/img/logos/huggingface.svg" height="80rem" width="80rem" />
   url: "https://huggingface.co/jacob-valdez" # "https://huggingface.co/{{ id }}"
 
 # RSS

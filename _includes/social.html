@@ -1,7 +1,7 @@
 {% for social in site.data.social %}
 
 <!--Maybe only display starred social identities-->
-{% if include.starred_only == true and social.star == false %}
+{% if include.starred_only == true and social.star != true %}
 {% continue %}
 {% endif %}
 
@@ -9,10 +9,11 @@
 <figure style="display: inline-block; margin: 0;">
   {{ social.icon }}
   {% if include.detailed == true %}
-  <figcaption style="font-size: small">
+  <figcaption style="font-size: small; height: 4rem; line-height: 1.333rem; overflow: hidden;">
     <code>{{ social.id }}</code>
+    <br>
     {% if social.note %}
-    <br>{{ social.note }}
+    {{ social.note }}
     {% endif %}
   </figcaption>
   {% endif %}
@@ -21,7 +22,7 @@
 
 <!--Maybe hyperlink icon-->
 {% if social.url %}
-<a href="{{ social.url }}">{{ icon }}</a>
+<a href="{{ social.url }}" style="text-decoration: none;">{{ icon }}</a>
 {% else %}
 <span title="{{social.id}}">{{ icon }}</span>
 {% endif %}
