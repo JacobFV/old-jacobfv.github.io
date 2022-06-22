@@ -11,7 +11,8 @@ tags:   [agi]
 Describe how
 - I will make the Limboid
 - Sell the Limboid
-- Market the DIY Limboid COmpany business model to encourage others to join
+- Market the DIY Limboid Company business model to encourage others to join
+  - AI powered companies
 - Use the Limboid benevolently
   - Limboid humanitarian program
   - Limboid space program

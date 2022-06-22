@@ -24,4 +24,4 @@ Aiming the Fertile Cresent at such revolutionary technological objectives, I tak
 Industry-shaping developments are ahead, and AI is hanging 10. With the Fertile Cresent project of projects, I aim to integrate the intellectual labors of innumerable researchers, developers, and engineers and germinate the growth of fully autonomous artificial superintelligence, perhaps retrospectively, a significant achievement in human history.[^1]
 
   
-  [^1]: See [*The Master Plan (part 2)*](https://jacobfv.github.io/blog/the-master-plan-part-2/) for more details.
+  [^1]: Continued in [*The Master Plan (part 2)*](https://jacobfv.github.io/blog/the-master-plan-part-2/)
