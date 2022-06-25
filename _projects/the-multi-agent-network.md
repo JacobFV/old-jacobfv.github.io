@@ -3,7 +3,7 @@ layout: page
 
 title: "The Multi-Agent Network (aka: the <code>MAN</code>)"
 
-hidden: true
+hidden: false
 redirect: https://github.com/Limboid/man
 category: [ai]
 importance: 4
@@ -15,10 +15,11 @@ display_date: # used instead of `date` or date range
 
 img:
 github: Limboid/man # uname/repo, don't include the prefix `https://github.com/`
+under_construction: true
 
 description: A modular developer-oriented framework for integrating pretrained and learning agents
 bullet_points: | # at least two bullet points
-    - :construction: Under construction :construction:
+    - A modular developer-oriented framework for integrating pretrained and learning agents
 ---
 
 TODO: separate this content into a blog post and the github repository

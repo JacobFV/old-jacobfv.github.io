@@ -29,6 +29,12 @@
               {% endif %}
             </div>
             {% endif %}
+            {% if project.under_construction == true %}
+            &nbsp;
+            <span class="icon" data-toggle="tooltip" title="Under construction">
+              🚧
+            </span>
+            {% endif %}
           </div>
         </div>
       </div>

@@ -6,5 +6,6 @@ description: Tutorial using TensorFlow to build machine learning Titanic-survivo
 jupyter: true
 categories: [ai, tutorial]
 tags:   [jupyter notebook]
+read_time: 14
 ---
 {% jupyter_notebook "../../notebooks/titanic-survival-prediction-with-tensorflow.ipynb" %}

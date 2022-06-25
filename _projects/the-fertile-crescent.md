@@ -3,7 +3,7 @@ layout: page
 
 title: "👩🏽‍🌾 The Fertile Cresent"
 
-hidden: true
+hidden:
 redirect: https://github.com/Limboid/the-fertile-crescent
 category: [ai]
 importance: 4
@@ -15,6 +15,7 @@ display_date: # used instead of `date` or date range
 
 img: 
 github: Limboid/the-fertile-crescent # uname/repo, don't include the prefix `https://github.com/`
+under_construction: true
 
 description: Active project to cultivate and ecosystem human-level artificial intelligence
 bullet_points: | # at least two bullet points

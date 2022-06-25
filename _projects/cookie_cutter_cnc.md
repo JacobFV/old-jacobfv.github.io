@@ -3,7 +3,7 @@ layout: page
 
 title: Cookie Cutter CNC
 
-hidden: true
+hidden:
 redirect: https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6
 category: [personal]
 importance: 5

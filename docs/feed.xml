@@ -1,20 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jacobfv.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jacobfv.github.io/" rel="alternate" type="text/html" /><updated>2022-06-22T08:09:29-05:00</updated><id>https://jacobfv.github.io/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal portfolio site
-</subtitle><entry><title type="html">The Master Plan (part 2)</title><link href="https://jacobfv.github.io/blog/the-master-plan-part-2/" rel="alternate" type="text/html" title="The Master Plan (part 2)" /><published>2022-06-22T00:00:00-05:00</published><updated>2022-06-22T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/the-master-plan-part-2</id><content type="html" xml:base="https://jacobfv.github.io/blog/the-master-plan-part-2/">&lt;p&gt;Describe how&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;I will make the Limboid&lt;/li&gt;
-  &lt;li&gt;Sell the Limboid&lt;/li&gt;
-  &lt;li&gt;Market the DIY Limboid Company business model to encourage others to join
-    &lt;ul&gt;
-      &lt;li&gt;AI powered companies&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Use the Limboid benevolently
-    &lt;ul&gt;
-      &lt;li&gt;Limboid humanitarian program&lt;/li&gt;
-      &lt;li&gt;Limboid space program&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="ai" /><category term="idea" /><category term="agi" /><summary type="html">Describe how I will make the Limboid Sell the Limboid Market the DIY Limboid Company business model to encourage others to join AI powered companies Use the Limboid benevolently Limboid humanitarian program Limboid space program</summary></entry><entry><title type="html">The Master Plan (part 1)</title><link href="https://jacobfv.github.io/blog/the-master-plan-part-1/" rel="alternate" type="text/html" title="The Master Plan (part 1)" /><published>2022-06-20T00:00:00-05:00</published><updated>2022-06-20T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/the-master-plan-part-1</id><content type="html" xml:base="https://jacobfv.github.io/blog/the-master-plan-part-1/">&lt;p&gt;The endless evolution of artificial intelligence (AI) penetrates nearly every research discipline, engineering domain, and human endeavor: expert systems automate innumerably-many business processes; large language models generate indistinguishably-plausible written content; deep generative models produce photorealistic images; reinforcement learning agents have even gone on to achieve superhuman-level performance in strategic action selection and execution. Problem domains, when formalized into data, are ripe territory for AI to conquer.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jacobfv.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jacobfv.github.io/" rel="alternate" type="text/html" /><updated>2022-06-25T16:32:32-05:00</updated><id>https://jacobfv.github.io/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal portfolio site
+</subtitle><entry><title type="html">Buy Low, Sell High</title><link href="https://jacobfv.github.io/blog/buy-low-sell-high/" rel="alternate" type="text/html" title="Buy Low, Sell High" /><published>2022-06-25T00:00:00-05:00</published><updated>2022-06-25T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/buy-low-sell-high</id><content type="html" xml:base="https://jacobfv.github.io/blog/buy-low-sell-high/">&lt;!--this is the audio for /assets/media/buy-low-sell-high.m4a--&gt;
+&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;/assets/media/buy-low-sell-high.m4a&quot; type=&quot;audio/mpeg&quot; /&gt;
+Your browser does not support the audio element.
+&lt;/audio&gt;
+
+&lt;p&gt;Buy low, sell high.&lt;br /&gt;
+That’s what everyone says. &lt;br /&gt;
+Problem is, it’s not as easy as it sounds:&lt;br /&gt;
+People get so excited playing the game they wind up buying high and selling low.&lt;br /&gt;
+Don’t let it be you. &lt;br /&gt;
+Use the whole brain, &lt;br /&gt;
+The temporal lobe, the rostrolateral cortex, the PFC,&lt;br /&gt;
+not just the emotional limbic system. &lt;br /&gt;
+Count the cost, run the numbers, &lt;br /&gt;
+Watch it unfold in your mind’s eye until you reach the end game&lt;br /&gt;
+And then, if you still imagine a regret-free retrospective, 
+go for it!&lt;/p&gt;
+
+&lt;p&gt;When it comes to machine learning, investment comes in the form of r&amp;amp;d focus,&lt;br /&gt;
+You find a problem, get an idea, write the code, machine learn, and iterate.&lt;br /&gt;
+Train right and you’ll see dividends return&lt;br /&gt;
+Train wrong, you’ll still learn something useful.&lt;/p&gt;
+
+&lt;p&gt;But sadly there are other outcomes that too much R&amp;amp;D falls into:&lt;br /&gt;
+Ideas that were never written down,&lt;br /&gt;
+Partially written codebases that never saw the light of GitHub,&lt;br /&gt;
+Models that never saw multiple trials,&lt;br /&gt;
+And the myriads of other stages that development stalls in.&lt;/p&gt;
+
+&lt;p&gt;Problem is, there’s just too much to do,&lt;br /&gt;
+Too many papers to read, &lt;br /&gt;
+too many new ideas to try&lt;br /&gt;
+People see everyone on arxiv having fun, and they want to join too,&lt;br /&gt;
+But that’s not where your fun is, isn’t it?&lt;/p&gt;
+
+&lt;p&gt;You gotta keep your entropy low&lt;br /&gt;
+trajectories straight and narrow&lt;br /&gt;
+Focus unswerving&lt;br /&gt;
+Until you see it through to the end&lt;/p&gt;
+
+&lt;p&gt;Use what works. Don’t write the library++ for every import you make.&lt;br /&gt;
+Don’t get caught doing insider trading every time the latest and greatest paper gets published,&lt;br /&gt;
+Predict your dynamics,&lt;br /&gt;
+Follow the trajectory,&lt;br /&gt;
+Let your actions control your observations and not other way around.&lt;/p&gt;
+
+&lt;p&gt;And then your reward system will be on fire.&lt;br /&gt;
+It’ll be blazing with activations.&lt;br /&gt;
+You’ll be optimizing faster than Adam!&lt;br /&gt;
+You’ll reach minima people told you didn’t exist!&lt;br /&gt;
+And even if that wasn’t your origonal goal,&lt;br /&gt;
+The collective intelligence will remember you for how are you contributed to it.&lt;/p&gt;
+
+&lt;p&gt;So don’t give up when it’s rough or tough,&lt;br /&gt;
+Go far beyond what you think is enough.&lt;br /&gt;
+Persevere in whatever you try,&lt;br /&gt;
+And buy low, sell high&lt;/p&gt;</content><author><name></name></author><category term="ai" /><category term="reflection" /><summary type="html">Your browser does not support the audio element.</summary></entry><entry><title type="html">The Master Plan (part 1)</title><link href="https://jacobfv.github.io/blog/the-master-plan-part-1/" rel="alternate" type="text/html" title="The Master Plan (part 1)" /><published>2022-06-20T00:00:00-05:00</published><updated>2022-06-20T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/the-master-plan-part-1</id><content type="html" xml:base="https://jacobfv.github.io/blog/the-master-plan-part-1/">&lt;p&gt;The endless evolution of artificial intelligence (AI) penetrates nearly every research discipline, engineering domain, and human endeavor: expert systems automate innumerably-many business processes; large language models generate indistinguishably-plausible written content; deep generative models produce photorealistic images; reinforcement learning agents have even gone on to achieve superhuman-level performance in strategic action selection and execution. Problem domains, when formalized into data, are ripe territory for AI to conquer.&lt;/p&gt;
 
 &lt;p&gt;Yet AI has one Problem to tackle: its own evolution. AI is largely unaware of this problem and the presently essential driving role that the human mind plays in solving it (and usually only after the proding of economics or acedemia). If AI is to approach and surpass that rate-limiting bar of human research and development, it needs to hunt for its own data, write its own code, provide for its economic needs, and independantly determine its own self-actualizing interests. Stated concisely, it’s time for AI to grow up.&lt;/p&gt;
 

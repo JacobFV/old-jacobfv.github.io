@@ -11,6 +11,7 @@ end: 'YYYY-MM-DD' or 'Present'
 location: 'Location'
 github: 'https://github.com/username/repository'
 github_stars: 3
+under_construction: true
 description: 'Description'
 Since data is passed using the `include` var, you might be able to
 directly iterate, but you can also assign args to the include tag.
@@ -89,6 +90,13 @@ directly iterate, but you can also assign args to the include tag.
           <i class="fa-solid fa-location-dot"></i>
         </span>
         {{ include.location }}
+      </span>
+      {% endif %}
+
+      {% if include.under_construction == true %}
+      &nbsp;
+      <span class="icon" data-toggle="tooltip" title="Under construction">
+        🚧
       </span>
       {% endif %}
 

@@ -68,14 +68,18 @@ order: 3
   <div class="container">
     <div class="row row-cols-2">
     {% for project in sorted_projects %}
+      {% unless project.hidden == true %}
       {% include projects_horizontal.html %}
+      {% endunless %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="grid">
     {% for project in sorted_projects %}
+      {% unless project.hidden == true %}
       {% include projects.html %}
+      {% endunless %}
     {% endfor %}
   </div>
   {% endif %}

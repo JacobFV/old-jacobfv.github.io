@@ -12,7 +12,7 @@
   star: true
   note: Primary email address
   icon: <i class="fas fa-envelope"></i>
-  url: mailto:jacob.valdez@limboid.ai # "{{ 'mailto:' | append: site.data.social.email.id | encode_email }}"
+  url: mailto:jacob.valdez@limboid.ai
 
 - type: discord
   id: jacob-valdez#5523
@@ -26,14 +26,14 @@
   star:
   note:
   icon: <i class="fab fa-twitter"></i>
-  url: https://twitter.com/JacobFV123 # "https://twitter.com/{{ id }}"
+  url: https://twitter.com/JacobFV123
 
 - type: github
   id: JacobFV
   star: true
   note:
   icon: <i class="fab fa-github"></i>
-  url: https://github.com/JacobFV # "https://github.com/{{ id }}"
+  url: https://github.com/JacobFV
 
 # cloud solutions
 
@@ -58,7 +58,7 @@
   star:
   note: Old blogging account
   icon: <i class="fab fa-medium"></i>
-  url: "https://medium.com/@jacobfv123" # "https://medium.com/@{{ id }}"
+  url: "https://medium.com/@jacobfv123"
 
 - type: youtube
   id: jacobfv123
@@ -72,7 +72,7 @@
   star:
   note: Things I've made
   icon: <img src="/assets/img/logos/thingiverse.svg" height="80rem" width="80rem"  />
-  url: https://www.thingiverse.com/jacobfv123/designs # https://www.thingiverse.com/{{ id }}/designs
+  url: https://www.thingiverse.com/jacobfv123/designs
 
 - type: onshape
   id: jacob_valdez
@@ -86,14 +86,14 @@
   star:
   note: Personal music
   icon: <i class="fab fa-soundcloud"></i>
-  url: "https://soundcloud.com/jacob-valdez-946056620" # "https://soundcloud.com/{{ id }}"
+  url: "https://soundcloud.com/jacob-valdez-946056620"
 
 - type: linkedin
   id: jacob-f-valdez
   star:
   note: Professional networking
   icon: <i class="fab fa-linkedin"></i>
-  url: "https://www.linkedin.com/in/jacob-f-valdez" # "https://www.linkedin.com/in/{{ id }}"
+  url: "https://www.linkedin.com/in/jacob-f-valdez"
 
 # - quora:
 #   id: Jacob-Valdez-46
@@ -107,21 +107,21 @@
   star:
   note: StackExchange Q&A
   icon: <i class="fab fa-stack-exchange"></i>
-  url: "https://stackexchange.com/users/14971315" # "https://stackexchange.com/users/{{ id }}"
+  url: "https://stackexchange.com/users/14971315"
 
 - type: gitlab
   id: jacobfv123
   star:
   note: Partial GitHub mirror
   icon: <i class="fab fa-gitlab"></i>
-  url: "https://gitlab.com/jacobfv123" # "https://gitlab.com/{{ id }}"
+  url: "https://gitlab.com/jacobfv123"
 
 - type: huggingface
   id: jacob-valdez
   star:
   note: ML models
   icon: <img src="/assets/img/logos/huggingface.svg" height="80rem" width="80rem" />
-  url: "https://huggingface.co/jacob-valdez" # "https://huggingface.co/{{ id }}"
+  url: "https://huggingface.co/jacob-valdez"
 
 # RSS
 
@@ -130,4 +130,4 @@
   star: true
   note: Subscribe for updates
   icon: <i class="fas fa-rss-square"></i>
-  url: "https://jacobfv.github.io/feed.xml" # "{{ site.baseurl | prepend: site.url }}/feed.xml"
+  url: "https://jacobfv.github.io/feed.xml"

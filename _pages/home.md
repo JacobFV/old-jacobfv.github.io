@@ -80,6 +80,7 @@ order: 1
       end=project.end
       github=project.github
       github_stars=project.github_stars
+      under_construction=project.under_construction
       description=project.bullet_points
       %}
     {% endif %}

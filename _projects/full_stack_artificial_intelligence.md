@@ -15,6 +15,7 @@ display_date: # used instead of `date` or date range
 
 img:
 github: Limboid/the-artificial-ecosystem # uname/repo, don't include the prefix `https://github.com/`
+under_construction: true
 
 description: Computer interaction + deep reinforcement learning
 bullet_points: | # at least two bullet points

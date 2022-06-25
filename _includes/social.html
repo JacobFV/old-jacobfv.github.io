@@ -10,10 +10,22 @@
   {{ social.icon }}
   {% if include.detailed == true %}
   <figcaption style="font-size: small; height: 4rem; line-height: 1.333rem; overflow: hidden;">
+    {% if social.display_id %}
+    <code>{{ social.display_id }}</code>
+    {% elsif social.id %}
     <code>{{ social.id }}</code>
+    {% endif %}
     <br>
     {% if social.note %}
     {{ social.note }}
+    {% endif %}
+  </figcaption>
+  {% else %}
+  <figcaption style="font-size: small; height: 1.333rem; line-height: 1.333rem; overflow: hidden;">
+    {% if social.display_id %}
+    <code>{{ social.display_id }}</code>
+    {% elsif social.id %}
+    <code>{{ social.id }}</code>
     {% endif %}
   </figcaption>
   {% endif %}
