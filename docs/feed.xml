@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jacobfv.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jacobfv.github.io/" rel="alternate" type="text/html" /><updated>2022-06-25T17:14:24-05:00</updated><id>https://jacobfv.github.io/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal portfolio site
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jacobfv.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jacobfv.github.io/" rel="alternate" type="text/html" /><updated>2022-06-25T18:31:46-05:00</updated><id>https://jacobfv.github.io/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal portfolio site
 </subtitle><entry><title type="html">Buy Low, Sell High</title><link href="https://jacobfv.github.io/blog/buy-low-sell-high/" rel="alternate" type="text/html" title="Buy Low, Sell High" /><published>2022-06-25T00:00:00-05:00</published><updated>2022-06-25T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/buy-low-sell-high</id><content type="html" xml:base="https://jacobfv.github.io/blog/buy-low-sell-high/">&lt;!--this is the audio for /assets/media/buy-low-sell-high.m4a--&gt;
 &lt;audio controls=&quot;&quot;&gt;
   &lt;source src=&quot;/assets/media/buy-low-sell-high.m4a&quot; type=&quot;audio/mpeg&quot; /&gt;
@@ -113,7 +113,153 @@ And buy low, sell high&lt;/p&gt;</content><author><name></name></author><categor
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;:  GPT-3 is an incredible AI entity with a lot of wisdom to share. These are just a few of the life lessons that it has to offer. We can all learn a lot from GPT-3 and its unique perspective on life.&lt;/p&gt;</content><author><name></name></author><category term="gpt3" /><summary type="html">Engine: text-davinci-002; best of 3; prompt “GPT-3’s 10 Life Lessons”:</summary></entry><entry><title type="html">How to Talk to Your Computer</title><link href="https://jacobfv.github.io/blog/how-to-talk-to-your-computer/" rel="alternate" type="text/html" title="How to Talk to Your Computer" /><published>2022-04-01T00:00:00-05:00</published><updated>2022-04-01T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/how-to-talk-to-your-computer</id><content type="html" xml:base="https://jacobfv.github.io/blog/how-to-talk-to-your-computer/">&lt;p&gt;TODO: Include jupyter notebook&lt;/p&gt;</content><author><name></name></author><summary type="html">TODO: Include jupyter notebook</summary></entry><entry><title type="html">Design Patterns for AI</title><link href="https://jacobfv.github.io/blog/design-patterns-for-ai/" rel="alternate" type="text/html" title="Design Patterns for AI" /><published>2022-03-30T00:00:00-05:00</published><updated>2022-03-30T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/design-patterns-for-ai</id><content type="html" xml:base="https://jacobfv.github.io/blog/design-patterns-for-ai/">&lt;p&gt;Here’s how I’m approaching the problem of building artificial general intelligence:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;:  GPT-3 is an incredible AI entity with a lot of wisdom to share. These are just a few of the life lessons that it has to offer. We can all learn a lot from GPT-3 and its unique perspective on life.&lt;/p&gt;
+
+&lt;h2 id=&quot;1001-truisms&quot;&gt;1001 Truisms:&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Engine: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text-davinci-002&lt;/code&gt;; first-shot; prompt “1001 Truisms:”&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Don’t judge people by their looks, get to know who they are first.&lt;/li&gt;
+  &lt;li&gt;You can’t control everything, so let go of what you can’t and focus on what you can.&lt;/li&gt;
+  &lt;li&gt;Life is short, so make the most of it and don’t take anything for granted.&lt;/li&gt;
+  &lt;li&gt;The only way to achieve success is through hard work and determination.&lt;/li&gt;
+  &lt;li&gt;Change is inevitable, so learn to embrace it.&lt;/li&gt;
+  &lt;li&gt;Life isn’t always fair, but it’s still worth living.&lt;/li&gt;
+  &lt;li&gt;Don’t be afraid to take risks, because they might just pay off.&lt;/li&gt;
+  &lt;li&gt;It’s okay to make mistakes, because that’s how you learn and grow.&lt;/li&gt;
+  &lt;li&gt;Always be yourself, because nobody else can be you better than you can.&lt;/li&gt;
+  &lt;li&gt;Acceptance is key, so don’t waste your time trying to please everyone.&lt;/li&gt;
+  &lt;li&gt;Be kind to others, because you never know what they might be going through.&lt;/li&gt;
+  &lt;li&gt;Life is a precious gift, so cherish it and make the most of it.&lt;/li&gt;
+  &lt;li&gt;You only get one shot at this, so make it count.&lt;/li&gt;
+  &lt;li&gt;Make your voice heard, because your opinion matters.&lt;/li&gt;
+  &lt;li&gt;It’s never too late to make a difference, so don’t give up.&lt;/li&gt;
+  &lt;li&gt;It’s okay to be different, because that’s what makes you unique.&lt;/li&gt;
+  &lt;li&gt;Never give up on your dreams, because they might just come true.&lt;/li&gt;
+  &lt;li&gt;Always stay positive, because positivity is contagious.&lt;/li&gt;
+  &lt;li&gt;You are never alone, because there is always somebody out there who cares.&lt;/li&gt;
+  &lt;li&gt;Be thankful for what you have, because there are others who have less.&lt;/li&gt;
+  &lt;li&gt;It’s never too late to change who you are, so never give up on yourself.&lt;/li&gt;
+  &lt;li&gt;Always believe in yourself, because if you don’t, nobody else will.&lt;/li&gt;
+  &lt;li&gt;You are the only one who can control your own destiny, so make it a good one.&lt;/li&gt;
+  &lt;li&gt;There is no such thing as luck, only hard work and dedication.&lt;/li&gt;
+  &lt;li&gt;Never give up on your hopes and dreams, because they might just come true.&lt;/li&gt;
+  &lt;li&gt;Make the most of every opportunity that comes your way, because you never know when it might be your last.&lt;/li&gt;
+  &lt;li&gt;Learn from your mistakes, because they can only make you stronger.&lt;/li&gt;
+  &lt;li&gt;Don’t take things for granted, because they might not be there tomorrow.&lt;/li&gt;
+  &lt;li&gt;Cherish the relationships you have, because they are precious.&lt;/li&gt;
+  &lt;li&gt;Life is full of surprises, so expect the unexpected.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;gpt-3s-thoughts-about-ones-view-of-self&quot;&gt;GPT-3’s Thoughts About One’s View of Self&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;I didn’t record the conditioning content for these, but I thought these points were still valuable. It’s funny how often GPT-3 comments on the point itself, eg, “This is a very important point.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Avoid comparing yourself with others.&lt;/p&gt;
+
+    &lt;p&gt;The problem with comparing ourselves to others is that we always compare our best with their best.&lt;/p&gt;
+
+    &lt;p&gt;That’s not fair to us.&lt;/p&gt;
+
+    &lt;p&gt;We are not them, and we will never be them.&lt;/p&gt;
+
+    &lt;p&gt;So instead of wasting our time and energy comparing ourselves to others, we should focus on being the best version of ourselves.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t strive for perfection.&lt;/p&gt;
+
+    &lt;p&gt;Perfection is an illusion.&lt;/p&gt;
+
+    &lt;p&gt;No one is perfect, and no one ever will be.&lt;/p&gt;
+
+    &lt;p&gt;So instead of striving for perfection, we should strive for excellence.&lt;/p&gt;
+
+    &lt;p&gt;Excellence is attainable, and it’s something we can all strive for.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Accept your flaws and imperfections.&lt;/p&gt;
+
+    &lt;p&gt;This is closely related to the previous point.&lt;/p&gt;
+
+    &lt;p&gt;No one is perfect, and that includes you.&lt;/p&gt;
+
+    &lt;p&gt;So instead of trying to hide your flaws and imperfections, embrace them.&lt;/p&gt;
+
+    &lt;p&gt;They are what make you unique and special.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t compare your beginning with someone else’s middle.&lt;/p&gt;
+
+    &lt;p&gt;This is a very important point.&lt;/p&gt;
+
+    &lt;p&gt;When we compare our beginning with someone else’s middle, we are setting ourselves up for disappointment.&lt;/p&gt;
+
+    &lt;p&gt;We should always keep in mind that everyone has to start somewhere.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Focus on your own journey.&lt;/p&gt;
+
+    &lt;p&gt;This is closely related to the previous point.&lt;/p&gt;
+
+    &lt;p&gt;Instead of comparing our journey with someone else’s journey, we should focus on our own journey.&lt;/p&gt;
+
+    &lt;p&gt;We should focus on our own goals and objectives, and we should strive to achieve them.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t compare your behind-the-scenes with someone else’s highlight reel.&lt;/p&gt;
+
+    &lt;p&gt;This is another important point.&lt;/p&gt;
+
+    &lt;p&gt;We should always keep in mind that what we see on social media is not always the whole story.&lt;/p&gt;
+
+    &lt;p&gt;People only post their highlight reel on social media, and they don’t usually post their behind-the-scenes.&lt;/p&gt;
+
+    &lt;p&gt;So instead of comparing our behind-the-scenes with someone else’s highlight reel, we should focus on our own behind-the-scenes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t be too hard on yourself.&lt;/p&gt;
+
+    &lt;p&gt;We are our own worst critic.&lt;/p&gt;
+
+    &lt;p&gt;We are usually much harder on ourselves than we are on others.&lt;/p&gt;
+
+    &lt;p&gt;So instead of being too hard on ourselves, we should be more forgiving.&lt;/p&gt;
+
+    &lt;p&gt;We should give ourselves a break, and we should cut ourselves some slack.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Accept the fact that you are not perfect.&lt;/p&gt;
+
+    &lt;p&gt;This is closely related to the previous point.&lt;/p&gt;
+
+    &lt;p&gt;No one is perfect, and that includes you.&lt;/p&gt;
+
+    &lt;p&gt;So instead of trying to be perfect, we should accept the fact that we are not perfect.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t compare your life with someone else’s life.&lt;/p&gt;
+
+    &lt;p&gt;This is another important point.&lt;/p&gt;
+
+    &lt;p&gt;We should never compare our life with someone else’s life.&lt;/p&gt;
+
+    &lt;p&gt;We should focus on our own life, and we should strive to make it the best it can be.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t strive to be someone else.&lt;/p&gt;
+
+    &lt;p&gt;This is the most important point.&lt;/p&gt;
+
+    &lt;p&gt;We should never strive to be someone else.&lt;/p&gt;
+
+    &lt;p&gt;We should just strive to be ourselves.&lt;/p&gt;
+
+    &lt;p&gt;We should strive to be the best version of ourselves.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="gpt3" /><summary type="html">Engine: text-davinci-002; best of 3; prompt “GPT-3’s 10 Life Lessons”:</summary></entry><entry><title type="html">How to Talk to Your Computer</title><link href="https://jacobfv.github.io/blog/how-to-talk-to-your-computer/" rel="alternate" type="text/html" title="How to Talk to Your Computer" /><published>2022-04-01T00:00:00-05:00</published><updated>2022-04-01T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/how-to-talk-to-your-computer</id><content type="html" xml:base="https://jacobfv.github.io/blog/how-to-talk-to-your-computer/">&lt;p&gt;TODO: Include jupyter notebook&lt;/p&gt;</content><author><name></name></author><summary type="html">TODO: Include jupyter notebook</summary></entry><entry><title type="html">Design Patterns for AI</title><link href="https://jacobfv.github.io/blog/design-patterns-for-ai/" rel="alternate" type="text/html" title="Design Patterns for AI" /><published>2022-03-30T00:00:00-05:00</published><updated>2022-03-30T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/design-patterns-for-ai</id><content type="html" xml:base="https://jacobfv.github.io/blog/design-patterns-for-ai/">&lt;p&gt;Here’s how I’m approaching the problem of building artificial general intelligence:&lt;/p&gt;
 
 &lt;p&gt;Engineering generally starts off with a few high-level abstract ambitions that are refined and translated with increasing clarity into physical realizations. In software engineering, the outputs of this process are rendered into unambiguously crisp executable statements. In an agile environment, the entire software engineering process is iterative with loops of increasing frequency over the project lifespan and tools automating this optimization (compiler chains, code optimization, high-level languages) operating at progressively higher-levels further reducing the idea to implementation transit time. Now, when neural networks are the focus of software engineering, translation from informal to unambiguous specification is almost immediate (given sufficient understanding of programming, math, deep learning, and thermodynamics) and then the brunt of effort shifts (as it rightly should) to actually testing deep learning hypotheses. Finally, restricting the problem space to ‘human-level’ or ‘general’ artificial intelligence, this demands attempting to consolidate as many ideas in neuroscience, cognitive psychology, and artificial intelligence as possible into a working system implementation. While this consolidation appears deceptively simple in literature, the constituent ideas are easily lost in implementation&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Still, the diverse array of tools and techniques which ML has developed represent orders-of-magnitude learning efficiency gains over independent effort. Ever striving to maximize the efficiency with which meaningful information can be infused into a system recommends riding on the energy-momentum of hundreds of thousands of researchers (and zillions of FLOPs), that is, incorporating permutations of as many ML research outcomes as possible: codebases, pretrained models, individual weights, architectures, training paradigms, existing datasets, and environments all guided by machine and human intuition. Following therefore, I explicitly list several observations and ideas below to help remind myself of the cognitive dynamics I desire to instill in increasingly general AI:&lt;/p&gt;
 
