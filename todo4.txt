@@ -12,3 +12,4 @@ x add `cookie-cutter` id div to engineering weebly page
 x optionally override predicted time to read
 x add construction property and emoji for relevant projects 
 x add project "the-multi-agent-network"
+- add more of my fertile cresent projects
