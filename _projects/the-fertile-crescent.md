@@ -19,7 +19,7 @@ under_construction: true
 
 description: Active project to cultivate and ecosystem human-level artificial intelligence
 bullet_points: | # at least two bullet points
-    - Computatrum: an AI agent that interacts with a computer using standard peripherals (keyboard, mouse, display, etc.) \gh{Limboid/computatrum}\gh{Limboid/computer-env}
+    - Computatrum: an AI agent that interacts with a computer using standard peripherals (keyboard, mouse, display, etc.) <i class="fa-brands fa-github"></i> [Limboid/computatrum](Limboid/computer-env)
     - The Multi-Agent Network (MAN): a modular developer-oriented framework for integrating pretrained and learning agents <i class="fa-brands fa-github"></i> [Limboid/man](https://github.com/Limboid/man)
     - `TensorCode`: Python library for intelligent run-time code analysis and code-gen using deep learning <i class="fa-brands fa-github"></i> [Limboid/tensorcode](https://github.com/Limboid/tensorcode) <i class="fa-brands fa-github"></i> [Limboid/deep-tree](https://github.com/Limboid/deep-tree)
     - `Unsupervised`: keras look-alike for modular unsupervised deep learning <i class="fa-brands fa-github"></i> [Limboid/unsupervised](https://github.com/Limboid/unsupervised)

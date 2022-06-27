@@ -1,0 +1,17 @@
+TODO:
+x fix md/html on bio and blog
+x add picture at desk on bio
+x stopped off halfway through background adding linked images/content
+x. add pictures in C:\Users\Jacob\Pictures to weebly, this site, and linkedin
+x make links in introduction correct
+x add links to focus statement (and ensure repositories are decent)
+x refine former blog posts
+x add new material
+x 20Q youtube embed not working
+x add `cookie-cutter` id div to engineering weebly page
+x optionally override predicted time to read
+x add construction property and emoji for relevant projects 
+x add project "the-multi-agent-network"
+- add more of my fertile cresent projects
+- add soundcloud albumb
+- add external blog posts

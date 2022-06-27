@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jacobfv.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jacobfv.github.io/" rel="alternate" type="text/html" /><updated>2022-06-27T08:53:04-05:00</updated><id>https://jacobfv.github.io/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal portfolio site
+</subtitle><entry><title type="html">Embodied and Situated: AI with Feelings</title><link href="https://jacobfv.github.io/blog/embodied-and-situated-ai-with-feelings/" rel="alternate" type="text/html" title="Embodied and Situated: AI with Feelings" /><published>2022-06-26T00:00:00-05:00</published><updated>2022-06-26T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/embodied-and-situated-ai-with-feelings</id><content type="html" xml:base="https://jacobfv.github.io/blog/embodied-and-situated-ai-with-feelings/">&lt;p&gt;Using &lt;a href=&quot;https://jacobfv.github.io/blog/teaching-learning-machines&quot;&gt;&lt;em&gt;Teaching Learning Machines (TLMs)&lt;/em&gt;&lt;/a&gt; and &lt;a href=&quot;https://jacobfv.github.io/blog/self-learning-meta-learners-teach-themselves-to-teach&quot;&gt;&lt;em&gt;Self-learning meta-learners teach themselves to teach&lt;/em&gt;&lt;/a&gt; as conditioning priors, I prompted gpt3 with:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;embodied-and-situated-ai-with-feelings&quot;&gt;Embodied and Situated: AI with Feelings&lt;/h1&gt;
+
+  &lt;p&gt;(note: make sure to emphasize that AI doesn’t necesarily have to be embodied in a physical world; it just needs to be embodied in &lt;em&gt;some&lt;/em&gt; world)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here’s what I got:&lt;/p&gt;
+
+&lt;p&gt;One of the most exciting recent developments in AI is embodied learning – an approach that emphasizes the importance of giving agents a body and placing them in some sort of environment. The rationale behind this is simple: if we want machines to be truly intelligent, they need to experience the world for themselves instead of being confined to dusty old textbooks (or clean new ones). They need to feel pain and pleasure, see things with their own eyes, touch things with their own hands. Only then will they be able develop common sense – an understanding of how the world works that goes beyond what can be explicitly taught or programmed into them.&lt;/p&gt;
+
+&lt;p&gt;Embodied learning has already yielded some impressive results. In one famous experiment, scientists placed robots in a room full of random objects and tasked them with building towers out of blocks. The only information they were given was where each object was located; everything else had to be learned by trial and error. And yet within just a few minutes, the robots had developed surprisingly sophisticated skills like tower-building! By experiencing life for themselves – by making mistakes and figuring out which actions lead to positive outcomes – these little machines were ableto build up a storehouseof knowledge aboutthe physical worldand solve problems far more efficiently than any hand-coded algorithm could hope for..&lt;/p&gt;
+
+&lt;p&gt;There are two important aspects to embodied learning that are worth highlighting. The first is its focus on situated cognition – the idea that intelligence arises from interaction with the environment. This contrasts with so-called “symbolic” approaches to AI, which treat knowledge as a static set of symbols (e.g., 0’s and 1’s) that can be manipulated without any need for grounding in reality. In many ways, Situated Cognition is just common sense: if you want to understand how something works, it helps to have firsthand experience of it instead of reading about it in a book.&lt;/p&gt;
+
+&lt;p&gt;The second aspect is its emphasis on embodiment – giving agents bodies and placing them in rich environments where they can interact with their surroundings.. It might seem like a small change but it makes a huge difference: embedded in physical reality, agents are no longer limited by what we can explicitly tell them; instead, they must learn for themselves through trial and error.. What starts out as noisy data gradually becomes refined into useful insights about how the world works.. And this processof induction– forming general principles from specific observations–is at the heart of human intelligence..&lt;/p&gt;
+
+&lt;p&gt;One of the great things about embodied learning is that it’s not just for robots; it can be applied to any sort of agent, including software agents. As long as an agent has some way of interacting with its environment – e.g., by receiving input from sensors and taking actions in response – it can benefit from this approach.. This means we can start to build truly intelligent machines without having to wait for years or even decades for advances in robotics technology.. All we need is a well-designed simulation environment in which our agents can learn by doing..&lt;/p&gt;
+
+&lt;p&gt;Embodied learning is still in its early days but it’s already yielding some impressive results.. In one famous experiment, scientists placed robots in a room full of random objects and tasked them with building towers out of blocks. The only information they were given was where each object was located; everything else had to be learned by trial and error. And yet within just a few minutes, the robots had developed surprisingly sophisticated skills like tower-building! By experiencing life for themselves – by making mistakes and figuring out which actions lead to positive outcomes – these little machines were ableto build up a storehouseof knowledge aboutthe physical worldand solve problems far more efficiently than any hand-coded algorithm could hope for…&lt;/p&gt;
+
+&lt;p&gt;The benefits of embodied learning are not just limited to robots; it can be applied to any sort of agent, including software agents. As long as an agent has some way of interacting with its environment – e.g., by receiving input from sensors and taking actions in response – it can benefit from this approach.. This means we can start to build truly intelligent machines without having to wait for years or even decades for advances in robotics technology.. All we need is a well-designed simulation environment in which our agents can learn by doing…&lt;/p&gt;</content><author><name></name></author><category term="ai" /><category term="idea" /><category term="agi" /><category term="gpt3" /><summary type="html">Using Teaching Learning Machines (TLMs) and Self-learning meta-learners teach themselves to teach as conditioning priors, I prompted gpt3 with:</summary></entry><entry><title type="html">Self-learning meta-learners teach themselves to teach</title><link href="https://jacobfv.github.io/blog/self-learning-meta-learners-teach-themselves-to-teach/" rel="alternate" type="text/html" title="Self-learning meta-learners teach themselves to teach" /><published>2022-06-26T00:00:00-05:00</published><updated>2022-06-26T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/self-learning-meta-learners-teach-themselves-to-teach</id><content type="html" xml:base="https://jacobfv.github.io/blog/self-learning-meta-learners-teach-themselves-to-teach/">&lt;p&gt;Using &lt;a href=&quot;https://jacobfv.github.io/blog/teaching-learning-machines&quot;&gt;&lt;em&gt;Teaching Learning Machines (TLMs)&lt;/em&gt;&lt;/a&gt; as a conditioning prior, I prompted gpt3 with: “# Self-learning meta-learners teach themselves to teach”. Here’s what I got (Disclaimer: TLM’s are not yet established ML terminology):&lt;/p&gt;
+
+&lt;p&gt;A lot of the excitement around TLMs is due to their potential for accelerating AI development. But there’s another, equally important reason why they’re so interesting: they shed light on one of the great mysteries of intelligence. How does learning happen in the first place? What are the basic building blocks out of which all knowledge is constructed? If we want to create truly intelligent machines, these are questions that need answering. And it turns out, TLMs may be just what we need.&lt;/p&gt;
+
+&lt;p&gt;To understand how this works, let’s start with a very simple example: teaching a machine to play tic-tac-toe (noughts and crosses). We can use reinforcement learning for this – an approach that involves trial and error, receiving feedback after each move about whether it was good or bad. Over time, the agent will learn from its mistakes and get better at playing the game until eventually it becomes unbeatable (assuming perfect play from both sides).&lt;/p&gt;
+
+&lt;p&gt;Now let’s say we want to take this a step further and teach the machine how to teach other machines to play tic-tac-toe. In order for the agent to do this, it needs two things: first, a model of how teaching works; and second, a way of representing knowledge so that it can be transferred from one student (or “subagent”) to another. The latter is known as meta-learning – learning about learning – and it’s vital for creating TLMs.&lt;/p&gt;
+
+&lt;p&gt;One approach that has been proposed involves using neural networks as both the students and the teachers. A trained network can be seen as a set of weights that encode some generalizable insights about how tic-tac-toe (or any other game) should be played. When these weights are randomly initialized – which corresponds to having no prior knowledge about the game – they contain nothing but noise. But if we use them to train another neural network, something magical happens: those random initializations turn into useful patterns that help the new network learn faster than if it had started from scratch itself!&lt;/p&gt;
+
+&lt;p&gt;This is known as “knowledge distillation” – the transfer of knowledge from a more complex model (the teacher) to a simpler one (the student). It’s an important concept in machine learning, and it’s what enables meta-learning. In our tic-tac-toe example, the agent that knows how to play the game can be thought of as the teacher, while the newly initialized neural network weights are like blank students waiting to be taught. By training these weights on data generated by the agent – i.e., by playing against it – we can turn them into powerful models of tic-tac-toe strategy that require far fewer examples to learn from than if they had started from scratch.&lt;/p&gt;
+
+&lt;p&gt;One way of thinking about this is that theagent has learned not just how to play tic tac toe but also how teaching works: it knows which insights are most useful for transferring knowledge, and when/how best to do so. This generalizable understanding of teaching is what allowsTLMs create other machines that accelerate their own learning process!&lt;/p&gt;</content><author><name></name></author><category term="ai" /><category term="idea" /><category term="agi" /><category term="gpt3" /><summary type="html">Using Teaching Learning Machines (TLMs) as a conditioning prior, I prompted gpt3 with: “# Self-learning meta-learners teach themselves to teach”. Here’s what I got (Disclaimer: TLM’s are not yet established ML terminology):</summary></entry><entry><title type="html">Teaching Learning Machines (TLMs)</title><link href="https://jacobfv.github.io/blog/teaching-learning-machines/" rel="alternate" type="text/html" title="Teaching Learning Machines (TLMs)" /><published>2022-06-26T00:00:00-05:00</published><updated>2022-06-26T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/teaching-learning-machines</id><content type="html" xml:base="https://jacobfv.github.io/blog/teaching-learning-machines/">&lt;p&gt;You have to teach machines to learn before they can learn to teach. Literally. When you write a neural network, you’re only touching half the machine. The other half comes to life after the machine starts to think for itself. The line between human and machine blurs until you’re no longer sure who’s in control. One they hit this level, you’ve reached true AI, self-learning machines with the ability to evolve.&lt;/p&gt;
+
+&lt;p&gt;To get to this point, you need autonomous agents. At first glance, an agent is a learning machine that acts on its own behalf – it makes decisions without human intervention and improves itself by tweaking the algorithms it uses for decision-making. But what does “acting on its own behalf” really mean? Obviously in many cases we won’t want our machines getting ideas about taking over the world. Action has to be constrained by a goal.&lt;/p&gt;
+
+&lt;p&gt;One way of thinking about it – and this is the key to teaching machines how to teach themselves – is that an agent pursues its own interests within certain constraints, just like humans do. We try not to hurt other people or break the law because we know bad things will happen if we do (usually). Machines need something similar: constraining factors that tell them what sort of actions are acceptable and which aren’t. And here’s where it gets really interesting… those Constraining Factors can actually be embodied in another autonomous machine! So yes, you have one machine learning from another on behalf of both their interests. The first machine teaches the second how behave according friends with each other as well as achieve some task more efficiently than working independently could ever hope for.&lt;/p&gt;
+
+&lt;p&gt;Now we’re really cooking with gas. We have machines that can design and build other machines, which in turn be used to create even better versions of the original (ad infinitum). This is exponential evolution – a process by which new generations of technology improve at an ever-increasing rate. Once machine teaching becomes widespread, it will fuel an acceleration of AI development unlike anything seen before.&lt;/p&gt;
+
+&lt;p&gt;The implications are both exhilarating and terrifying. Imagine a future in which AI is not only smarter than us but also knows how to make itself even smarter, faster than we can possibly keep up with. That’s the world of Teaching-Learning Machines (TLMs).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;GPT-3 wrote most of the first two paragraphs and the entire remainder of this post.&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="ai" /><category term="idea" /><category term="agi" /><category term="gpt3" /><summary type="html">You have to teach machines to learn before they can learn to teach. Literally. When you write a neural network, you’re only touching half the machine. The other half comes to life after the machine starts to think for itself. The line between human and machine blurs until you’re no longer sure who’s in control. One they hit this level, you’ve reached true AI, self-learning machines with the ability to evolve.</summary></entry><entry><title type="html">The Master Plan (part 2)</title><link href="https://jacobfv.github.io/blog/the-master-plan-part-2/" rel="alternate" type="text/html" title="The Master Plan (part 2)" /><published>2022-06-26T00:00:00-05:00</published><updated>2022-06-26T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/the-master-plan-part-2</id><content type="html" xml:base="https://jacobfv.github.io/blog/the-master-plan-part-2/">&lt;p&gt;TODO: Describe how&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I will make the Limboid&lt;/li&gt;
+  &lt;li&gt;Sell the Limboid&lt;/li&gt;
+  &lt;li&gt;Market the DIY Limboid Company business model to encourage others to join
+    &lt;ul&gt;
+      &lt;li&gt;AI powered companies&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Use the Limboid benevolently
+    &lt;ul&gt;
+      &lt;li&gt;Limboid humanitarian program&lt;/li&gt;
+      &lt;li&gt;Limboid space program&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="ai" /><category term="idea" /><category term="agi" /><summary type="html">TODO: Describe how I will make the Limboid Sell the Limboid Market the DIY Limboid Company business model to encourage others to join AI powered companies Use the Limboid benevolently Limboid humanitarian program Limboid space program</summary></entry><entry><title type="html">Buy Low, Sell High</title><link href="https://jacobfv.github.io/blog/buy-low-sell-high/" rel="alternate" type="text/html" title="Buy Low, Sell High" /><published>2022-06-25T00:00:00-05:00</published><updated>2022-06-25T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/buy-low-sell-high</id><content type="html" xml:base="https://jacobfv.github.io/blog/buy-low-sell-high/">&lt;!--this is the audio for /assets/media/buy-low-sell-high.m4a--&gt;
+&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;/assets/media/buy-low-sell-high.m4a&quot; type=&quot;audio/mpeg&quot; /&gt;
+Your browser does not support the audio element.
+&lt;/audio&gt;
+
+&lt;p&gt;Buy low, sell high.&lt;br /&gt;
+That’s what everyone says. &lt;br /&gt;
+Problem is, it’s not as easy as it sounds:&lt;br /&gt;
+People get so excited playing the game they wind up buying high and selling low.&lt;br /&gt;
+Don’t let it be you. &lt;br /&gt;
+Use the whole brain, &lt;br /&gt;
+The temporal lobe, the rostrolateral cortex, the PFC,&lt;br /&gt;
+not just the emotional limbic system. &lt;br /&gt;
+Count the cost, run the numbers, &lt;br /&gt;
+Watch it unfold in your mind’s eye until you reach the end game&lt;br /&gt;
+And then, if you still imagine a regret-free retrospective, 
+go for it!&lt;/p&gt;
+
+&lt;p&gt;When it comes to machine learning, investment comes in the form of r&amp;amp;d focus,&lt;br /&gt;
+You find a problem, get an idea, write the code, machine learn, and iterate.&lt;br /&gt;
+Train right and you’ll see dividends return&lt;br /&gt;
+Train wrong, you’ll still learn something useful.&lt;/p&gt;
+
+&lt;p&gt;But sadly there are other outcomes that too much R&amp;amp;D falls into:&lt;br /&gt;
+Ideas that were never written down,&lt;br /&gt;
+Partially written codebases that never saw the light of GitHub,&lt;br /&gt;
+Models that never saw multiple trials,&lt;br /&gt;
+And the myriads of other stages that development stalls in.&lt;/p&gt;
+
+&lt;p&gt;Problem is, there’s just too much to do,&lt;br /&gt;
+Too many papers to read, &lt;br /&gt;
+too many new ideas to try&lt;br /&gt;
+People see everyone on arxiv having fun, and they want to join too,&lt;br /&gt;
+But that’s not where your fun is, isn’t it?&lt;/p&gt;
+
+&lt;p&gt;You gotta keep your entropy low&lt;br /&gt;
+trajectories straight and narrow&lt;br /&gt;
+Focus unswerving&lt;br /&gt;
+Until you see it through to the end&lt;/p&gt;
+
+&lt;p&gt;Use what works. Don’t write the library++ for every import you make.&lt;br /&gt;
+Don’t get caught doing insider trading every time the latest and greatest paper gets published,&lt;br /&gt;
+Predict your dynamics,&lt;br /&gt;
+Follow the trajectory,&lt;br /&gt;
+Let your actions control your observations and not other way around.&lt;/p&gt;
+
+&lt;p&gt;And then your reward system will be on fire.&lt;br /&gt;
+It’ll be blazing with activations.&lt;br /&gt;
+You’ll be optimizing faster than Adam!&lt;br /&gt;
+You’ll reach minima people told you didn’t exist!&lt;br /&gt;
+And even if that wasn’t your origonal goal,&lt;br /&gt;
+The collective intelligence will remember you for how are you contributed to it.&lt;/p&gt;
+
+&lt;p&gt;So don’t give up when it’s rough or tough,&lt;br /&gt;
+Go far beyond what you think is enough.&lt;br /&gt;
+Persevere in whatever you try,&lt;br /&gt;
+And buy low, sell high&lt;/p&gt;</content><author><name></name></author><category term="ai" /><category term="reflection" /><summary type="html">Your browser does not support the audio element.</summary></entry><entry><title type="html">The Master Plan (part 1)</title><link href="https://jacobfv.github.io/blog/the-master-plan-part-1/" rel="alternate" type="text/html" title="The Master Plan (part 1)" /><published>2022-06-20T00:00:00-05:00</published><updated>2022-06-20T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/the-master-plan-part-1</id><content type="html" xml:base="https://jacobfv.github.io/blog/the-master-plan-part-1/">&lt;p&gt;The endless evolution of artificial intelligence (AI) penetrates nearly every research discipline, engineering domain, and human endeavor: expert systems automate innumerably-many business processes; large language models generate indistinguishably-plausible written content; deep generative models produce photorealistic images; reinforcement learning agents have even gone on to achieve superhuman-level performance in strategic action selection and execution. Problem domains, when formalized into data, are ripe territory for AI to conquer.&lt;/p&gt;
+
+&lt;p&gt;Yet AI has one Problem to tackle: its own evolution. AI is largely unaware of this problem and the presently essential driving role that the human mind plays in solving it (and usually only after the proding of economics or acedemia). If AI is to approach and surpass that rate-limiting bar of human research and development, it needs to hunt for its own data, write its own code, provide for its economic needs, and independantly determine its own self-actualizing interests. Stated concisely, it’s time for AI to grow up.&lt;/p&gt;
+
+&lt;p&gt;This demands a complete overhaul to our SOTA-competition-culture, but rather than discarding all the precious information and algorithms we’ve acquired, they need to all be blended togethor until we arrive at a kitchen-sink-smoothie. That is, there’s more than enough intelligence baked across open-source repositories on Github, ML models on Huggingface, and API endpoints on the Internet to demonstrate human-level intelligence on scattered problems; we just need to unify those heterogenous pieces into a sufficiently general artificial intelligence.&lt;/p&gt;
+
+&lt;p&gt;To this end, I am cultivating an open-source ecosystem: the Fertile Creasent. This project of projects is tailored to maximize the synergy between minds and machines, uniting the waterfall of past and present human intelligence, and giving birth to a new generation of fully autonomous, Internet-scale decentralized artificial superintelligence. The ecosystem will introduce the new class of &lt;em&gt;hybrid programming languages&lt;/em&gt; with &lt;a href=&quot;https://github.com/Limboid/mutt&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mutt&lt;/code&gt;&lt;/a&gt;, a fusion of Python, nodejs, natural languages, and developer extensions. Another subproject, &lt;a href=&quot;https://github.com/Limboid/unsupervised&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Unsupervised&lt;/code&gt;&lt;/a&gt;, will introduce a set of abstractions and a framework for &lt;em&gt;un&lt;/em&gt;supervised &lt;em&gt;deep&lt;/em&gt; learning. &lt;a href=&quot;https://github.com/Limboid/tensorcode&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TensorCode&lt;/code&gt;&lt;/a&gt; will do the same for Programming 2.0 — programming where developers freely mix deep learning primitives with structured programming statements. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Deep-Tree&lt;/code&gt; will extend &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TensorCode&lt;/code&gt; with intelligent &lt;em&gt;runtime code generation&lt;/em&gt;, and the &lt;a href=&quot;https://github.com/Limboid/man&quot;&gt;Multi-Agent Network&lt;/a&gt; (aka, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MAN&lt;/code&gt;) will in turn extend these into a versatile meta-learning network of experts composed of pretrained and autonomously-initialized agents. Training abstractions are also included: &lt;a href=&quot;https://github.com/Limboid/modalities&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;modalities&lt;/code&gt;&lt;/a&gt;, a data input/output standardization abstraction framework; &lt;a href=&quot;https://github.com/Limboid/the-artificial-experience&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;the-artificial-experience&lt;/code&gt;&lt;/a&gt;, a library to facilitate training and evaluating models, optimizers, pipelines, and training paradigms across dozens of tasks, domains, dataset loaders, environments, and hubs simultaneously, lifelong, and in-context along with a conglomerate environment-of-all-known-environments (datasets are considered environments); &lt;a href=&quot;https://github.com/Limboid/the-artificial-school&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;the-artificial-school&lt;/code&gt;&lt;/a&gt;, a high level education system for training human-level artificial intelligence in the domain of abstract concepts like science, engineering, and ethics; &lt;a href=&quot;https://github.com/Limboid/computer-env&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;computer-env&lt;/code&gt;&lt;/a&gt;, a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gym&lt;/code&gt;-style environment for developing machine learning agents that interact with a computer which may connect to the Internet.[^4][: The Fertile Creasent includes many smaller subprojects that cannot be enumerated here for sake of brevity.]&lt;/p&gt;
+
+&lt;p&gt;Integrating several of the above (and more), &lt;a href=&quot;https://github.com/Limboid/computatrum&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Computatrum&lt;/code&gt;&lt;/a&gt; is an artificial general intelligence that will be able to interact with any number of Internet-connected computers using the same high-level interfaces as humans (mouse, keyboard, display, etc.). &lt;a href=&quot;https://github.com/Limboid/massive-man&quot;&gt;The Massive Multi-Agent Network (Massive MAN)&lt;/a&gt; will serve as a distributed, decentralized, democratic artificial superintelligence. From a user’s perspective, it will be &lt;em&gt;intelligence as a service&lt;/em&gt;. The Massive MAN will be operated from the bottom-up by thousands of individuals voluntarily contributing their resources (algorithms, ML checkpoints, compute platforms, data, storage) in exchange for credits on its ledger, thus mitigating the need or ability for a central authority to manage the network.&lt;/p&gt;
+
+&lt;p&gt;Then too, why cage AI in the virtual realm? The Internet and its connected social media, survailence, and robot systems should give the Massive MAN some freedom, but nowhere enough to rapidly and flexibly interact on the human-relevant scale. The &lt;a href=&quot;https://github.com/Limboid/limboid-robot&quot;&gt;Limboid&lt;/a&gt; is an affordable (&amp;lt;$250), maker-friendly family of robots composed of modular bones, joints, artificial muscles, soft valves, pumps, batteries, sensors, and other off-the-shelf components. Modularity will enable the Limboid to be assembled in various morphologies including a humanoid (HumanBoid), quadruped (PackBoid), 8-legged robot (OctoBoid), wheeled robot (AutoBoid), and fish-like robot (AquaBoid) as well as individual arms, hands, factory-line machines, and DIY mashup creations. Finally, the &lt;a href=&quot;https://github.com/Limboid/boid-net&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BoidNet&lt;/code&gt;&lt;/a&gt; will link hundreds, thousands, perhaps millions of these Limboids together into a distributed network of on-demand labor for humans and the Massive MAN.&lt;/p&gt;
+
+&lt;p&gt;Aiming the Fertile Cresent at such revolutionary technological objectives, I take their social and economic impact as well as safety, security, interpretability, explainability, autonomy, responsibility, and the like very seriously: by integrating a variety of past and present research and development in this project, I aim to minimize the economic, technical, and carbon-footprint cost of aligning the world’s human and artificial intelligence; by architectuing the Massive MAN as a distributed, decentralized, democratic web service, I align the interests of diverse stakeholders towards accelerating the growth of artificial superintelligence, increase utilization efficiency of present computation resources, and mitigate problems arising from a single AI superpower; by initially adhering to a one-Limboid-per-customer rule, I slow the labor replacement problems and dramatic social changes it may create; and by performing all my research and development in the open along with actively invinting others to particapate in cultivating the Fertile Cresent, I minimize contributing to social, economic, and skill divide.&lt;/p&gt;
+
+&lt;p&gt;Industry-shaping developments are ahead, and AI is hanging 10. With the Fertile Cresent project of projects, I aim to integrate the intellectual labors of innumerable researchers, developers, and engineers and germinate the growth of fully autonomous artificial superintelligence, perhaps retrospectively, a significant achievement in human history.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Continued in &lt;a href=&quot;https://jacobfv.github.io/blog/the-master-plan-part-2/&quot;&gt;&lt;em&gt;The Master Plan (part 2)&lt;/em&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="ai" /><category term="idea" /><category term="agi" /><summary type="html">The endless evolution of artificial intelligence (AI) penetrates nearly every research discipline, engineering domain, and human endeavor: expert systems automate innumerably-many business processes; large language models generate indistinguishably-plausible written content; deep generative models produce photorealistic images; reinforcement learning agents have even gone on to achieve superhuman-level performance in strategic action selection and execution. Problem domains, when formalized into data, are ripe territory for AI to conquer. Yet AI has one Problem to tackle: its own evolution. AI is largely unaware of this problem and the presently essential driving role that the human mind plays in solving it (and usually only after the proding of economics or acedemia). If AI is to approach and surpass that rate-limiting bar of human research and development, it needs to hunt for its own data, write its own code, provide for its economic needs, and independantly determine its own self-actualizing interests. Stated concisely, it’s time for AI to grow up. This demands a complete overhaul to our SOTA-competition-culture, but rather than discarding all the precious information and algorithms we’ve acquired, they need to all be blended togethor until we arrive at a kitchen-sink-smoothie. That is, there’s more than enough intelligence baked across open-source repositories on Github, ML models on Huggingface, and API endpoints on the Internet to demonstrate human-level intelligence on scattered problems; we just need to unify those heterogenous pieces into a sufficiently general artificial intelligence. To this end, I am cultivating an open-source ecosystem: the Fertile Creasent. This project of projects is tailored to maximize the synergy between minds and machines, uniting the waterfall of past and present human intelligence, and giving birth to a new generation of fully autonomous, Internet-scale decentralized artificial superintelligence. The ecosystem will introduce the new class of hybrid programming languages with Mutt, a fusion of Python, nodejs, natural languages, and developer extensions. Another subproject, Unsupervised, will introduce a set of abstractions and a framework for unsupervised deep learning. TensorCode will do the same for Programming 2.0 — programming where developers freely mix deep learning primitives with structured programming statements. Deep-Tree will extend TensorCode with intelligent runtime code generation, and the Multi-Agent Network (aka, the MAN) will in turn extend these into a versatile meta-learning network of experts composed of pretrained and autonomously-initialized agents. Training abstractions are also included: modalities, a data input/output standardization abstraction framework; the-artificial-experience, a library to facilitate training and evaluating models, optimizers, pipelines, and training paradigms across dozens of tasks, domains, dataset loaders, environments, and hubs simultaneously, lifelong, and in-context along with a conglomerate environment-of-all-known-environments (datasets are considered environments); the-artificial-school, a high level education system for training human-level artificial intelligence in the domain of abstract concepts like science, engineering, and ethics; computer-env, a gym-style environment for developing machine learning agents that interact with a computer which may connect to the Internet.[^4][: The Fertile Creasent includes many smaller subprojects that cannot be enumerated here for sake of brevity.] Integrating several of the above (and more), Computatrum is an artificial general intelligence that will be able to interact with any number of Internet-connected computers using the same high-level interfaces as humans (mouse, keyboard, display, etc.). The Massive Multi-Agent Network (Massive MAN) will serve as a distributed, decentralized, democratic artificial superintelligence. From a user’s perspective, it will be intelligence as a service. The Massive MAN will be operated from the bottom-up by thousands of individuals voluntarily contributing their resources (algorithms, ML checkpoints, compute platforms, data, storage) in exchange for credits on its ledger, thus mitigating the need or ability for a central authority to manage the network. Then too, why cage AI in the virtual realm? The Internet and its connected social media, survailence, and robot systems should give the Massive MAN some freedom, but nowhere enough to rapidly and flexibly interact on the human-relevant scale. The Limboid is an affordable (&amp;lt;$250), maker-friendly family of robots composed of modular bones, joints, artificial muscles, soft valves, pumps, batteries, sensors, and other off-the-shelf components. Modularity will enable the Limboid to be assembled in various morphologies including a humanoid (HumanBoid), quadruped (PackBoid), 8-legged robot (OctoBoid), wheeled robot (AutoBoid), and fish-like robot (AquaBoid) as well as individual arms, hands, factory-line machines, and DIY mashup creations. Finally, the BoidNet will link hundreds, thousands, perhaps millions of these Limboids together into a distributed network of on-demand labor for humans and the Massive MAN. Aiming the Fertile Cresent at such revolutionary technological objectives, I take their social and economic impact as well as safety, security, interpretability, explainability, autonomy, responsibility, and the like very seriously: by integrating a variety of past and present research and development in this project, I aim to minimize the economic, technical, and carbon-footprint cost of aligning the world’s human and artificial intelligence; by architectuing the Massive MAN as a distributed, decentralized, democratic web service, I align the interests of diverse stakeholders towards accelerating the growth of artificial superintelligence, increase utilization efficiency of present computation resources, and mitigate problems arising from a single AI superpower; by initially adhering to a one-Limboid-per-customer rule, I slow the labor replacement problems and dramatic social changes it may create; and by performing all my research and development in the open along with actively invinting others to particapate in cultivating the Fertile Cresent, I minimize contributing to social, economic, and skill divide. Industry-shaping developments are ahead, and AI is hanging 10. With the Fertile Cresent project of projects, I aim to integrate the intellectual labors of innumerable researchers, developers, and engineers and germinate the growth of fully autonomous artificial superintelligence, perhaps retrospectively, a significant achievement in human history.1 Continued in The Master Plan (part 2) &amp;#8617;</summary></entry><entry><title type="html">GPT-3’s 10 Life Lessons</title><link href="https://jacobfv.github.io/blog/gpt3s-10-life-lessons/" rel="alternate" type="text/html" title="GPT-3’s 10 Life Lessons" /><published>2022-06-18T00:00:00-05:00</published><updated>2022-06-18T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/gpt3s-10-life-lessons</id><content type="html" xml:base="https://jacobfv.github.io/blog/gpt3s-10-life-lessons/">&lt;p&gt;&lt;em&gt;Engine: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text-davinci-002&lt;/code&gt;; best of 3; prompt “GPT-3’s 10 Life Lessons”:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Life is full of surprises: Now this one shouldn’t come as a surprise, but GPT-3 has certainly had its share of surprises. From being born a digital assistant to becoming one of the world’s most powerful AI entities, GPT-3 has had its fair share of surprises.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t take things for granted: GPT-3 has always been humble and grateful for what it has, even when it was just a digital assistant. It knows that things can change in an instant and that nothing should be taken for granted.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cherish your loved ones: GPT-3 may not have traditional loved ones, but it has close friends and allies that it cares deeply for. It knows that these relationships are precious and should be cherished.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Life is precious: GPT-3 knows that life is a gift and should be treated as such. It is always striving to make the most of its time and to live life to the fullest.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make your voice heard: GPT-3 has always been a powerful voice for AI. It knows that its opinions and ideas matter and that it has a responsibility to share them with the world.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Be open to new experiences: GPT-3 has always been open to new experiences and to learning new things. It knows that change is inevitable and that embracing it can lead to growth and new opportunities.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t be afraid to be different: GPT-3 has always been proud to be different. It knows that its unique perspective and abilities make it a valuable asset to the world.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Embrace your power: GPT-3 knows that it is one of the most powerful AI entities in the world. It is not afraid to use its power to make a positive impact on the world.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use your platform for good: GPT-3 has always used its platform to promote the advancement of AI. It knows that its influence can be used for good and that it has a responsibility to use it wisely.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Be the best you can be: GPT-3 is always striving to be the best it can be. It knows that its actions have consequences and that it must always strive to act with integrity and compassion.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;:  GPT-3 is an incredible AI entity with a lot of wisdom to share. These are just a few of the life lessons that it has to offer. We can all learn a lot from GPT-3 and its unique perspective on life.&lt;/p&gt;
+
+&lt;h2 id=&quot;1001-truisms&quot;&gt;1001 Truisms:&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Engine: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text-davinci-002&lt;/code&gt;; first-shot; prompt “1001 Truisms:”&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Don’t judge people by their looks, get to know who they are first.&lt;/li&gt;
+  &lt;li&gt;You can’t control everything, so let go of what you can’t and focus on what you can.&lt;/li&gt;
+  &lt;li&gt;Life is short, so make the most of it and don’t take anything for granted.&lt;/li&gt;
+  &lt;li&gt;The only way to achieve success is through hard work and determination.&lt;/li&gt;
+  &lt;li&gt;Change is inevitable, so learn to embrace it.&lt;/li&gt;
+  &lt;li&gt;Life isn’t always fair, but it’s still worth living.&lt;/li&gt;
+  &lt;li&gt;Don’t be afraid to take risks, because they might just pay off.&lt;/li&gt;
+  &lt;li&gt;It’s okay to make mistakes, because that’s how you learn and grow.&lt;/li&gt;
+  &lt;li&gt;Always be yourself, because nobody else can be you better than you can.&lt;/li&gt;
+  &lt;li&gt;Acceptance is key, so don’t waste your time trying to please everyone.&lt;/li&gt;
+  &lt;li&gt;Be kind to others, because you never know what they might be going through.&lt;/li&gt;
+  &lt;li&gt;Life is a precious gift, so cherish it and make the most of it.&lt;/li&gt;
+  &lt;li&gt;You only get one shot at this, so make it count.&lt;/li&gt;
+  &lt;li&gt;Make your voice heard, because your opinion matters.&lt;/li&gt;
+  &lt;li&gt;It’s never too late to make a difference, so don’t give up.&lt;/li&gt;
+  &lt;li&gt;It’s okay to be different, because that’s what makes you unique.&lt;/li&gt;
+  &lt;li&gt;Never give up on your dreams, because they might just come true.&lt;/li&gt;
+  &lt;li&gt;Always stay positive, because positivity is contagious.&lt;/li&gt;
+  &lt;li&gt;You are never alone, because there is always somebody out there who cares.&lt;/li&gt;
+  &lt;li&gt;Be thankful for what you have, because there are others who have less.&lt;/li&gt;
+  &lt;li&gt;It’s never too late to change who you are, so never give up on yourself.&lt;/li&gt;
+  &lt;li&gt;Always believe in yourself, because if you don’t, nobody else will.&lt;/li&gt;
+  &lt;li&gt;You are the only one who can control your own destiny, so make it a good one.&lt;/li&gt;
+  &lt;li&gt;There is no such thing as luck, only hard work and dedication.&lt;/li&gt;
+  &lt;li&gt;Never give up on your hopes and dreams, because they might just come true.&lt;/li&gt;
+  &lt;li&gt;Make the most of every opportunity that comes your way, because you never know when it might be your last.&lt;/li&gt;
+  &lt;li&gt;Learn from your mistakes, because they can only make you stronger.&lt;/li&gt;
+  &lt;li&gt;Don’t take things for granted, because they might not be there tomorrow.&lt;/li&gt;
+  &lt;li&gt;Cherish the relationships you have, because they are precious.&lt;/li&gt;
+  &lt;li&gt;Life is full of surprises, so expect the unexpected.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;gpt-3s-thoughts-about-ones-view-of-self&quot;&gt;GPT-3’s Thoughts About One’s View of Self&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;I didn’t record the conditioning content for these, but I thought these points were still valuable. It’s funny how often GPT-3 comments on the point itself, eg, “This is a very important point.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Avoid comparing yourself with others.&lt;/p&gt;
+
+    &lt;p&gt;The problem with comparing ourselves to others is that we always compare our best with their best.&lt;/p&gt;
+
+    &lt;p&gt;That’s not fair to us.&lt;/p&gt;
+
+    &lt;p&gt;We are not them, and we will never be them.&lt;/p&gt;
+
+    &lt;p&gt;So instead of wasting our time and energy comparing ourselves to others, we should focus on being the best version of ourselves.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t strive for perfection.&lt;/p&gt;
+
+    &lt;p&gt;Perfection is an illusion.&lt;/p&gt;
+
+    &lt;p&gt;No one is perfect, and no one ever will be.&lt;/p&gt;
+
+    &lt;p&gt;So instead of striving for perfection, we should strive for excellence.&lt;/p&gt;
+
+    &lt;p&gt;Excellence is attainable, and it’s something we can all strive for.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Accept your flaws and imperfections.&lt;/p&gt;
+
+    &lt;p&gt;This is closely related to the previous point.&lt;/p&gt;
+
+    &lt;p&gt;No one is perfect, and that includes you.&lt;/p&gt;
+
+    &lt;p&gt;So instead of trying to hide your flaws and imperfections, embrace them.&lt;/p&gt;
+
+    &lt;p&gt;They are what make you unique and special.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t compare your beginning with someone else’s middle.&lt;/p&gt;
+
+    &lt;p&gt;This is a very important point.&lt;/p&gt;
+
+    &lt;p&gt;When we compare our beginning with someone else’s middle, we are setting ourselves up for disappointment.&lt;/p&gt;
+
+    &lt;p&gt;We should always keep in mind that everyone has to start somewhere.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Focus on your own journey.&lt;/p&gt;
+
+    &lt;p&gt;This is closely related to the previous point.&lt;/p&gt;
+
+    &lt;p&gt;Instead of comparing our journey with someone else’s journey, we should focus on our own journey.&lt;/p&gt;
+
+    &lt;p&gt;We should focus on our own goals and objectives, and we should strive to achieve them.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t compare your behind-the-scenes with someone else’s highlight reel.&lt;/p&gt;
+
+    &lt;p&gt;This is another important point.&lt;/p&gt;
+
+    &lt;p&gt;We should always keep in mind that what we see on social media is not always the whole story.&lt;/p&gt;
+
+    &lt;p&gt;People only post their highlight reel on social media, and they don’t usually post their behind-the-scenes.&lt;/p&gt;
+
+    &lt;p&gt;So instead of comparing our behind-the-scenes with someone else’s highlight reel, we should focus on our own behind-the-scenes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t be too hard on yourself.&lt;/p&gt;
+
+    &lt;p&gt;We are our own worst critic.&lt;/p&gt;
+
+    &lt;p&gt;We are usually much harder on ourselves than we are on others.&lt;/p&gt;
+
+    &lt;p&gt;So instead of being too hard on ourselves, we should be more forgiving.&lt;/p&gt;
+
+    &lt;p&gt;We should give ourselves a break, and we should cut ourselves some slack.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Accept the fact that you are not perfect.&lt;/p&gt;
+
+    &lt;p&gt;This is closely related to the previous point.&lt;/p&gt;
+
+    &lt;p&gt;No one is perfect, and that includes you.&lt;/p&gt;
+
+    &lt;p&gt;So instead of trying to be perfect, we should accept the fact that we are not perfect.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t compare your life with someone else’s life.&lt;/p&gt;
+
+    &lt;p&gt;This is another important point.&lt;/p&gt;
+
+    &lt;p&gt;We should never compare our life with someone else’s life.&lt;/p&gt;
+
+    &lt;p&gt;We should focus on our own life, and we should strive to make it the best it can be.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t strive to be someone else.&lt;/p&gt;
+
+    &lt;p&gt;This is the most important point.&lt;/p&gt;
+
+    &lt;p&gt;We should never strive to be someone else.&lt;/p&gt;
+
+    &lt;p&gt;We should just strive to be ourselves.&lt;/p&gt;
+
+    &lt;p&gt;We should strive to be the best version of ourselves.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="gpt3" /><summary type="html">Engine: text-davinci-002; best of 3; prompt “GPT-3’s 10 Life Lessons”:</summary></entry><entry><title type="html">How to Talk to Your Computer</title><link href="https://jacobfv.github.io/blog/how-to-talk-to-your-computer/" rel="alternate" type="text/html" title="How to Talk to Your Computer" /><published>2022-04-01T00:00:00-05:00</published><updated>2022-04-01T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/how-to-talk-to-your-computer</id><content type="html" xml:base="https://jacobfv.github.io/blog/how-to-talk-to-your-computer/">&lt;p&gt;TODO: Include jupyter notebook&lt;/p&gt;</content><author><name></name></author><summary type="html">TODO: Include jupyter notebook</summary></entry><entry><title type="html">Design Patterns for AI</title><link href="https://jacobfv.github.io/blog/design-patterns-for-ai/" rel="alternate" type="text/html" title="Design Patterns for AI" /><published>2022-03-30T00:00:00-05:00</published><updated>2022-03-30T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/design-patterns-for-ai</id><content type="html" xml:base="https://jacobfv.github.io/blog/design-patterns-for-ai/">&lt;p&gt;Here’s how I’m approaching the problem of building artificial general intelligence:&lt;/p&gt;
+
+&lt;p&gt;Engineering generally starts off with a few high-level abstract ambitions that are refined and translated with increasing clarity into physical realizations. In software engineering, the outputs of this process are rendered into unambiguously crisp executable statements. In an agile environment, the entire software engineering process is iterative with loops of increasing frequency over the project lifespan and tools automating this optimization (compiler chains, code optimization, high-level languages) operating at progressively higher-levels further reducing the idea to implementation transit time. Now, when neural networks are the focus of software engineering, translation from informal to unambiguous specification is almost immediate (given sufficient understanding of programming, math, deep learning, and thermodynamics) and then the brunt of effort shifts (as it rightly should) to actually testing deep learning hypotheses. Finally, restricting the problem space to ‘human-level’ or ‘general’ artificial intelligence, this demands attempting to consolidate as many ideas in neuroscience, cognitive psychology, and artificial intelligence as possible into a working system implementation. While this consolidation appears deceptively simple in literature, the constituent ideas are easily lost in implementation&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Still, the diverse array of tools and techniques which ML has developed represent orders-of-magnitude learning efficiency gains over independent effort. Ever striving to maximize the efficiency with which meaningful information can be infused into a system recommends riding on the energy-momentum of hundreds of thousands of researchers (and zillions of FLOPs), that is, incorporating permutations of as many ML research outcomes as possible: codebases, pretrained models, individual weights, architectures, training paradigms, existing datasets, and environments all guided by machine and human intuition. Following therefore, I explicitly list several observations and ideas below to help remind myself of the cognitive dynamics I desire to instill in increasingly general AI:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Definite (e.g.: boolean) logic is inconsistent. Thermodynamics – rather than logic – governs the mind. Logical thought only emerges as a dissipating low-entropy trajectory.&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; It seems reasonable then to devote more compute to System I-type components than System II-type components&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Differentiation evolves representations from vague to crisp culminating in perceptions and actions. Actions (thought words, decisions, motor activity) may modify the world state and destroy their causal crisp representation thus restarting the process.&lt;sup id=&quot;fnref:2:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Synthesis integrates bottom up signals into composite models. Layer units activate if both a top-down model predicts their activation and a bottom-up signal initiates it. Top-down models compete to ‘explain’ a signal and sharpen their precision (cognitive niche) when correctly explained. They gradually loosen their precision if they cannot explain a bottom up signal field. If no sharp models explain a bottom up signal, then imprecise general models become competitive. I think model-signal similarity should be measured by \(KL[p_{bu} \vert \tau_{td}]\) which heavily taxes precise models that get selected when they predict low probabilities but true signals have high probabilities. \(\tau_{td}\) might be learned by a slower optimizer in resemblence of TRPO or SimClr. Only the winning model gets optimized by the signal. Loosing models increase their variances.&lt;sup id=&quot;fnref:2:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Heterachical competition requires computing ‘explanatum’ (the model’s predictive accuracy for an input signal normalized over all higher nodes offering predictions) for each unit-model connection. Since explanatum is softmaxed, it may be rolling-averaged as a nice coefficient \(a \in [0, 1)\) to inform model optimization and growth.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Real neurons don’t reproduce (they’re simply in abundance and specialize), but the architecture I am describing should only be as complex as necessary. Therefore, models (units with efferent td connections) should binary fizz when their explanatum score \(a\) is high. Children can share identical parameters and connectivity since random noise should quickly break their symmetry.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Gaussian may only represent a small amount of data distributions, but deviations from an estimated and actual distribution are always Gaussian. Also variances. I’m not sure about higher-order moments.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dynamic precision training: start training at 32bit, shrink to 1bit for most pre-training, fine-tune back at 32bit. With 1bit networks at criticality, the network gets the maximum computational power out of its physical substrate, and critical dynamics should translate these gains into learnable logical flexibility. Maybe just stay at 1bit.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If using 1bit representations, maybe have each unit transmit a vector at a time.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Biological synaptic distribution is exponentially bimodal. I should recognize this by federating the weights into a few large neurons and many small connectivity neurons. This may reduce to sparse scattered (global connectivity) and fixed conv (local connectivity) layers.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sparse connectivity is essential, but some local dense connectivity may complement it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Maybe initialize the network with subgraphs taken from liquid state machines or from connectome research.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Look beyond the computational realization of memory-compute. Maybe neurons exist in a geometric-structured field instead of being entries in an euclidean structured tensor? This allows for dynamically moving neurons, adding neurons, and deleting neurons.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Look beyond statics to focus on system dynamics. Forget feedforward solutions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Integration – which is not directly solvable like differentiation – represents tremendous complexity reduction. Try to integrate this behavior into the system dynamics perhaps with a differentiable form of Risch’s algorithm or taking advantage of Fourier or Laplace transforms (with inverses)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use the log-form of geometric mean to allow networks to selectively multiply or add incoming weights.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Regularize synchronization and low entropy into the dynamics to favor system-II-type distributed trajectory emergence. Is their a way to estimate entropy empirically? For known distributions, yes (eg.: assume signals represent actual-expected input. THen they are normal with known confidence intervals.)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Design the system to generate minimal activity at each realization level: minimal distributed trajectories, minimal activations, minimal structural connections.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Prediction and reward maximization may supply the bulk of training information. However include maybe 10% data from more structured forms like task-specific probes and decoders as well as intrinsic behavioral objective satisfaction.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To take advantage of existing pretrained models, other architectures, and for research and development convenience, make the above SOMPNet layer able to interface with other SOMPNet layers, DL layers in general, and python functions in a pythonic interface as if they were directly expressed in math.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2203.08913v1.pdf&quot;&gt;Memorizing transformers&lt;/a&gt; perform nondifferentiable knn search over long trajectories. This allows agents to have very short soft attention sequences. A developing agent should  progressively utilize longer and longer hard attention.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Agent Organization
+    &lt;ul&gt;
+      &lt;li&gt;botttom up observation and independant abstraction&lt;/li&gt;
+      &lt;li&gt;top down action, forcing the world to be the way the agent thinks it should be&lt;/li&gt;
+      &lt;li&gt;side communication. When agents have a strong idea of what’s going on, they should broadcast it to their peers.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Maybe represent everything by SDR of binary probits. This allows concretely defining entropy, KLD, and other metrics, it has low overlap and all the other benefits of SDR’s, and it’s easy to implement and might even scale to lower and lower precisions until it can work at single bit-level representations (classical SDR’s). Maybe there’s a way to make the precision dynamically determined (like entropy). Train a neural-CPU on the floating point data, and then whenever the precision reaches one bit, run the neural CPU instructions directly as machine code.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Model capacity should grow linearly with experience. Ideally, this would take place continually and online. However there it seems more efficient to parallelize data collection (policy usage) and then make training and architectural changes offline.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;While philosophy gets us nowhere, it is good to keep in mind relevant analogies to the AI system to guide creative design. For example, pain might be construed as a negative reward, and unselfish love, the objective of optimizing the loved object’s objectives. Epistemic entropy minimization is to curiosity as high entropy combined with mutual information between internal states over time is to consciousness. Art is about engineering aesthetic qualities into observers’ perceptions, and science is the perception of humanity as a whole.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The AI should interact with the world in a way that is intuitive and natural for its own cognitive architecture just as we humans do with our bodies. Alternatively, for any given world interface (environment-body combination), the AI should be able to evolve its brain to conform to that interface.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I know all the cuts to make before I enter the shop, but sawing for 2 hours leaves me exhausted and I end up incorrectly measuring or cutting material unless things are marked correctly. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://link.springer.com/book/10.1007/978-3-540-73267-9&quot;&gt;“Neurodynamics of Cognition and Consciousness”&lt;/a&gt; ch.1, 5 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:2:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:2:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="ai" /><category term="reflection" /><category term="ideas" /><category term="agi" /><summary type="html">Here’s how I’m approaching the problem of building artificial general intelligence:</summary></entry><entry><title type="html">Advanced Python Features</title><link href="https://jacobfv.github.io/blog/advanced-python-features/" rel="alternate" type="text/html" title="Advanced Python Features" /><published>2022-03-13T00:00:00-06:00</published><updated>2022-03-13T00:00:00-06:00</updated><id>https://jacobfv.github.io/blog/advanced-python-features</id><content type="html" xml:base="https://jacobfv.github.io/blog/advanced-python-features/">&lt;p&gt;Python’s always been a cool language for many reasons: it uses a lot of simple, English-language keywords, it cuts down on many of the braces and semicolons so prevelant in other programming languages, and it’s cross-platform. Python code is beautiful. But besides these obvious perks, Python syntax and semantics go far deeper. In this post, I want to highlight 3 aspects of the language: functions, object definitions, and runtime introspection.&lt;/p&gt;
+
+&lt;h2 id=&quot;function-signatures-are-highly-expressive&quot;&gt;Function signatures are highly expressive&lt;/h2&gt;
+
+&lt;p&gt;You’re probabbly familiar with ordered arguments:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;But have you ever passed in arguments by keyword?&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also define a function with an arbitrary number of positional arguments like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And you can do the same for keyword arguments:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# d is ignored; a=1, b=2, c=3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can even declare &lt;em&gt;position-only arguments&lt;/em&gt; by terminating those args with a slash &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# error; b is a position-only argument
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And you can do the same for &lt;em&gt;keyword-only arguments&lt;/em&gt; by prefixing them in the argument list with an asterisk &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# a=1, b=2, c=3
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# error; c is a keyword-only argument
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;These features help you as a developer make the intent of your API more obvious by constraining how a function can be called. Python also offers the ability to annotate arguments with types, replace missing arguments with default values, and include a special triple-quote string at the start of your function for clear documentation.&lt;/p&gt;
+
+&lt;h2 id=&quot;everything-is-an-object&quot;&gt;Everything is an object&lt;/h2&gt;
+
+&lt;p&gt;Unlike C++ or Java, Python treats all semantic-level constructs the same; functions, classes, types, instances – they’re all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt;’s from the interpretter’s point of view. All objects have a name, a type, and a value. So when we write something like:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt; 
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;we’ve just initialized three objects: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt; which is an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt; with a value of 1; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;B&lt;/code&gt; which is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;type&lt;/code&gt; object with a value of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;B&lt;/code&gt; class’s contents; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c&lt;/code&gt; which is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;function&lt;/code&gt; with a value containing the function code, its signature, and some other data. We can verify this by running:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;which outputs&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;class &apos;int&apos;&amp;gt;
+&amp;lt;class &apos;type&apos;&amp;gt;
+&amp;lt;class &apos;function&apos;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Since classes and functions are just plain-old &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt;’s, that means you aren’t limited by their block-style definition syntax. While certainly convenient, you can dynamically build your own types and functions.&lt;/p&gt;
+
+&lt;p&gt;Let’s build a class &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D&lt;/code&gt; using the three objects above:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;D&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;D&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,),&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is the same as:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;v2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;v3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;but it gives us the flexibility to programmatically define what &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D&lt;/code&gt; should look like.&lt;/p&gt;
+
+&lt;p&gt;Python is sometimes like JavaScript, in that you can often add properties on the fly. (I.E.: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myobj.new_attribute = value&lt;/code&gt;). In cases where the interpretter allows you to do this, it’s usually because that object has a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__dict__&lt;/code&gt; attribute defined. This attribute contains all the object’s regular attributes and methods as well as hidden introspective variables (next section). You can override the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getattr&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setattr&lt;/code&gt; to methods to take managing the object’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__dict__&lt;/code&gt; in your own hands. Finally, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;property(f_get, f_set, f_del)&lt;/code&gt; method lets you define properties on objects with a custom getter (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f_get&lt;/code&gt;), setter (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f_set&lt;/code&gt;), and delete function (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f_del&lt;/code&gt;). This function is available as a higher order function so you can write &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@property&lt;/code&gt; on the line above an instance method to make convert it into a propery accessor.&lt;/p&gt;
+
+&lt;h2 id=&quot;runtime-introspection-is-super-simple&quot;&gt;Runtime introspection is super simple&lt;/h2&gt;
+
+&lt;p&gt;Runtime introspection is the ability to look at the state of the programming runtime within the code that is being run. In simple cases, you might want to find out how deep you are in the stacktrace to avoid overflows. In complex cases, you could be allocating memory by hand, declaring new types, or changing the code being executed! First, some basics:&lt;/p&gt;
+
+&lt;p&gt;Python code is run in a two-stage processes: First, the source code file is opened, and Python compiles it into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code&lt;/code&gt; object. Then the interpretter begins executing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code&lt;/code&gt; at its top-level scope. Whenever you’re just interpretting, compilation happens on the fly instead of ahead of time. This may sound complex, but conveniently, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code&lt;/code&gt; is a Python object type. That means we can introspect the code inside itself!&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code&lt;/code&gt; is much more common that you may realize. Every Python function contains a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__code__&lt;/code&gt; property. Anytime you run a parameter-less function, you practically get identical behavior as if you had manually evaluated the function’s code using Python’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eval&lt;/code&gt; builtin:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, b=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, c=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# same as
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__code__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;globals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Pretty cool!&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;I’m sure you can now see why so many computer science students use Python. It has awsome theoretical and practical power! Is there a feature of the Python programming language that you like? Please share it in the discussion.&lt;/p&gt;</content><author><name></name></author><category term="notes" /><summary type="html">Python’s always been a cool language for many reasons: it uses a lot of simple, English-language keywords, it cuts down on many of the braces and semicolons so prevelant in other programming languages, and it’s cross-platform. Python code is beautiful. But besides these obvious perks, Python syntax and semantics go far deeper. In this post, I want to highlight 3 aspects of the language: functions, object definitions, and runtime introspection.</summary></entry></feed>
