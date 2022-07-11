@@ -13,5 +13,6 @@ x optionally override predicted time to read
 x add construction property and emoji for relevant projects 
 x add project "the-multi-agent-network"
 - add more of my fertile cresent projects
-- add soundcloud albumb
+x add soundcloud albumb
 - add external blog posts
+- rename the home page to about ??? IDK but GH pages isn't working. Maybe convert to render.com site and haev gh forward traffic there???
