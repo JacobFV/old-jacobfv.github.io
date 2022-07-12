@@ -43,7 +43,7 @@ Obviously, this would be a blunder when aiming to extract the principles underpi
 
 It should be clear to AI researchers who sit closer to the former extreme that advancing the intellectual capacity of artificial systems demands acquiring a basic understanding of the mathematical and statistical tools used to represent real intelligence – and not just be content with applying one or two in his or her research – but like brain's predictive model ensemble, I encourage the active-learning agent who operates in research space to entertain as many principles of human intelligence as possible. Please consider starting with the following (listed in the order you may find easiest to grasp):
 
-1.  Action and Perception as Divergence Minimization {% cite DBLP:journals/corr/abs-2009-01791 %}
+1.  Action and Perception as Divergence Minimization {% cite DBLPjournals/corr/abs-2009-01791 %}
 
 2.  Friston's Free Energy Principle (I recommend {% cite friston_2009 %}, but you may have already found a different paper on this topic.)
 
@@ -51,10 +51,10 @@ It should be clear to AI researchers who sit closer to the former extreme that a
 
 4.  The Critical Brain Hypothesis {% cite 10.3389/fnsys.2014.00166 Shew15595 Chialvo_2010 %}
 
-5.  Buzsáki's neural syntax hypothesis {% cite buzsáki_2010 %}
+5.  Buzsáki's neural syntax hypothesis {% cite buzsaki_2010 %}
 
 Once human-level AI researchers acquire a differentiable framework to propagate their thoughts through the research community, vague terms like 'human-level', 'consciousness', and 'attention' are unnecessary and actually get in the way of progress. Instead research may be defined in the language of neuroscience, psychology, information theory, computer science, or entirely new machine learning vocabulary. I personally advocate paper titles as "Towards Autonomous Developmental Language-Acquiring Artificial Intelligence" rather than "Towards Human Level Artificial Intelligence". If you make the former your grant proposal, you will almost certainly meet your objectives. However your reward estimator diverges from mine on the latter (current) paper title. Between you and me, these vocabulary differences are only ornamental, and I can understand you when you say "human-level". However, I fear these exterior word choices might cultivate paradigmatically different mindsets and approaches to engineering artificial systems that perform on-par with human intelligence over a wide range of goals.
 
-<!--% bibliography --cited %}-->
+{% bibliography --cited_in_order %}
 
 {% pdf /assets/pdf/Reaching-for-the-intangible.pdf %}
