@@ -26,122 +26,6 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          <<<<<<< HEAD {%- for page in site.pages -%} {% if page.permalink=='/' %} {% assign about_title=page.title %}
-            {% endif %} {% endfor %} <!-- About -->
-            <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
-                {%- if page.permalink == '/' -%}
-                =======
-
-<<<<<<< HEAD
-                <!-- Home -->
-            <li class="nav-item {% if page.title == 'home' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/' | relative_url }}">home
-                {%- if page.title == "home" -%}
-                >>>>>>> incomplete but workable
-                <span class="sr-only">(current)</span>
-                {%- endif -%}
-              </a>
-            </li>
-            {% if site.blog_name %}
-            <!-- Blog -->
-            <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/blog/' | relative_url }}">blog
-                {%- if page.title == "blog" -%}
-                <span class="sr-only">(current)</span>
-                {%- endif -%}
-              </a>
-            </li>
-            {%- endif %}
-
-            <!-- Other pages -->
-            {%- assign sorted_pages = site.pages | sort: "order" -%}
-            {%- for p in sorted_pages -%}
-            {%- if p.nav and p.autogen == nil -%}
-            {%- if p.dropdown %}
-            <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">{{ p.title }}
-                {%- if page.title == p.title -%}
-                <span class="sr-only">(current)</span>
-                <<<<<<< HEAD {%- endif -%} </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    {%- for child in p.children -%}
-                    {%- if child.title == 'divider' %}
-                    <div class="dropdown-divider"></div>
-                    {%- else %}
-                    <a class="dropdown-item" href="{{ child.permalink | relative_url }}">{{ child.title }}</a>
-                    {%- endif -%}
-                    {% endfor %}
-                  </div>
-            </li>
-            {%- else %}
-            <a class="dropdown-item" href="{{ child.permalink | relative_url }}">{{ child.title }}</a>
-            {%- endif -%}
-            {% endfor %}
-      </div>
-      </li>
-      {%- else %}
-      <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-        <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
-          {%- if page.title == p.title -%}
-          <span class="sr-only">(current)</span>
-          {%- endif -%}
-        </a>
-      </li>
-      {%- endif -%}
-      {%- endif -%}
-      {% endfor -%}
-      {%- if site.enable_darkmode %}
-
-      <!-- Toogle theme mode -->
-      <li class="toggle-container">
-        <button id="light-toggle" title="Change theme">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-        </button>
-      </li>
-      {%- endif %}
-      </ul>
-    </div>
-    =======
-    {%- endif -%}
-    </a>
-    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-      {%- for child in p.children -%}
-      {%- if child.title == 'divider' %}
-      <div class="dropdown-divider"></div>
-      {%- else %}
-      <a class="dropdown-item" href="{{ child.permalink | relative_url }}">{{ child.title }}</a>
-      {%- endif -%}
-      {% endfor %}
-    </div>
-    </li>
-    {%- else %}
-    <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-      <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
-        {%- if page.title == p.title -%}
-        <span class="sr-only">(current)</span>
-        {%- endif -%}
-      </a>
-    </li>
-    {%- endif -%}
-    {%- endif -%}
-    {% endfor -%}
-    {%- if site.enable_darkmode %}
-
-    <!-- Toogle theme mode -->
-    <div class="toggle-container">
-      <a id="light-toggle">
-        <i class="fas fa-moon"></i>
-        <i class="fas fa-sun"></i>
-      </a>
-    </div>
-    {%- endif %}
-    </ul>
-    </div>
-    >>>>>>> incomplete but workable
-=======
           <!-- Home -->
           {% if site.show_home_nav_link == true %}
           <li class="nav-item {% if page.title == 'home' %}active{% endif %}">
@@ -208,7 +92,6 @@
           {% endif %}
         </ul>
       </div>
->>>>>>> fixed social icons and contact form layout
     </div>
   </nav>
 </header>

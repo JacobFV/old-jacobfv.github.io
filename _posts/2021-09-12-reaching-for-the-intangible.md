@@ -55,6 +55,6 @@ It should be clear to AI researchers who sit closer to the former extreme that a
 
 Once human-level AI researchers acquire a differentiable framework to propagate their thoughts through the research community, vague terms like 'human-level', 'consciousness', and 'attention' are unnecessary and actually get in the way of progress. Instead research may be defined in the language of neuroscience, psychology, information theory, computer science, or entirely new machine learning vocabulary. I personally advocate paper titles as "Towards Autonomous Developmental Language-Acquiring Artificial Intelligence" rather than "Towards Human Level Artificial Intelligence". If you make the former your grant proposal, you will almost certainly meet your objectives. However your reward estimator diverges from mine on the latter (current) paper title. Between you and me, these vocabulary differences are only ornamental, and I can understand you when you say "human-level". However, I fear these exterior word choices might cultivate paradigmatically different mindsets and approaches to engineering artificial systems that perform on-par with human intelligence over a wide range of goals.
 
-{% bibliography --cited_in_order %}
+<!--% bibliography --cited %}-->
 
 {% pdf /assets/pdf/Reaching-for-the-intangible.pdf %}

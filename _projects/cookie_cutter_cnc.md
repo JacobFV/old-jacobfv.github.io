@@ -23,7 +23,6 @@ bullet_points: | # at least two bullet points
     - [Presented](https://youtu.be/yGfpX0WXYFM) on project in May 2015 and June 2016
     - Development journey published [here](https://jacobfv123.medium.com/cookie-cutter-cnc-923c68932ee6)
 ---
-<<<<<<< HEAD
 
 Outcomes:
 
@@ -67,52 +66,13 @@ It's hard to maintain a crazy level of involvement for long without losing some 
 
 In honor of an attempted 3D printer, the Cookie Baker, I named this machine the Cookie Cutter. This system has all the bare-bones you would expect from a sheet metal cutting CNC except for an actual working cutting head. It uses CookieWare to read SVG files, an Arduino Mega with CookieWare Client to buffer serial input and make appropriate movements, and a threadscrew XY table. Check out the CookieCutter's Github repos for [server](https://github.com/JacobFV/CookieControl) and [client](https://github.com/JacobFV/Arduino-CookieControl) code.
 
-<<<<<<< HEAD:_projects/1_project.md
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-=======
 <div class="row">
     <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/cc_3.jpg' | relative_url }}" alt="" title="Final CookieCutter"/>
     <div class="col-sm mt-3 mt-md-0">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/dyWwv9mZEvk?start=61" title="YouTube video player" frameborder="0" class="z-depth-1 rounded" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
->>>>>>> 2:_projects/1_project.markdown
     </div>
     <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/cookie_control.png' | relative_url }}" alt="" title="Cookie Control"/>
 </div>
-<div class="caption">
-<<<<<<< HEAD
-<<<<<<< HEAD:_projects/1_project.md
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
-=======
-    Mock product-release video (above) and final CookieCutter (below)
-=======
-    Final CookieCutter (left), mock product-release video (center), and CookieControl (right)
->>>>>>> added projects and images
-</div>
->>>>>>> 2:_projects/1_project.markdown
-=======
->>>>>>> incomplete but workable
+Mock product-release video (above) and final CookieCutter (below)
+Final CookieCutter (left), mock product-release video (center), and CookieControl (right)
+    
