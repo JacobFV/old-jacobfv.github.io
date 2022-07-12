@@ -143,7 +143,7 @@ plugins:
   - jemoji
   - jekyll-spaceship
   - jekyll-scholar
-
+ 
 # Sitemap settings
 defaults:
   - scope:
