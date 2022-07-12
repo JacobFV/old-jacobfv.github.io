@@ -137,11 +137,13 @@ plugins:
   - jekyll-imagemagick
   - jekyll-minifier
   - jekyll-paginate-v2
-  - jekyll-scholar # jekyll/scholar
   - jekyll-sitemap
   - jekyll-jupyter-notebook
   - jekyll-pdf-embed
   - jemoji
+#  - jekyll-scholar # jekyll/scholar
+
+plugins_dir: [jekyll-scholar]
 
 # Sitemap settings
 defaults:
