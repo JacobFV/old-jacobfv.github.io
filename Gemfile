@@ -9,7 +9,6 @@ group :jekyll_plugins do
     gem 'jekyll-imagemagick'
     gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
-    gem 'jekyll-scholar'
     gem 'jekyll-sitemap'
     gem 'jekyll-jupyter-notebook'
     gem 'jekyll-pdf-embed'
@@ -22,7 +21,9 @@ group :jekyll_plugins do
     gem 'webrick'
     gem 'htmlcompressor'
     gem 'htmlbeautifier'
+    gem 'jekyll-spaceship'
 end
+gem 'jekyll-scholar', group: :jekyll_plugin
 group :other_plugins do
     gem 'httparty'
     gem 'feedjira'

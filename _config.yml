@@ -141,6 +141,7 @@ plugins:
   - jekyll-jupyter-notebook
   - jekyll-pdf-embed
   - jemoji
+  - jekyll-spaceship
 #  - jekyll-scholar # jekyll/scholar
 
 plugins_dir: [jekyll-scholar]
