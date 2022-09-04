@@ -263,6 +263,10 @@ enable_project_categories:
   # multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
 # -----------------------------------------------------------------------------
 # Library versions
 # -----------------------------------------------------------------------------
