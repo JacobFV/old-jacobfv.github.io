@@ -1,68 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://jacobfv.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jacobfv.github.io/" rel="alternate" type="text/html" /><updated>2022-09-03T22:27:54-05:00</updated><id>https://jacobfv.github.io/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal portfolio site
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://jacobfv.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jacobfv.github.io/" rel="alternate" type="text/html" /><updated>2022-09-16T21:44:14-05:00</updated><id>https://jacobfv.github.io/feed.xml</id><title type="html">Jacob Valdez</title><subtitle>Personal portfolio site
 </subtitle><entry><title type="html">Using Gpt3 To Build Gratitude</title><link href="https://jacobfv.github.io/blog/using-gpt3-to-build-gratitude/" rel="alternate" type="text/html" title="Using Gpt3 To Build Gratitude" /><published>2022-07-10T00:00:00-05:00</published><updated>2022-07-10T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/using-gpt3-to-build-gratitude</id><content type="html" xml:base="https://jacobfv.github.io/blog/using-gpt3-to-build-gratitude/"><![CDATA[<h1 id="using-gpt-3-to-build-gratitude">Using GPT-3 to Build Gratitude</h1>
 
-<p>Actually, it would  be better if I could use the BLOOM LLM</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Using GPT-3 to Build Gratitude]]></summary></entry><entry><title type="html">The Master Plan (part 2)</title><link href="https://jacobfv.github.io/blog/the-master-plan-part-2/" rel="alternate" type="text/html" title="The Master Plan (part 2)" /><published>2022-07-02T00:00:00-05:00</published><updated>2022-07-02T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/the-master-plan-part-2</id><content type="html" xml:base="https://jacobfv.github.io/blog/the-master-plan-part-2/"><![CDATA[<p>TODO: renamae my blog post to “The dupster of all things AI”</p>
-
-<p>TODO: write this post</p>
-
-<p>THe previous post described a suite of technologies and …
-However its contributions are highly technical and general without any specific application
-This post fleshes out a more concrete perspective of the roadmap and details some of the specific problem domains that the foregoing tools are applied towards</p>
-
-<ul>
-  <li>Daily/weekly programming routine</li>
-  <li>Specific application of Computatrum:
-    <ul>
-      <li>writing more code</li>
-    </ul>
-  </li>
-  <li>How will the Limboid be developed?
-    <ul>
-      <li>schedule</li>
-    </ul>
-  </li>
-  <li>Specific applications of Limboid
-    <ul>
-      <li>Limboid factory services</li>
-      <li>Limboid humanitarian program
-        <ul>
-          <li>targets specific technical challenges, not general social problems
-            <ul>
-              <li>eg: delivering power, food, water, etc.</li>
-              <li>eg: providing emergency response assistance</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>Limboid space program
-        <ul>
-          <li>technologies: rocket, engine, fuel</li>
-          <li>solar network</li>
-          <li>lunar/martin/asteroid robotic/biological habitation</li>
-          <li>further targets: titan, triton, europa, pluto</li>
-          <li>trans-solar system expiditions</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>AI Orgnizational model
-    <ul>
-      <li>why and how I will market these technologies</li>
-    </ul>
-  </li>
-  <li>Ensuring contributions are benevolent</li>
-</ul>
-
-<p>Part 3:</p>
-<ul>
-  <li>SynBio Engineered Limboids</li>
-  <li>Replacing chemical/power/processing ‘plants’ with ‘cells’</li>
-  <li>Brain-in-a-vat and wetware supercomputer</li>
-  <li>Digital neurons and the global BrainNet</li>
-  <li>The Matrix</li>
-</ul>
-
-<p>Include a discalimer that some of these may take centuries to reach</p>]]></content><author><name></name></author><category term="ai" /><category term="idea" /><category term="agi" /><summary type="html"><![CDATA[The Master Plan to develop the world's first fully-autonomous affordable humanoid robot with general purpose artificial intelligence.]]></summary></entry><entry><title type="html">Embodied and Situated: AI with Feelings</title><link href="https://jacobfv.github.io/blog/embodied-and-situated-ai-with-feelings/" rel="alternate" type="text/html" title="Embodied and Situated: AI with Feelings" /><published>2022-06-26T00:00:00-05:00</published><updated>2022-06-26T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/embodied-and-situated-ai-with-feelings</id><content type="html" xml:base="https://jacobfv.github.io/blog/embodied-and-situated-ai-with-feelings/"><![CDATA[<p>Using <a href="https://jacobfv.github.io/blog/teaching-learning-machines"><em>Teaching Learning Machines (TLMs)</em></a> and <a href="https://jacobfv.github.io/blog/self-learning-meta-learners-teach-themselves-to-teach"><em>Self-learning meta-learners teach themselves to teach</em></a> as conditioning priors, I prompted gpt3 with:</p>
+<p>Actually, it would  be better if I could use the BLOOM LLM</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Using GPT-3 to Build Gratitude]]></summary></entry><entry><title type="html">The Master Plan (part 2)</title><link href="https://jacobfv.github.io/blog/the-master-plan-part-2/" rel="alternate" type="text/html" title="The Master Plan (part 2)" /><published>2022-07-02T00:00:00-05:00</published><updated>2022-07-02T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/the-master-plan-part-2</id><content type="html" xml:base="https://jacobfv.github.io/blog/the-master-plan-part-2/"><![CDATA[<p>This post is under construction. Please come back later.</p>]]></content><author><name></name></author><category term="ai" /><category term="idea" /><category term="agi" /><summary type="html"><![CDATA[The Master Plan to develop the world's first fully-autonomous affordable humanoid robot with general purpose artificial intelligence.]]></summary></entry><entry><title type="html">Embodied and Situated: AI with Feelings</title><link href="https://jacobfv.github.io/blog/embodied-and-situated-ai-with-feelings/" rel="alternate" type="text/html" title="Embodied and Situated: AI with Feelings" /><published>2022-06-26T00:00:00-05:00</published><updated>2022-06-26T00:00:00-05:00</updated><id>https://jacobfv.github.io/blog/embodied-and-situated-ai-with-feelings</id><content type="html" xml:base="https://jacobfv.github.io/blog/embodied-and-situated-ai-with-feelings/"><![CDATA[<p>Using <a href="https://jacobfv.github.io/blog/teaching-learning-machines"><em>Teaching Learning Machines (TLMs)</em></a> and <a href="https://jacobfv.github.io/blog/self-learning-meta-learners-teach-themselves-to-teach"><em>Self-learning meta-learners teach themselves to teach</em></a> as conditioning priors, I prompted gpt3 with:</p>
 
 <blockquote>
   <h1 id="embodied-and-situated-ai-with-feelings">Embodied and Situated: AI with Feelings</h1>
