@@ -6,6 +6,17 @@ Hello! I'm a machine learning engineer 👨‍🔬, roboticist 👨‍🏭, and 
 
 ## Dev notes
 
+- This is how I know to update:
+  
+  ```bash
+  conda activate ai
+  ./bin/build.sh
+
+  git add .
+  git commit -m "Update"
+  git push
+  ```
+
 - I manually set uglifier.rb `DEFAULTS[harmony] = true`, but what really mattered was inserting the following config:
 
 ```yaml
