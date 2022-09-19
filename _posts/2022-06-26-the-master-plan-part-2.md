@@ -8,4 +8,7 @@ categories: [ai, idea]
 tags:   [agi]
 ---
 
-This post is under construction. Please come back later.
+This post is under construction. Please come back later.[^1]
+
+
+  [^1]: Continued in [*The Master Plan (part 3)*](https://jacobfv.github.io/blog/the-master-plan-part-3/)
