@@ -11,6 +11,7 @@ Hello! I'm a machine learning engineer 👨‍🔬, roboticist 👨‍🏭, and 
   ```bash
   conda activate ai
   ./bin/build.sh
+  # optional, jekyll serve --skip-initial-build
 
   git add .
   git commit -m "Update"
