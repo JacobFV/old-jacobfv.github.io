@@ -7,7 +7,8 @@ inline: false
 order: 1
 ---
 
-**ML Collective presentation [here](https://docs.google.com/presentation/d/1H3mzCmuVKK_o-Y2wpw1Uuw8iMjHgr0EiP00H6ZxnNGA/edit?usp=sharing) and code [here](https://github.com/Limboid/tensorcode)**
+
+📰 Note to Rosanne / Jason / other appreciated MLC organizer: my presentation details have updated. Please see this [link](https://jacobvaldez.notion.site/TensorCode-8992f96752d44e919ddd30ffe85d8232)
 
 The endless evolution of artificial intelligence (AI) penetrates nearly every research discipline, engineering domain, and human endeavor: expert systems automate innumerably-many business processes; large language models generate indistinguishably-plausible written content; deep generative models produce photorealistic images; reinforcement learning agents have even gone on to achieve superhuman-level performance in strategic action selection and execution. Problem domains, when formalized into data, are ripe territory for AI to conquer.
 
